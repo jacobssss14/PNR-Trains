@@ -4,5 +4,5 @@
 #GRF names and description definitions
 STR_GRF_NAME        : PNR Trains 0.0.1-alpha
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
-
+STR_DMU_KiHa_35     : KiHa 35
 
