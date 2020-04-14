@@ -1,0 +1,49 @@
+/*Kiha 35*/
+item (FEAT_TRAINS, dmu_kiha_35) {
+   property {
+
+      name : string(STR_DMU_KiHa_35);
+      climates_available: bitmask(CLIMATE_TEMPERATE, CLIMATE_TROPICAL);
+
+      /*Vehicle lifecycle info*/
+      
+      introduction_date: date(2015, 1, 1);
+      retire_early: 75;
+      vehicle_life: 60;
+      reliability_decay: 20;
+      loading_speed: 20;
+      cost_factor: 45;
+      running_cost_factor: 100;
+
+      /*Train-specific properties*/
+
+      sprite_id: SPRITE_ID_NEW_TRAIN;
+      speed:  80 km/h;
+      /*Add track type later, for now use standard guage*/
+      track_type: RAIL;
+      power: 2500;
+      running_cost_base: RUNNING_COST_DIESEL;
+      dual_headed: 1;
+      refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+      non_refittable_cargo_classes: bitmask();
+      cargo_capacity: 250;
+      weight: 129;
+      engine_class: ENGINE_CLASS_DIESEL;
+      tractive_effort_coefficient: 0.3;
+      effect_spawn_model_and_powered: EFFECT_SPAWN_MODEL_DIESEL;
+      visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
+      misc_flags:  bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
+      
+   }
+
+   graphics {
+      purchase: set_kiha_35_purchase;
+      default: switch_dmu_kiha_35_reversed;
+
+   }
+
+   livery_override (item_pnr_mu_wagon) {
+		default: switch_kiha_35_pass_cargo;
+   }
+
+}

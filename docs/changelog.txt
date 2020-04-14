@@ -1,0 +1,7 @@
+Changelog for PNR-Trains
+
+0.0.2-alpha-testing
+    *First working model of the GRF
+
+0.0.1-alpha-testing
+    *Added purchase menu graphics

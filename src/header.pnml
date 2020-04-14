@@ -1,0 +1,9 @@
+grf {
+   grfid: "PM\01\01";
+   name:                   string(STR_GRF_NAME);
+   desc:                   string(STR_GRF_DESCRIPTION);
+   version:                01;
+   min_compatible_version: 0;
+}
+
+

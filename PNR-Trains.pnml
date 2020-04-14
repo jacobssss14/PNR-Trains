@@ -1,0 +1,8 @@
+#include "src/header.pnml"
+
+#include "src/DMU/dmu_kiha_35_graphics.pnml"
+#include "src/DMU/dmu_kiha_35_item.pnml"
+
+#include "src/Coaches/pnr_mu_coach_item.pnml"
+
+

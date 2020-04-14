@@ -1,0 +1,26 @@
+
+ /*MU Wagon, modify for later use*/  
+item(FEAT_TRAINS, item_pnr_mu_wagon) {
+	property {
+		name: string(STR_MU_WAGON);
+      climates_available: bitmask(CLIMATE_TEMPERATE, CLIMATE_TROPICAL);
+		cargo_capacity: 250;
+		sprite_id: SPRITE_ID_NEW_TRAIN;
+      introduction_date: date(2015, 1, 1);
+      retire_early: 75;
+      vehicle_life: 60;
+      reliability_decay: 20;
+      loading_speed: 20;
+      cost_factor: 45;
+      running_cost_factor: 100;
+      speed:  80 km/h;
+      /*Add track type later, for now use standard guage*/
+      track_type: RAIL;
+      running_cost_base: RUNNING_COST_NONE;
+      dual_headed: 0;
+      refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+      non_refittable_cargo_classes: bitmask();
+      cargo_capacity: 250;
+      weight: 129;
+   }
+}
