@@ -1,0 +1,17 @@
+//No cargo vehicles
+#define NO_LOAD 0
+
+//Intercity vehicles
+#define LOAD_INTERCITY 16
+
+//Commuter vehicles
+#define LOAD_COMMUTER 40
+
+//Metro vehicles
+#define LOAD_METRO 120
+
+//Cargo vehicles
+#define LOAD_CARGO 20
+
+//Mail vehicles
+#define LOAD_MAIL 15

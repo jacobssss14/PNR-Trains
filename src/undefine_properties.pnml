@@ -1,0 +1,32 @@
+#undef VEHIDCODE 
+#undef ITEM 
+#undef NAME 
+#undef VEHICLE_REGION 
+#undef CLIMATE
+#undef INTRODUCTION_YEAR 
+#undef MODEL_LIFE 
+#undef RETIRE_EARLY 
+#undef VEHICLE_LIFE 
+#undef LOADINGSPEED 
+#undef CARGODEF 
+#undef SPEED 
+#undef POWER 
+#undef WEIGHT 
+#undef TE_COEFFICIENT 
+
+#undef LENGTH 
+#undef ACTUAL_LENGTH 
+#undef WAGON_LENGTH 
+#undef HEAD_CAPACITY 
+#undef WAGON_CAPACITY 
+#undef DUAL_HEADED 
+#undef PASSENGER 
+#undef MISC_FLAGS 
+#undef VISUAL_FLAG 
+#undef TRACK_TYPE 
+#undef ENGINE_CLASS 
+#undef RUNNING_COST_BASE 
+#undef REFIT_COST 
+#undef RELIABILITY_DECAY 
+
+#undef SPRITE_ID

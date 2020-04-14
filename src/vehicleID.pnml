@@ -1,0 +1,7 @@
+#define ID_RANGE_DMU 0x3E8..0x7CF
+item(FEAT_TRAINS, dmu_kiha_35, 1000) {}
+
+
+#define ID_RANGE_COACH 0x7D0..0xBB7
+item(FEAT_TRAINS, item_pnr_mu_coach 2000) {}
+

@@ -1,6 +1,6 @@
 
  /*MU Wagon, modify for later use*/  
-item(FEAT_TRAINS, item_pnr_mu_wagon) {
+item(FEAT_TRAINS, item_pnr_mu_coach) {
 	property {
 		name: string(STR_MU_WAGON);
       climates_available: bitmask(CLIMATE_TEMPERATE, CLIMATE_TROPICAL);

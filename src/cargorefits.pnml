@@ -1,0 +1,2 @@
+//The old set also allowed carrying of MAIL and Valuables in passenger trains
+#define PASSENGERS refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL, CC_ARMOURED); non_refittable_cargo_classes: 0;
