@@ -1,3 +1,5 @@
+//GRF definition
+
 grf {
    grfid: "PM\01\01";
    name:                   string(STR_GRF_NAME);

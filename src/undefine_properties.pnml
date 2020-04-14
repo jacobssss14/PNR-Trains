@@ -1,3 +1,5 @@
+//Undefined properties
+
 #undef VEHIDCODE 
 #undef ITEM 
 #undef NAME 

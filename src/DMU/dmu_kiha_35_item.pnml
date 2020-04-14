@@ -7,7 +7,7 @@ item (FEAT_TRAINS, ITEM) {
 		model_life: MODEL_LIFE;
 		vehicle_life: VEHICLE_LIFE; 
 		retire_early: RETIRE_EARLY;
-		loading_speed: LOAD_COMMUTER;
+		loading_speed: LOADINGSPEED;
 		cost_factor: 25;
 		speed: SPEED km/h;
 		power: POWER hp;
@@ -39,6 +39,8 @@ item (FEAT_TRAINS, ITEM) {
    }
 
    livery_override (item_pnr_mu_coach) {
+	   	loading_speed: LOADINGSPEED;
+	   	cargo_capacity: WAGON_CAPACITY;
 		default: switch_kiha_35_pass_cargo;
    }
 

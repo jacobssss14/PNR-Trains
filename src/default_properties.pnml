@@ -1,3 +1,5 @@
+//Default properties of
+
 #define DEFAULT_REFIT_COST 0
 #define DEFAULT_RELIABILITY_DECAY 20
 #define DEFAULT_CARGO_AGE_PERIOD 185

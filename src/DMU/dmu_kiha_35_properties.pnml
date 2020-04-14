@@ -1,7 +1,7 @@
 #include "../undefine_properties.pnml"
 
 #define VEHIDCODE dmu_kiha_35
-#define ITEM  dmu_kiha_35
+#define ITEM  item_dmu_kiha_35
 #define NAME  string(STR_DMU_KiHa_35)
 #define INTRODUCTION_YEAR 2015
 #define CLIMATE bitmask(CLIMATE_TEMPERATE)

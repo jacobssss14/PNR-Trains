@@ -3,6 +3,8 @@
 # 1 "<command-line>"
 # 1 "PNR-Trains.pnml"
 # 1 "src/header.pnml" 1
+//GRF definition
+
 grf {
    grfid: "PM\01\01";
    name: string(STR_GRF_NAME);
@@ -15,7 +17,8 @@ grf {
 //The old set also allowed carrying of MAIL and Valuables in passenger trains
 # 3 "PNR-Trains.pnml" 2
 # 1 "src/default_properties.pnml" 1
-# 9 "src/default_properties.pnml"
+//Default properties of
+# 11 "src/default_properties.pnml"
 //AI flag
 
 
@@ -40,8 +43,50 @@ grf {
 //Mail vehicles
 # 5 "PNR-Trains.pnml" 2
 # 1 "src/undefine_properties.pnml" 1
+//Undefined properties
 # 6 "PNR-Trains.pnml" 2
 
+
+# 1 "src/Coaches/pnr_mu_coach_properties.pnml" 1
+# 1 "src/Coaches/../undefine_properties.pnml" 1
+//Undefined properties
+# 2 "src/Coaches/pnr_mu_coach_properties.pnml" 2
+# 9 "PNR-Trains.pnml" 2
+# 1 "src/Coaches/pnr_mu_coach_item.pnml" 1
+
+ /*MU Wagon, modify for later use*/
+item(FEAT_TRAINS, item_pnr_mu_coach) {
+ property {
+  name: string(STR_MU_COACH);
+      climates_available: bitmask(CLIMATE_TEMPERATE);
+  introduction_date: date(1908, 1, 1);
+  model_life: VEHICLE_NEVER_EXPIRES;
+  vehicle_life: 60;
+  retire_early: 5;
+  loading_speed: 0;
+  cost_factor: 25;
+  speed: 0 km/h;
+  power: 0 hp;
+  cargo_capacity: 1;
+  weight: 0 ton;
+  tractive_effort_coefficient: 0.3;
+  air_drag_coefficient: 0;
+
+  refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL, CC_ARMOURED); non_refittable_cargo_classes: 0;
+  misc_flags: bitmask(TRAIN_FLAG_2CC);
+
+  track_type: RAIL;
+
+
+  visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+
+  sprite_id: SPRITE_ID_NEW_TRAIN;
+  dual_headed: 0;
+  length: 8;
+
+   }
+}
+# 10 "PNR-Trains.pnml" 2
 
 
 # 1 "src/DMU/dmu_kiha_35_graphics.pnml" 1
@@ -90,14 +135,15 @@ switch(FEAT_TRAINS, SELF, switch_dmu_kiha_35_reversed, var[0xC8]) {
     0xFF: set_kiha_35_back;
     set_kiha_35_front;
 }
-# 10 "PNR-Trains.pnml" 2
+# 13 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_kiha_35_properties.pnml" 1
 # 1 "src/DMU/../undefine_properties.pnml" 1
+//Undefined properties
 # 2 "src/DMU/dmu_kiha_35_properties.pnml" 2
-# 11 "PNR-Trains.pnml" 2
+# 14 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_kiha_35_item.pnml" 1
 /*Kiha 35*/
-item (FEAT_TRAINS, dmu_kiha_35) {
+item (FEAT_TRAINS, item_dmu_kiha_35) {
    property {
       name: string(STR_DMU_KiHa_35);
       climates_available: bitmask(CLIMATE_TEMPERATE);
@@ -137,37 +183,10 @@ item (FEAT_TRAINS, dmu_kiha_35) {
    }
 
    livery_override (item_pnr_mu_coach) {
+     loading_speed: 40;
+     cargo_capacity: 250;
   default: switch_kiha_35_pass_cargo;
    }
 
 }
-# 12 "PNR-Trains.pnml" 2
-
-# 1 "src/Coaches/pnr_mu_coach_item.pnml" 1
-
- /*MU Wagon, modify for later use*/
-item(FEAT_TRAINS, item_pnr_mu_coach) {
- property {
-  name: string(STR_MU_WAGON);
-      climates_available: bitmask(CLIMATE_TEMPERATE, CLIMATE_TROPICAL);
-  cargo_capacity: 250;
-  sprite_id: SPRITE_ID_NEW_TRAIN;
-      introduction_date: date(2015, 1, 1);
-      retire_early: 75;
-      vehicle_life: 60;
-      reliability_decay: 20;
-      loading_speed: 20;
-      cost_factor: 45;
-      running_cost_factor: 100;
-      speed: 80 km/h;
-      /*Add track type later, for now use standard guage*/
-      track_type: RAIL;
-      running_cost_base: RUNNING_COST_NONE;
-      dual_headed: 0;
-      refittable_cargo_classes: bitmask(CC_PASSENGERS);
-      non_refittable_cargo_classes: bitmask();
-      cargo_capacity: 250;
-      weight: 129;
-   }
-}
-# 14 "PNR-Trains.pnml" 2
+# 15 "PNR-Trains.pnml" 2
