@@ -1,15 +1,15 @@
 #include "../undefine_properties.pnml"
 
-#define VEHIDCODE dmu_kiha_35
-#define ITEM  item_dmu_kiha_35
-#define NAME  string(STR_DMU_KiHa_35)
-#define INTRODUCTION_YEAR 2015
+#define VEHIDCODE dmu_kiha_59
+#define ITEM  item_dmu_kiha_59
+#define NAME  string(STR_DMU_KiHa_59)
+#define INTRODUCTION_YEAR 2012
 #define CLIMATE bitmask(CLIMATE_TEMPERATE)
 #define MODEL_LIFE 30
 #define RETIRE_EARLY DEFAULT_RETIRE_EARLY
 #define VEHICLE_LIFE 60
 
-#define LOADINGSPEED LOAD_COMMUTER
+#define LOADINGSPEED LOAD_INTERCITY
 #define CARGODEF PASSENGERS
 #define SPEED 80 
 #define POWER 250
@@ -21,8 +21,8 @@
 #define ACTUAL_LENGTH 8
 #define WAGON_LENGTH  8
 
-#define HEAD_CAPACITY 250
-#define WAGON_CAPACITY 250
+#define HEAD_CAPACITY 27
+#define WAGON_CAPACITY 27
 
 #define DUAL_HEADED 1
 #define PASSENGER 1

@@ -1,0 +1,3 @@
+spriteset (set_pnr_mu_coach_purchase, "gfx/PNR_MU_COACH.png") {
+    [1, 106, 40, 16, -31, -8]
+}

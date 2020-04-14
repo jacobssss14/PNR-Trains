@@ -1,8 +1,7 @@
-
- /*MU Wagon, modify for later use*/  
-item(FEAT_TRAINS, ITEM) {
-	property {
-		name: NAME;
+/*Kiha 59*/
+item (FEAT_TRAINS, ITEM) {
+   property {
+      name: NAME;
       climates_available: CLIMATE;
 		INTRODUCTIONDATEPROPERTY
 		model_life: MODEL_LIFE;
@@ -15,14 +14,16 @@ item(FEAT_TRAINS, ITEM) {
 		cargo_capacity: HEAD_CAPACITY;
 		weight: WEIGHT ton;
 		tractive_effort_coefficient: TE_COEFFICIENT;
-		air_drag_coefficient: AIR_COEFFICIENT;
-	
+		air_drag_coefficient: AIR_DRAG_COEFFICIENT;
+		
+		reliability_decay: RELIABILITY_DECAY;
 		CARGODEF
 		misc_flags: MISC_FLAGS;
-
+		refit_cost: REFIT_COST;
 		track_type: TRACK_TYPE;
 		
-	
+		running_cost_base: RUNNING_COST;
+		engine_class: ENGINE_CLASS;
 		visual_effect_and_powered: VISUAL_FLAG;
 		
 		sprite_id: SPRITE_ID;
@@ -30,7 +31,17 @@ item(FEAT_TRAINS, ITEM) {
 		length: LENGTH;
       
    }
+
    graphics {
-      purchase: set_pnr_mu_coach_purchase;
+      purchase: set_kiha_59_purchase;
+      default: switch_dmu_kiha_59_reversed;
+
    }
+
+   livery_override (item_pnr_mu_coach) {
+	   	loading_speed: LOADINGSPEED;
+	   	cargo_capacity: WAGON_CAPACITY;
+		default: switch_kiha_59_pass_cargo;
+   }
+
 }

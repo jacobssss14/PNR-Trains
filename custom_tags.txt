@@ -1,6 +1,6 @@
-VERSION        :
-VERSION_STRING :
-TITLE          :PNR Trains 
+VERSION        :noRev
+VERSION_STRING :noRev
+TITLE          :PNR Trains noRev
 FILENAME       :PNR-Trains.grf
 REPO_HASH      :
-NEWGRF_VERSION :
+NEWGRF_VERSION :0

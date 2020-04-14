@@ -26,7 +26,7 @@ Contents:
 This is a NewGRF build framework
 
 Name of this Repo:  Example NewGRF project
-Repository version: 
+Repository version: 0
 
 
 
@@ -86,7 +86,7 @@ when you change them. You can do so, if you call your readme
 'readme.ptxt' and have the Makefile generate the readme.txt from it.
 Then you have a few special commands in the readme.ptxt which will
 be replaced:
-PNR Trains       - this is declared in Makefile.config by REPO_NAME
+PNR Trains noRev      - this is declared in Makefile.config by REPO_NAME
        - this is the grf's filename, e.g. mynewgrf.grf,
                      automatically generated from the BASE_FILENAME as
                      declared in Makefile.config
@@ -94,7 +94,7 @@ PNR Trains       - this is declared in Makefile.config by REPO_NAME
                      commit date
 
 Deprecated (do not use!)
-  - this is determined by the revision in the mercurial repo
+0  - this is determined by the revision in the mercurial repo
                     (REPO_REVISION).
 
 

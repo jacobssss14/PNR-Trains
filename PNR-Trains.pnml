@@ -4,7 +4,7 @@
 #include "src/loading_speed.pnml"
 #include "src/undefine_properties.pnml"
 
-
+#include "src/Coaches/pnr_mu_coach_graphics.pnml"
 #include "src/Coaches/pnr_mu_coach_properties.pnml"
 #include "src/Coaches/pnr_mu_coach_item.pnml"
 
@@ -12,5 +12,9 @@
 #include "src/DMU/dmu_kiha_35_graphics.pnml"
 #include "src/DMU/dmu_kiha_35_properties.pnml"
 #include "src/DMU/dmu_kiha_35_item.pnml"
+
+#include "src/DMU/dmu_kiha_59_graphics.pnml"
+#include "src/DMU/dmu_kiha_59_properties.pnml"
+#include "src/DMU/dmu_kiha_59_item.pnml"
 
 
