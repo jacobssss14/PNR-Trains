@@ -51,5 +51,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #undef RUNNING_COST_BASE 
 #undef REFIT_COST 
 #undef RELIABILITY_DECAY 
+#undef CARGO_AGE_PERIOD
 
 #undef SPRITE_ID
