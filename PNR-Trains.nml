@@ -22,7 +22,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-
+//GRF Definition
 # 1 "src/header.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -60,7 +60,9 @@ train_width_32_px = 1;
 //align train properly in depot window
 traininfo_y_offset = 2;
 # 23 "PNR-Trains.pnml" 2
-# 1 "src/cargorefits.pnml" 1
+
+//Cargo refit definition
+# 1 "src/cargo_refits.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
 
@@ -80,7 +82,9 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
-# 24 "PNR-Trains.pnml" 2
+# 26 "PNR-Trains.pnml" 2
+
+//Default vehicle properties
 # 1 "src/default_properties.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -101,7 +105,9 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
-# 25 "PNR-Trains.pnml" 2
+# 29 "PNR-Trains.pnml" 2
+
+//Loading speed definitions
 # 1 "src/loading_speed.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -140,7 +146,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 
 //Mail vehicles
-# 26 "PNR-Trains.pnml" 2
+# 32 "PNR-Trains.pnml" 2
+
+//Undefined properties
 # 1 "src/undefine_properties.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -164,7 +172,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 
 //Undefined properties
-# 27 "PNR-Trains.pnml" 2
+# 35 "PNR-Trains.pnml" 2
+
+//Capactiy switch
 # 1 "src/capacities.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 
@@ -203,7 +213,9 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 */
-# 28 "PNR-Trains.pnml" 2
+# 38 "PNR-Trains.pnml" 2
+
+//Template for graphics files
 # 1 "src/graphics_template.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -247,7 +259,9 @@ template template_mu_purchase(x, y) {
     [x , y, 55, 16, -11, -8]
     [1 , 1, 1, 1, 0, 0, "gfx/Empty.png"]
 }
-# 29 "PNR-Trains.pnml" 2
+# 41 "PNR-Trains.pnml" 2
+
+//Costs calculations
 # 1 "src/costs.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 
@@ -299,29 +313,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 
 
-// Railbuses
-
-
-
-// Steam railbus
-
-
-
-// Diesel railbus
-
-
-
-// Electric railbus
-
-
-
-// Metro railbus
-
-
-
-// Maglev railbus
-
-
 
 
 // Engines
@@ -352,12 +343,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 
 
-// Maglev
-
-
-
-// Metro
-
 
 
 // Wagons and coaches
@@ -374,7 +359,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 
 // MU wagonds
-# 30 "PNR-Trains.pnml" 2
+# 44 "PNR-Trains.pnml" 2
+
+//Railtypes
 # 1 "src/railtypetable.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -399,8 +386,10 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 railtypetable {
     NAAN, ELRL, RAIL
 }
-# 31 "PNR-Trains.pnml" 2
-# 1 "src/cargodecay.pnml" 1
+# 47 "PNR-Trains.pnml" 2
+
+//Cargo decay
+# 1 "src/cargo_decay.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
 
@@ -420,16 +409,99 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
-# 32 "PNR-Trains.pnml" 2
+# 50 "PNR-Trains.pnml" 2
+
+//MU Coach calculations
+# 1 "src/mu_coach_calc.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+
+Copyright (C) 2020  Jacob Payag
 
 
-# 1 "src/Coaches/pnr_mu_coach_graphics.pnml" 1
-spriteset (set_pnr_mu_coach_purchase, "gfx/PNR_MU_COACH.png") {
-    [1, 106, 40, 16, -31, -8]
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+
+
+This program is free software; you can redistribute it and/or
+
+modify it under the terms of the GNU General Public License
+
+as published by the Free Software Foundation; either version 2
+
+of the License, or (at your option) any later version.
+
+
+
+This program is distributed in the hope that it will be useful,
+
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+
+GNU General Public License for more details.
+
+
+
+You should have received a copy of the GNU General Public License
+
+along with this program; if not, write to the Free Software
+
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+*/
+# 21 "src/mu_coach_calc.pnml"
+//this file is used to define all properties for MU wagons from one file
+# 53 "PNR-Trains.pnml" 2
+
+//Coached
+# 1 "src/Coaches/pnr_mu_coach_powered_graphics.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+spriteset (set_pnr_mu_coach_powered_purchase, "gfx/PNR_MU_COACH.png") {
+    [1, 106, 40, 16, -11, -8]
 }
 
-# 35 "PNR-Trains.pnml" 2
-# 1 "src/Coaches/pnr_mu_coach_properties.pnml" 1
+# 56 "PNR-Trains.pnml" 2
+# 1 "src/Coaches/pnr_mu_coach_powered_properties.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
 # 1 "src/Coaches/../undefine_properties.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -453,14 +525,33 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 
 //Undefined properties
-# 2 "src/Coaches/pnr_mu_coach_properties.pnml" 2
-# 36 "PNR-Trains.pnml" 2
-# 1 "src/Coaches/pnr_mu_coach_item.pnml" 1
+# 22 "src/Coaches/pnr_mu_coach_powered_properties.pnml" 2
+# 57 "PNR-Trains.pnml" 2
+# 1 "src/Coaches/pnr_mu_coach_powered_item.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
 
  /*MU Wagon, modify for later use*/
-item(FEAT_TRAINS, item_pnr_mu_coach) {
+item(FEAT_TRAINS, item_pnr_mu_coach_powered) {
  property {
-  name: string(STR_MU_COACH);
+  name: string(STR_MU_COACH_POWERED);
       climates_available: bitmask(CLIMATE_TEMPERATE);
   introduction_date: date(1908, 1, 1);
   model_life: VEHICLE_NEVER_EXPIRES;
@@ -490,12 +581,146 @@ item(FEAT_TRAINS, item_pnr_mu_coach) {
 
    }
    graphics {
-      purchase: set_pnr_mu_coach_purchase;
+      purchase: set_pnr_mu_coach_powered_purchase;
   
    }
 }
-# 37 "PNR-Trains.pnml" 2
+# 58 "PNR-Trains.pnml" 2
+# 1 "src/Coaches/pnr_mu_coach_unpowered_graphics.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
 
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+spriteset (set_pnr_mu_coach_unpowered_purchase, "gfx/PNR_MU_COACH.png") {
+    [1, 106, 40, 16, -11, -8]
+}
+
+# 59 "PNR-Trains.pnml" 2
+# 1 "src/Coaches/pnr_mu_coach_unpowered_properties.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+# 1 "src/Coaches/../undefine_properties.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+//Undefined properties
+# 22 "src/Coaches/pnr_mu_coach_unpowered_properties.pnml" 2
+# 60 "PNR-Trains.pnml" 2
+# 1 "src/Coaches/pnr_mu_coach_unpowered_item.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+ /*MU Wagon, modify for later use*/
+item(FEAT_TRAINS, item_pnr_mu_coach_unpowered) {
+ property {
+  name: string(STR_MU_COACH_UNPOWERED);
+      climates_available: bitmask(CLIMATE_TEMPERATE);
+  introduction_date: date(1908, 1, 1);
+  model_life: VEHICLE_NEVER_EXPIRES;
+  vehicle_life: 60;
+  retire_early: 5;
+  loading_speed: 0;
+  cost_factor: 0;
+  running_cost_factor: 0;
+  speed: 0 km/h;
+  power: 0 hp;
+  cargo_capacity: 1;
+  weight: 0 ton;
+  tractive_effort_coefficient: 0.3;
+  air_drag_coefficient: 0;
+
+  refittable_cargo_classes: bitmask(CC_PASSENGERS); non_refittable_cargo_classes: 0;
+  misc_flags: bitmask(TRAIN_FLAG_2CC);
+
+  track_type: NAAN;
+
+
+  visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+
+  sprite_id: SPRITE_ID_NEW_TRAIN;
+  dual_headed: 0;
+  length: 8;
+
+   }
+   graphics {
+      purchase: set_pnr_mu_coach_unpowered_purchase;
+  
+   }
+}
+# 61 "PNR-Trains.pnml" 2
+
+//DMUs
+
+//KiHa35
 # 1 "src/init/init_dmu.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -547,7 +772,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 
 // Room for specific defines
-# 39 "PNR-Trains.pnml" 2
+# 66 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_kiha_35_properties.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -594,7 +819,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //Undefined properties
 # 23 "src/DMU/dmu_kiha_35_properties.pnml" 2
-# 40 "PNR-Trains.pnml" 2
+# 67 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_kiha_35_graphics.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -648,8 +873,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_kiha_35_capacity_wagon, cargo_classes) { bi
 
 
 
-
-# 41 "PNR-Trains.pnml" 2
+# 68 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_kiha_35_item.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -711,22 +935,36 @@ item (FEAT_TRAINS, item_dmu_kiha_35) {
    graphics {
   
       cargo_capacity: switch_dmu_kiha_35_capacity_engine;
-  
       purchase: set_kiha_35_purchase;
       default: switch_dmu_kiha_35_reversed;
 
    }
 
-   livery_override (item_pnr_mu_coach) {
+   livery_override (item_pnr_mu_coach_unpowered) {
      running_cost_factor: int(80/10);
      loading_speed: 40;
      cargo_capacity: switch_dmu_kiha_35_capacity_wagon;
+  length: 8;
+  weight: int(30*1/8);
   default: switch_kiha_35_pass_cargo;
    }
 
-}
-# 42 "PNR-Trains.pnml" 2
+   livery_override (item_pnr_mu_coach_powered) {
+     running_cost_factor: int(80/10+(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))-((((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))))-250 )/(0.1+2*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))))/10+0.3*30);
+     loading_speed: 40;
+     cargo_capacity: switch_dmu_kiha_35_capacity_wagon;
+  length: 8;
+  weight: int(30*1/16);
+  power: int(250*1/2);
+  tractive_effort_coefficient: int(0.3*10*30);
+  default: switch_kiha_35_pass_cargo;
+   }
 
+
+}
+# 69 "PNR-Trains.pnml" 2
+
+//KiHa59
 # 1 "src/DMU/dmu_kiha_59_properties.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -773,7 +1011,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //Undefined properties
 # 23 "src/DMU/dmu_kiha_59_properties.pnml" 2
-# 44 "PNR-Trains.pnml" 2
+# 72 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_kiha_59_graphics.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -829,8 +1067,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_kiha_59_capacity_wagon, cargo_classes) { bi
 
 
 
-
-# 45 "PNR-Trains.pnml" 2
+# 73 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_kiha_59_item.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -889,21 +1126,34 @@ item (FEAT_TRAINS, item_dmu_kiha_59) {
 
    }
 
-   graphics {
+     graphics {
   
-   cargo_capacity: switch_dmu_kiha_59_capacity_engine;
-  
+      cargo_capacity: switch_dmu_kiha_59_capacity_engine;
       purchase: set_kiha_59_purchase;
       default: switch_dmu_kiha_59_reversed;
 
    }
 
-   livery_override (item_pnr_mu_coach) {
+   livery_override (item_pnr_mu_coach_unpowered) {
      running_cost_factor: int(80/10);
      loading_speed: 16;
      cargo_capacity: switch_dmu_kiha_59_capacity_wagon;
+  length: 8;
+  weight: int(35*1/8);
   default: switch_kiha_59_pass_cargo;
    }
 
+   livery_override (item_pnr_mu_coach_powered) {
+     running_cost_factor: int(80/10+(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))-((((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))))-250 )/(0.1+2*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))))/10+0.3*35);
+     loading_speed: 16;
+     cargo_capacity: switch_dmu_kiha_59_capacity_wagon;
+  length: 8;
+  weight: int(35*1/16);
+  power: int(250*1/2);
+  tractive_effort_coefficient: int(0.3*10*35);
+  default: switch_kiha_59_pass_cargo;
+   }
+
+
 }
-# 46 "PNR-Trains.pnml" 2
+# 74 "PNR-Trains.pnml" 2

@@ -18,28 +18,56 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-
+//GRF Definition
 #include "src/header.pnml"
-#include "src/cargorefits.pnml"
+
+//Cargo refit definition
+#include "src/cargo_refits.pnml"
+
+//Default vehicle properties
 #include "src/default_properties.pnml"
+
+//Loading speed definitions
 #include "src/loading_speed.pnml"
+
+//Undefined properties
 #include "src/undefine_properties.pnml"
+
+//Capactiy switch
 #include "src/capacities.pnml"
+
+//Template for graphics files
 #include "src/graphics_template.pnml"
+
+//Costs calculations
 #include "src/costs.pnml"
+
+//Railtypes
 #include "src/railtypetable.pnml"
-#include "src/cargodecay.pnml"
 
+//Cargo decay
+#include "src/cargo_decay.pnml"
 
-#include "src/Coaches/pnr_mu_coach_graphics.pnml"
-#include "src/Coaches/pnr_mu_coach_properties.pnml"
-#include "src/Coaches/pnr_mu_coach_item.pnml"
+//MU Coach calculations
+#include "src/mu_coach_calc.pnml"
 
+//Coached
+#include "src/Coaches/pnr_mu_coach_powered_graphics.pnml"
+#include "src/Coaches/pnr_mu_coach_powered_properties.pnml"
+#include "src/Coaches/pnr_mu_coach_powered_item.pnml"
+#include "src/Coaches/pnr_mu_coach_unpowered_graphics.pnml"
+#include "src/Coaches/pnr_mu_coach_unpowered_properties.pnml"
+#include "src/Coaches/pnr_mu_coach_unpowered_item.pnml"
+
+//DMUs
+
+//KiHa35
 #include "src/init/init_dmu.pnml"
 #include "src/DMU/dmu_kiha_35_properties.pnml"
 #include "src/DMU/dmu_kiha_35_graphics.pnml"
 #include "src/DMU/dmu_kiha_35_item.pnml"
 
+//KiHa59
 #include "src/DMU/dmu_kiha_59_properties.pnml"
 #include "src/DMU/dmu_kiha_59_graphics.pnml"
 #include "src/DMU/dmu_kiha_59_item.pnml"

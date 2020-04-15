@@ -30,6 +30,17 @@ template template_dmu_head_car(x, y) {
 
 }
 
+template template_dmu_ft(x, y) {
+    [x    , y,  8, 24,  -3, -12]
+    [x+9  , y, 22, 20, -14, -12]
+    [x+32 , y, 32, 16, -16, -12]
+    [x+65 , y, 22, 20,  -6, -12]
+    [x+88 , y,  8, 24,  -3, -12]
+    [x+97 , y, 22, 20, -14, -12]
+    [x+120, y, 32, 16, -16, -12]
+    [x+153, y, 22, 20,  -6, -12]
+}
+
 template template_mu_purchase(x, y) {
     [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
     [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]

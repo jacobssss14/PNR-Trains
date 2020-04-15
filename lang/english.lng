@@ -27,4 +27,6 @@ STR_GRF_NAME        : PNR Trains 0.2.0-beta-public
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
 STR_DMU_KiHa_35     : KiHa 35
 STR_DMU_KiHa_59     : KiHa 59
-STR_MU_COACH        : PNR MU Coach
+STR_MU_COACH_UNPOWERED           : PNR MU Coach Unpowered
+STR_MU_COACH_POWERED             : PNR MU Coach Powered
+
