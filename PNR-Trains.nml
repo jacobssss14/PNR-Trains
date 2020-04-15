@@ -2,7 +2,49 @@
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "PNR-Trains.pnml"
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
 # 1 "src/header.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
 //GRF definition
 
 grf {
@@ -17,19 +59,52 @@ grf {
 train_width_32_px = 1;
 //align train properly in depot window
 traininfo_y_offset = 2;
-# 2 "PNR-Trains.pnml" 2
+# 23 "PNR-Trains.pnml" 2
 # 1 "src/cargorefits.pnml" 1
-//The old set also allowed carrying of MAIL and Valuables in passenger trains
-# 3 "PNR-Trains.pnml" 2
+# 24 "PNR-Trains.pnml" 2
 # 1 "src/default_properties.pnml" 1
-//Default properties of
-# 11 "src/default_properties.pnml"
-//AI flag
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
 
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
 
-//Introduction date
-# 4 "PNR-Trains.pnml" 2
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+# 25 "PNR-Trains.pnml" 2
 # 1 "src/loading_speed.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
 //No cargo vehicles
 
 
@@ -46,26 +121,91 @@ traininfo_y_offset = 2;
 
 
 //Mail vehicles
-# 5 "PNR-Trains.pnml" 2
+# 26 "PNR-Trains.pnml" 2
 # 1 "src/undefine_properties.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
 //Undefined properties
-# 6 "PNR-Trains.pnml" 2
+# 27 "PNR-Trains.pnml" 2
 # 1 "src/capacities.pnml" 1
-/*
+/* PNR-Trains NewGRF For OpenTTD
 
- *  Copyright (C) 2017 Transportman
+Copyright (C) 2020  Jacob Payag
 
- *  This file is part of the 2cc Trains In NML and is based on The Dutch Trainset 2.0 by Jasper Vries
 
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 
- *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
 
- *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+
+This program is free software; you can redistribute it and/or
+
+modify it under the terms of the GNU General Public License
+
+as published by the Free Software Foundation; either version 2
+
+of the License, or (at your option) any later version.
+
+
+
+This program is distributed in the hope that it will be useful,
+
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+
+GNU General Public License for more details.
+
+
+
+You should have received a copy of the GNU General Public License
+
+along with this program; if not, write to the Free Software
+
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 */
-# 7 "PNR-Trains.pnml" 2
+# 28 "PNR-Trains.pnml" 2
 # 1 "src/graphics_template.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
 template template_dmu_head_car(x, y) {
    [x, y, 8, 24, -3, -12]
    [x+9, y, 22, 21, -14, -13]
@@ -88,24 +228,48 @@ template template_mu_purchase(x, y) {
     [x , y, 55, 16, -11, -8]
     [1 , 1, 1, 1, 0, 0, "gfx/Empty.png"]
 }
-# 8 "PNR-Trains.pnml" 2
+# 29 "PNR-Trains.pnml" 2
 # 1 "src/costs.pnml" 1
-/*
+/* PNR-Trains NewGRF For OpenTTD
 
- *  Copyright (C) 2017 Transportman
+Copyright (C) 2020  Jacob Payag
 
- *  This file is part of the 2cc Trains In NML and is based on The Dutch Trainset 2.0 by Jasper Vries
 
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 
- *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
 
- *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+
+This program is free software; you can redistribute it and/or
+
+modify it under the terms of the GNU General Public License
+
+as published by the Free Software Foundation; either version 2
+
+of the License, or (at your option) any later version.
+
+
+
+This program is distributed in the hope that it will be useful,
+
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+
+GNU General Public License for more details.
+
+
+
+You should have received a copy of the GNU General Public License
+
+along with this program; if not, write to the Free Software
+
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 */
-# 9 "src/costs.pnml"
+# 22 "src/costs.pnml"
 //this file is used to define the costs of vehicles
-# 21 "src/costs.pnml"
+# 34 "src/costs.pnml"
 // Use Newton's method to approximate the square root
 
 
@@ -191,12 +355,32 @@ template template_mu_purchase(x, y) {
 
 
 // MU wagonds
-# 9 "PNR-Trains.pnml" 2
+# 30 "PNR-Trains.pnml" 2
 # 1 "src/railtypetable.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
 railtypetable {
     NAAN, ELRL, RAIL
 }
-# 10 "PNR-Trains.pnml" 2
+# 31 "PNR-Trains.pnml" 2
 
 
 # 1 "src/Coaches/pnr_mu_coach_graphics.pnml" 1
@@ -204,12 +388,33 @@ spriteset (set_pnr_mu_coach_purchase, "gfx/PNR_MU_COACH.png") {
     [1, 106, 40, 16, -31, -8]
 }
 
-# 13 "PNR-Trains.pnml" 2
+# 34 "PNR-Trains.pnml" 2
 # 1 "src/Coaches/pnr_mu_coach_properties.pnml" 1
 # 1 "src/Coaches/../undefine_properties.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
 //Undefined properties
 # 2 "src/Coaches/pnr_mu_coach_properties.pnml" 2
-# 14 "PNR-Trains.pnml" 2
+# 35 "PNR-Trains.pnml" 2
 # 1 "src/Coaches/pnr_mu_coach_item.pnml" 1
 
  /*MU Wagon, modify for later use*/
@@ -231,7 +436,7 @@ item(FEAT_TRAINS, item_pnr_mu_coach) {
   tractive_effort_coefficient: 0.3;
   air_drag_coefficient: 0;
 
-  refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL, CC_ARMOURED); non_refittable_cargo_classes: 0;
+  refittable_cargo_classes: bitmask(CC_PASSENGERS); non_refittable_cargo_classes: 0;
   misc_flags: bitmask(TRAIN_FLAG_2CC);
 
   track_type: NAAN;
@@ -249,11 +454,52 @@ item(FEAT_TRAINS, item_pnr_mu_coach) {
   
    }
 }
-# 15 "PNR-Trains.pnml" 2
+# 36 "PNR-Trains.pnml" 2
 
 # 1 "src/init/init_dmu.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+
 # 1 "src/init/undefined_properties.pnml" 1
-# 2 "src/init/init_dmu.pnml" 2
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+# 24 "src/init/init_dmu.pnml" 2
 
 
 
@@ -261,13 +507,76 @@ item(FEAT_TRAINS, item_pnr_mu_coach) {
 
 
 // Room for specific defines
-# 17 "PNR-Trains.pnml" 2
+# 38 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_kiha_35_properties.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
 # 1 "src/DMU/../undefine_properties.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
 //Undefined properties
-# 2 "src/DMU/dmu_kiha_35_properties.pnml" 2
-# 18 "PNR-Trains.pnml" 2
+# 23 "src/DMU/dmu_kiha_35_properties.pnml" 2
+# 39 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_kiha_35_graphics.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
 spriteset(set_kiha_35_purchase, "gfx/DMU_KIHA_35.png") {
   template_mu_purchase(1, 106)
 }
@@ -300,8 +609,29 @@ switch(FEAT_TRAINS, SELF, switch_dmu_kiha_35_capacity_wagon, cargo_classes) { bi
 
 
 
-# 19 "PNR-Trains.pnml" 2
+# 40 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_kiha_35_item.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
 /*Kiha 35*/
 item (FEAT_TRAINS, item_dmu_kiha_35) {
    property {
@@ -312,17 +642,17 @@ item (FEAT_TRAINS, item_dmu_kiha_35) {
   vehicle_life: 60;
   retire_early: 5;
   loading_speed: 40;
-  cost_factor: 1*(0.1*129 +0.05*(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))-((((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))*((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))))-80 )/(0.1+2*((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))))+1*(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))-((((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))))-250 )/(0.1+2*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))))+max(0.5*(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))-((((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))))-250 )/(0.1+2*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))))),0.5*(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))-((((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))))-250 )/(0.1+2*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))))))+1*0.3);
+  cost_factor: 1*(0.1*7 +0.05*(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))-((((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))*((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))))-80 )/(0.1+2*((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))))+1*(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))-((((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))))-250 )/(0.1+2*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))))+max(0.5*(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))-((((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))))-250 )/(0.1+2*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))))),0.5*(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))-((((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))))-250 )/(0.1+2*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))))))+1*0.3);
   running_cost_factor: 1*(0.01*(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))-((((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))*((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))))-80 )/(0.1+2*((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))))+1*(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))-((((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))))-250 )/(0.1+2*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))))+max(0.5*(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))-((((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))))-250 )/(0.1+2*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))))), 0.5*(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))-((((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))))-250 )/(0.1+2*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))))))+1*0.3);
   speed: 80 km/h;
   power: 250 hp;
   cargo_capacity: 250;
-  weight: 129 ton;
+  weight: 7 ton;
   tractive_effort_coefficient: 0.3;
   air_drag_coefficient: 0;
 
   reliability_decay: 20;
-  refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL, CC_ARMOURED); non_refittable_cargo_classes: 0;
+  refittable_cargo_classes: bitmask(CC_PASSENGERS); non_refittable_cargo_classes: 0;
   misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
   refit_cost: 0;
   track_type: NAAN;
@@ -354,14 +684,77 @@ item (FEAT_TRAINS, item_dmu_kiha_35) {
    }
 
 }
-# 20 "PNR-Trains.pnml" 2
+# 41 "PNR-Trains.pnml" 2
 
 # 1 "src/DMU/dmu_kiha_59_properties.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
 # 1 "src/DMU/../undefine_properties.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
 //Undefined properties
-# 2 "src/DMU/dmu_kiha_59_properties.pnml" 2
-# 22 "PNR-Trains.pnml" 2
+# 23 "src/DMU/dmu_kiha_59_properties.pnml" 2
+# 43 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_kiha_59_graphics.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
 spriteset(set_kiha_59_purchase, "gfx/DMU_KIHA_59.png") {
   template_mu_purchase(1, 106)
 }
@@ -396,8 +789,29 @@ switch(FEAT_TRAINS, SELF, switch_dmu_kiha_59_capacity_wagon, cargo_classes) { bi
 
 
 
-# 23 "PNR-Trains.pnml" 2
+# 44 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_kiha_59_item.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
 /*Kiha 59*/
 item (FEAT_TRAINS, item_dmu_kiha_59) {
    property {
@@ -408,17 +822,17 @@ item (FEAT_TRAINS, item_dmu_kiha_59) {
   vehicle_life: 60;
   retire_early: 5;
   loading_speed: 16;
-  cost_factor: 1*(0.1*129 +0.05*(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))-((((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))*((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))))-80 )/(0.1+2*((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))))+1*(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))-((((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))))-250 )/(0.1+2*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))))+max(0.5*(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))))-((((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))))*((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))))-27 )/(0.1+2*((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))))),0.5*(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))))-((((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))))*((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))))-27 )/(0.1+2*((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))))))+1*0.3);
+  cost_factor: 1*(0.1*9 +0.05*(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))-((((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))*((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))))-80 )/(0.1+2*((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))))+1*(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))-((((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))))-250 )/(0.1+2*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))))+max(0.5*(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))))-((((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))))*((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))))-27 )/(0.1+2*((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))))),0.5*(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))))-((((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))))*((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))))-27 )/(0.1+2*((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))))))+1*0.3);
   running_cost_factor: 1*(0.01*(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))-((((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))*((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))))-80 )/(0.1+2*((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))))+1*(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))-((((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))))-250 )/(0.1+2*((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))-(((250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40)))-250 )/(0.1+2*(250/40 -((250/40*250/40)-250 )/(0.1+2*250/40))))))+max(0.5*(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))))-((((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))))*((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))))-27 )/(0.1+2*((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))))), 0.5*(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))))-((((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))))*((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))))-27 )/(0.1+2*((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))-(((27/40 -((27/40*27/40)-27 )/(0.1+2*27/40))*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))-27 )/(0.1+2*(27/40 -((27/40*27/40)-27 )/(0.1+2*27/40)))))))+1*0.3);
   speed: 80 km/h;
   power: 250 hp;
   cargo_capacity: 27;
-  weight: 129 ton;
+  weight: 9 ton;
   tractive_effort_coefficient: 0.3;
   air_drag_coefficient: 0;
 
   reliability_decay: 20;
-  refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL, CC_ARMOURED); non_refittable_cargo_classes: 0;
+  refittable_cargo_classes: bitmask(CC_PASSENGERS); non_refittable_cargo_classes: 0;
   misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
   refit_cost: 0;
   track_type: NAAN;
@@ -450,4 +864,4 @@ item (FEAT_TRAINS, item_dmu_kiha_59) {
    }
 
 }
-# 24 "PNR-Trains.pnml" 2
+# 45 "PNR-Trains.pnml" 2

@@ -1,4 +1,23 @@
-//Default properties of
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
 
 #define DEFAULT_REFIT_COST 0
 #define DEFAULT_RELIABILITY_DECAY 20
@@ -8,8 +27,8 @@
 #define DEFAULT_SPRITE_ID SPRITE_ID_NEW_TRAIN
 #define DEFAULT_RETIRE_EARLY 5
 
-//AI flag
+
 #define AIFLAGPROPERTY ai_special_flag: PASSENGER ? AI_FLAG_PASSENGER : AI_FLAG_CARGO;
 
-//Introduction date
+
 #define INTRODUCTIONDATEPROPERTY introduction_date: date(INTRODUCTION_YEAR, 1, 1);
