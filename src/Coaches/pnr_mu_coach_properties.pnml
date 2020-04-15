@@ -32,6 +32,5 @@
 #define VISUAL_FLAG visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER)
 
 
-#define TRACK_TYPE RAIL
 
 #define SPRITE_ID DEFAULT_SPRITE_ID
