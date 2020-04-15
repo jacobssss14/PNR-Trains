@@ -87,7 +87,7 @@ The source code can be obtained from https://github.com/jacobssss14/PNR-Trains
 4 Credits
 ---------
 
-Author: Ingo von Borstel (aka planetmaker)
+Author: Jacob Payag
 
 Special thanks to:
 
