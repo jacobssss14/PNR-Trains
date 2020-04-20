@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : PNR Trains 0.2.0-beta-public
+STR_GRF_NAME        : PNR Trains 0.3.0-beta-public
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
 STR_DIESEL_GE_900   : GE 900
 STR_DMU_KiHa_35     : KiHa 35

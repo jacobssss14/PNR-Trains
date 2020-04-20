@@ -1,4 +1,14 @@
 Changelog for PNR-Trains
+
+0.3.0-beta-public
+    *Added GE Class 900 locomotives
+    *Added 203 Series Derived coached and generator car
+    *Added Hyundai Rotem DMU (from Filipino trains)
+    *Fixed aimated sprites 
+    
+0.2.0-beta-public
+    *Initial public beta release
+
 0.1.2-beta-private
     *Fixed head unit weight
 

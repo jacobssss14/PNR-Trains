@@ -22,8 +22,13 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //Vehicle IDS
 #define ID_RANGE_DMU 0x3E8..0x7CF
 item(FEAT_TRAINS, dmu_kiha_35, 1000) {}
+item(FEAT_TRAINS, dmu_kiha_59, 1001) {}
+item(FEAT_TRAINS, dmu_hyundai_rotem, 1002) {}
 
 
 #define ID_RANGE_COACH 0x7D0..0xBB7
-item(FEAT_TRAINS, item_pnr_mu_coach 2000) {}
+item(FEAT_TRAINS, item_203_coach 2000) {}
+item(FEAT_TRAINS, item_203_generator_car  2001) {}
+item(FEAT_TRAINS, item_pnr_mu_coach_unpowered 2002) {}
+item(FEAT_TRAINS, item_pnr_mu_coach_powered 2003) {}
 

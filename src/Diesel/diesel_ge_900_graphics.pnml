@@ -25,7 +25,7 @@ spriteset(set_ge_900_purchase, "gfx/DIESEL_GE_900.png") {
 }
 
 spriteset(set_ge_900,  "gfx/DIESEL_GE_900.png") {
-   template_standard(1,1)
+   template_diesel(1,1)
 }
 
 RUNNING_COST_ENGINE

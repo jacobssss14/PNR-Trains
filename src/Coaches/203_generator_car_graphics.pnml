@@ -18,9 +18,10 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-//spriteset (set_203_generator_car_purchase, "gfx/203_COACH.png") {
-//    template_mu_purchase(1,106)
-//}
+spriteset (set_203_generator_car_purchase, "gfx/203_COACH.png") {
+    template_mu_purchase(1,106)
+}
+
 
 spriteset (set_203_generator_car, "gfx/203_COACH.png") {
     template_others(1,32)
