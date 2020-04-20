@@ -18,7 +18,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-template template_dmu_head_car(x, y) {
+template template_standard(x, y) {
    [x,     y, 8,  24, -3,  -10]
    [x+9,   y, 22, 21, -14, -13]
    [x+33,  y, 31, 16, -14, -12]
@@ -26,6 +26,33 @@ template template_dmu_head_car(x, y) {
    [x+88,  y, 8,  24, -3,  -10]
    [x+97,  y, 22, 21, -14, -13]
    [x+120, y, 31, 16, -14, -12]
+   [x+153, y, 22, 21, -8,  -14]
+
+}
+
+
+template template_others(x, y) {
+    [x+88,  y, 8,  24, -3,  -10]
+    [x+97,  y, 22, 21, -14, -13]
+    [x+120, y, 31, 16, -14, -12]
+    [x+153, y, 22, 21, -8,  -14]
+    [x,     y, 8,  24, -3,  -10]
+    [x+9,   y, 22, 21, -14, -13]
+    [x+33,  y, 31, 16, -14, -12]
+    [x+65,  y, 22, 21, -8,  -14]
+
+}
+
+
+
+template template_diesel(x, y) {
+   [x,     y, 8,  24, -3,  -10]
+   [x+9,   y, 22, 21, -14, -13]
+   [x+120, y, 31, 16, -14, -12]
+   [x+65,  y, 22, 21, -8,  -14]
+   [x+88,  y, 8,  24, -3,  -10]
+   [x+97,  y, 22, 21, -14, -13]
+   [x+33,  y, 31, 16, -14, -12]
    [x+153, y, 22, 21, -8,  -14]
 
 }
@@ -41,6 +68,8 @@ template template_dmu_ft(x, y) {
     [x+153, y, 22, 20,  -6, -12]
 }
 
+
+
 template template_mu_purchase(x, y) {
     [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
     [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
@@ -48,6 +77,17 @@ template template_mu_purchase(x, y) {
     [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
     [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
     [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [x	,  y,  55, 16, -11, -8]
+    [x	,  y,  55, 16, -11, -10]
+    [1	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+}
+
+template template_diesel_purchase(x, y) {
+    [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [x	,  y,  41, 17, -11, -10]
     [1	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
 }

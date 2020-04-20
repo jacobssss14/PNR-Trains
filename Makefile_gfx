@@ -1,0 +1,20 @@
+GIMP := gimp
+GIMP_FLAGS := -n -i -b - <
+%.scm: scripts/gimpscript scripts/gimp.sed
+	@echo "[GIMP-SCRIPT] Makefile_gfx.dep"
+	@ cat scripts/gimpscript > $@
+	@ cat gfx/png_source_list | grep $(patsubst %.scm,%.png,$@) | sed -f scripts/gimp.sed >> $@
+	@ echo "(gimp-quit 0)" >> $@
+
+%.png: %.scm
+	@echo [GIMP] $@
+	@ "gimp" -n -i -b - < $< >/dev/null
+
+gimp: gfx/203_COACH.png
+gimp: gfx/DIESEL_GE_900.png
+gimp: gfx/DMU_KIHA_35.png
+gimp: gfx/DMU_KIHA_59.png
+: 
+: 
+: 
+: 

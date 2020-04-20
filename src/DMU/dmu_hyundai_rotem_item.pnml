@@ -19,7 +19,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
 
-/*Kiha 59*/
+/*Kiha 35*/
 item (FEAT_TRAINS, ITEM) {
    property {
       name: NAME;
@@ -37,7 +37,7 @@ item (FEAT_TRAINS, ITEM) {
 		weight: WEIGHT ton;
 		tractive_effort_coefficient: TE_COEFFICIENT;
 		air_drag_coefficient: AIR_DRAG_COEFFICIENT;
-		DECAY_INTERCITY
+		DECAY_COMMUTER
 		
 		reliability_decay: RELIABILITY_DECAY;
 		CARGODEF
@@ -55,11 +55,11 @@ item (FEAT_TRAINS, ITEM) {
       
    }
 
-     graphics {
+   graphics {
 	  RUNNING_COST_ENGINE_CALL
       ENGINECAPACITYSWITCHCALL(VEHIDCODE)	   
-      purchase: set_kiha_59_purchase;
-      default: switch_dmu_kiha_59_reversed;
+      purchase: set_hyundai_rotem_purchase;
+      default: switch_dmu_hyundai_rotem_reversed;
 
    }
 
@@ -69,9 +69,8 @@ item (FEAT_TRAINS, ITEM) {
 	   	WAGONCAPACITYSWITCHCALL(VEHIDCODE)
 		length: WAGON_LENGTH;
 		weight: ADD_WEIGHT_UNPOWERED
-		DECAY_INTERCITY
-		default: switch_kiha_59_pass_cargo;
-		
+		DECAY_COMMUTER
+		default: switch_hyundai_rotem_pass_cargo;
    }
 
    livery_override (item_pnr_mu_coach_powered) {
@@ -82,8 +81,8 @@ item (FEAT_TRAINS, ITEM) {
 		weight: ADD_WEIGHT_POWERED
 		power: ADD_POWER
 		tractive_effort_coefficient: ADD_TE
-		DECAY_INTERCITY
-		default: switch_kiha_59_pass_cargo;
+		DECAY_COMMUTER
+		default: switch_hyundai_rotem_pass_cargo;
    }
 
 

@@ -18,37 +18,12 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-
-spriteset(set_kiha_59_purchase, "gfx/DMU_KIHA_59.png") {
-  template_mu_purchase(1, 106) 
+spriteset (set_203_coach_purchase, "gfx/203_COACH.png") {
+    template_mu_purchase(1,106)
 }
 
-spriteset(set_kiha_59_front,  "gfx/DMU_KIHA_59.png") {
-    template_standard(1, 1)
+spriteset (set_203_coach, "gfx/203_COACH.png") {
+    template_diesel(1,64)
 }
-
-spriteset(set_kiha_59_back, "gfx/DMU_KIHA_59.png") {
-    template_standard(1, 32)
-   }
-
-
-spriteset (set_kiha_59_pass_car, "gfx/DMU_KIHA_59.png") {
-    template_standard(1, 64)
-}
-
-switch(FEAT_TRAINS, SELF, switch_kiha_59_pass_cargo, cargo_classes){
-	bitmask(CC_PASSENGERS): set_kiha_59_pass_car;
-}
-
-switch(FEAT_TRAINS, SELF, switch_dmu_kiha_59_reversed, var[0xC8]) {
-	 0xFE: set_kiha_59_back;
-    0xFF: set_kiha_59_back;
-    set_kiha_59_front;
-}
-
-ENGINECAPACITYSWITCH(VEHIDCODE)
-
-WAGONCAPACITYSWITCH(VEHIDCODE)
 
 RUNNING_COST_ENGINE
-RUNNING_COST_MU

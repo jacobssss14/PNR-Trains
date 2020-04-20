@@ -1,0 +1,9 @@
+
+gfx/203_COACH.scm: gfx/png_source_list
+PNR-Trains.grf: gfx/203_COACH.png
+gfx/DIESEL_GE_900.scm: gfx/png_source_list
+PNR-Trains.grf: gfx/DIESEL_GE_900.png
+gfx/DMU_KIHA_35.scm: gfx/png_source_list
+PNR-Trains.grf: gfx/DMU_KIHA_35.png
+gfx/DMU_KIHA_59.scm: gfx/png_source_list
+PNR-Trains.grf: gfx/DMU_KIHA_59.png

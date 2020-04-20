@@ -24,14 +24,14 @@ spriteset(set_kiha_35_purchase, "gfx/DMU_KIHA_35.png") {
 }
 
 spriteset(set_kiha_35_front,  "gfx/DMU_KIHA_35.png") {
-   template_dmu_head_car(1,1)
+   template_standard(1,1)
 }
 spriteset(set_kiha_35_back, "gfx/DMU_KIHA_35.png") {
-   template_dmu_head_car(1,32)
+   template_standard(1,32)
 
 }
 spriteset (set_kiha_35_pass_car, "gfx/DMU_KIHA_35.png") {
-   template_dmu_head_car(1,64)
+   template_standard(1,64)
 }
 
 switch(FEAT_TRAINS, SELF, switch_kiha_35_pass_cargo, cargo_classes){

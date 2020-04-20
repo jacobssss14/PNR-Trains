@@ -18,37 +18,38 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
+#include "../undefine_properties.pnml"
 
-spriteset(set_kiha_59_purchase, "gfx/DMU_KIHA_59.png") {
-  template_mu_purchase(1, 106) 
-}
-
-spriteset(set_kiha_59_front,  "gfx/DMU_KIHA_59.png") {
-    template_standard(1, 1)
-}
-
-spriteset(set_kiha_59_back, "gfx/DMU_KIHA_59.png") {
-    template_standard(1, 32)
-   }
+#define VEHIDCODE 203_generator_car
+#define ITEM item_203_generator_car
+#define NAME string(STR_203_GENERATOR_CAR)
+#define CLIMATE bitmask(CLIMATE_TEMPERATE)
 
 
-spriteset (set_kiha_59_pass_car, "gfx/DMU_KIHA_59.png") {
-    template_standard(1, 64)
-}
+#define INTRODUCTION_YEAR 2011
+#define MODEL_LIFE VEHICLE_NEVER_EXPIRES
+#define RETIRE_EARLY DEFAULT_RETIRE_EARLY
+#define VEHICLE_LIFE 60
 
-switch(FEAT_TRAINS, SELF, switch_kiha_59_pass_cargo, cargo_classes){
-	bitmask(CC_PASSENGERS): set_kiha_59_pass_car;
-}
+#define LOADINGSPEED LOAD_COMMUTER
+#define CARGODEF PASSENGERS
 
-switch(FEAT_TRAINS, SELF, switch_dmu_kiha_59_reversed, var[0xC8]) {
-	 0xFE: set_kiha_59_back;
-    0xFF: set_kiha_59_back;
-    set_kiha_59_front;
-}
+#define SPEED 100
+#define POWER 0
+#define WEIGHT 40
+#define TE_COEFFICIENT 0.37
+#define AIR_COEFFICIENT 0
 
-ENGINECAPACITYSWITCH(VEHIDCODE)
+#define LENGTH 8
+#define ACTUAL_LENGTH 8
 
-WAGONCAPACITYSWITCH(VEHIDCODE)
+#define HEAD_CAPACITY 125
 
-RUNNING_COST_ENGINE
-RUNNING_COST_MU
+
+#define DUAL_HEADED 0
+#define PASSENGER 1
+#define MISC_FLAGS bitmask(TRAIN_FLAG_2CC)
+#define VISUAL_FLAG visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER)
+
+
+#define SPRITE_ID DEFAULT_SPRITE_ID

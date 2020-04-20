@@ -51,18 +51,34 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //MU Coach calculations
 #include "src/mu_coach_calc.pnml"
 
-//Coached
+//Coaches
 #include "src/Coaches/pnr_mu_coach_powered_graphics.pnml"
 #include "src/Coaches/pnr_mu_coach_powered_properties.pnml"
 #include "src/Coaches/pnr_mu_coach_powered_item.pnml"
 #include "src/Coaches/pnr_mu_coach_unpowered_graphics.pnml"
 #include "src/Coaches/pnr_mu_coach_unpowered_properties.pnml"
 #include "src/Coaches/pnr_mu_coach_unpowered_item.pnml"
+#include "src/Coaches/203_generator_car_graphics.pnml"
+#include "src/Coaches/203_generator_car_properties.pnml"
+#include "src/Coaches/203_generator_car_item.pnml"
+#include "src/Coaches/203_coach_graphics.pnml"
+#include "src/Coaches/203_coach_properties.pnml"
+#include "src/Coaches/203_coach_item.pnml"
+
+
+
+//Diesel 
+#include "src/init/init_diesel.pnml"
+
+//GE 900
+#include "src/Diesel/diesel_ge_900_properties.pnml"
+#include "src/Diesel/diesel_ge_900_graphics.pnml"
+#include "src/Diesel/diesel_ge_900_item.pnml"
 
 //DMUs
+#include "src/init/init_dmu.pnml"
 
 //KiHa35
-#include "src/init/init_dmu.pnml"
 #include "src/DMU/dmu_kiha_35_properties.pnml"
 #include "src/DMU/dmu_kiha_35_graphics.pnml"
 #include "src/DMU/dmu_kiha_35_item.pnml"
@@ -72,4 +88,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/DMU/dmu_kiha_59_graphics.pnml"
 #include "src/DMU/dmu_kiha_59_item.pnml"
 
+//Hyundai Rotem from Filipino Trains
+#include "src/DMU/dmu_hyundai_rotem_properties.pnml"
+#include "src/DMU/dmu_hyundai_rotem_graphics.pnml"
+#include "src/DMU/dmu_hyundai_rotem_item.pnml"
 
