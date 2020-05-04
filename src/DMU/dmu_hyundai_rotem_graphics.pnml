@@ -18,32 +18,107 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-
-spriteset(set_hyundai_rotem_purchase, "gfx/DMU_HYUNDAI_ROTEM_PURCHASE.png") {
-    [0, 0, 60, 12, -31, -7]
-  
+//2009 Livery
+spriteset(set_hyundai_rotem_purchase_2009, "gfx/DMU/HYUNDAI_ROTEM/DMU_HYUNDAI_ROTEM_PURCHASE_2009.png") {
+    template_ft_purchase(0,0)
 }
 
-spriteset(set_hyundai_rotem_front,  "gfx/DMU_HYUNDAI_ROTEM.png") {
-   template_dmu_ft(1,0)
+spriteset(set_hyundai_rotem_front_2009,  "gfx/DMU/HYUNDAI_ROTEM/DMU_HYUNDAI_ROTEM.png") {
+   template_dmu_ft_front(1,0)
 }
-spriteset(set_hyundai_rotem_back, "gfx/DMU_HYUNDAI_ROTEM.png") {
-   template_dmu_ft(1,0)
+spriteset(set_hyundai_rotem_back_2009, "gfx/DMU/HYUNDAI_ROTEM/DMU_HYUNDAI_ROTEM.png") {
+   template_dmu_ft_back(1,60)
 
 }
-spriteset (set_hyundai_rotem_pass_car, "gfx/DMU_HYUNDAI_ROTEM.png") {
-   template_dmu_ft(1,30)
+spriteset (set_hyundai_rotem_pass_car_2009, "gfx/DMU/HYUNDAI_ROTEM/DMU_HYUNDAI_ROTEM.png") {
+   template_dmu_ft_front(1,30)
 }
 
-switch(FEAT_TRAINS, SELF, switch_hyundai_rotem_pass_cargo, cargo_classes){
-	bitmask(CC_PASSENGERS): set_hyundai_rotem_pass_car;
+switch(FEAT_TRAINS, SELF, switch_hyundai_rotem_pass_cargo_2009, cargo_classes){
+	bitmask(CC_PASSENGERS): set_hyundai_rotem_pass_car_2009;
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_hyundai_rotem_reversed, var[0xC8]) {
-	 0xFE: set_hyundai_rotem_back;
-    0xFF: set_hyundai_rotem_back;
-    set_hyundai_rotem_front;
+switch(FEAT_TRAINS, SELF, switch_dmu_hyundai_rotem_reversed_2009, var[0xC8]) {
+	 0xFE: set_hyundai_rotem_back_2009;
+    0xFF: set_hyundai_rotem_back_2009;
+    set_hyundai_rotem_front_2009;
 }
+
+//2011 Livery
+spriteset(set_hyundai_rotem_purchase_2011, "gfx/DMU/HYUNDAI_ROTEM/DMU_HYUNDAI_ROTEM_PURCHASE_2011.png") {
+    template_ft_purchase(0,0)
+}
+
+spriteset(set_hyundai_rotem_front_2011,  "gfx/DMU/HYUNDAI_ROTEM/DMU_HYUNDAI_ROTEM.png") {
+   template_dmu_ft_front(1,100)
+}
+spriteset(set_hyundai_rotem_back_2011, "gfx/DMU/HYUNDAI_ROTEM/DMU_HYUNDAI_ROTEM.png") {
+   template_dmu_ft_back(1,160)
+
+}
+spriteset (set_hyundai_rotem_pass_car_2011, "gfx/DMU/HYUNDAI_ROTEM/DMU_HYUNDAI_ROTEM.png") {
+   template_dmu_ft_front(1,130)
+}
+
+switch(FEAT_TRAINS, SELF, switch_hyundai_rotem_pass_cargo_2011, cargo_classes){
+	bitmask(CC_PASSENGERS): set_hyundai_rotem_pass_car_2011;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_hyundai_rotem_reversed_2011, var[0xC8]) {
+	 0xFE: set_hyundai_rotem_back_2011;
+    0xFF: set_hyundai_rotem_back_2011;
+    set_hyundai_rotem_front_2011;
+}
+
+//2020 Livery
+spriteset(set_hyundai_rotem_purchase_2020, "gfx/DMU/HYUNDAI_ROTEM/DMU_HYUNDAI_ROTEM_PURCHASE_2020.png") {
+    template_ft_purchase(0,0)
+}
+
+spriteset(set_hyundai_rotem_front_2020,  "gfx/DMU/HYUNDAI_ROTEM/DMU_HYUNDAI_ROTEM.png") {
+   template_dmu_ft_front(1,200)
+}
+spriteset(set_hyundai_rotem_back_2020, "gfx/DMU/HYUNDAI_ROTEM/DMU_HYUNDAI_ROTEM.png") {
+   template_dmu_ft_back(1,260)
+
+}
+spriteset (set_hyundai_rotem_pass_car_2020, "gfx/DMU/HYUNDAI_ROTEM/DMU_HYUNDAI_ROTEM.png") {
+   template_dmu_ft_front(1,230)
+}
+
+switch(FEAT_TRAINS, SELF, switch_hyundai_rotem_pass_cargo_2020, cargo_classes){
+	bitmask(CC_PASSENGERS): set_hyundai_rotem_pass_car_2020;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_hyundai_rotem_reversed_2020, var[0xC8]) {
+	 0xFE: set_hyundai_rotem_back_2020;
+    0xFF: set_hyundai_rotem_back_2020;
+    set_hyundai_rotem_front_2020;
+}
+
+//Auto livery change
+switch (FEAT_TRAINS, PARENT, switch_hyundai_rotem_purchase, current_date ) {
+    0..date(2010,12,31): set_hyundai_rotem_purchase_2009;
+    date(2011,1,1)..date(2019,12,31): set_hyundai_rotem_purchase_2011;
+    date(2020,1,1)..date(2050,12,31): set_hyundai_rotem_purchase_2020;
+    set_hyundai_rotem_purchase_2020;
+}
+
+switch (FEAT_TRAINS, PARENT, switch_hyundai_rotem_head_cars, date_of_last_service ) {
+     0..date(2010,12,31): switch_dmu_hyundai_rotem_reversed_2009;
+    date(2011,1,1)..date(2019,12,31): switch_dmu_hyundai_rotem_reversed_2011;
+    date(2020,1,1)..date(2050,12,31): switch_dmu_hyundai_rotem_reversed_2020;
+    switch_dmu_hyundai_rotem_reversed_2020;
+}
+
+switch (FEAT_TRAINS, PARENT, switch_hyundai_rotem_pass_cars, date_of_last_service ) {
+    0..date(2010,12,31): switch_hyundai_rotem_pass_cargo_2009;
+    date(2011,1,1)..date(2019,12,31): switch_hyundai_rotem_pass_cargo_2011;
+    date(2020,1,1)..date(2050,12,31): switch_hyundai_rotem_pass_cargo_2020;
+    switch_hyundai_rotem_pass_cargo_2020;
+}
+
+
 
 ENGINECAPACITYSWITCH(VEHIDCODE)
 

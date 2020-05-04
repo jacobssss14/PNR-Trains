@@ -1,0 +1,121 @@
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+//1973 livery
+spriteset(set_class_900_purchase_1973, "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_1973.png") {
+    template_diesel_purchase(1,105)
+  
+}
+
+spriteset(set_class_900_1973,  "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_1973.png") {
+   template_standard(1,1)
+}
+
+//1997-2000 livery
+spriteset(set_class_900_purchase_1997, "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_1997.png") {
+    template_diesel_purchase(1,105)
+  
+}
+
+spriteset(set_class_900_1997,  "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_1997.png") {
+   template_standard(1,1)
+}
+
+//2001-2009 livery
+spriteset(set_class_900_purchase_2000, "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2000.png") {
+    template_diesel_purchase(1,105)
+  
+}
+
+spriteset(set_class_900_2000,  "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2000.png") {
+   template_standard(1,1)
+}
+
+//2009-2011
+spriteset(set_class_900_purchase_2009, "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2009.png") {
+    template_diesel_purchase(1,105)
+  
+}
+
+spriteset(set_class_900_2009,  "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2009.png") {
+   template_standard(1,1)
+}
+
+//2011-2019
+spriteset(set_class_900_purchase_2011, "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2000.png") {
+    template_diesel_purchase(1,105)
+  
+}
+
+spriteset(set_class_900_2011,  "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2000.png") {
+   template_standard(1,1)
+}
+
+//2020
+spriteset(set_class_900_purchase_2020, "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2020.png") {
+    template_diesel_purchase(1,105)
+  
+}
+
+spriteset(set_class_900_2020,  "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2020.png") {
+   template_standard(1,1)
+}
+
+
+
+
+
+
+
+//Autochanclass Livery
+switch (FEAT_TRAINS, PARENT, switch_class_900_purchase, current_date ) {
+    0..date(1996,12,31): set_class_900_purchase_1973;
+    date(1997,1,1)..date(2000,12,31): set_class_900_purchase_1997;
+    date(2001,1,1)..date(2008,12,31): set_class_900_purchase_2000;
+    date(2009,1,1)..date(2010,12,31): set_class_900_purchase_2009;
+    date(2011,1,1)..date(2019,12,31): set_class_900_purchase_2011;
+    date(2020,1,1)..date(2050,12,31): set_class_900_purchase_2020;
+    set_class_900_purchase_2020;
+}
+
+switch (FEAT_TRAINS, PARENT, switch_class_900 , date_of_last_service ) {
+    0..date(1996,12,31): set_class_900_1973;
+    date(1997,1,1)..date(2000,12,31): set_class_900_1997;
+    date(2001,1,1)..date(2008,12,31): set_class_900_2000;
+    date(2009,1,1)..date(2010,12,31): set_class_900_2009;
+    date(2011,1,1)..date(2019,12,31): set_class_900_2011;
+    date(2020,1,1)..date(2050,12,31): set_class_900_2020;
+    set_class_900_2020;
+}
+
+switch (FEAT_TRAINS, PARENT, switch_class_900_variant, date_of_last_service) {
+    0..date(1996,12,31): string(str_variant_u14c);
+    date(1997,1,1)..date(2025,12,31): string(str_variant_u15c);
+    string(str_variant_u15c);
+    
+}
+
+switch (FEAT_TRAINS, PARENT, switch_class_900_power, date_of_last_service) {
+    0..date(1996,12,31): return 1560;
+    date(1997,1,1)..date(2025,12,31):  return 1400;
+    return 1400;  
+}
+
+RUNNING_COST_ENGINE

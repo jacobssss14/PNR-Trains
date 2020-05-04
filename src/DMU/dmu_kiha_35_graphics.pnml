@@ -18,31 +18,86 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
+//2011 Livery
 
-spriteset(set_kiha_35_purchase, "gfx/DMU_KIHA_35.png") {
+spriteset(set_kiha_35_purchase_2011, "gfx/DMU/KIHA_35/DMU_KIHA_35_2011.png") {
   template_mu_purchase(1, 106) 
 }
 
-spriteset(set_kiha_35_front,  "gfx/DMU_KIHA_35.png") {
-   template_standard(1,1)
-}
-spriteset(set_kiha_35_back, "gfx/DMU_KIHA_35.png") {
-   template_standard(1,32)
-
-}
-spriteset (set_kiha_35_pass_car, "gfx/DMU_KIHA_35.png") {
-   template_standard(1,64)
+spriteset(set_kiha_35_front_2011,  "gfx/DMU/KIHA_35/DMU_KIHA_35_2011.png") {
+    template_standard(1, 1)
 }
 
-switch(FEAT_TRAINS, SELF, switch_kiha_35_pass_cargo, cargo_classes){
-	bitmask(CC_PASSENGERS): set_kiha_35_pass_car;
+spriteset(set_kiha_35_back_2011, "gfx/DMU/KIHA_35/DMU_KIHA_35_2011.png") {
+    template_standard(1, 32)
+   }
+
+
+spriteset (set_kiha_35_pass_car_2011, "gfx/DMU/KIHA_35/DMU_KIHA_35_2011.png") {
+    template_standard(1, 64)
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_kiha_35_reversed, var[0xC8]) {
-	 0xFE: set_kiha_35_back;
-    0xFF: set_kiha_35_back;
-    set_kiha_35_front;
+switch(FEAT_TRAINS, SELF, switch_kiha_35_pass_cargo_2011, cargo_classes){
+	bitmask(CC_PASSENGERS): set_kiha_35_pass_car_2011;
 }
+
+switch(FEAT_TRAINS, SELF, switch_dmu_kiha_35_reversed_2011, var[0xC8]) {
+	 0xFE: set_kiha_35_back_2011;
+    0xFF: set_kiha_35_back_2011;
+    set_kiha_35_front_2011;
+}
+
+//2020 Lviery
+
+spriteset(set_kiha_35_purchase_2020, "gfx/DMU/KIHA_35/DMU_KIHA_35_2020.png") {
+  template_mu_purchase(1, 106) 
+}
+
+spriteset(set_kiha_35_front_2020,  "gfx/DMU/KIHA_35/DMU_KIHA_35_2020.png") {
+    template_standard(1, 1)
+}
+
+spriteset(set_kiha_35_back_2020, "gfx/DMU/KIHA_35/DMU_KIHA_35_2020.png") {
+    template_standard(1, 32)
+   }
+
+
+spriteset (set_kiha_35_pass_car_2020, "gfx/DMU/KIHA_35/DMU_KIHA_35_2020.png") {
+    template_standard(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_kiha_35_pass_cargo_2020, cargo_classes){
+	bitmask(CC_PASSENGERS): set_kiha_35_pass_car_2020;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_kiha_35_reversed_2020, var[0xC8]) {
+	 0xFE: set_kiha_35_back_2020;
+    0xFF: set_kiha_35_back_2020;
+    set_kiha_35_front_2020;
+}
+
+
+//Autolivery change
+
+switch (FEAT_TRAINS, PARENT, switch_kiha_35_purchase, current_date ) {
+    0..date(2019,12,31): set_kiha_35_purchase_2011;
+    date(2020,1,1)..date(2050,1,1): set_kiha_35_purchase_2020;
+    set_kiha_35_purchase_2020;
+}
+
+switch (FEAT_TRAINS, PARENT, switch_kiha_35_head_cars, date_of_last_service ) {
+    0..date(2019,12,31): switch_dmu_kiha_35_reversed_2011;
+    date(2020,1,1)..date(2050,1,1): switch_dmu_kiha_35_reversed_2020;
+    switch_dmu_kiha_35_reversed_2020;
+}
+
+switch (FEAT_TRAINS, PARENT, switch_kiha_35_pass_cars, date_of_last_service ) {
+    0..date(2019,12,31): switch_kiha_35_pass_cargo_2011;
+    date(2020,1,1)..date(2050,1,1): switch_kiha_35_pass_cargo_2020;
+    switch_kiha_35_pass_cargo_2020;
+}
+
+
 
 ENGINECAPACITYSWITCH(VEHIDCODE)
 

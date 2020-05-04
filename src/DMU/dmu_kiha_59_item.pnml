@@ -58,8 +58,8 @@ item (FEAT_TRAINS, ITEM) {
      graphics {
 	  RUNNING_COST_ENGINE_CALL
       ENGINECAPACITYSWITCHCALL(VEHIDCODE)	   
-      purchase: set_kiha_59_purchase;
-      default: switch_dmu_kiha_59_reversed;
+      purchase: switch_kiha_59_purchase;
+      default: switch_kiha_59_head_cars;
 
    }
 
@@ -70,7 +70,7 @@ item (FEAT_TRAINS, ITEM) {
 		length: WAGON_LENGTH;
 		weight: ADD_WEIGHT_UNPOWERED
 		DECAY_INTERCITY
-		default: switch_kiha_59_pass_cargo;
+		default: switch_kiha_59_pass_cars;
 		
    }
 
@@ -83,8 +83,9 @@ item (FEAT_TRAINS, ITEM) {
 		power: ADD_POWER
 		tractive_effort_coefficient: ADD_TE
 		DECAY_INTERCITY
-		default: switch_kiha_59_pass_cargo;
+		default: switch_kiha_59_pass_cars;
    }
+
 
 
 }

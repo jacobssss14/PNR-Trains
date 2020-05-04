@@ -1,0 +1,107 @@
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 1978  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+//1974 Livery
+
+spriteset(set_cmc_300_purchase_1974, "gfx/DMU/CMC_300/DMU_CMC_300_1974.png") {
+  template_mu_purchase(1, 106) 
+}
+
+spriteset(set_cmc_300_front_1974,  "gfx/DMU/CMC_300/DMU_CMC_300_1974.png") {
+    template_standard(1, 1)
+}
+
+spriteset(set_cmc_300_back_1974, "gfx/DMU/CMC_300/DMU_CMC_300_1974.png") {
+    template_standard(1, 32)
+   }
+
+
+spriteset (set_cmc_300_pass_car_1974, "gfx/DMU/CMC_300/DMU_CMC_300_1974.png") {
+    template_standard(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_cmc_300_pass_cargo_1974, cargo_classes){
+	bitmask(CC_PASSENGERS): set_cmc_300_pass_car_1974;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_cmc_300_reversed_1974, var[0xC8]) {
+	 0xFE: set_cmc_300_back_1974;
+    0xFF: set_cmc_300_back_1974;
+    set_cmc_300_front_1974;
+}
+
+//1978 Lviery
+
+spriteset(set_cmc_300_purchase_1978, "gfx/DMU/CMC_300/DMU_CMC_300_1978.png") {
+  template_mu_purchase(1, 106) 
+}
+
+spriteset(set_cmc_300_front_1978,  "gfx/DMU/CMC_300/DMU_CMC_300_1978.png") {
+    template_standard(1, 1)
+}
+
+spriteset(set_cmc_300_back_1978, "gfx/DMU/CMC_300/DMU_CMC_300_1978.png") {
+    template_standard(1, 32)
+   }
+
+
+spriteset (set_cmc_300_pass_car_1978, "gfx/DMU/CMC_300/DMU_CMC_300_1978.png") {
+    template_standard(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_cmc_300_pass_cargo_1978, cargo_classes){
+	bitmask(CC_PASSENGERS): set_cmc_300_pass_car_1978;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_cmc_300_reversed_1978, var[0xC8]) {
+	 0xFE: set_cmc_300_back_1978;
+    0xFF: set_cmc_300_back_1978;
+    set_cmc_300_front_1978;
+}
+
+
+//Autolivery change
+
+switch (FEAT_TRAINS, PARENT, switch_cmc_300_purchase, current_date ) {
+    0..date(1978,12,31): set_cmc_300_purchase_1974;
+    date(1978,1,1)..date(2050,1,1): set_cmc_300_purchase_1978;
+    set_cmc_300_purchase_1978;
+}
+
+switch (FEAT_TRAINS, PARENT, switch_cmc_300_head_cars, date_of_last_service ) {
+    0..date(1978,12,31): switch_dmu_cmc_300_reversed_1974;
+    date(1978,1,1)..date(2050,1,1): switch_dmu_cmc_300_reversed_1978;
+    switch_dmu_cmc_300_reversed_1978;
+}
+
+switch (FEAT_TRAINS, PARENT, switch_cmc_300_pass_cars, date_of_last_service ) {
+    0..date(1978,12,31): switch_cmc_300_pass_cargo_1974;
+    date(1978,1,1)..date(2050,1,1): switch_cmc_300_pass_cargo_1978;
+    switch_cmc_300_pass_cargo_1978;
+}
+
+
+
+ENGINECAPACITYSWITCH(VEHIDCODE)
+
+WAGONCAPACITYSWITCH(VEHIDCODE)
+
+RUNNING_COST_ENGINE
+RUNNING_COST_MU

@@ -23,14 +23,36 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : PNR Trains 0.3.0-beta-public
+STR_GRF_NAME        : PNR Trains 0.7.0-beta-public
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
-STR_DIESEL_GE_900   : GE 900
-STR_DMU_KiHa_35     : KiHa 35
-STR_DMU_KiHa_59     : KiHa 59
-STR_DMU_HYUNDAI_ROTEM : PNR Hyundai Rotem DMU 
-STR_203_COACH         : 203 Series Coach
-STR_203_GENERATOR_CAR : 203 Series Generator Car
-STR_MU_COACH_UNPOWERED           : PNR MU Coach Unpowered
-STR_MU_COACH_POWERED             : PNR MU Coach Powered
 
+#Diesel Locomotives
+STR_DIESEL_CLASS_2500: PNR Class 2500
+STR_DIESEL_CLASS_5000: PNR Class 5000
+STR_DIESEL_CLASS_900 : PNR Class 900 
+STR_DIESEL_CC203     : ICTSI CC 203
+
+#DMU
+STR_DMU_CMC_300       : CMC 300
+STR_DMU_KiHa_35       : KiHa 35
+STR_DMU_KiHa_59       : KiHa 59
+STR_DMU_CLASS_8000    : PNR Class 8000/8100
+STR_DMU_HYUNDAI_ROTEM : PNR Hyundai Rotem DMU 
+
+#Coaches
+STR_203_COACH         : 203 Series Coach
+STR_7A_100            : 7A-100
+STR_7A_2000           : 7A-2000
+STR_203_GENERATOR_CAR : 203 Series Generator Car
+STR_MU_COACH_UNPOWERED: PNR MU Coach Unpowered
+STR_MU_COACH_POWERED  : PNR MU Coach Powered
+
+#Wagons
+STR_FLAT_WAGON        : PNR Flatbed Wagon
+
+
+
+#Purchase text
+
+str_variant_u14c:Variant: {ORANGE} GE U14C
+str_variant_u15c:Variant: {ORANGE} GE U15C

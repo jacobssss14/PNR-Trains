@@ -18,5 +18,8 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
+
+#define DECAY_COMMUTER_NONAC cargo_age_period: 250;
+#define DECAY_INTERCITY_NONAC cargo_age_period: 200;
 #define DECAY_COMMUTER cargo_age_period: 185;
-#define DECAY_INTERCITY cargo_age_period: 50;
+#define DECAY_INTERCITY cargo_age_period: 100;

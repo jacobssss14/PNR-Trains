@@ -1,0 +1,61 @@
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+//1999 Livery
+spriteset(set_7A_2000_1999_purchase, "gfx/COACHES/7A_2000/7A_2000_1999.png") {
+  template_mu_purchase(1, 106) 
+}
+
+
+spriteset (set_7A_2000_1999, "gfx/COACHES/7A_2000/7A_2000_1999.png") {
+    template_standard(1, 64)
+}
+
+//2009 livery
+spriteset(set_7A_2000_2009_purchase, "gfx/COACHES/7A_2000/7A_2000_2009.png") {
+  template_mu_purchase(1, 106) 
+}
+
+
+spriteset (set_7A_2000_2009, "gfx/COACHES/7A_2000/7A_2000_2009.png") {
+    template_standard(1, 64)
+}
+
+
+
+//Auto livery change
+switch (FEAT_TRAINS, PARENT, switch_7A_2000_purchase, current_date ) {
+    0..date(2008,12,31): set_7A_2000_1999_purchase;
+    date(2009,1,1)..date(2010,12,31): set_7A_2000_2009_purchase;
+    set_7A_2000_1999_purchase;
+}
+
+switch (FEAT_TRAINS, PARENT, switch_7A_2000, date_of_last_service ) {
+    0..date(1954,12,31): set_7A_2000_1999;
+    date(2009,1,1)..date(2010,12,31): set_7A_2000_2009;
+    set_7A_2000_1999;
+}
+
+
+
+
+
+RUNNING_COST_ENGINE
+

@@ -1,0 +1,133 @@
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+//Spritesets
+spriteset (set_flat_wagon_empty, "gfx/Wagons/CONTAINER_FLATBED.png") {
+    template_cargo(1,0)
+}
+
+spriteset (set_flat_wagon_dark_green, "gfx/Wagons/CONTAINER_FLATBED.png") {
+    template_cargo(1,30)
+}
+
+
+spriteset (set_flat_wagon_blue, "gfx/Wagons/CONTAINER_FLATBED.png") {
+    template_cargo(1,60)
+}
+
+
+spriteset (set_flat_wagon_cream, "gfx/Wagons/CONTAINER_FLATBED.png") {
+    template_cargo(1,90)
+}
+
+spriteset (set_flat_wagon_red1, "gfx/Wagons/CONTAINER_FLATBED.png") {
+    template_cargo(1,120)
+}
+
+spriteset (set_flat_wagon_light_green, "gfx/Wagons/CONTAINER_FLATBED.png") {
+    template_cargo(1,150)
+}
+
+spriteset (set_flat_wagon_light_blue, "gfx/Wagons/CONTAINER_FLATBED.png") {
+    template_cargo(1,180)
+}
+
+spriteset (set_flat_wagon_white, "gfx/Wagons/CONTAINER_FLATBED.png") {
+    template_cargo(1,210)
+}
+
+spriteset (set_flat_wagon_dark_blue, "gfx/Wagons/CONTAINER_FLATBED.png") {
+    template_cargo(1,240)
+}
+spriteset (set_flat_wagon_yellow, "gfx/Wagons/CONTAINER_FLATBED.png") {
+    template_cargo(1,270)
+}
+spriteset (set_flat_wagon_red2, "gfx/Wagons/CONTAINER_FLATBED.png") {
+    template_cargo(1,300)
+}
+//Spritegroups
+spritegroup flat_wagon_1 {
+    loading: [set_flat_wagon_empty, set_flat_wagon_dark_green];
+    loaded: [set_flat_wagon_empty, set_flat_wagon_dark_green];
+}
+
+spritegroup flat_wagon_2 {
+    loading: [set_flat_wagon_empty, set_flat_wagon_blue];
+    loaded: [set_flat_wagon_empty, set_flat_wagon_blue];
+
+}
+
+spritegroup flat_wagon_3 {
+    loading: [set_flat_wagon_empty, set_flat_wagon_cream];
+    loaded: [set_flat_wagon_empty, set_flat_wagon_cream];
+}
+
+spritegroup flat_wagon_4 {
+    loading: [set_flat_wagon_empty, set_flat_wagon_red1];
+    loaded: [set_flat_wagon_empty, set_flat_wagon_red1];
+}
+
+spritegroup flat_wagon_5 {
+    loading: [set_flat_wagon_empty, set_flat_wagon_light_green];
+    loaded: [set_flat_wagon_empty, set_flat_wagon_light_green];
+}
+
+spritegroup flat_wagon_6 {
+    loading: [set_flat_wagon_empty, set_flat_wagon_light_blue];
+    loaded: [set_flat_wagon_empty, set_flat_wagon_light_blue];
+}
+
+spritegroup flat_wagon_7 {
+    loading: [set_flat_wagon_empty, set_flat_wagon_white];
+    loaded: [set_flat_wagon_empty, set_flat_wagon_white];
+}
+
+spritegroup flat_wagon_8 {
+    loading: [set_flat_wagon_empty, set_flat_wagon_dark_blue];
+    loaded: [set_flat_wagon_empty, set_flat_wagon_dark_blue];
+}
+
+spritegroup flat_wagon_9 {
+    loading: [set_flat_wagon_empty, set_flat_wagon_yellow];
+    loaded: [set_flat_wagon_empty, set_flat_wagon_yellow];
+}
+
+spritegroup flat_wagon_10 {
+    loading: [set_flat_wagon_empty, set_flat_wagon_red2];
+    loaded: [set_flat_wagon_empty, set_flat_wagon_red2];
+}
+
+//Randomizer groups
+random_switch (FEAT_TRAINS, SELF, flat_wagon) {
+        1: flat_wagon_10;
+        1: flat_wagon_9;
+        1: flat_wagon_8;
+        1: flat_wagon_7;
+        1: flat_wagon_6;
+        1: flat_wagon_5;
+        1: flat_wagon_4;
+        1: flat_wagon_3;
+        1: flat_wagon_2;
+        1: flat_wagon_1;
+}
+
+RUNNING_COST_ENGINE
+
+
+

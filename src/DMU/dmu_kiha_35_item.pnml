@@ -58,8 +58,8 @@ item (FEAT_TRAINS, ITEM) {
    graphics {
 	  RUNNING_COST_ENGINE_CALL
       ENGINECAPACITYSWITCHCALL(VEHIDCODE)	   
-      purchase: set_kiha_35_purchase;
-      default: switch_dmu_kiha_35_reversed;
+      purchase: switch_kiha_35_purchase;
+      default: switch_kiha_35_head_cars;
 
    }
 
@@ -70,7 +70,7 @@ item (FEAT_TRAINS, ITEM) {
 		length: WAGON_LENGTH;
 		weight: ADD_WEIGHT_UNPOWERED
 		DECAY_COMMUTER
-		default: switch_kiha_35_pass_cargo;
+		default: switch_kiha_35_pass_cars;
    }
 
    livery_override (item_pnr_mu_coach_powered) {
@@ -82,8 +82,7 @@ item (FEAT_TRAINS, ITEM) {
 		power: ADD_POWER
 		tractive_effort_coefficient: ADD_TE
 		DECAY_COMMUTER
-		default: switch_kiha_35_pass_cargo;
+		default: switch_kiha_35_pass_cars;
    }
-
 
 }
