@@ -18,7 +18,12 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-spriteset (set_pnr_mu_coach_unpowered_purchase, "gfx/COACHES/MU_COACH/PNR_MU_COACH.png") {
-    [1, 106, 40, 16, -11, -10]
+spriteset(set_pnr_mu_coach_unpowered_purchase, "gfx/COACHES/MU_COACH/PNR_MU_COACH.png") {
+  template_mu_purchase(1, 106) 
+}
+
+
+spriteset (set_pnr_mu_coach_unpowered, "gfx/COACHES/MU_COACH/PNR_MU_COACH.png") {
+    template_standard(1, 64)
 }
 RUNNING_COST_ENGINE

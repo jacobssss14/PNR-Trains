@@ -629,8 +629,13 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-spriteset (set_pnr_mu_coach_powered_purchase, "gfx/COACHES/MU_COACH/PNR_MU_COACH.png") {
-    [1, 106, 40, 16, -11, -10]
+spriteset(set_pnr_mu_coach_powered_purchase, "gfx/COACHES/MU_COACH/PNR_MU_COACH.png") {
+  template_mu_purchase(1, 106)
+}
+
+
+spriteset (set_pnr_mu_coach_powered, "gfx/COACHES/MU_COACH/PNR_MU_COACH.png") {
+    template_standard(1, 64)
 }
 
 # 59 "PNR-Trains.pnml" 2
@@ -735,6 +740,7 @@ item(FEAT_TRAINS, item_pnr_mu_coach_powered) {
    }
    graphics {
       purchase: set_pnr_mu_coach_powered_purchase;
+   default: set_pnr_mu_coach_powered;
   
    }
 }
@@ -760,8 +766,13 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-spriteset (set_pnr_mu_coach_unpowered_purchase, "gfx/COACHES/MU_COACH/PNR_MU_COACH.png") {
-    [1, 106, 40, 16, -11, -10]
+spriteset(set_pnr_mu_coach_unpowered_purchase, "gfx/COACHES/MU_COACH/PNR_MU_COACH.png") {
+  template_mu_purchase(1, 106)
+}
+
+
+spriteset (set_pnr_mu_coach_unpowered, "gfx/COACHES/MU_COACH/PNR_MU_COACH.png") {
+    template_standard(1, 64)
 }
 
 # 62 "PNR-Trains.pnml" 2
@@ -866,6 +877,7 @@ item(FEAT_TRAINS, item_pnr_mu_coach_unpowered) {
    }
    graphics {
       purchase: set_pnr_mu_coach_unpowered_purchase;
+   default: set_pnr_mu_coach_unpowered;
   
    }
 }

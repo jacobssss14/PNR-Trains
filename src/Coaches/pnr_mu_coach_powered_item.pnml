@@ -52,6 +52,7 @@ item(FEAT_TRAINS, ITEM) {
    }
    graphics {
       purchase: set_pnr_mu_coach_powered_purchase;
+	  default: set_pnr_mu_coach_powered;
 	  RUNNING_COST_ENGINE_CALL
    }
 }
