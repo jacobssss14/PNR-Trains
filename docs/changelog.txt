@@ -1,5 +1,8 @@
 Changelog for PNR-Trains
-
+0.7.1-beta-public
+    *Added 1997 livery of 7A-100 coaches
+    *Added fixes for non-AC coaches
+    
 0.7.0-beta-public
     *Fixed CMC 300 issues
     *Added 7A-2000
