@@ -1898,13 +1898,23 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-//1965 livery
-spriteset(set_class_5000_purchase_1965, "gfx/DIESEL/CLASS_5000/DIESEL_CLASS_5000_1965.png") {
+//1960 livery
+spriteset(set_class_5000_purchase_1960, "gfx/DIESEL/CLASS_5000/DIESEL_CLASS_5000_1960.png") {
     template_diesel_purchase(1,105)
 
 }
 
-spriteset(set_class_5000_1965, "gfx/DIESEL/CLASS_5000/DIESEL_CLASS_5000_1965.png") {
+spriteset(set_class_5000_1960, "gfx/DIESEL/CLASS_5000/DIESEL_CLASS_5000_1960.png") {
+   template_standard(1,1)
+}
+
+//1960 livery
+spriteset(set_class_5000_purchase_1970, "gfx/DIESEL/CLASS_5000/DIESEL_CLASS_5000_1970.png") {
+    template_diesel_purchase(1,105)
+
+}
+
+spriteset(set_class_5000_1970, "gfx/DIESEL/CLASS_5000/DIESEL_CLASS_5000_1970.png") {
    template_standard(1,1)
 }
 
@@ -1951,7 +1961,8 @@ spriteset(set_class_5000_2011, "gfx/DIESEL/CLASS_5000/DIESEL_CLASS_5000_2000.png
 
 //Autochanclass Livery
 switch (FEAT_TRAINS, PARENT, switch_class_5000_purchase, current_date ) {
-    0..date(1996,12,31): set_class_5000_purchase_1965;
+    0..date(1969,12,31): set_class_5000_purchase_1960;
+    date(1970,1,1)..date(1996,12,31): set_class_5000_purchase_1970;
     date(1997,1,1)..date(2000,12,31): set_class_5000_purchase_1997;
     date(2001,1,1)..date(2008,12,31): set_class_5000_purchase_2000;
     date(2009,1,1)..date(2010,12,31): set_class_5000_purchase_2009;
@@ -1960,8 +1971,8 @@ switch (FEAT_TRAINS, PARENT, switch_class_5000_purchase, current_date ) {
 }
 
 switch (FEAT_TRAINS, PARENT, switch_class_5000 , date_of_last_service ) {
-    0..date(1996,12,31): set_class_5000_1965;
-    date(1997,1,1)..date(2000,12,31): set_class_5000_1997;
+    0..date(1969,12,31): set_class_5000_1960;
+    date(1970,1,1)..date(1996,12,31): set_class_5000_1970;
     date(2001,1,1)..date(2008,12,31): set_class_5000_2000;
     date(2009,1,1)..date(2010,12,31): set_class_5000_2009;
     date(2011,1,1)..date(2019,12,31): set_class_5000_2011;
@@ -2118,6 +2129,16 @@ spriteset(set_class_2500_1965, "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_1965.png
    template_standard(1,1)
 }
 
+//1970 livery
+spriteset(set_class_2500_purchase_1970, "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_1970.png") {
+    template_diesel_purchase(1,105)
+
+}
+
+spriteset(set_class_2500_1970, "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_1970.png") {
+   template_standard(1,1)
+}
+
 //1997-2000 livery
 spriteset(set_class_2500_purchase_1997, "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_1997.png") {
     template_diesel_purchase(1,105)
@@ -2161,7 +2182,8 @@ spriteset(set_class_2500_2011, "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_2000.png
 
 //Autochanclass Livery
 switch (FEAT_TRAINS, PARENT, switch_class_2500_purchase, current_date ) {
-    0..date(1996,12,31): set_class_2500_purchase_1965;
+    0..date(1969,12,31): set_class_2500_purchase_1965;
+    date(1970,1,1)..date(1996,12,31): set_class_2500_purchase_1970;
     date(1997,1,1)..date(2000,12,31): set_class_2500_purchase_1997;
     date(2001,1,1)..date(2008,12,31): set_class_2500_purchase_2000;
     date(2009,1,1)..date(2010,12,31): set_class_2500_purchase_2009;
@@ -2170,7 +2192,8 @@ switch (FEAT_TRAINS, PARENT, switch_class_2500_purchase, current_date ) {
 }
 
 switch (FEAT_TRAINS, PARENT, switch_class_2500 , date_of_last_service ) {
-    0..date(1996,12,31): set_class_2500_1965;
+    0..date(1969,12,31): set_class_2500_1965;
+    date(1970,1,1)..date(1996,12,31): set_class_2500_1970;
     date(1997,1,1)..date(2000,12,31): set_class_2500_1997;
     date(2001,1,1)..date(2008,12,31): set_class_2500_2000;
     date(2009,1,1)..date(2010,12,31): set_class_2500_2009;

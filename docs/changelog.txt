@@ -1,8 +1,12 @@
 Changelog for PNR-Trains
+0.7.2-beta-public
+    *Added 1960 livery for Class 5000 locomotive
+    *Added 1965 livery for Class 2500 locomotive
+
 0.7.1-beta-public
     *Added 1997 livery of 7A-100 coaches
     *Added fixes for non-AC coaches
-    
+
 0.7.0-beta-public
     *Fixed CMC 300 issues
     *Added 7A-2000
