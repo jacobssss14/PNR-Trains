@@ -105,6 +105,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //DMUs
 #include "src/init/init_dmu.pnml"
 
+//CMC Nikko
+#include "src/DMU/dmu_nikko_properties.pnml"
+#include "src/DMU/dmu_nikko_graphics.pnml"
+#include "src/DMU/dmu_nikko_item.pnml"
+
 //CMC 300
 #include "src/DMU/dmu_cmc_300_properties.pnml"
 #include "src/DMU/dmu_cmc_300_graphics.pnml"

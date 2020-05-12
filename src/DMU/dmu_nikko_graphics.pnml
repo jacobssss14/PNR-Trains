@@ -1,0 +1,162 @@
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 1981  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+//1974 Livery
+
+spriteset(set_nikko_purchase_1974, "gfx/DMU/NIKKO/NIKKO_PRESTIGE_EXPRESS.png") {
+  template_mu_purchase(1, 106) 
+}
+
+spriteset(set_nikko_front_1974,  "gfx/DMU/NIKKO/NIKKO_PRESTIGE_EXPRESS.png") {
+    template_standard(1, 1)
+}
+
+spriteset(set_nikko_back_1974, "gfx/DMU/NIKKO/NIKKO_PRESTIGE_EXPRESS.png") {
+    template_standard(1, 32)
+   }
+
+
+spriteset (set_nikko_pass_car_1974, "gfx/DMU/NIKKO/NIKKO_PRESTIGE_EXPRESS.png") {
+    template_standard(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_nikko_pass_cargo_1974, cargo_classes){
+	bitmask(CC_PASSENGERS): set_nikko_pass_car_1974;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_nikko_reversed_1974, var[0xC8]) {
+	 0xFE: set_nikko_back_1974;
+    0xFF: set_nikko_back_1974;
+    set_nikko_front_1974;
+}
+
+//1981 Lviery
+
+spriteset(set_nikko_purchase_1981, "gfx/DMU/nikko/NIKKO_PEÑAFRANCIA_EXPRESS.png") {
+  template_mu_purchase(1, 106) 
+}
+
+spriteset(set_nikko_front_1981,   "gfx/DMU/nikko/NIKKO_PEÑAFRANCIA_EXPRESS.png") {
+    template_standard(1, 1)
+}
+
+spriteset(set_nikko_back_1981,  "gfx/DMU/nikko/NIKKO_PEÑAFRANCIA_EXPRESS.png") {
+    template_standard(1, 32)
+   }
+
+
+spriteset (set_nikko_pass_car_1981,  "gfx/DMU/nikko/NIKKO_PEÑAFRANCIA_EXPRESS.png") {
+    template_standard(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_nikko_pass_cargo_1981, cargo_classes){
+	bitmask(CC_PASSENGERS): set_nikko_pass_car_1981;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_nikko_reversed_1981, var[0xC8]) {
+	 0xFE: set_nikko_back_1981;
+    0xFF: set_nikko_back_1981;
+    set_nikko_front_1981;
+}
+
+//1990 Lviery
+
+spriteset(set_nikko_purchase_1990, "gfx/DMU/nikko/NIKKO_METROTREN.png") {
+  template_mu_purchase(1, 106) 
+}
+
+spriteset(set_nikko_front_1990,   "gfx/DMU/nikko/NIKKO_METROTREN.png") {
+    template_standard(1, 1)
+}
+
+spriteset(set_nikko_back_1990,  "gfx/DMU/nikko/NIKKO_METROTREN.png") {
+    template_standard(1, 32)
+   }
+
+
+spriteset (set_nikko_pass_car_1990,  "gfx/DMU/nikko/NIKKO_METROTREN.png") {
+    template_standard(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_nikko_pass_cargo_1990, cargo_classes){
+	bitmask(CC_PASSENGERS): set_nikko_pass_car_1990;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_nikko_reversed_1990, var[0xC8]) {
+	 0xFE: set_nikko_back_1990;
+    0xFF: set_nikko_back_1990;
+    set_nikko_front_1990;
+}
+
+
+//Autolivery change
+
+switch (FEAT_TRAINS, PARENT, switch_nikko_purchase, current_date ) {
+    0..date(1980,12,31): set_nikko_purchase_1974;
+    date(1981,1,1)..date(1989,12,31): set_nikko_purchase_1981;
+    date(1990,1,1)..date(2050,1,1): set_nikko_purchase_1990;
+    set_nikko_purchase_1990;
+}
+
+switch (FEAT_TRAINS, PARENT, switch_nikko_head_cars_auto, date_of_last_service ) {
+    0..date(2019,12,31): switch_dmu_nikko_reversed_1974;
+    date(1981,1,1)..date(1989,12,31): switch_dmu_nikko_reversed_1981;
+    date(1990,1,1)..date(2050,1,1): switch_dmu_nikko_reversed_1981;
+    switch_dmu_nikko_reversed_1981;
+}
+
+switch (FEAT_TRAINS, PARENT, switch_nikko_pass_cars_auto, date_of_last_service ) {
+    0..date(2019,12,31): switch_nikko_pass_cargo_1974;
+    date(1981,1,1)..date(1989,12,31): switch_nikko_pass_cargo_1981;
+    date(1990,1,1)..date(2050,1,1): switch_nikko_pass_cargo_1990;
+    switch_nikko_pass_cargo_1990;
+}
+
+//Manual Livery Change
+switch(FEAT_TRAINS, SELF, switch_nikko_head_cars, cargo_subtype) {
+    1: switch_dmu_nikko_reversed_1974;
+    2: switch_dmu_nikko_reversed_1981;
+    3: switch_dmu_nikko_reversed_1990;
+    switch_nikko_head_cars_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_nikko_pass_cars, cargo_subtype) {
+	1: switch_nikko_pass_cargo_1974;
+    2: switch_nikko_pass_cargo_1981;
+    3: switch_nikko_pass_cargo_1990;
+    switch_nikko_pass_cars_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_livery_text_nikko, cargo_subtype) {
+    0: return string(str_livery_auto);
+    1: return string(str_livery_prestige_express);
+    2: return string(str_livery_penafrancia_express);
+    3: return string(str_livery_metrotren);
+    return CB_RESULT_NO_TEXT;
+}
+
+
+
+ENGINECAPACITYSWITCH(VEHIDCODE)
+
+WAGONCAPACITYSWITCH(VEHIDCODE)
+
+RUNNING_COST_ENGINE
+RUNNING_COST_MU

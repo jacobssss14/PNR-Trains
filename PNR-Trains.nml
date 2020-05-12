@@ -1044,11 +1044,11 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-spriteset (set_203_coach_purchase, "gfx/COACHES/203_COACH/203_COACH.png") {
+spriteset (set_203_coach_purchase, "gfx/COACHES/203_COACH/203_COACH_2011.png") {
     template_coach_purchase(1,106)
 }
 
-spriteset (set_203_coach, "gfx/COACHES/203_COACH/203_COACH.png") {
+spriteset (set_203_coach, "gfx/COACHES/203_COACH/203_COACH_2011.png") {
     template_diesel(1,64)
 }
 
@@ -2836,6 +2836,313 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 // Room for specific defines
 # 107 "PNR-Trains.pnml" 2
 
+//CMC Nikko
+# 1 "src/DMU/dmu_nikko_properties.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+# 1 "src/DMU/../undefine_properties.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+//Undefined properties
+# 23 "src/DMU/dmu_nikko_properties.pnml" 2
+# 110 "PNR-Trains.pnml" 2
+# 1 "src/DMU/dmu_nikko_graphics.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 1981  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+//1974 Livery
+
+spriteset(set_nikko_purchase_1974, "gfx/DMU/NIKKO/NIKKO_PRESTIGE_EXPRESS.png") {
+  template_mu_purchase(1, 106)
+}
+
+spriteset(set_nikko_front_1974, "gfx/DMU/NIKKO/NIKKO_PRESTIGE_EXPRESS.png") {
+    template_standard(1, 1)
+}
+
+spriteset(set_nikko_back_1974, "gfx/DMU/NIKKO/NIKKO_PRESTIGE_EXPRESS.png") {
+    template_standard(1, 32)
+   }
+
+
+spriteset (set_nikko_pass_car_1974, "gfx/DMU/NIKKO/NIKKO_PRESTIGE_EXPRESS.png") {
+    template_standard(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_nikko_pass_cargo_1974, cargo_classes){
+ bitmask(CC_PASSENGERS): set_nikko_pass_car_1974;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_nikko_reversed_1974, var[0xC8]) {
+  0xFE: set_nikko_back_1974;
+    0xFF: set_nikko_back_1974;
+    set_nikko_front_1974;
+}
+
+//1981 Lviery
+
+spriteset(set_nikko_purchase_1981, "gfx/DMU/nikko/NIKKO_PEÑAFRANCIA_EXPRESS.png") {
+  template_mu_purchase(1, 106)
+}
+
+spriteset(set_nikko_front_1981, "gfx/DMU/nikko/NIKKO_PEÑAFRANCIA_EXPRESS.png") {
+    template_standard(1, 1)
+}
+
+spriteset(set_nikko_back_1981, "gfx/DMU/nikko/NIKKO_PEÑAFRANCIA_EXPRESS.png") {
+    template_standard(1, 32)
+   }
+
+
+spriteset (set_nikko_pass_car_1981, "gfx/DMU/nikko/NIKKO_PEÑAFRANCIA_EXPRESS.png") {
+    template_standard(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_nikko_pass_cargo_1981, cargo_classes){
+ bitmask(CC_PASSENGERS): set_nikko_pass_car_1981;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_nikko_reversed_1981, var[0xC8]) {
+  0xFE: set_nikko_back_1981;
+    0xFF: set_nikko_back_1981;
+    set_nikko_front_1981;
+}
+
+//1990 Lviery
+
+spriteset(set_nikko_purchase_1990, "gfx/DMU/nikko/NIKKO_METROTREN.png") {
+  template_mu_purchase(1, 106)
+}
+
+spriteset(set_nikko_front_1990, "gfx/DMU/nikko/NIKKO_METROTREN.png") {
+    template_standard(1, 1)
+}
+
+spriteset(set_nikko_back_1990, "gfx/DMU/nikko/NIKKO_METROTREN.png") {
+    template_standard(1, 32)
+   }
+
+
+spriteset (set_nikko_pass_car_1990, "gfx/DMU/nikko/NIKKO_METROTREN.png") {
+    template_standard(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_nikko_pass_cargo_1990, cargo_classes){
+ bitmask(CC_PASSENGERS): set_nikko_pass_car_1990;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_nikko_reversed_1990, var[0xC8]) {
+  0xFE: set_nikko_back_1990;
+    0xFF: set_nikko_back_1990;
+    set_nikko_front_1990;
+}
+
+
+//Autolivery change
+
+switch (FEAT_TRAINS, PARENT, switch_nikko_purchase, current_date ) {
+    0..date(1980,12,31): set_nikko_purchase_1974;
+    date(1981,1,1)..date(1989,12,31): set_nikko_purchase_1981;
+    date(1990,1,1)..date(2050,1,1): set_nikko_purchase_1990;
+    set_nikko_purchase_1990;
+}
+
+switch (FEAT_TRAINS, PARENT, switch_nikko_head_cars_auto, date_of_last_service ) {
+    0..date(2019,12,31): switch_dmu_nikko_reversed_1974;
+    date(1981,1,1)..date(1989,12,31): switch_dmu_nikko_reversed_1981;
+    date(1990,1,1)..date(2050,1,1): switch_dmu_nikko_reversed_1981;
+    switch_dmu_nikko_reversed_1981;
+}
+
+switch (FEAT_TRAINS, PARENT, switch_nikko_pass_cars_auto, date_of_last_service ) {
+    0..date(2019,12,31): switch_nikko_pass_cargo_1974;
+    date(1981,1,1)..date(1989,12,31): switch_nikko_pass_cargo_1981;
+    date(1990,1,1)..date(2050,1,1): switch_nikko_pass_cargo_1990;
+    switch_nikko_pass_cargo_1990;
+}
+
+//Manual Livery Change
+switch(FEAT_TRAINS, SELF, switch_nikko_head_cars, cargo_subtype) {
+    1: switch_dmu_nikko_reversed_1974;
+    2: switch_dmu_nikko_reversed_1981;
+    3: switch_dmu_nikko_reversed_1990;
+    switch_nikko_head_cars_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_nikko_pass_cars, cargo_subtype) {
+ 1: switch_nikko_pass_cargo_1974;
+    2: switch_nikko_pass_cargo_1981;
+    3: switch_nikko_pass_cargo_1990;
+    switch_nikko_pass_cars_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_livery_text_nikko, cargo_subtype) {
+    0: return string(str_livery_auto);
+    1: return string(str_livery_prestige_express);
+    2: return string(str_livery_penafrancia_express);
+    3: return string(str_livery_metrotren);
+    return CB_RESULT_NO_TEXT;
+}
+
+
+
+switch(FEAT_TRAINS, SELF, switch_dmu_nikko_capacity_engine, cargo_classes) { bitmask(CC_MAIL): 28/2; bitmask(CC_ARMOURED): 28/4; 28; }
+
+switch(FEAT_TRAINS, SELF, switch_dmu_nikko_capacity_wagon, cargo_classes) { bitmask(CC_MAIL): 28/2; bitmask(CC_ARMOURED): 28/4; 28; }
+
+
+
+# 111 "PNR-Trains.pnml" 2
+# 1 "src/DMU/dmu_nikko_item.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+item (FEAT_TRAINS, item_nikko) {
+   property {
+      name: string(STR_DMU_NIKKO);
+      climates_available: bitmask(CLIMATE_TEMPERATE);
+  introduction_date: date(1974, 1, 1);
+  model_life: 25;
+  vehicle_life: 60;
+  retire_early: 5;
+  loading_speed: 16;
+  cost_factor: 0.5*(0.1*40 +0.05*(((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))-(((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180)))-95 )/(0.1+2*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))))-((((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))-(((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180)))-95 )/(0.1+2*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))))*((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))-(((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180)))-95 )/(0.1+2*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180)))))-95 )/(0.1+2*((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))-(((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180)))-95 )/(0.1+2*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))))))+0.5*(((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))-(((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180)))-365 )/(0.1+2*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))))-((((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))-(((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180)))-365 )/(0.1+2*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))))*((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))-(((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180)))-365 )/(0.1+2*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180)))))-365 )/(0.1+2*((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))-(((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180)))-365 )/(0.1+2*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))))))+max(0.5*(((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))-(((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))-28 )/(0.1+2*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))))-((((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))-(((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))-28 )/(0.1+2*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))))*((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))-(((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))-28 )/(0.1+2*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))))-28 )/(0.1+2*((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))-(((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))-28 )/(0.1+2*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))))),0.5*(((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))-(((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))-28 )/(0.1+2*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))))-((((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))-(((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))-28 )/(0.1+2*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))))*((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))-(((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))-28 )/(0.1+2*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))))-28 )/(0.1+2*((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))-(((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))-28 )/(0.1+2*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))))))+0.5*0.3);
+  running_cost_factor: 0.5*(0.01*(((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))-(((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180)))-95 )/(0.1+2*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))))-((((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))-(((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180)))-95 )/(0.1+2*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))))*((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))-(((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180)))-95 )/(0.1+2*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180)))))-95 )/(0.1+2*((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))-(((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180)))-95 )/(0.1+2*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))))))+0.5*(((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))-(((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180)))-365 )/(0.1+2*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))))-((((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))-(((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180)))-365 )/(0.1+2*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))))*((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))-(((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180)))-365 )/(0.1+2*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180)))))-365 )/(0.1+2*((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))-(((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180)))-365 )/(0.1+2*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))))))+max(0.5*(((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))-(((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))-28 )/(0.1+2*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))))-((((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))-(((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))-28 )/(0.1+2*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))))*((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))-(((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))-28 )/(0.1+2*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))))-28 )/(0.1+2*((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))-(((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))-28 )/(0.1+2*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))))), 0.5*(((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))-(((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))-28 )/(0.1+2*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))))-((((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))-(((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))-28 )/(0.1+2*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))))*((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))-(((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))-28 )/(0.1+2*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))))-28 )/(0.1+2*((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))-(((28/180 -((28/180*28/180)-28 )/(0.1+2*28/180))*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))-28 )/(0.1+2*(28/180 -((28/180*28/180)-28 )/(0.1+2*28/180)))))))+0.5*0.3);
+  speed: 95 km/h;
+  power: 365 hp;
+  cargo_capacity: 28;
+  weight: 40 ton;
+  tractive_effort_coefficient: 0.3;
+  air_drag_coefficient: 0;
+  cargo_age_period: 100;
+
+  reliability_decay: 20;
+  refittable_cargo_classes: bitmask(CC_PASSENGERS); non_refittable_cargo_classes: 0;
+  misc_flags: bitmask(TRAIN_FLAG_MU);
+  refit_cost: 0;
+  track_type: NAAN;
+
+  running_cost_base: RUNNING_COST_DIESEL;
+  engine_class: ENGINE_CLASS_DIESEL;
+  visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
+
+  sprite_id: SPRITE_ID_NEW_TRAIN;
+  dual_headed: 0;
+  length: 8;
+
+   }
+
+     graphics {
+  
+      cargo_capacity: switch_dmu_nikko_capacity_engine;
+      purchase: switch_nikko_purchase;
+      default: switch_nikko_head_cars;
+   cargo_subtype_text: switch_livery_text_nikko;
+
+   }
+
+   livery_override (item_pnr_mu_coach_unpowered) {
+     running_cost_factor: int(95/10);
+     loading_speed: 16;
+     cargo_capacity: switch_dmu_nikko_capacity_wagon;
+  length: 8;
+  weight: int(40*1/8);
+  cargo_age_period: 100;
+  default: switch_nikko_pass_cars;
+  cargo_subtype_text: switch_livery_text_nikko;
+
+   }
+
+   livery_override (item_pnr_mu_coach_powered) {
+     running_cost_factor: int(95/10+(((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))-(((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180)))-365 )/(0.1+2*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))))-((((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))-(((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180)))-365 )/(0.1+2*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))))*((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))-(((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180)))-365 )/(0.1+2*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180)))))-365 )/(0.1+2*((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))-(((365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180)))-365 )/(0.1+2*(365/180 -((365/180*365/180)-365 )/(0.1+2*365/180))))))/10+0.3*40);
+     loading_speed: 16;
+     cargo_capacity: switch_dmu_nikko_capacity_wagon;
+  length: 8;
+  weight: int(40*1/16);
+  power: int(365*1/2);
+  tractive_effort_coefficient: int(0.3*10*40);
+  cargo_age_period: 100;
+  default: switch_nikko_pass_cars;
+  cargo_subtype_text: switch_livery_text_nikko;
+   }
+
+
+
+}
+# 112 "PNR-Trains.pnml" 2
+
 //CMC 300
 # 1 "src/DMU/dmu_cmc_300_properties.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
@@ -2883,7 +3190,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //Undefined properties
 # 23 "src/DMU/dmu_cmc_300_properties.pnml" 2
-# 110 "PNR-Trains.pnml" 2
+# 115 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_cmc_300_graphics.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 1978  Jacob Payag
@@ -3076,7 +3383,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_cmc_300_capacity_wagon, cargo_classes) { bi
 
 
 
-# 111 "PNR-Trains.pnml" 2
+# 116 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_cmc_300_item.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -3169,7 +3476,7 @@ item (FEAT_TRAINS, item_dmu_cmc_300) {
    }
 
 }
-# 112 "PNR-Trains.pnml" 2
+# 117 "PNR-Trains.pnml" 2
 
 //KiHa35
 # 1 "src/DMU/dmu_kiha_35_properties.pnml" 1
@@ -3218,7 +3525,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //Undefined properties
 # 23 "src/DMU/dmu_kiha_35_properties.pnml" 2
-# 115 "PNR-Trains.pnml" 2
+# 120 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_kiha_35_graphics.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -3347,7 +3654,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_kiha_35_capacity_wagon, cargo_classes) { bi
 
 
 
-# 116 "PNR-Trains.pnml" 2
+# 121 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_kiha_35_item.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -3440,7 +3747,7 @@ item (FEAT_TRAINS, item_dmu_kiha_35) {
    }
 
 }
-# 117 "PNR-Trains.pnml" 2
+# 122 "PNR-Trains.pnml" 2
 
 //KiHa59
 # 1 "src/DMU/dmu_kiha_59_properties.pnml" 1
@@ -3489,7 +3796,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //Undefined properties
 # 23 "src/DMU/dmu_kiha_59_properties.pnml" 2
-# 120 "PNR-Trains.pnml" 2
+# 125 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_kiha_59_graphics.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -3618,7 +3925,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_kiha_59_capacity_wagon, cargo_classes) { bi
 
 
 
-# 121 "PNR-Trains.pnml" 2
+# 126 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_kiha_59_item.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -3714,7 +4021,7 @@ item (FEAT_TRAINS, item_dmu_kiha_59) {
 
 
 }
-# 122 "PNR-Trains.pnml" 2
+# 127 "PNR-Trains.pnml" 2
 
 //Hyundai Rotem from Filipino Trains
 # 1 "src/DMU/dmu_hyundai_rotem_properties.pnml" 1
@@ -3763,7 +4070,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //Undefined properties
 # 23 "src/DMU/dmu_hyundai_rotem_properties.pnml" 2
-# 125 "PNR-Trains.pnml" 2
+# 130 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_hyundai_rotem_graphics.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -3915,7 +4222,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_hyundai_rotem_capacity_wagon, cargo_classes
 
 
 
-# 126 "PNR-Trains.pnml" 2
+# 131 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_hyundai_rotem_item.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -4009,7 +4316,7 @@ item (FEAT_TRAINS, item_dmu_hyundai_rotem) {
 
 
 }
-# 127 "PNR-Trains.pnml" 2
+# 132 "PNR-Trains.pnml" 2
 
 //Hyundai Rotem from Filipino Trains
 # 1 "src/DMU/dmu_class_8000_properties.pnml" 1
@@ -4058,7 +4365,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //Undefined properties
 # 23 "src/DMU/dmu_class_8000_properties.pnml" 2
-# 130 "PNR-Trains.pnml" 2
+# 135 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_class_8000_graphics.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -4115,7 +4422,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_class_8000_capacity_wagon, cargo_classes) {
 
 
 
-# 131 "PNR-Trains.pnml" 2
+# 136 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_class_8000_item.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -4206,4 +4513,4 @@ item (FEAT_TRAINS, item_dmu_class_8000) {
 
 
 }
-# 132 "PNR-Trains.pnml" 2
+# 137 "PNR-Trains.pnml" 2
