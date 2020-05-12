@@ -630,7 +630,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
 spriteset(set_pnr_mu_coach_powered_purchase, "gfx/COACHES/MU_COACH/PNR_MU_COACH.png") {
-  template_mu_purchase(1, 106)
+  template_coach_purchase(1,106)
 }
 
 
@@ -767,7 +767,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
 spriteset(set_pnr_mu_coach_unpowered_purchase, "gfx/COACHES/MU_COACH/PNR_MU_COACH.png") {
-  template_mu_purchase(1, 106)
+  template_coach_purchase(1,106)
 }
 
 
@@ -1460,7 +1460,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //1999 Livery
 spriteset(set_7A_2000_1999_purchase, "gfx/COACHES/7A_2000/7A_2000_1999.png") {
-  template_mu_purchase(1, 106)
+  template_coach_purchase(1,106)
 }
 
 
@@ -1470,7 +1470,7 @@ spriteset (set_7A_2000_1999, "gfx/COACHES/7A_2000/7A_2000_1999.png") {
 
 //2009 livery
 spriteset(set_7A_2000_2009_purchase, "gfx/COACHES/7A_2000/7A_2000_2009.png") {
-  template_mu_purchase(1, 106)
+  template_coach_purchase(1,106)
 }
 
 
@@ -3329,8 +3329,9 @@ switch(FEAT_TRAINS, SELF, switch_dmu_cmc_300_reversed_mayon_limited, var[0xC8]) 
 
 switch (FEAT_TRAINS, PARENT, switch_cmc_300_purchase, current_date ) {
     0..date(1978,12,31): set_cmc_300_purchase_1974;
-    date(1978,1,1)..date(2050,1,1): set_cmc_300_purchase_1978;
-    set_cmc_300_purchase_1978;
+    date(1978,1,1)..date(1989,12,31): set_cmc_300_purchase_1978;
+    date(1990,1,1)..date(2000,12,31): set_cmc_300_purchase_1990;
+    set_cmc_300_purchase_1990;
 }
 
 switch (FEAT_TRAINS, PARENT, switch_cmc_300_head_cars_auto, date_of_last_service ) {

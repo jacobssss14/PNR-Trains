@@ -135,8 +135,9 @@ switch(FEAT_TRAINS, SELF, switch_dmu_cmc_300_reversed_mayon_limited, var[0xC8]) 
 
 switch (FEAT_TRAINS, PARENT, switch_cmc_300_purchase, current_date ) {
     0..date(1978,12,31): set_cmc_300_purchase_1974;
-    date(1978,1,1)..date(2050,1,1): set_cmc_300_purchase_1978;
-    set_cmc_300_purchase_1978;
+    date(1978,1,1)..date(1989,12,31): set_cmc_300_purchase_1978;
+    date(1990,1,1)..date(2000,12,31): set_cmc_300_purchase_1990;
+    set_cmc_300_purchase_1990;
 }
 
 switch (FEAT_TRAINS, PARENT, switch_cmc_300_head_cars_auto, date_of_last_service ) {

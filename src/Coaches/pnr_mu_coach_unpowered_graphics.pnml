@@ -19,7 +19,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
 spriteset(set_pnr_mu_coach_unpowered_purchase, "gfx/COACHES/MU_COACH/PNR_MU_COACH.png") {
-  template_mu_purchase(1, 106) 
+  template_coach_purchase(1,106)
 }
 
 
