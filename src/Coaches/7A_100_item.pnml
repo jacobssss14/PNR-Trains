@@ -50,6 +50,8 @@ item (FEAT_TRAINS, ITEM) {
 		sprite_id: SPRITE_ID;
 		dual_headed: DUAL_HEADED;
 		length: LENGTH;
+
+		cargo_allow_refit: [PASS];
       
    }
 
@@ -57,6 +59,7 @@ item (FEAT_TRAINS, ITEM) {
 	  cargo_age_period: switch_7A_cargodecay;
       purchase: switch_7A_100_purchase;
       default: switch_7A_100;
+	  cargo_subtype_text: switch_livery_text_7A_100;
       RUNNING_COST_ENGINE_CALL
 
    }

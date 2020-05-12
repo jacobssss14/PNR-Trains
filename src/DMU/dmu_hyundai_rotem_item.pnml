@@ -60,6 +60,7 @@ item (FEAT_TRAINS, ITEM) {
       ENGINECAPACITYSWITCHCALL(VEHIDCODE)	   
       purchase: switch_hyundai_rotem_purchase;
       default: switch_hyundai_rotem_head_cars;
+	  cargo_subtype_text: switch_livery_text_hyundai_rotem;
 
    }
 
@@ -71,6 +72,7 @@ item (FEAT_TRAINS, ITEM) {
 		weight: ADD_WEIGHT_UNPOWERED
 		DECAY_COMMUTER
 		default: switch_hyundai_rotem_pass_cars;
+		cargo_subtype_text: switch_livery_text_hyundai_rotem;
    }
 
    livery_override (item_pnr_mu_coach_powered) {
@@ -83,6 +85,7 @@ item (FEAT_TRAINS, ITEM) {
 		tractive_effort_coefficient: ADD_TE
 		DECAY_COMMUTER
 		default: switch_hyundai_rotem_pass_cars;
+		cargo_subtype_text: switch_livery_text_hyundai_rotem;
    }
 
 

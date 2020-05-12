@@ -76,6 +76,60 @@ switch(FEAT_TRAINS, SELF, switch_dmu_cmc_300_reversed_1978, var[0xC8]) {
     set_cmc_300_front_1978;
 }
 
+//1990 Livery
+spriteset(set_cmc_300_purchase_1990, "gfx/DMU/CMC_300/DMU_CMC_300_1990.png") {
+  template_mu_purchase(1, 106) 
+}
+
+spriteset(set_cmc_300_front_1990,  "gfx/DMU/CMC_300/DMU_CMC_300_1990.png") {
+    template_standard(1, 1)
+}
+
+spriteset(set_cmc_300_back_1990, "gfx/DMU/CMC_300/DMU_CMC_300_1990.png") {
+    template_standard(1, 32)
+   }
+
+
+spriteset (set_cmc_300_pass_car_1990, "gfx/DMU/CMC_300/DMU_CMC_300_1990.png") {
+    template_standard(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_cmc_300_pass_cargo_1990, cargo_classes){
+	bitmask(CC_PASSENGERS): set_cmc_300_pass_car_1990;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_cmc_300_reversed_1990, var[0xC8]) {
+	 0xFE: set_cmc_300_back_1990;
+    0xFF: set_cmc_300_back_1990;
+    set_cmc_300_front_1990;
+}
+//Mayon Limited Livery
+spriteset(set_cmc_300_purchase_mayon_limited, "gfx/DMU/CMC_300/DMU_CMC_300_mayon_limited.png") {
+  template_mu_purchase(1, 106) 
+}
+
+spriteset(set_cmc_300_front_mayon_limited,  "gfx/DMU/CMC_300/DMU_CMC_300_mayon_limited.png") {
+    template_standard(1, 1)
+}
+
+spriteset(set_cmc_300_back_mayon_limited, "gfx/DMU/CMC_300/DMU_CMC_300_mayon_limited.png") {
+    template_standard(1, 32)
+   }
+
+
+spriteset (set_cmc_300_pass_car_mayon_limited, "gfx/DMU/CMC_300/DMU_CMC_300_mayon_limited.png") {
+    template_standard(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_cmc_300_pass_cargo_mayon_limited, cargo_classes){
+	bitmask(CC_PASSENGERS): set_cmc_300_pass_car_mayon_limited;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_cmc_300_reversed_mayon_limited, var[0xC8]) {
+	 0xFE: set_cmc_300_back_mayon_limited;
+    0xFF: set_cmc_300_back_mayon_limited;
+    set_cmc_300_front_mayon_limited;
+}
 
 //Autolivery change
 
@@ -85,17 +139,47 @@ switch (FEAT_TRAINS, PARENT, switch_cmc_300_purchase, current_date ) {
     set_cmc_300_purchase_1978;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_cmc_300_head_cars, date_of_last_service ) {
+switch (FEAT_TRAINS, PARENT, switch_cmc_300_head_cars_auto, date_of_last_service ) {
     0..date(1978,12,31): switch_dmu_cmc_300_reversed_1974;
-    date(1978,1,1)..date(2050,1,1): switch_dmu_cmc_300_reversed_1978;
-    switch_dmu_cmc_300_reversed_1978;
+    date(1978,1,1)..date(1989,12,31): switch_dmu_cmc_300_reversed_1978;
+    date(1990,1,1)..date(2000,12,31): switch_dmu_cmc_300_reversed_1990;
+    switch_dmu_cmc_300_reversed_1990;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_cmc_300_pass_cars, date_of_last_service ) {
+switch (FEAT_TRAINS, PARENT, switch_cmc_300_pass_cars_auto, date_of_last_service ) {
     0..date(1978,12,31): switch_cmc_300_pass_cargo_1974;
-    date(1978,1,1)..date(2050,1,1): switch_cmc_300_pass_cargo_1978;
-    switch_cmc_300_pass_cargo_1978;
+    date(1978,1,1)..date(1989,12,31): switch_cmc_300_pass_cargo_1978;
+    date(1990,1,1)..date(2000,12,31): switch_cmc_300_pass_cargo_1990;
+    switch_cmc_300_pass_cargo_1990;
 }
+
+
+//Manual Livery Change
+switch(FEAT_TRAINS, SELF, switch_cmc_300_head_cars, cargo_subtype) {
+	1: switch_dmu_cmc_300_reversed_1974;
+    2: switch_dmu_cmc_300_reversed_1978;
+    3: switch_dmu_cmc_300_reversed_1990;
+    4: switch_dmu_cmc_300_reversed_mayon_limited;
+    switch_cmc_300_head_cars_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_cmc_300_pass_cars, cargo_subtype) {
+	1: switch_cmc_300_pass_cargo_1974;
+    2: switch_cmc_300_pass_cargo_1978;
+    3: switch_cmc_300_pass_cargo_1990;
+    4: switch_cmc_300_pass_cargo_mayon_limited;
+    switch_cmc_300_pass_cars_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_livery_text_cmc_300, cargo_subtype) {
+    0: return string(str_livery_auto);
+    1: return string(str_livery_mrr_yellow);
+    2: return string(str_livery_pnr_navy_blue);
+    3: return string(str_livery_metrotren);
+    4: return string(str_livery_mayon_limited);
+    return CB_RESULT_NO_TEXT;
+}
+
 
 
 

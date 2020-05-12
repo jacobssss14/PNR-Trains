@@ -90,13 +90,33 @@ switch (FEAT_TRAINS, PARENT, switch_class_5000_purchase, current_date ) {
     set_class_5000_purchase_2011;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_class_5000 , date_of_last_service ) {
+switch (FEAT_TRAINS, PARENT, switch_class_5000_auto , date_of_last_service ) {
     0..date(1969,12,31): set_class_5000_1960;
     date(1970,1,1)..date(1996,12,31): set_class_5000_1970;
+    date(1997,1,1)..date(2000,12,31): set_class_5000_1997;
     date(2001,1,1)..date(2008,12,31): set_class_5000_2000;
     date(2009,1,1)..date(2010,12,31): set_class_5000_2009;
     date(2011,1,1)..date(2019,12,31): set_class_5000_2011;
     set_class_5000_2011;
+}
+
+switch(FEAT_TRAINS, SELF, switch_class_5000, cargo_subtype) {
+	1: set_class_5000_1960;
+    2: set_class_5000_1970;
+    3: set_class_5000_1997;
+    4: set_class_5000_2000;
+    5: set_class_5000_2009;
+    switch_class_5000_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_livery_text_5000, cargo_subtype) {
+    0: return string(str_livery_auto);
+	1: return string(str_livery_mrr_yellow_green);
+    2: return string(str_livery_pnr_green);
+    3: return string(str_livery_philippines_2000);
+    4: return string(str_livery_pnr_navy_blue);
+    5: return string(str_livery_filtrak);
+    return CB_RESULT_NO_TEXT;
 }
 
 RUNNING_COST_ENGINE

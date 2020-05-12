@@ -95,7 +95,7 @@ switch (FEAT_TRAINS, PARENT, switch_class_900_purchase, current_date ) {
     set_class_900_purchase_2020;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_class_900 , date_of_last_service ) {
+switch (FEAT_TRAINS, PARENT, switch_class_900_auto , date_of_last_service ) {
     0..date(1996,12,31): set_class_900_1973;
     date(1997,1,1)..date(2000,12,31): set_class_900_1997;
     date(2001,1,1)..date(2008,12,31): set_class_900_2000;
@@ -104,6 +104,26 @@ switch (FEAT_TRAINS, PARENT, switch_class_900 , date_of_last_service ) {
     date(2020,1,1)..date(2050,12,31): set_class_900_2020;
     set_class_900_2020;
 }
+
+switch(FEAT_TRAINS, SELF, switch_class_900, cargo_subtype) {
+	1: set_class_900_1973;
+    2: set_class_900_1997;
+    3: set_class_900_2000;
+    4: set_class_900_2009;
+    5: set_class_900_2020;
+    switch_class_900_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_livery_text_900, cargo_subtype) {
+    0: return string(str_livery_auto);
+    1: return string(str_livery_pnr_green);
+    2: return string(str_livery_philippines_2000);
+    3: return string(str_livery_pnr_navy_blue);
+    4: return string(str_livery_filtrak);
+    5: return string(str_livery_pnr_orange);
+    return CB_RESULT_NO_TEXT;
+}
+
 
 switch (FEAT_TRAINS, PARENT, switch_class_900_variant, date_of_last_service) {
     0..date(1996,12,31): string(str_variant_u14c);

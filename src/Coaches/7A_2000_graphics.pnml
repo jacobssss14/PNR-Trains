@@ -47,12 +47,23 @@ switch (FEAT_TRAINS, PARENT, switch_7A_2000_purchase, current_date ) {
     set_7A_2000_1999_purchase;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_7A_2000, date_of_last_service ) {
+switch (FEAT_TRAINS, PARENT, switch_7A_2000_auto, date_of_last_service ) {
     0..date(1954,12,31): set_7A_2000_1999;
     date(2009,1,1)..date(2010,12,31): set_7A_2000_2009;
     set_7A_2000_1999;
 }
+ switch(FEAT_TRAINS, SELF, switch_7A_2000, cargo_subtype) {
+   	1: set_7A_2000_1999;
+    2: set_7A_2000_2009;
+    switch_7A_2000_auto;
+}
 
+switch(FEAT_TRAINS, SELF, switch_livery_text_7A_2000, cargo_subtype) {
+    0: return string(str_livery_auto);
+	  1: return string(str_livery_pnr_navy_blue);
+    2: return string(str_livery_filtrak);
+    return CB_RESULT_NO_TEXT;
+}
 
 
 

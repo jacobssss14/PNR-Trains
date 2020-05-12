@@ -72,7 +72,7 @@ switch (FEAT_TRAINS, PARENT, switch_7A_100_purchase, current_date ) {
     set_7A_100_1990_purchase;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_7A_100, date_of_last_service ) {
+switch (FEAT_TRAINS, PARENT, switch_7A_100_auto, date_of_last_service ) {
     0..date(1954,12,31): set_7A_100_1949;
     date(1955,1,1)..date(1989,12,31): set_7A_100_1955;
     date(1990,1,1)..date(1996,12,31): set_7A_100_1990;
@@ -80,11 +80,29 @@ switch (FEAT_TRAINS, PARENT, switch_7A_100, date_of_last_service ) {
     set_7A_100_1990;
 }
 
+
 //Non-AC to AC cargo decay
 switch (FEAT_TRAINS, PARENT, switch_7A_cargodecay, date_of_last_service ) {
     0..date(1954,12,31): return 200;
     date(1955,1,1)..date(2010,12,31): return 100;
     return 100;
+}
+
+switch(FEAT_TRAINS, SELF, switch_7A_100, cargo_subtype) {
+   	1: set_7A_100_1949;
+    2: set_7A_100_1955;
+    3: set_7A_100_1990;
+    4: set_7A_100_1997;
+    switch_7A_100_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_livery_text_7A_100, cargo_subtype) {
+    0: return string(str_livery_auto);
+	  1: return string(str_livery_mrr_yellow);
+    2: return string(str_livery_pnr_green);
+    3: return string(str_livery_metrotren);
+    4: return string(str_livery_philippines_2000);
+    return CB_RESULT_NO_TEXT;
 }
 
 RUNNING_COST_ENGINE

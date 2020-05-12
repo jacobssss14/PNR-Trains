@@ -726,7 +726,7 @@ item(FEAT_TRAINS, item_pnr_mu_coach_powered) {
   air_drag_coefficient: 0;
 
   refittable_cargo_classes: bitmask(CC_PASSENGERS); non_refittable_cargo_classes: 0;
-  misc_flags: bitmask(TRAIN_FLAG_2CC);
+  misc_flags: bitmask(TRAIN_FLAG_MU);
 
   track_type: NAAN;
 
@@ -863,7 +863,7 @@ item(FEAT_TRAINS, item_pnr_mu_coach_unpowered) {
   air_drag_coefficient: 0;
 
   refittable_cargo_classes: bitmask(CC_PASSENGERS); non_refittable_cargo_classes: 0;
-  misc_flags: bitmask(TRAIN_FLAG_2CC);
+  misc_flags: bitmask(TRAIN_FLAG_MU);
 
   track_type: NAAN;
 
@@ -1163,53 +1163,6 @@ item(FEAT_TRAINS, item_203_coach) {
 
 }
 # 70 "PNR-Trains.pnml" 2
-# 1 "src/Coaches/7A_100_properties.pnml" 1
-/* PNR-Trains NewGRF For OpenTTD
-Copyright (C) 2020  Jacob Payag
-
-This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
-
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-*/
-
-
-# 1 "src/Coaches/../undefine_properties.pnml" 1
-/* PNR-Trains NewGRF For OpenTTD
-Copyright (C) 2020  Jacob Payag
-
-This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
-
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-*/
-
-
-//Undefined properties
-# 23 "src/Coaches/7A_100_properties.pnml" 2
-# 71 "PNR-Trains.pnml" 2
 # 1 "src/Coaches/7A_100_graphics.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -1285,13 +1238,14 @@ switch (FEAT_TRAINS, PARENT, switch_7A_100_purchase, current_date ) {
     set_7A_100_1990_purchase;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_7A_100, date_of_last_service ) {
+switch (FEAT_TRAINS, PARENT, switch_7A_100_auto, date_of_last_service ) {
     0..date(1954,12,31): set_7A_100_1949;
     date(1955,1,1)..date(1989,12,31): set_7A_100_1955;
     date(1990,1,1)..date(1996,12,31): set_7A_100_1990;
     date(1997,1,1)..date(1999,12,31): set_7A_100_1997;
     set_7A_100_1990;
 }
+
 
 //Non-AC to AC cargo decay
 switch (FEAT_TRAINS, PARENT, switch_7A_cargodecay, date_of_last_service ) {
@@ -1300,7 +1254,71 @@ switch (FEAT_TRAINS, PARENT, switch_7A_cargodecay, date_of_last_service ) {
     return 100;
 }
 
+switch(FEAT_TRAINS, SELF, switch_7A_100, cargo_subtype) {
+    1: set_7A_100_1949;
+    2: set_7A_100_1955;
+    3: set_7A_100_1990;
+    4: set_7A_100_1997;
+    switch_7A_100_auto;
+}
 
+switch(FEAT_TRAINS, SELF, switch_livery_text_7A_100, cargo_subtype) {
+    0: return string(str_livery_auto);
+   1: return string(str_livery_mrr_yellow);
+    2: return string(str_livery_pnr_green);
+    3: return string(str_livery_metrotren);
+    4: return string(str_livery_philippines_2000);
+    return CB_RESULT_NO_TEXT;
+}
+
+
+# 71 "PNR-Trains.pnml" 2
+# 1 "src/Coaches/7A_100_properties.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+# 1 "src/Coaches/../undefine_properties.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+//Undefined properties
+# 23 "src/Coaches/7A_100_properties.pnml" 2
 # 72 "PNR-Trains.pnml" 2
 # 1 "src/Coaches/7A_100_item.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
@@ -1330,7 +1348,7 @@ item (FEAT_TRAINS, item_7A_100) {
       name: string(STR_7A_100);
       climates_available: bitmask(CLIMATE_TEMPERATE);
   introduction_date: date(1949, 1, 1);
-  model_life: 51;
+  model_life: 46;
   retire_early: 5;
   loading_speed: 16;
   cost_factor: 0.5*(0.1*40 +0.05*(((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))-(((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180)))-100 )/(0.1+2*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))))-((((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))-(((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180)))-100 )/(0.1+2*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))))*((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))-(((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180)))-100 )/(0.1+2*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180)))))-100 )/(0.1+2*((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))-(((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180)))-100 )/(0.1+2*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))))))+0.5*(((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))-(((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180)))-0 )/(0.1+2*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))))-((((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))-(((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180)))-0 )/(0.1+2*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))))*((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))-(((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180)))-0 )/(0.1+2*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180)))))-0 )/(0.1+2*((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))-(((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180)))-0 )/(0.1+2*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))))))+0.5*0.3);
@@ -1356,12 +1374,15 @@ item (FEAT_TRAINS, item_7A_100) {
   dual_headed: 0;
   length: 8;
 
+  cargo_allow_refit: [PASS];
+
    }
 
      graphics {
    cargo_age_period: switch_7A_cargodecay;
       purchase: switch_7A_100_purchase;
       default: switch_7A_100;
+   cargo_subtype_text: switch_livery_text_7A_100;
      
 
    }
@@ -1466,12 +1487,23 @@ switch (FEAT_TRAINS, PARENT, switch_7A_2000_purchase, current_date ) {
     set_7A_2000_1999_purchase;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_7A_2000, date_of_last_service ) {
+switch (FEAT_TRAINS, PARENT, switch_7A_2000_auto, date_of_last_service ) {
     0..date(1954,12,31): set_7A_2000_1999;
     date(2009,1,1)..date(2010,12,31): set_7A_2000_2009;
     set_7A_2000_1999;
 }
+ switch(FEAT_TRAINS, SELF, switch_7A_2000, cargo_subtype) {
+    1: set_7A_2000_1999;
+    2: set_7A_2000_2009;
+    switch_7A_2000_auto;
+}
 
+switch(FEAT_TRAINS, SELF, switch_livery_text_7A_2000, cargo_subtype) {
+    0: return string(str_livery_auto);
+   1: return string(str_livery_pnr_navy_blue);
+    2: return string(str_livery_filtrak);
+    return CB_RESULT_NO_TEXT;
+}
 
 
 
@@ -1532,11 +1564,13 @@ item (FEAT_TRAINS, item_7A_2000) {
   dual_headed: 0;
   length: 8;
 
+  cargo_allow_refit: [PASS];
    }
 
      graphics {
       purchase: switch_7A_2000_purchase;
       default: switch_7A_2000;
+   cargo_subtype_text: switch_livery_text_7A_2000;
      
 
    }
@@ -1982,13 +2016,33 @@ switch (FEAT_TRAINS, PARENT, switch_class_5000_purchase, current_date ) {
     set_class_5000_purchase_2011;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_class_5000 , date_of_last_service ) {
+switch (FEAT_TRAINS, PARENT, switch_class_5000_auto , date_of_last_service ) {
     0..date(1969,12,31): set_class_5000_1960;
     date(1970,1,1)..date(1996,12,31): set_class_5000_1970;
+    date(1997,1,1)..date(2000,12,31): set_class_5000_1997;
     date(2001,1,1)..date(2008,12,31): set_class_5000_2000;
     date(2009,1,1)..date(2010,12,31): set_class_5000_2009;
     date(2011,1,1)..date(2019,12,31): set_class_5000_2011;
     set_class_5000_2011;
+}
+
+switch(FEAT_TRAINS, SELF, switch_class_5000, cargo_subtype) {
+ 1: set_class_5000_1960;
+    2: set_class_5000_1970;
+    3: set_class_5000_1997;
+    4: set_class_5000_2000;
+    5: set_class_5000_2009;
+    switch_class_5000_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_livery_text_5000, cargo_subtype) {
+    0: return string(str_livery_auto);
+ 1: return string(str_livery_mrr_yellow_green);
+    2: return string(str_livery_pnr_green);
+    3: return string(str_livery_philippines_2000);
+    4: return string(str_livery_pnr_navy_blue);
+    5: return string(str_livery_filtrak);
+    return CB_RESULT_NO_TEXT;
 }
 
 
@@ -2036,6 +2090,7 @@ item (FEAT_TRAINS, item_diesel_class_5000) {
   refit_cost: 0;
   track_type: NAAN;
 
+
   running_cost_base: RUNNING_COST_DIESEL;
   engine_class: ENGINE_CLASS_DIESEL;
   visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
@@ -2044,12 +2099,17 @@ item (FEAT_TRAINS, item_diesel_class_5000) {
   dual_headed: 0;
   length: 7;
 
+  cargo_capacity: 1;
+  cargo_allow_refit: [PASS];
+
    }
 
    graphics {
   
       purchase: switch_class_5000_purchase;
-      default: switch_class_5000;
+   default: switch_class_5000;
+   cargo_subtype_text: switch_livery_text_5000;
+   cargo_capacity: return 0;
 
    }
 
@@ -2203,7 +2263,7 @@ switch (FEAT_TRAINS, PARENT, switch_class_2500_purchase, current_date ) {
     set_class_2500_purchase_2011;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_class_2500 , date_of_last_service ) {
+switch (FEAT_TRAINS, PARENT, switch_class_2500_auto , date_of_last_service ) {
     0..date(1969,12,31): set_class_2500_1965;
     date(1970,1,1)..date(1996,12,31): set_class_2500_1970;
     date(1997,1,1)..date(2000,12,31): set_class_2500_1997;
@@ -2211,6 +2271,26 @@ switch (FEAT_TRAINS, PARENT, switch_class_2500 , date_of_last_service ) {
     date(2009,1,1)..date(2010,12,31): set_class_2500_2009;
     date(2011,1,1)..date(2019,12,31): set_class_2500_2011;
     set_class_2500_2011;
+}
+
+
+switch(FEAT_TRAINS, SELF, switch_class_2500, cargo_subtype) {
+ 1: set_class_2500_1965;
+    2: set_class_2500_1970;
+    3: set_class_2500_1997;
+    4: set_class_2500_2000;
+    5: set_class_2500_2009;
+    switch_class_2500_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_livery_text_2500, cargo_subtype) {
+    0: return string(str_livery_auto);
+ 1: return string(str_livery_mrr_yellow_green);
+    2: return string(str_livery_pnr_green);
+    3: return string(str_livery_philippines_2000);
+    4: return string(str_livery_pnr_navy_blue);
+    5: return string(str_livery_filtrak);
+    return CB_RESULT_NO_TEXT;
 }
 
 
@@ -2266,12 +2346,17 @@ item (FEAT_TRAINS, item_diesel_class_2500) {
   dual_headed: 0;
   length: 7;
 
+  cargo_capacity: 1;
+  cargo_allow_refit: [PASS];
+
    }
 
    graphics {
   
       purchase: switch_class_2500_purchase;
       default: switch_class_2500;
+   cargo_subtype_text: switch_livery_text_2500;
+   cargo_capacity: return 0;
 
    }
 
@@ -2430,7 +2515,7 @@ switch (FEAT_TRAINS, PARENT, switch_class_900_purchase, current_date ) {
     set_class_900_purchase_2020;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_class_900 , date_of_last_service ) {
+switch (FEAT_TRAINS, PARENT, switch_class_900_auto , date_of_last_service ) {
     0..date(1996,12,31): set_class_900_1973;
     date(1997,1,1)..date(2000,12,31): set_class_900_1997;
     date(2001,1,1)..date(2008,12,31): set_class_900_2000;
@@ -2439,6 +2524,26 @@ switch (FEAT_TRAINS, PARENT, switch_class_900 , date_of_last_service ) {
     date(2020,1,1)..date(2050,12,31): set_class_900_2020;
     set_class_900_2020;
 }
+
+switch(FEAT_TRAINS, SELF, switch_class_900, cargo_subtype) {
+ 1: set_class_900_1973;
+    2: set_class_900_1997;
+    3: set_class_900_2000;
+    4: set_class_900_2009;
+    5: set_class_900_2020;
+    switch_class_900_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_livery_text_900, cargo_subtype) {
+    0: return string(str_livery_auto);
+    1: return string(str_livery_pnr_green);
+    2: return string(str_livery_philippines_2000);
+    3: return string(str_livery_pnr_navy_blue);
+    4: return string(str_livery_filtrak);
+    5: return string(str_livery_pnr_orange);
+    return CB_RESULT_NO_TEXT;
+}
+
 
 switch (FEAT_TRAINS, PARENT, switch_class_900_variant, date_of_last_service) {
     0..date(1996,12,31): string(str_variant_u14c);
@@ -2506,6 +2611,9 @@ item (FEAT_TRAINS, item_diesel_class_900) {
   dual_headed: 0;
   length: 8;
 
+  cargo_capacity: 1;
+  cargo_allow_refit: [PASS];
+
    }
 
    graphics {
@@ -2514,6 +2622,8 @@ item (FEAT_TRAINS, item_diesel_class_900) {
    power: switch_class_900_power;
       purchase: switch_class_900_purchase;
       default: switch_class_900;
+   cargo_subtype_text: switch_livery_text_900;
+   cargo_capacity: return 0;
 
    }
 
@@ -2853,6 +2963,60 @@ switch(FEAT_TRAINS, SELF, switch_dmu_cmc_300_reversed_1978, var[0xC8]) {
     set_cmc_300_front_1978;
 }
 
+//1990 Livery
+spriteset(set_cmc_300_purchase_1990, "gfx/DMU/CMC_300/DMU_CMC_300_1990.png") {
+  template_mu_purchase(1, 106)
+}
+
+spriteset(set_cmc_300_front_1990, "gfx/DMU/CMC_300/DMU_CMC_300_1990.png") {
+    template_standard(1, 1)
+}
+
+spriteset(set_cmc_300_back_1990, "gfx/DMU/CMC_300/DMU_CMC_300_1990.png") {
+    template_standard(1, 32)
+   }
+
+
+spriteset (set_cmc_300_pass_car_1990, "gfx/DMU/CMC_300/DMU_CMC_300_1990.png") {
+    template_standard(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_cmc_300_pass_cargo_1990, cargo_classes){
+ bitmask(CC_PASSENGERS): set_cmc_300_pass_car_1990;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_cmc_300_reversed_1990, var[0xC8]) {
+  0xFE: set_cmc_300_back_1990;
+    0xFF: set_cmc_300_back_1990;
+    set_cmc_300_front_1990;
+}
+//Mayon Limited Livery
+spriteset(set_cmc_300_purchase_mayon_limited, "gfx/DMU/CMC_300/DMU_CMC_300_mayon_limited.png") {
+  template_mu_purchase(1, 106)
+}
+
+spriteset(set_cmc_300_front_mayon_limited, "gfx/DMU/CMC_300/DMU_CMC_300_mayon_limited.png") {
+    template_standard(1, 1)
+}
+
+spriteset(set_cmc_300_back_mayon_limited, "gfx/DMU/CMC_300/DMU_CMC_300_mayon_limited.png") {
+    template_standard(1, 32)
+   }
+
+
+spriteset (set_cmc_300_pass_car_mayon_limited, "gfx/DMU/CMC_300/DMU_CMC_300_mayon_limited.png") {
+    template_standard(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_cmc_300_pass_cargo_mayon_limited, cargo_classes){
+ bitmask(CC_PASSENGERS): set_cmc_300_pass_car_mayon_limited;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_cmc_300_reversed_mayon_limited, var[0xC8]) {
+  0xFE: set_cmc_300_back_mayon_limited;
+    0xFF: set_cmc_300_back_mayon_limited;
+    set_cmc_300_front_mayon_limited;
+}
 
 //Autolivery change
 
@@ -2862,17 +3026,47 @@ switch (FEAT_TRAINS, PARENT, switch_cmc_300_purchase, current_date ) {
     set_cmc_300_purchase_1978;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_cmc_300_head_cars, date_of_last_service ) {
+switch (FEAT_TRAINS, PARENT, switch_cmc_300_head_cars_auto, date_of_last_service ) {
     0..date(1978,12,31): switch_dmu_cmc_300_reversed_1974;
-    date(1978,1,1)..date(2050,1,1): switch_dmu_cmc_300_reversed_1978;
-    switch_dmu_cmc_300_reversed_1978;
+    date(1978,1,1)..date(1989,12,31): switch_dmu_cmc_300_reversed_1978;
+    date(1990,1,1)..date(2000,12,31): switch_dmu_cmc_300_reversed_1990;
+    switch_dmu_cmc_300_reversed_1990;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_cmc_300_pass_cars, date_of_last_service ) {
+switch (FEAT_TRAINS, PARENT, switch_cmc_300_pass_cars_auto, date_of_last_service ) {
     0..date(1978,12,31): switch_cmc_300_pass_cargo_1974;
-    date(1978,1,1)..date(2050,1,1): switch_cmc_300_pass_cargo_1978;
-    switch_cmc_300_pass_cargo_1978;
+    date(1978,1,1)..date(1989,12,31): switch_cmc_300_pass_cargo_1978;
+    date(1990,1,1)..date(2000,12,31): switch_cmc_300_pass_cargo_1990;
+    switch_cmc_300_pass_cargo_1990;
 }
+
+
+//Manual Livery Change
+switch(FEAT_TRAINS, SELF, switch_cmc_300_head_cars, cargo_subtype) {
+ 1: switch_dmu_cmc_300_reversed_1974;
+    2: switch_dmu_cmc_300_reversed_1978;
+    3: switch_dmu_cmc_300_reversed_1990;
+    4: switch_dmu_cmc_300_reversed_mayon_limited;
+    switch_cmc_300_head_cars_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_cmc_300_pass_cars, cargo_subtype) {
+ 1: switch_cmc_300_pass_cargo_1974;
+    2: switch_cmc_300_pass_cargo_1978;
+    3: switch_cmc_300_pass_cargo_1990;
+    4: switch_cmc_300_pass_cargo_mayon_limited;
+    switch_cmc_300_pass_cars_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_livery_text_cmc_300, cargo_subtype) {
+    0: return string(str_livery_auto);
+    1: return string(str_livery_mrr_yellow);
+    2: return string(str_livery_pnr_navy_blue);
+    3: return string(str_livery_metrotren);
+    4: return string(str_livery_mayon_limited);
+    return CB_RESULT_NO_TEXT;
+}
+
 
 
 
@@ -2927,7 +3121,7 @@ item (FEAT_TRAINS, item_dmu_cmc_300) {
 
   reliability_decay: 20;
   refittable_cargo_classes: bitmask(CC_PASSENGERS); non_refittable_cargo_classes: 0;
-  misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
+  misc_flags: bitmask(TRAIN_FLAG_MU);
   refit_cost: 0;
   track_type: NAAN;
 
@@ -2946,6 +3140,7 @@ item (FEAT_TRAINS, item_dmu_cmc_300) {
       cargo_capacity: switch_dmu_cmc_300_capacity_engine;
       purchase: switch_cmc_300_purchase;
       default: switch_cmc_300_head_cars;
+   cargo_subtype_text: switch_livery_text_cmc_300;
 
    }
 
@@ -2957,6 +3152,7 @@ item (FEAT_TRAINS, item_dmu_cmc_300) {
   weight: int(35*1/8);
   cargo_age_period: 185;
   default: switch_cmc_300_pass_cars;
+  cargo_subtype_text: switch_livery_text_cmc_300;
    }
 
    livery_override (item_pnr_mu_coach_powered) {
@@ -2969,6 +3165,7 @@ item (FEAT_TRAINS, item_dmu_cmc_300) {
   tractive_effort_coefficient: int(0.3*10*35);
   cargo_age_period: 185;
   default: switch_cmc_300_pass_cars;
+  cargo_subtype_text: switch_livery_text_cmc_300;
    }
 
 }
@@ -3043,33 +3240,33 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-//2011 Livery
+//2015 Livery
 
-spriteset(set_kiha_35_purchase_2011, "gfx/DMU/KIHA_35/DMU_KIHA_35_2011.png") {
+spriteset(set_kiha_35_purchase_2015, "gfx/DMU/KIHA_35/DMU_KIHA_35_2015.png") {
   template_mu_purchase(1, 106)
 }
 
-spriteset(set_kiha_35_front_2011, "gfx/DMU/KIHA_35/DMU_KIHA_35_2011.png") {
+spriteset(set_kiha_35_front_2015, "gfx/DMU/KIHA_35/DMU_KIHA_35_2015.png") {
     template_standard(1, 1)
 }
 
-spriteset(set_kiha_35_back_2011, "gfx/DMU/KIHA_35/DMU_KIHA_35_2011.png") {
+spriteset(set_kiha_35_back_2015, "gfx/DMU/KIHA_35/DMU_KIHA_35_2015.png") {
     template_standard(1, 32)
    }
 
 
-spriteset (set_kiha_35_pass_car_2011, "gfx/DMU/KIHA_35/DMU_KIHA_35_2011.png") {
+spriteset (set_kiha_35_pass_car_2015, "gfx/DMU/KIHA_35/DMU_KIHA_35_2015.png") {
     template_standard(1, 64)
 }
 
-switch(FEAT_TRAINS, SELF, switch_kiha_35_pass_cargo_2011, cargo_classes){
- bitmask(CC_PASSENGERS): set_kiha_35_pass_car_2011;
+switch(FEAT_TRAINS, SELF, switch_kiha_35_pass_cargo_2015, cargo_classes){
+ bitmask(CC_PASSENGERS): set_kiha_35_pass_car_2015;
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_kiha_35_reversed_2011, var[0xC8]) {
-  0xFE: set_kiha_35_back_2011;
-    0xFF: set_kiha_35_back_2011;
-    set_kiha_35_front_2011;
+switch(FEAT_TRAINS, SELF, switch_dmu_kiha_35_reversed_2015, var[0xC8]) {
+  0xFE: set_kiha_35_back_2015;
+    0xFF: set_kiha_35_back_2015;
+    set_kiha_35_front_2015;
 }
 
 //2020 Lviery
@@ -3105,21 +3302,41 @@ switch(FEAT_TRAINS, SELF, switch_dmu_kiha_35_reversed_2020, var[0xC8]) {
 //Autolivery change
 
 switch (FEAT_TRAINS, PARENT, switch_kiha_35_purchase, current_date ) {
-    0..date(2019,12,31): set_kiha_35_purchase_2011;
+    0..date(2019,12,31): set_kiha_35_purchase_2015;
     date(2020,1,1)..date(2050,1,1): set_kiha_35_purchase_2020;
     set_kiha_35_purchase_2020;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_kiha_35_head_cars, date_of_last_service ) {
-    0..date(2019,12,31): switch_dmu_kiha_35_reversed_2011;
+switch (FEAT_TRAINS, PARENT, switch_kiha_35_head_cars_auto, date_of_last_service ) {
+    0..date(2019,12,31): switch_dmu_kiha_35_reversed_2015;
     date(2020,1,1)..date(2050,1,1): switch_dmu_kiha_35_reversed_2020;
     switch_dmu_kiha_35_reversed_2020;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_kiha_35_pass_cars, date_of_last_service ) {
-    0..date(2019,12,31): switch_kiha_35_pass_cargo_2011;
+switch (FEAT_TRAINS, PARENT, switch_kiha_35_pass_cars_auto, date_of_last_service ) {
+    0..date(2019,12,31): switch_kiha_35_pass_cargo_2015;
     date(2020,1,1)..date(2050,1,1): switch_kiha_35_pass_cargo_2020;
     switch_kiha_35_pass_cargo_2020;
+}
+
+//Manual Livery Change
+switch(FEAT_TRAINS, SELF, switch_kiha_35_head_cars, cargo_subtype) {
+    1: switch_dmu_kiha_35_reversed_2015;
+    2: switch_dmu_kiha_35_reversed_2020;
+    switch_kiha_35_head_cars_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_kiha_35_pass_cars, cargo_subtype) {
+ 1: switch_kiha_35_pass_cargo_2015;
+    2: switch_kiha_35_pass_cargo_2020;
+    switch_kiha_35_pass_cars_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_livery_text_kiha_35, cargo_subtype) {
+    0: return string(str_livery_auto);
+    1: return string(str_livery_pnr_navy_blue);
+    2: return string(str_livery_pnr_2020);
+    return CB_RESULT_NO_TEXT;
 }
 
 
@@ -3194,6 +3411,7 @@ item (FEAT_TRAINS, item_dmu_kiha_35) {
       cargo_capacity: switch_dmu_kiha_35_capacity_engine;
       purchase: switch_kiha_35_purchase;
       default: switch_kiha_35_head_cars;
+   cargo_subtype_text: switch_livery_text_kiha_35;
 
    }
 
@@ -3205,6 +3423,7 @@ item (FEAT_TRAINS, item_dmu_kiha_35) {
   weight: int(30*1/8);
   cargo_age_period: 185;
   default: switch_kiha_35_pass_cars;
+  cargo_subtype_text: switch_livery_text_kiha_35;
    }
 
    livery_override (item_pnr_mu_coach_powered) {
@@ -3217,6 +3436,7 @@ item (FEAT_TRAINS, item_dmu_kiha_35) {
   tractive_effort_coefficient: int(0.3*10*30);
   cargo_age_period: 185;
   default: switch_kiha_35_pass_cars;
+  cargo_subtype_text: switch_livery_text_kiha_35;
    }
 
 }
@@ -3358,16 +3578,36 @@ switch (FEAT_TRAINS, PARENT, switch_kiha_59_purchase, current_date ) {
     set_kiha_59_purchase_2020;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_kiha_59_head_cars, date_of_last_service ) {
+switch (FEAT_TRAINS, PARENT, switch_kiha_59_head_cars_auto, date_of_last_service ) {
     0..date(2019,12,31): switch_dmu_kiha_59_reversed_2012;
     date(2020,1,1)..date(2050,1,1): switch_dmu_kiha_59_reversed_2020;
     switch_dmu_kiha_59_reversed_2020;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_kiha_59_pass_cars, date_of_last_service ) {
+switch (FEAT_TRAINS, PARENT, switch_kiha_59_pass_cars_auto, date_of_last_service ) {
     0..date(2019,12,31): switch_kiha_59_pass_cargo_2012;
     date(2020,1,1)..date(2050,1,1): switch_kiha_59_pass_cargo_2020;
     switch_kiha_59_pass_cargo_2020;
+}
+
+//Manual Livery Change
+switch(FEAT_TRAINS, SELF, switch_kiha_59_head_cars, cargo_subtype) {
+    1: switch_dmu_kiha_59_reversed_2012;
+    2: switch_dmu_kiha_59_reversed_2020;
+    switch_kiha_59_head_cars_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_kiha_59_pass_cars, cargo_subtype) {
+ 1: switch_kiha_59_pass_cargo_2012;
+    2: switch_kiha_59_pass_cargo_2020;
+    switch_kiha_59_pass_cars_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_livery_text_kiha_59, cargo_subtype) {
+    0: return string(str_livery_auto);
+    1: return string(str_livery_premire_train_2012);
+    2: return string(str_livery_pnr_2020);
+    return CB_RESULT_NO_TEXT;
 }
 
 
@@ -3442,6 +3682,7 @@ item (FEAT_TRAINS, item_dmu_kiha_59) {
       cargo_capacity: switch_dmu_kiha_59_capacity_engine;
       purchase: switch_kiha_59_purchase;
       default: switch_kiha_59_head_cars;
+   cargo_subtype_text: switch_livery_text_kiha_59;
 
    }
 
@@ -3453,6 +3694,7 @@ item (FEAT_TRAINS, item_dmu_kiha_59) {
   weight: int(35*1/8);
   cargo_age_period: 100;
   default: switch_kiha_59_pass_cars;
+  cargo_subtype_text: switch_livery_text_kiha_59;
 
    }
 
@@ -3466,6 +3708,7 @@ item (FEAT_TRAINS, item_dmu_kiha_59) {
   tractive_effort_coefficient: int(0.3*10*35);
   cargo_age_period: 100;
   default: switch_kiha_59_pass_cars;
+  cargo_subtype_text: switch_livery_text_kiha_59;
    }
 
 
@@ -3628,20 +3871,42 @@ switch (FEAT_TRAINS, PARENT, switch_hyundai_rotem_purchase, current_date ) {
     set_hyundai_rotem_purchase_2020;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_hyundai_rotem_head_cars, date_of_last_service ) {
+switch (FEAT_TRAINS, PARENT, switch_hyundai_rotem_head_cars_auto, date_of_last_service ) {
      0..date(2010,12,31): switch_dmu_hyundai_rotem_reversed_2009;
     date(2011,1,1)..date(2019,12,31): switch_dmu_hyundai_rotem_reversed_2011;
     date(2020,1,1)..date(2050,12,31): switch_dmu_hyundai_rotem_reversed_2020;
     switch_dmu_hyundai_rotem_reversed_2020;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_hyundai_rotem_pass_cars, date_of_last_service ) {
+switch (FEAT_TRAINS, PARENT, switch_hyundai_rotem_pass_cars_auto, date_of_last_service ) {
     0..date(2010,12,31): switch_hyundai_rotem_pass_cargo_2009;
     date(2011,1,1)..date(2019,12,31): switch_hyundai_rotem_pass_cargo_2011;
     date(2020,1,1)..date(2050,12,31): switch_hyundai_rotem_pass_cargo_2020;
     switch_hyundai_rotem_pass_cargo_2020;
 }
 
+//Manual Livery Change
+switch(FEAT_TRAINS, SELF, switch_hyundai_rotem_head_cars, cargo_subtype) {
+  1: switch_dmu_hyundai_rotem_reversed_2009;
+    2: switch_dmu_hyundai_rotem_reversed_2011;
+    3: switch_dmu_hyundai_rotem_reversed_2020;
+    switch_hyundai_rotem_head_cars_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_hyundai_rotem_pass_cars, cargo_subtype) {
+  1: switch_hyundai_rotem_pass_cargo_2009;
+    2: switch_hyundai_rotem_pass_cargo_2011;
+    3: switch_hyundai_rotem_pass_cargo_2020;
+    switch_hyundai_rotem_pass_cars_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_livery_text_hyundai_rotem, cargo_subtype) {
+    0: return string(str_livery_auto);
+    1: return string(str_livery_filtrak);
+    2: return string(str_livery_pnr_navy_blue);
+    3: return string(str_livery_pnr_2020);
+    return CB_RESULT_NO_TEXT;
+}
 
 
 switch(FEAT_TRAINS, SELF, switch_dmu_hyundai_rotem_capacity_engine, cargo_classes) { bitmask(CC_MAIL): 167/2; bitmask(CC_ARMOURED): 167/4; 167; }
@@ -3714,6 +3979,7 @@ item (FEAT_TRAINS, item_dmu_hyundai_rotem) {
       cargo_capacity: switch_dmu_hyundai_rotem_capacity_engine;
       purchase: switch_hyundai_rotem_purchase;
       default: switch_hyundai_rotem_head_cars;
+   cargo_subtype_text: switch_livery_text_hyundai_rotem;
 
    }
 
@@ -3725,6 +3991,7 @@ item (FEAT_TRAINS, item_dmu_hyundai_rotem) {
   weight: int(43.5*1/8);
   cargo_age_period: 185;
   default: switch_hyundai_rotem_pass_cars;
+  cargo_subtype_text: switch_livery_text_hyundai_rotem;
    }
 
    livery_override (item_pnr_mu_coach_powered) {
@@ -3737,6 +4004,7 @@ item (FEAT_TRAINS, item_dmu_hyundai_rotem) {
   tractive_effort_coefficient: int(0.3*10*43.5);
   cargo_age_period: 185;
   default: switch_hyundai_rotem_pass_cars;
+  cargo_subtype_text: switch_livery_text_hyundai_rotem;
    }
 
 

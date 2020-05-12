@@ -48,7 +48,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 #define DUAL_HEADED 0
 #define PASSENGER 1
-#define MISC_FLAGS bitmask(TRAIN_FLAG_2CC)
+#define MISC_FLAGS bitmask(TRAIN_FLAG_MU)
 #define VISUAL_FLAG visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER)
 
 

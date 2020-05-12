@@ -85,16 +85,36 @@ switch (FEAT_TRAINS, PARENT, switch_kiha_59_purchase, current_date ) {
     set_kiha_59_purchase_2020;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_kiha_59_head_cars, date_of_last_service ) {
+switch (FEAT_TRAINS, PARENT, switch_kiha_59_head_cars_auto, date_of_last_service ) {
     0..date(2019,12,31): switch_dmu_kiha_59_reversed_2012;
     date(2020,1,1)..date(2050,1,1): switch_dmu_kiha_59_reversed_2020;
     switch_dmu_kiha_59_reversed_2020;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_kiha_59_pass_cars, date_of_last_service ) {
+switch (FEAT_TRAINS, PARENT, switch_kiha_59_pass_cars_auto, date_of_last_service ) {
     0..date(2019,12,31): switch_kiha_59_pass_cargo_2012;
     date(2020,1,1)..date(2050,1,1): switch_kiha_59_pass_cargo_2020;
     switch_kiha_59_pass_cargo_2020;
+}
+
+//Manual Livery Change
+switch(FEAT_TRAINS, SELF, switch_kiha_59_head_cars, cargo_subtype) {
+    1: switch_dmu_kiha_59_reversed_2012;
+    2: switch_dmu_kiha_59_reversed_2020;
+    switch_kiha_59_head_cars_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_kiha_59_pass_cars, cargo_subtype) {
+	1: switch_kiha_59_pass_cargo_2012;
+    2: switch_kiha_59_pass_cargo_2020;
+    switch_kiha_59_pass_cars_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_livery_text_kiha_59, cargo_subtype) {
+    0: return string(str_livery_auto);
+    1: return string(str_livery_premire_train_2012);
+    2: return string(str_livery_pnr_2020);
+    return CB_RESULT_NO_TEXT;
 }
 
 
