@@ -114,7 +114,7 @@ spritegroup flat_wagon_10 {
 }
 
 //Randomizer groups
-random_switch (FEAT_TRAINS, SELF, flat_wagon) {
+random_switch (FEAT_TRAINS, SELF, flat_wagon, bitmask(TRIGGER_VEHICLE_NEW_LOAD)) {
         1: flat_wagon_10;
         1: flat_wagon_9;
         1: flat_wagon_8;
