@@ -18,24 +18,16 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
+//1999 Livery
+spriteset(set_SERIES_14_SLEEPER_purchase, "gfx/COACHES/SERIES_14_SLEEPER/SERIES_14_SLEEPER.png") {
+  template_coach_purchase(1,106) 
+}
 
-//No cargo vehicles
-#define NO_LOAD 0
 
-//Intercity vehicles
-#define LOAD_INTERCITY 20
+spriteset (set_SERIES_14_SLEEPER, "gfx/COACHES/SERIES_14_SLEEPER/SERIES_14_SLEEPER.png") {
+    template_standard(1, 64)
 
-//Sleeper cars
-#define LOAD_SLEEPER 15
+}
 
-//Commuter vehicles
-#define LOAD_COMMUTER 40
+RUNNING_COST_ENGINE
 
-//Metro vehicles
-#define LOAD_METRO 120
-
-//Cargo vehicles
-#define LOAD_CARGO 20
-
-//Mail vehicles
-#define LOAD_MAIL 15

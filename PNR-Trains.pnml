@@ -73,6 +73,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/Coaches/7A_2000_properties.pnml"
 #include "src/Coaches/7A_2000_graphics.pnml"
 #include "src/Coaches/7A_2000_item.pnml"
+#include "src/Coaches/SERIES_14_SLEEPER_properties.pnml"
+#include "src/Coaches/SERIES_14_SLEEPER_graphics.pnml"
+#include "src/Coaches/SERIES_14_SLEEPER_item.pnml"
 //Wagons
 #include "src/Wagons/flat_wagon_properties.pnml"
 #include "src/Wagons/flat_wagon_graphics.pnml"

@@ -1,5 +1,29 @@
 Changelog for PNR-Trains
 
+0.9.0-beta-public 
+    *Added Series 14 Sleeper
+
+0.8.5-beta-public 
+    *Adjusted loading speed for Intercity trains
+    *Added properties for sleeper cars
+    *Added 2 liveries for the 7A-2000 coach (available through manual livery switch only)
+
+0.8.4-beta-public
+    *New randomizer behavior for Flat wagons
+
+0.8.3-beta-public
+    *Fixed 7A-2000 purchase sprite
+    *Fixed CMC-300 purchase sprite
+
+0.8.2-beta-public
+    *Fixed MU Coach purchase sprites
+    
+0.8.1-beta-public
+    *Fixed Nikko DMU display name
+
+0.8.0-beta-public
+    *Added Nikko DMU
+
 0.7.3-beta-public
     *Added generic Multiple Unit coach sprites
     *Update MU coach purchase graphics

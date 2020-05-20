@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : PNR Trains 0.8.3-beta-public
+STR_GRF_NAME        : PNR Trains 0.9.0-beta-public
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
 
 #Diesel Locomotives
@@ -45,6 +45,7 @@ STR_DMU_HYUNDAI_ROTEM : PNR Hyundai Rotem DMU
 STR_203_COACH         : 203 Series Coach
 STR_7A_100            : 7A-100
 STR_7A_2000           : 7A-2000
+STR_SERIES_14_SLEEPER : Series 14 Family Sleeper
 STR_203_GENERATOR_CAR : 203 Series Generator Car
 STR_MU_COACH_UNPOWERED: PNR MU Coach Unpowered
 STR_MU_COACH_POWERED  : PNR MU Coach Powered
@@ -73,3 +74,5 @@ str_livery_mayon_limited       : Mayon Limited
 str_livery_premire_train_2012  : Premiere Train 2012
 str_livery_penafrancia_express : Peñafrancia Express
 str_livery_prestige_express    : Prestige Express
+str_livery_bicol_express       : Bicol Express
+str_livery_northrail           : NorthRail

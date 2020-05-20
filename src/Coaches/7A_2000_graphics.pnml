@@ -38,6 +38,15 @@ spriteset (set_7A_2000_2009, "gfx/COACHES/7A_2000/7A_2000_2009.png") {
     template_standard(1, 64)
 }
 
+//Bicol Express livery
+spriteset (set_7A_2000_BICOL_EXPRESS, "gfx/COACHES/7A_2000/7A_2000_BICOL_EXPRESS.png") {
+    template_standard(1, 64)
+}
+
+//Northrail livery
+spriteset (set_7A_2000_NORTHRAIL, "gfx/COACHES/7A_2000/7A_2000_NORTHRAIL.png") {
+    template_standard(1, 64)
+}
 
 
 //Auto livery change
@@ -52,16 +61,22 @@ switch (FEAT_TRAINS, PARENT, switch_7A_2000_auto, date_of_last_service ) {
     date(2009,1,1)..date(2010,12,31): set_7A_2000_2009;
     set_7A_2000_1999;
 }
+
+//Manual livery change
  switch(FEAT_TRAINS, SELF, switch_7A_2000, cargo_subtype) {
    	1: set_7A_2000_1999;
     2: set_7A_2000_2009;
+    3: set_7A_2000_BICOL_EXPRESS;
+    4: set_7A_2000_NORTHRAIL;
     switch_7A_2000_auto;
 }
 
 switch(FEAT_TRAINS, SELF, switch_livery_text_7A_2000, cargo_subtype) {
     0: return string(str_livery_auto);
-	  1: return string(str_livery_pnr_navy_blue);
+	1: return string(str_livery_pnr_navy_blue);
     2: return string(str_livery_filtrak);
+    3: return string(str_livery_bicol_express);
+    4: return string(str_livery_northrail);
     return CB_RESULT_NO_TEXT;
 }
 
