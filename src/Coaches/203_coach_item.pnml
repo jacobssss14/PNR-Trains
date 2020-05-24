@@ -53,7 +53,8 @@ item(FEAT_TRAINS, ITEM) {
    }
    graphics {
       purchase: set_203_coach_purchase;
-      default: set_203_coach;
+      default: switch_203_coach;
+	  cargo_subtype_text: switch_livery_text_203_coach;
 	  RUNNING_COST_ENGINE_CALL
    }
 

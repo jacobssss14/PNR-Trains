@@ -116,14 +116,14 @@ switch (FEAT_TRAINS, PARENT, switch_nikko_purchase, current_date ) {
 }
 
 switch (FEAT_TRAINS, PARENT, switch_nikko_head_cars_auto, date_of_last_service ) {
-    0..date(2019,12,31): switch_dmu_nikko_reversed_1974;
+    0..date(1980,12,31): switch_dmu_nikko_reversed_1974;
     date(1981,1,1)..date(1989,12,31): switch_dmu_nikko_reversed_1981;
     date(1990,1,1)..date(2050,1,1): switch_dmu_nikko_reversed_1981;
     switch_dmu_nikko_reversed_1981;
 }
 
 switch (FEAT_TRAINS, PARENT, switch_nikko_pass_cars_auto, date_of_last_service ) {
-    0..date(2019,12,31): switch_nikko_pass_cargo_1974;
+    0..date(1980,12,31): switch_nikko_pass_cargo_1974;
     date(1981,1,1)..date(1989,12,31): switch_nikko_pass_cargo_1981;
     date(1990,1,1)..date(2050,1,1): switch_nikko_pass_cargo_1990;
     switch_nikko_pass_cargo_1990;

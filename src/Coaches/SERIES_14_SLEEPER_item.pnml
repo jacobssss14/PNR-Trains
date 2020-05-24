@@ -56,7 +56,7 @@ item (FEAT_TRAINS, ITEM) {
 
      graphics {  
       purchase: set_SERIES_14_SLEEPER_purchase;
-      default: set_SERIES_14_SLEEPER_purchase;
+      default: set_SERIES_14_SLEEPER;
 
       RUNNING_COST_ENGINE_CALL
    }

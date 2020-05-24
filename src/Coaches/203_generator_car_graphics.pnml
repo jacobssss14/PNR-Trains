@@ -24,9 +24,32 @@ spriteset (set_203_generator_car_purchase, "gfx/COACHES/203_GEN_CAR/203_GEN_CAR.
 
 
 spriteset (set_203_generator_car, "gfx/COACHES/203_GEN_CAR/203_GEN_CAR.png") {
-    template_others(1,32)
+    template_others(1,64)
 }
 
+//Other Liveries
 
+spriteset (set_203_generator_car_orange, "gfx/COACHES/203_GEN_CAR/203_GEN_CAR.png") {
+    template_diesel(1,1)
+}
+
+spriteset (set_203_generator_car_green, "gfx/COACHES/203_GEN_CAR/203_GEN_CAR.png") {
+    template_diesel(1,32)
+}
+
+//Manual livery swtich
+
+switch(FEAT_TRAINS, SELF, switch_203_generator_car, cargo_subtype) {
+   	1: set_203_generator_car_orange;
+    2: set_203_generator_car_green;
+    set_203_generator_car;
+}
+
+switch(FEAT_TRAINS, SELF, switch_livery_text_203_generator_car, cargo_subtype) {
+    0: return string(str_livery_pnr_navy_blue);
+	1: return string(str_livery_203_orange);
+    2: return string(str_livery_203_green);
+    return CB_RESULT_NO_TEXT;
+}
 
 RUNNING_COST_ENGINE

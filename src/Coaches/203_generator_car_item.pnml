@@ -52,8 +52,9 @@ item(FEAT_TRAINS, ITEM) {
       
    }
    graphics {
-	   purchase: set_203_generator_car_purchase;
-      default: set_203_generator_car;
+	  purchase: set_203_generator_car_purchase;
+      default: switch_203_generator_car;
+	  cargo_subtype_text: switch_livery_text_203_generator_car;
 	  RUNNING_COST_ENGINE_CALL
    }
 }

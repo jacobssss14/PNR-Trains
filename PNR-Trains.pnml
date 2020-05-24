@@ -55,27 +55,42 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //Coaches
 #include "src/init/init_coach.pnml"
+
+//MU Coach Powered
 #include "src/Coaches/pnr_mu_coach_powered_graphics.pnml"
 #include "src/Coaches/pnr_mu_coach_powered_properties.pnml"
 #include "src/Coaches/pnr_mu_coach_powered_item.pnml"
+
+//MU Coach Unpowered
 #include "src/Coaches/pnr_mu_coach_unpowered_graphics.pnml"
 #include "src/Coaches/pnr_mu_coach_unpowered_properties.pnml"
 #include "src/Coaches/pnr_mu_coach_unpowered_item.pnml"
+
+// 203 Series Generator Car
 #include "src/Coaches/203_generator_car_graphics.pnml"
 #include "src/Coaches/203_generator_car_properties.pnml"
 #include "src/Coaches/203_generator_car_item.pnml"
+
+//203 Series Coach
 #include "src/Coaches/203_coach_graphics.pnml"
 #include "src/Coaches/203_coach_properties.pnml"
 #include "src/Coaches/203_coach_item.pnml"
+
+//7A-100
 #include "src/Coaches/7A_100_graphics.pnml"
 #include "src/Coaches/7A_100_properties.pnml"
 #include "src/Coaches/7A_100_item.pnml"
+
+//7A-2000
 #include "src/Coaches/7A_2000_properties.pnml"
 #include "src/Coaches/7A_2000_graphics.pnml"
 #include "src/Coaches/7A_2000_item.pnml"
+
+//Series 14 Sleeper
 #include "src/Coaches/SERIES_14_SLEEPER_properties.pnml"
 #include "src/Coaches/SERIES_14_SLEEPER_graphics.pnml"
 #include "src/Coaches/SERIES_14_SLEEPER_item.pnml"
+
 //Wagons
 #include "src/Wagons/flat_wagon_properties.pnml"
 #include "src/Wagons/flat_wagon_graphics.pnml"
