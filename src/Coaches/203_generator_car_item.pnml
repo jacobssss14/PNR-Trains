@@ -22,7 +22,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 item(FEAT_TRAINS, ITEM) {
 	property {
 		name: NAME;
-      climates_available: CLIMATE;
+        climates_available: CLIMATE;
 		INTRODUCTIONDATEPROPERTY
 		model_life: MODEL_LIFE;
 		vehicle_life: VEHICLE_LIFE; 
