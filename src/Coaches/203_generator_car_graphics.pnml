@@ -24,17 +24,17 @@ spriteset (set_203_generator_car_purchase, "gfx/COACHES/203_GEN_CAR/203_GEN_CAR.
 
 
 spriteset (set_203_generator_car, "gfx/COACHES/203_GEN_CAR/203_GEN_CAR.png") {
-    template_standard(1,64)
+    template_others(1,64)
 }
 
 //Other Liveries
 
 spriteset (set_203_generator_car_orange, "gfx/COACHES/203_GEN_CAR/203_GEN_CAR.png") {
-    template_standard(1,1)
+    template_others(1,1)
 }
 
 spriteset (set_203_generator_car_green, "gfx/COACHES/203_GEN_CAR/203_GEN_CAR.png") {
-    template_standard(1,32)
+    template_others(1,32)
 }
 
 //Manual livery swtich
