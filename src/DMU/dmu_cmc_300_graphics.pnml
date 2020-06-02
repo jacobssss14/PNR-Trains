@@ -175,7 +175,7 @@ switch(FEAT_TRAINS, SELF, switch_cmc_300_pass_cars, cargo_subtype) {
 switch(FEAT_TRAINS, SELF, switch_livery_text_cmc_300, cargo_subtype) {
     0: return string(str_livery_auto);
     1: return string(str_livery_mrr_yellow);
-    2: return string(str_livery_pnr_navy_blue);
+    2: return string(str_livery_metro_manila_commuter);
     3: return string(str_livery_metrotren);
     4: return string(str_livery_mayon_limited);
     return CB_RESULT_NO_TEXT;

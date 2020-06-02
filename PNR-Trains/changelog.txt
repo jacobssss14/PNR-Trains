@@ -1,4 +1,8 @@
 Changelog for PNR-Trains
+0.9.4-beta-public
+    *Fixed CMC 300 livery name 
+    *Added reworked Class 900 graphics
+    *Added Luster livery to the Nikko DMU (Manual livery only)
 
 0.9.3-beta-public
     *Fixed additional 203 Series Generator Car glitches

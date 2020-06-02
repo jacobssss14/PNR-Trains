@@ -3225,6 +3225,29 @@ switch(FEAT_TRAINS, SELF, switch_dmu_nikko_reversed_1990, var[0xC8]) {
     set_nikko_front_1990;
 }
 
+//Luster Livery
+spriteset(set_nikko_front_luster, "gfx/DMU/nikko/NIKKO_LUSTER.png") {
+    template_standard(1, 1)
+}
+
+spriteset(set_nikko_back_luster, "gfx/DMU/nikko/NIKKO_LUSTER.png") {
+    template_standard(1, 32)
+   }
+
+
+spriteset (set_nikko_pass_car_luster, "gfx/DMU/nikko/NIKKO_LUSTER.png") {
+    template_standard(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_nikko_pass_cargo_luster, cargo_classes){
+ bitmask(CC_PASSENGERS): set_nikko_pass_car_luster;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_nikko_reversed_luster, var[0xC8]) {
+  0xFE: set_nikko_back_luster;
+    0xFF: set_nikko_back_luster;
+    set_nikko_front_luster;
+}
 
 //Autolivery change
 
@@ -3254,6 +3277,7 @@ switch(FEAT_TRAINS, SELF, switch_nikko_head_cars, cargo_subtype) {
     1: switch_dmu_nikko_reversed_1974;
     2: switch_dmu_nikko_reversed_1981;
     3: switch_dmu_nikko_reversed_1990;
+    4: switch_dmu_nikko_reversed_luster;
     switch_nikko_head_cars_auto;
 }
 
@@ -3261,6 +3285,7 @@ switch(FEAT_TRAINS, SELF, switch_nikko_pass_cars, cargo_subtype) {
  1: switch_nikko_pass_cargo_1974;
     2: switch_nikko_pass_cargo_1981;
     3: switch_nikko_pass_cargo_1990;
+    4: switch_nikko_pass_cargo_luster;
     switch_nikko_pass_cars_auto;
 }
 
@@ -3269,6 +3294,7 @@ switch(FEAT_TRAINS, SELF, switch_livery_text_nikko, cargo_subtype) {
     1: return string(str_livery_prestige_express);
     2: return string(str_livery_penafrancia_express);
     3: return string(str_livery_metrotren);
+    4: return string(str_livery_luster);
     return CB_RESULT_NO_TEXT;
 }
 
@@ -3602,7 +3628,7 @@ switch(FEAT_TRAINS, SELF, switch_cmc_300_pass_cars, cargo_subtype) {
 switch(FEAT_TRAINS, SELF, switch_livery_text_cmc_300, cargo_subtype) {
     0: return string(str_livery_auto);
     1: return string(str_livery_mrr_yellow);
-    2: return string(str_livery_pnr_navy_blue);
+    2: return string(str_livery_metro_manila_commuter);
     3: return string(str_livery_metrotren);
     4: return string(str_livery_mayon_limited);
     return CB_RESULT_NO_TEXT;

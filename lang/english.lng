@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : PNR Trains 0.9.3-beta-public
+STR_GRF_NAME        : PNR Trains 0.9.4-beta-public
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
 
 #Diesel Locomotives
@@ -67,6 +67,7 @@ str_livery_pnr_green           : PNR Green
 str_livery_philippines_2000    : Philippines 2000
 str_livery_pnr_navy_blue       : PNR Navy Blue  
 str_livery_filtrak             : Filtrak
+str_livery_metro_manila_commuter : Metro Manila Commuter
 str_livery_pnr_orange          : PNR Orange
 str_livery_pnr_2020            : PNR 2020 
 str_livery_metrotren           : Metrotren
@@ -79,3 +80,4 @@ str_livery_northrail           : NorthRail
 str_livery_203_green           : Tokyo Metro Chiyoda Line
 str_livery_203_orange          : Jōban Line Special Rapid
 str_livery_isarog_express      : Isarog Express
+str_livery_luster              : Luster
