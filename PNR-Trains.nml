@@ -2732,7 +2732,18 @@ spriteset(set_class_900_2020, "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2020.png") 
 }
 
 
+//Navy Blue Reversed
 
+spriteset(set_class_900_2011_reversed, "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2000_REVERSED.png") {
+   template_standard(1,1)
+}
+
+//2020
+
+
+spriteset(set_class_900_2020_reversed, "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2020_REVERSED.png") {
+   template_standard(1,1)
+}
 
 
 
@@ -2758,12 +2769,15 @@ switch (FEAT_TRAINS, PARENT, switch_class_900_auto , date_of_last_service ) {
     set_class_900_2020;
 }
 
+//Manual Livery change
 switch(FEAT_TRAINS, SELF, switch_class_900, cargo_subtype) {
  1: set_class_900_1973;
     2: set_class_900_1997;
     3: set_class_900_2000;
-    4: set_class_900_2009;
-    5: set_class_900_2020;
+    4: set_class_900_2011_reversed;
+    5: set_class_900_2009;
+    6: set_class_900_2020;
+    7: set_class_900_2020_reversed;
     switch_class_900_auto;
 }
 
@@ -2772,8 +2786,10 @@ switch(FEAT_TRAINS, SELF, switch_livery_text_900, cargo_subtype) {
     1: return string(str_livery_pnr_green);
     2: return string(str_livery_philippines_2000);
     3: return string(str_livery_pnr_navy_blue);
-    4: return string(str_livery_filtrak);
-    5: return string(str_livery_pnr_orange);
+    4: return string(str_livery_pnr_navy_blue_reversed);
+    5: return string(str_livery_filtrak);
+    6: return string(str_livery_pnr_orange);
+    7: return string(str_livery_pnr_orange_reversed);
     return CB_RESULT_NO_TEXT;
 }
 

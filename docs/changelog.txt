@@ -1,4 +1,7 @@
 Changelog for PNR-Trains
+0.9.5-beta-public
+    *Added reversed options for Class 900 locomotive
+    
 0.9.4-beta-public
     *Fixed CMC 300 livery name 
     *Added reworked Class 900 graphics

@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : PNR Trains 0.9.4-beta-public
+STR_GRF_NAME        : PNR Trains 0.9.5-beta-public
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
 
 #Diesel Locomotives
@@ -65,10 +65,12 @@ str_livery_mrr_yellow          : MRR Yellow
 str_livery_mrr_yellow_green    : MRR Yellow Green
 str_livery_pnr_green           : PNR Green
 str_livery_philippines_2000    : Philippines 2000
-str_livery_pnr_navy_blue       : PNR Navy Blue  
+str_livery_pnr_navy_blue       : PNR Navy Blue
+str_livery_pnr_navy_blue_reversed  : PNR Navy Blue (Reversed)    
 str_livery_filtrak             : Filtrak
 str_livery_metro_manila_commuter : Metro Manila Commuter
 str_livery_pnr_orange          : PNR Orange
+str_livery_pnr_orange_reversed : PNR Orange (Reversed)
 str_livery_pnr_2020            : PNR 2020 
 str_livery_metrotren           : Metrotren
 str_livery_mayon_limited       : Mayon Limited
