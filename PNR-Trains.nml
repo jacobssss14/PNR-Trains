@@ -1661,6 +1661,158 @@ item (FEAT_TRAINS, item_7A_2000) {
 }
 # 88 "PNR-Trains.pnml" 2
 
+//Inka Commuter Coaches
+# 1 "src/Coaches/inka_commuter_coach_properties.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+# 1 "src/Coaches/../undefine_properties.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+//Undefined properties
+# 23 "src/Coaches/inka_commuter_coach_properties.pnml" 2
+# 91 "PNR-Trains.pnml" 2
+# 1 "src/Coaches/inka_commuter_coach_graphics.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+//2020 Livery   
+spriteset(set_inka_coach_purchase, "gfx/COACHES/Inka_Commuter_Coach/Inka_Commuter_Coach.png") {
+  template_mu_purchase(1, 106)
+}
+
+
+spriteset (set_inka_coach, "gfx/COACHES/Inka_Commuter_Coach/Inka_Commuter_Coach.png") {
+    template_standard(1, 64)
+}
+
+
+
+# 92 "PNR-Trains.pnml" 2
+# 1 "src/Coaches/inka_commuter_coach_item.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+
+item (FEAT_TRAINS, item_inka_commuter_coach) {
+   property {
+      name: string(STR_INKA_COMMUTER_COACH);
+      climates_available: bitmask(CLIMATE_TEMPERATE);
+  introduction_date: date(2020, 1, 1);
+  model_life: 50;
+  retire_early: 5;
+  loading_speed: 40;
+  cost_factor: 0.5*(0.1*40 +0.05*(((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))-(((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180)))-100 )/(0.1+2*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))))-((((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))-(((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180)))-100 )/(0.1+2*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))))*((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))-(((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180)))-100 )/(0.1+2*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180)))))-100 )/(0.1+2*((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))-(((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180)))-100 )/(0.1+2*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))))))+0.5*(((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))-(((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180)))-0 )/(0.1+2*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))))-((((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))-(((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180)))-0 )/(0.1+2*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))))*((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))-(((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180)))-0 )/(0.1+2*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180)))))-0 )/(0.1+2*((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))-(((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180)))-0 )/(0.1+2*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))))))+0.5*0.3);
+  running_cost_factor: 0.5*(0.01*(((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))-(((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180)))-100 )/(0.1+2*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))))-((((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))-(((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180)))-100 )/(0.1+2*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))))*((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))-(((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180)))-100 )/(0.1+2*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180)))))-100 )/(0.1+2*((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))-(((100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180)))-100 )/(0.1+2*(100/180 -((100/180*100/180)-100 )/(0.1+2*100/180))))))+0.5*(((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))-(((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180)))-0 )/(0.1+2*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))))-((((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))-(((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180)))-0 )/(0.1+2*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))))*((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))-(((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180)))-0 )/(0.1+2*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180)))))-0 )/(0.1+2*((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))-(((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180)))-0 )/(0.1+2*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))))))+0.5*0.3);
+  speed: 100 km/h;
+        power: 0 hp;
+  cargo_capacity: 250;
+  weight: 40 ton;
+  tractive_effort_coefficient: 0.3;
+  air_drag_coefficient: 0;
+  cargo_age_period: 100;
+
+  reliability_decay: 20;
+  refittable_cargo_classes: bitmask(CC_PASSENGERS); non_refittable_cargo_classes: 0;
+  refit_cost: 0;
+  track_type: NAAN;
+
+  running_cost_base: RUNNING_COST_DIESEL;
+  engine_class: ENGINE_CLASS_DIESEL;
+  visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+
+  sprite_id: SPRITE_ID_NEW_TRAIN;
+  dual_headed: 0;
+  length: 8;
+
+  cargo_allow_refit: [PASS];
+
+   }
+
+     graphics {
+      purchase: set_inka_coach_purchase;
+      default: set_inka_coach;
+     
+
+   }
+
+
+}
+# 93 "PNR-Trains.pnml" 2
+
 //Series 14 Sleeper
 # 1 "src/Coaches/SERIES_14_SLEEPER_properties.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
@@ -1708,7 +1860,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //Undefined properties
 # 23 "src/Coaches/SERIES_14_SLEEPER_properties.pnml" 2
-# 91 "PNR-Trains.pnml" 2
+# 96 "PNR-Trains.pnml" 2
 # 1 "src/Coaches/SERIES_14_SLEEPER_graphics.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -1742,7 +1894,7 @@ spriteset (set_SERIES_14_SLEEPER, "gfx/COACHES/SERIES_14_SLEEPER/SERIES_14_SLEEP
 }
 
 
-# 92 "PNR-Trains.pnml" 2
+# 97 "PNR-Trains.pnml" 2
 # 1 "src/Coaches/SERIES_14_SLEEPER_item.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -1809,7 +1961,7 @@ item (FEAT_TRAINS, item_series_14_sleeper) {
 
 
 }
-# 93 "PNR-Trains.pnml" 2
+# 98 "PNR-Trains.pnml" 2
 
 //Wagons
 # 1 "src/Wagons/flat_wagon_properties.pnml" 1
@@ -1857,7 +2009,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //Undefined properties
 # 22 "src/Wagons/flat_wagon_properties.pnml" 2
-# 96 "PNR-Trains.pnml" 2
+# 101 "PNR-Trains.pnml" 2
 # 1 "src/Wagons/flat_wagon_graphics.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -1989,7 +2141,7 @@ random_switch (FEAT_TRAINS, SELF, flat_wagon, bitmask(TRIGGER_VEHICLE_NEW_LOAD))
 }
 
 
-# 97 "PNR-Trains.pnml" 2
+# 102 "PNR-Trains.pnml" 2
 # 1 "src/Wagons/flat_wagon_item.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -2051,7 +2203,7 @@ item(FEAT_TRAINS, item_flat_wagon) {
 
 
 }
-# 98 "PNR-Trains.pnml" 2
+# 103 "PNR-Trains.pnml" 2
 
 
 //Diesel 
@@ -2106,7 +2258,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 
 // Room for specific defines
-# 102 "PNR-Trains.pnml" 2
+# 107 "PNR-Trains.pnml" 2
 
 //GE 2500
 # 1 "src/Diesel/diesel_class_5000_properties.pnml" 1
@@ -2155,7 +2307,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //Undefined properties
 # 23 "src/Diesel/diesel_class_5000_properties.pnml" 2
-# 105 "PNR-Trains.pnml" 2
+# 110 "PNR-Trains.pnml" 2
 # 1 "src/Diesel/diesel_class_5000_graphics.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -2279,7 +2431,7 @@ switch(FEAT_TRAINS, SELF, switch_livery_text_5000, cargo_subtype) {
 }
 
 
-# 106 "PNR-Trains.pnml" 2
+# 111 "PNR-Trains.pnml" 2
 # 1 "src/Diesel/diesel_class_5000_item.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -2353,7 +2505,7 @@ item (FEAT_TRAINS, item_diesel_class_5000) {
 
 
 }
-# 107 "PNR-Trains.pnml" 2
+# 112 "PNR-Trains.pnml" 2
 
 //GE 2500
 # 1 "src/Diesel/diesel_class_2500_properties.pnml" 1
@@ -2402,7 +2554,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //Undefined properties
 # 23 "src/Diesel/diesel_class_2500_properties.pnml" 2
-# 110 "PNR-Trains.pnml" 2
+# 115 "PNR-Trains.pnml" 2
 # 1 "src/Diesel/diesel_class_2500_graphics.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -2527,7 +2679,7 @@ switch(FEAT_TRAINS, SELF, switch_livery_text_2500, cargo_subtype) {
 }
 
 
-# 111 "PNR-Trains.pnml" 2
+# 116 "PNR-Trains.pnml" 2
 # 1 "src/Diesel/diesel_class_2500_item.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -2600,7 +2752,7 @@ item (FEAT_TRAINS, item_diesel_class_2500) {
 
 
 }
-# 112 "PNR-Trains.pnml" 2
+# 117 "PNR-Trains.pnml" 2
 
 //GE 900
 # 1 "src/Diesel/diesel_class_900_properties.pnml" 1
@@ -2649,7 +2801,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //Undefined properties
 # 23 "src/Diesel/diesel_class_900_properties.pnml" 2
-# 115 "PNR-Trains.pnml" 2
+# 120 "PNR-Trains.pnml" 2
 # 1 "src/Diesel/diesel_class_900_graphics.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -2808,7 +2960,7 @@ switch (FEAT_TRAINS, PARENT, switch_class_900_power, date_of_last_service) {
 }
 
 
-# 116 "PNR-Trains.pnml" 2
+# 121 "PNR-Trains.pnml" 2
 # 1 "src/Diesel/diesel_class_900_item.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -2882,7 +3034,7 @@ item (FEAT_TRAINS, item_diesel_class_900) {
    }
 
 }
-# 117 "PNR-Trains.pnml" 2
+# 122 "PNR-Trains.pnml" 2
 
 //CC 203
 # 1 "src/Diesel/diesel_cc203_properties.pnml" 1
@@ -2931,7 +3083,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //Undefined properties
 # 23 "src/Diesel/diesel_cc203_properties.pnml" 2
-# 120 "PNR-Trains.pnml" 2
+# 125 "PNR-Trains.pnml" 2
 # 1 "src/Diesel/diesel_cc203_graphics.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -2961,7 +3113,7 @@ spriteset(set_cc203, "gfx/DIESEL/CC203/DIESEL_CC203.png") {
 
 }
 
-# 121 "PNR-Trains.pnml" 2
+# 126 "PNR-Trains.pnml" 2
 # 1 "src/Diesel/diesel_cc203_item.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -3029,7 +3181,160 @@ item (FEAT_TRAINS, item_diesel_cc203) {
 
 
 }
-# 122 "PNR-Trains.pnml" 2
+# 127 "PNR-Trains.pnml" 2
+
+//CC 300
+# 1 "src/Diesel/diesel_cc300_properties.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag, Alon?
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+# 1 "src/Diesel/../undefine_properties.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+//Undefined properties
+# 23 "src/Diesel/diesel_cc300_properties.pnml" 2
+# 130 "PNR-Trains.pnml" 2
+# 1 "src/Diesel/diesel_cc300_graphics.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+spriteset(set_cc300_purchase, "gfx/DIESEL/CC300/DIESEL_CC300.png") {
+    template_diesel_purchase(1,105)
+
+}
+
+
+spriteset(set_cc300, "gfx/DIESEL/CC300/DIESEL_CC300.png") {
+   template_standard(1,0)
+}
+
+
+
+
+# 131 "PNR-Trains.pnml" 2
+# 1 "src/Diesel/diesel_cc300_item.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+
+item (FEAT_TRAINS, item_diesel_cc300) {
+   property {
+      name: string(STR_DIESEL_CC300);
+      climates_available: bitmask(CLIMATE_TEMPERATE);
+  introduction_date: date(2020, 1, 1);
+  model_life: 50;
+  vehicle_life: 30;
+  retire_early: 5;
+  cost_factor: 0.5*(0.1*84 +0.05*(((120/180 -((120/180*120/180)-120 )/(0.1+2*120/180))-(((120/180 -((120/180*120/180)-120 )/(0.1+2*120/180))*(120/180 -((120/180*120/180)-120 )/(0.1+2*120/180)))-120 )/(0.1+2*(120/180 -((120/180*120/180)-120 )/(0.1+2*120/180))))-((((120/180 -((120/180*120/180)-120 )/(0.1+2*120/180))-(((120/180 -((120/180*120/180)-120 )/(0.1+2*120/180))*(120/180 -((120/180*120/180)-120 )/(0.1+2*120/180)))-120 )/(0.1+2*(120/180 -((120/180*120/180)-120 )/(0.1+2*120/180))))*((120/180 -((120/180*120/180)-120 )/(0.1+2*120/180))-(((120/180 -((120/180*120/180)-120 )/(0.1+2*120/180))*(120/180 -((120/180*120/180)-120 )/(0.1+2*120/180)))-120 )/(0.1+2*(120/180 -((120/180*120/180)-120 )/(0.1+2*120/180)))))-120 )/(0.1+2*((120/180 -((120/180*120/180)-120 )/(0.1+2*120/180))-(((120/180 -((120/180*120/180)-120 )/(0.1+2*120/180))*(120/180 -((120/180*120/180)-120 )/(0.1+2*120/180)))-120 )/(0.1+2*(120/180 -((120/180*120/180)-120 )/(0.1+2*120/180))))))+0.5*(((2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180))-(((2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180))*(2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180)))-2200 )/(0.1+2*(2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180))))-((((2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180))-(((2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180))*(2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180)))-2200 )/(0.1+2*(2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180))))*((2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180))-(((2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180))*(2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180)))-2200 )/(0.1+2*(2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180)))))-2200 )/(0.1+2*((2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180))-(((2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180))*(2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180)))-2200 )/(0.1+2*(2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180))))))+0.5*0.3);
+  running_cost_factor: 0.5*(0.01*(((120/180 -((120/180*120/180)-120 )/(0.1+2*120/180))-(((120/180 -((120/180*120/180)-120 )/(0.1+2*120/180))*(120/180 -((120/180*120/180)-120 )/(0.1+2*120/180)))-120 )/(0.1+2*(120/180 -((120/180*120/180)-120 )/(0.1+2*120/180))))-((((120/180 -((120/180*120/180)-120 )/(0.1+2*120/180))-(((120/180 -((120/180*120/180)-120 )/(0.1+2*120/180))*(120/180 -((120/180*120/180)-120 )/(0.1+2*120/180)))-120 )/(0.1+2*(120/180 -((120/180*120/180)-120 )/(0.1+2*120/180))))*((120/180 -((120/180*120/180)-120 )/(0.1+2*120/180))-(((120/180 -((120/180*120/180)-120 )/(0.1+2*120/180))*(120/180 -((120/180*120/180)-120 )/(0.1+2*120/180)))-120 )/(0.1+2*(120/180 -((120/180*120/180)-120 )/(0.1+2*120/180)))))-120 )/(0.1+2*((120/180 -((120/180*120/180)-120 )/(0.1+2*120/180))-(((120/180 -((120/180*120/180)-120 )/(0.1+2*120/180))*(120/180 -((120/180*120/180)-120 )/(0.1+2*120/180)))-120 )/(0.1+2*(120/180 -((120/180*120/180)-120 )/(0.1+2*120/180))))))+0.5*(((2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180))-(((2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180))*(2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180)))-2200 )/(0.1+2*(2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180))))-((((2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180))-(((2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180))*(2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180)))-2200 )/(0.1+2*(2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180))))*((2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180))-(((2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180))*(2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180)))-2200 )/(0.1+2*(2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180)))))-2200 )/(0.1+2*((2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180))-(((2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180))*(2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180)))-2200 )/(0.1+2*(2200/180 -((2200/180*2200/180)-2200 )/(0.1+2*2200/180))))))+0.5*0.3);
+  speed: 120 km/h;
+  weight: 84 ton;
+  power: 2200 hp;
+  tractive_effort_coefficient: 0.3;
+  air_drag_coefficient: 0;
+
+  reliability_decay: 20;
+
+  refit_cost: 0;
+  track_type: NAAN;
+
+  running_cost_base: RUNNING_COST_DIESEL;
+  engine_class: ENGINE_CLASS_DIESEL;
+  visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
+
+  sprite_id: SPRITE_ID_NEW_TRAIN;
+  dual_headed: 0;
+  length: 8;
+
+   }
+
+   graphics {
+  
+   purchase: set_cc300_purchase;
+      default: set_cc300;
+
+   }
+
+  livery_override (item_203_generator_car) {
+    power: 250;
+    default: set_203_generator_car;
+   }
+
+
+}
+# 132 "PNR-Trains.pnml" 2
 
 //DMUs
 # 1 "src/init/init_dmu.pnml" 1
@@ -3083,9 +3388,198 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 
 // Room for specific defines
-# 125 "PNR-Trains.pnml" 2
+# 135 "PNR-Trains.pnml" 2
 
-//CMC Nikko
+//DOST HET
+//Nikko
+# 1 "src/DMU/dmu_dost_het_properties.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag, Alon
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+# 1 "src/DMU/../undefine_properties.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+//Undefined properties
+# 23 "src/DMU/dmu_dost_het_properties.pnml" 2
+# 139 "PNR-Trains.pnml" 2
+# 1 "src/DMU/dmu_dost_het_graphics.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+spriteset(set_dost_het_front, "gfx/DMU/DOST_HET/DOST_HET.png") {
+   template_dmu_ft_front(1,0)
+}
+spriteset(set_dost_het_back, "gfx/DMU/DOST_HET/DOST_HET.png") {
+   template_dmu_ft_back(1,60)
+
+}
+spriteset (set_dost_het_pass_car, "gfx/DMU/DOST_HET/DOST_HET.png") {
+   template_dmu_ft_front(1,30)
+}
+
+switch(FEAT_TRAINS, SELF, switch_dost_het_pass_cargo, cargo_classes){
+ bitmask(CC_PASSENGERS): set_dost_het_pass_car;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_dost_het_reversed, var[0xC8]) {
+  0xFE: set_dost_het_back;
+    0xFF: set_dost_het_back;
+    set_dost_het_front;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_dost_het_capacity_engine, cargo_classes) { bitmask(CC_MAIL): 175/2; bitmask(CC_ARMOURED): 175/4; 175; }
+
+switch(FEAT_TRAINS, SELF, switch_dmu_dost_het_capacity_wagon, cargo_classes) { bitmask(CC_MAIL): 175/2; bitmask(CC_ARMOURED): 175/4; 175; }
+
+
+
+# 140 "PNR-Trains.pnml" 2
+# 1 "src/DMU/dmu_dost_het_item.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+/*Kiha 35*/
+item (FEAT_TRAINS, item_dmu_dost_het) {
+   property {
+      name: string(STR_DMU_DOST_HET);
+      climates_available: bitmask(CLIMATE_TEMPERATE);
+  introduction_date: date(2018, 1, 1);
+  model_life: 30;
+  vehicle_life: 60;
+  retire_early: 5;
+  loading_speed: 40;
+  cost_factor: 0.5*(0.1*25.5 +0.05*(((80/180 -((80/180*80/180)-80 )/(0.1+2*80/180))-(((80/180 -((80/180*80/180)-80 )/(0.1+2*80/180))*(80/180 -((80/180*80/180)-80 )/(0.1+2*80/180)))-80 )/(0.1+2*(80/180 -((80/180*80/180)-80 )/(0.1+2*80/180))))-((((80/180 -((80/180*80/180)-80 )/(0.1+2*80/180))-(((80/180 -((80/180*80/180)-80 )/(0.1+2*80/180))*(80/180 -((80/180*80/180)-80 )/(0.1+2*80/180)))-80 )/(0.1+2*(80/180 -((80/180*80/180)-80 )/(0.1+2*80/180))))*((80/180 -((80/180*80/180)-80 )/(0.1+2*80/180))-(((80/180 -((80/180*80/180)-80 )/(0.1+2*80/180))*(80/180 -((80/180*80/180)-80 )/(0.1+2*80/180)))-80 )/(0.1+2*(80/180 -((80/180*80/180)-80 )/(0.1+2*80/180)))))-80 )/(0.1+2*((80/180 -((80/180*80/180)-80 )/(0.1+2*80/180))-(((80/180 -((80/180*80/180)-80 )/(0.1+2*80/180))*(80/180 -((80/180*80/180)-80 )/(0.1+2*80/180)))-80 )/(0.1+2*(80/180 -((80/180*80/180)-80 )/(0.1+2*80/180))))))+0.5*(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))-(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))-1250 )/(0.1+2*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))))-((((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))-(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))-1250 )/(0.1+2*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))))*((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))-(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))-1250 )/(0.1+2*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))))-1250 )/(0.1+2*((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))-(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))-1250 )/(0.1+2*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))))))+max(0.5*(((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))-(((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))-175 )/(0.1+2*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))))-((((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))-(((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))-175 )/(0.1+2*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))))*((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))-(((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))-175 )/(0.1+2*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))))-175 )/(0.1+2*((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))-(((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))-175 )/(0.1+2*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))))),0.5*(((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))-(((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))-175 )/(0.1+2*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))))-((((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))-(((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))-175 )/(0.1+2*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))))*((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))-(((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))-175 )/(0.1+2*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))))-175 )/(0.1+2*((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))-(((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))-175 )/(0.1+2*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))))))+0.5*0.3);
+  running_cost_factor: 0.5*(0.01*(((80/180 -((80/180*80/180)-80 )/(0.1+2*80/180))-(((80/180 -((80/180*80/180)-80 )/(0.1+2*80/180))*(80/180 -((80/180*80/180)-80 )/(0.1+2*80/180)))-80 )/(0.1+2*(80/180 -((80/180*80/180)-80 )/(0.1+2*80/180))))-((((80/180 -((80/180*80/180)-80 )/(0.1+2*80/180))-(((80/180 -((80/180*80/180)-80 )/(0.1+2*80/180))*(80/180 -((80/180*80/180)-80 )/(0.1+2*80/180)))-80 )/(0.1+2*(80/180 -((80/180*80/180)-80 )/(0.1+2*80/180))))*((80/180 -((80/180*80/180)-80 )/(0.1+2*80/180))-(((80/180 -((80/180*80/180)-80 )/(0.1+2*80/180))*(80/180 -((80/180*80/180)-80 )/(0.1+2*80/180)))-80 )/(0.1+2*(80/180 -((80/180*80/180)-80 )/(0.1+2*80/180)))))-80 )/(0.1+2*((80/180 -((80/180*80/180)-80 )/(0.1+2*80/180))-(((80/180 -((80/180*80/180)-80 )/(0.1+2*80/180))*(80/180 -((80/180*80/180)-80 )/(0.1+2*80/180)))-80 )/(0.1+2*(80/180 -((80/180*80/180)-80 )/(0.1+2*80/180))))))+0.5*(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))-(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))-1250 )/(0.1+2*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))))-((((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))-(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))-1250 )/(0.1+2*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))))*((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))-(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))-1250 )/(0.1+2*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))))-1250 )/(0.1+2*((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))-(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))-1250 )/(0.1+2*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))))))+max(0.5*(((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))-(((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))-175 )/(0.1+2*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))))-((((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))-(((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))-175 )/(0.1+2*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))))*((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))-(((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))-175 )/(0.1+2*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))))-175 )/(0.1+2*((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))-(((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))-175 )/(0.1+2*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))))), 0.5*(((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))-(((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))-175 )/(0.1+2*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))))-((((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))-(((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))-175 )/(0.1+2*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))))*((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))-(((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))-175 )/(0.1+2*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))))-175 )/(0.1+2*((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))-(((175/180 -((175/180*175/180)-175 )/(0.1+2*175/180))*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))-175 )/(0.1+2*(175/180 -((175/180*175/180)-175 )/(0.1+2*175/180)))))))+0.5*0.3);
+  speed: 80 km/h;
+  power: 1250 hp;
+  cargo_capacity: 175;
+  weight: 25.5 ton;
+  tractive_effort_coefficient: 0.3;
+  air_drag_coefficient: 0;
+  cargo_age_period: 185;
+
+  reliability_decay: 20;
+  refittable_cargo_classes: bitmask(CC_PASSENGERS); non_refittable_cargo_classes: 0;
+  misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
+  refit_cost: 0;
+  track_type: NAAN;
+
+  running_cost_base: RUNNING_COST_DIESEL;
+  engine_class: ENGINE_CLASS_DIESEL;
+  visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
+
+  sprite_id: SPRITE_ID_NEW_TRAIN;
+  dual_headed: 1;
+  length: 8;
+
+   }
+
+   graphics {
+  
+      cargo_capacity: switch_dmu_dost_het_capacity_engine;
+      default: switch_dmu_dost_het_reversed;
+
+   }
+
+   livery_override (item_pnr_mu_coach_unpowered) {
+     running_cost_factor: int(80/10);
+     loading_speed: 40;
+     cargo_capacity: switch_dmu_dost_het_capacity_wagon;
+  length: 8;
+  weight: int(25.5*1/8);
+  cargo_age_period: 185;
+  default: switch_dost_het_pass_cargo;
+   }
+
+   livery_override (item_pnr_mu_coach_powered) {
+     running_cost_factor: int(80/10+(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))-(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))-1250 )/(0.1+2*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))))-((((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))-(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))-1250 )/(0.1+2*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))))*((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))-(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))-1250 )/(0.1+2*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))))-1250 )/(0.1+2*((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))-(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))-1250 )/(0.1+2*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))))))/10+0.3*25.5);
+     loading_speed: 40;
+  cargo_capacity: 0;
+  length: 8;
+  weight: int(25.5*1/16);
+  power: int(1250*1/2);
+  tractive_effort_coefficient: int(0.3*10*25.5);
+  cargo_age_period: 185;
+  default: switch_dost_het_pass_cargo;
+   }
+
+
+}
+# 141 "PNR-Trains.pnml" 2
+
+//Nikko
 # 1 "src/DMU/dmu_nikko_properties.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -3132,7 +3626,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //Undefined properties
 # 23 "src/DMU/dmu_nikko_properties.pnml" 2
-# 128 "PNR-Trains.pnml" 2
+# 144 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_nikko_graphics.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 1981  Jacob Payag
@@ -3322,7 +3816,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_nikko_capacity_wagon, cargo_classes) { bitm
 
 
 
-# 129 "PNR-Trains.pnml" 2
+# 145 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_nikko_item.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -3416,7 +3910,7 @@ item (FEAT_TRAINS, item_nikko) {
 
 
 }
-# 130 "PNR-Trains.pnml" 2
+# 146 "PNR-Trains.pnml" 2
 
 //CMC 300
 # 1 "src/DMU/dmu_cmc_300_properties.pnml" 1
@@ -3465,7 +3959,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //Undefined properties
 # 23 "src/DMU/dmu_cmc_300_properties.pnml" 2
-# 133 "PNR-Trains.pnml" 2
+# 149 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_cmc_300_graphics.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 1978  Jacob Payag
@@ -3659,7 +4153,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_cmc_300_capacity_wagon, cargo_classes) { bi
 
 
 
-# 134 "PNR-Trains.pnml" 2
+# 150 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_cmc_300_item.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -3752,7 +4246,7 @@ item (FEAT_TRAINS, item_dmu_cmc_300) {
    }
 
 }
-# 135 "PNR-Trains.pnml" 2
+# 151 "PNR-Trains.pnml" 2
 
 //KiHa35
 # 1 "src/DMU/dmu_kiha_35_properties.pnml" 1
@@ -3801,7 +4295,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //Undefined properties
 # 23 "src/DMU/dmu_kiha_35_properties.pnml" 2
-# 138 "PNR-Trains.pnml" 2
+# 154 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_kiha_35_graphics.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -3930,7 +4424,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_kiha_35_capacity_wagon, cargo_classes) { bi
 
 
 
-# 139 "PNR-Trains.pnml" 2
+# 155 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_kiha_35_item.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -4023,7 +4517,7 @@ item (FEAT_TRAINS, item_dmu_kiha_35) {
    }
 
 }
-# 140 "PNR-Trains.pnml" 2
+# 156 "PNR-Trains.pnml" 2
 
 //KiHa59
 # 1 "src/DMU/dmu_kiha_59_properties.pnml" 1
@@ -4072,7 +4566,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //Undefined properties
 # 23 "src/DMU/dmu_kiha_59_properties.pnml" 2
-# 143 "PNR-Trains.pnml" 2
+# 159 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_kiha_59_graphics.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -4234,7 +4728,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_kiha_59_capacity_wagon, cargo_classes) { bi
 
 
 
-# 144 "PNR-Trains.pnml" 2
+# 160 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_kiha_59_item.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -4330,7 +4824,7 @@ item (FEAT_TRAINS, item_dmu_kiha_59) {
 
 
 }
-# 145 "PNR-Trains.pnml" 2
+# 161 "PNR-Trains.pnml" 2
 
 //Hyundai Rotem from Filipino Trains
 # 1 "src/DMU/dmu_hyundai_rotem_properties.pnml" 1
@@ -4379,7 +4873,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //Undefined properties
 # 23 "src/DMU/dmu_hyundai_rotem_properties.pnml" 2
-# 148 "PNR-Trains.pnml" 2
+# 164 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_hyundai_rotem_graphics.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -4531,7 +5025,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_hyundai_rotem_capacity_wagon, cargo_classes
 
 
 
-# 149 "PNR-Trains.pnml" 2
+# 165 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_hyundai_rotem_item.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -4625,7 +5119,7 @@ item (FEAT_TRAINS, item_dmu_hyundai_rotem) {
 
 
 }
-# 150 "PNR-Trains.pnml" 2
+# 166 "PNR-Trains.pnml" 2
 
 //Hyundai Rotem from Filipino Trains
 # 1 "src/DMU/dmu_class_8000_properties.pnml" 1
@@ -4674,7 +5168,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //Undefined properties
 # 23 "src/DMU/dmu_class_8000_properties.pnml" 2
-# 153 "PNR-Trains.pnml" 2
+# 169 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_class_8000_graphics.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -4731,7 +5225,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_class_8000_capacity_wagon, cargo_classes) {
 
 
 
-# 154 "PNR-Trains.pnml" 2
+# 170 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_class_8000_item.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -4822,4 +5316,4 @@ item (FEAT_TRAINS, item_dmu_class_8000) {
 
 
 }
-# 155 "PNR-Trains.pnml" 2
+# 171 "PNR-Trains.pnml" 2

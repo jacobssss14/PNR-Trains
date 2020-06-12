@@ -1,4 +1,9 @@
 Changelog for PNR-Trains
+0.10.0-beta-public
+    *Added DOST Hybrid Electric Train
+    *Added CC 300 Diesel-Hydraulic Locomitive
+    *Added Inka Commuter Coach
+
 0.9.5-beta-public
     *Added reversed options for Class 900 locomotive
     

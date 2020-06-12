@@ -86,6 +86,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/Coaches/7A_2000_graphics.pnml"
 #include "src/Coaches/7A_2000_item.pnml"
 
+//Inka Commuter Coaches
+#include "src/Coaches/inka_commuter_coach_properties.pnml"
+#include "src/Coaches/inka_commuter_coach_graphics.pnml"
+#include "src/Coaches/inka_commuter_coach_item.pnml"
+
 //Series 14 Sleeper
 #include "src/Coaches/SERIES_14_SLEEPER_properties.pnml"
 #include "src/Coaches/SERIES_14_SLEEPER_graphics.pnml"
@@ -120,10 +125,21 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/Diesel/diesel_cc203_graphics.pnml"
 #include "src/Diesel/diesel_cc203_item.pnml"
 
+//CC 300
+#include "src/Diesel/diesel_cc300_properties.pnml"
+#include "src/Diesel/diesel_cc300_graphics.pnml"
+#include "src/Diesel/diesel_cc300_item.pnml"
+
 //DMUs
 #include "src/init/init_dmu.pnml"
 
-//CMC Nikko
+//DOST HET
+//Nikko
+#include "src/DMU/dmu_dost_het_properties.pnml"
+#include "src/DMU/dmu_dost_het_graphics.pnml"
+#include "src/DMU/dmu_dost_het_item.pnml"
+
+//Nikko
 #include "src/DMU/dmu_nikko_properties.pnml"
 #include "src/DMU/dmu_nikko_graphics.pnml"
 #include "src/DMU/dmu_nikko_item.pnml"

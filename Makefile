@@ -533,7 +533,7 @@ endif
 
 # If non of the above matched, we'll assume we're on a unix-like system
 ifeq ($(OSTYPE),Linux)
-INSTALL_DIR := $(HOME)/.openttd/newgrf/$(BASE_FILENAME)
+INSTALL_DIR := $(HOME)/.openttd-jgrpp/newgrf/$(BASE_FILENAME)
 endif
 
 endif
