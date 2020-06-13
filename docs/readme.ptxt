@@ -35,40 +35,19 @@ The trains are built to run on narrow guage tracks. It is highly recommended to 
 narrow guage railtypes. We recommend the Japan Set Tracks and set the Mode from the parmeters to international.
 
 ----------------------
-3 Version info
+3 Version scheme
 ----------------------
-There are three public release tags used for PNR Trains. Please note the recommendations and notes for each version.
+As of 0.10.3, the naming scheme is as follows:
 
----------------------------
-3.1 alpha-testing versions
----------------------------
-*Updated nightly
-*Highly unstable
-*Features experimental changes to train behavior
-*Not suitable for playing; evalutaion only
-
--------------------------
-3.2 beta-private versions
--------------------------
-*Versions for internal testing and debugging before public beta release
-*Available for select beta testers
-*Not suitable for playing; evalutaion only
-
--------------------------
-3.3 beta-public versions
--------------------------
-
-*Versions with relative stability
-*Updated frequently to feature new trains and rolling stock
-*Suitable for short game sessions only, not recommened for long game sessions
-
--------------------------
-3.4 release versions
--------------------------
-
-*Versions with high enough number of trains and rolling stock and code integrity
-*Updated less frequently than beta-public
-*Suitable for general game sessions
+ *The first decimal  (release) denotes the release version. 0 idicates pre-releases betas
+ *The second decimal (version) denotes an addition of a train model or 10 consecutive minor code changes and bug fixes
+ *The third decimal  (revision/alpha) signifies one of the following
+    -Single digit    (revision): Minor code changes and/or bug fixes. 10 of these changes will raise the digit on the secod decimal by 1
+    -Two or more digits(alpha): Alpha versions meant for testing of new features or trains
+  
+Example
+0.10.3 is read as pre-release version 10, revision 3
+0.10.21 is read as pre-release version 10, alpha 21 
 
 ------------------------
 4 Obtaining the source

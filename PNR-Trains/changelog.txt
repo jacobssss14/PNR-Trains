@@ -1,4 +1,12 @@
 Changelog for PNR-Trains
+0.10.3
+    *Fixed graphics issues with the DOST HET
+    *Pull graphics template from 0.8.1
+    *Fixed 203 Series Generator car graphics
+    *Updated 203 series coach and generator car sprites
+    *Fixed Kiha 59 Isarog Express sprites
+    *Fixed Kiha 59 2020 livery missing from refit menu
+
 0.10.2-beta-public
     *Adjusted 203 Series Coach and Generator car capacity
     *Adjusted 7A-2000 lifespan
