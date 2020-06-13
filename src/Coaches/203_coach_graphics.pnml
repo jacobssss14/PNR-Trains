@@ -23,17 +23,17 @@ spriteset (set_203_coach_purchase, "gfx/COACHES/203_COACH/203_COACH.png") {
 }
 
 spriteset (set_203_coach, "gfx/COACHES/203_COACH/203_COACH.png") {
-    template_diesel(1,64)
+    template_standard(1,64)
 }
 
 //Other Liveries
 
 spriteset (set_203_coach_orange, "gfx/COACHES/203_COACH/203_COACH.png") {
-    template_diesel(1,1)
+    template_standard(1,1)
 }
 
 spriteset (set_203_coach_green, "gfx/COACHES/203_COACH/203_COACH.png") {
-    template_diesel(1,32)
+    template_standard(1,32)
 }
 
 //Manual livery swtich

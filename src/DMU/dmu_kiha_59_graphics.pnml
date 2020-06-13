@@ -131,7 +131,6 @@ switch(FEAT_TRAINS, SELF, switch_kiha_59_head_cars, cargo_subtype) {
     1: switch_dmu_kiha_59_reversed_2012;
     2: switch_dmu_kiha_59_reversed_isarog;
     3: switch_dmu_kiha_59_reversed_2020;
-    
     switch_kiha_59_head_cars_auto;
 }
 
@@ -146,7 +145,7 @@ switch(FEAT_TRAINS, SELF, switch_livery_text_kiha_59, cargo_subtype) {
     0: return string(str_livery_auto);
     1: return string(str_livery_premiere_train_2012);
     2: return string(str_livery_isarog_express);
-    2: return string(str_livery_pnr_2020);
+    3: return string(str_livery_pnr_2020);
     return CB_RESULT_NO_TEXT;
 }
 
