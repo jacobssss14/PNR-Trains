@@ -1,10 +1,15 @@
 Changelog for PNR-Trains
+0.10.2-beta-public
+    *Adjusted 203 Series Coach and Generator car capacity
+    *Adjusted 7A-2000 lifespan
+
 0.10.1-beta-public
     *Fixed DOST Hybrid Electric Train graphics issues
     *Fixed Inka Commuter Coach purchase sprite 
     *New sprite for CC 300 locomotive
     *Updated sprite for Series 14 Sleeper coach
     *Fixed capitalization issues for source files
+    *Adjusted Series 14 Sleeper lifespan
 
 0.10.0-beta-public
     *Added DOST Hybrid Electric Train
