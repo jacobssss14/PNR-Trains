@@ -122,7 +122,7 @@ template template_coach_purchase(x, y) {
     [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
     [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
     [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [x	,  y,  47, 16, -11, -10]
+    [x	,  y,  41, 16, -11, -10]
     [1	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
 }
 

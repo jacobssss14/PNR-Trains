@@ -92,9 +92,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/Coaches/inka_commuter_coach_item.pnml"
 
 //Series 14 Sleeper
-#include "src/Coaches/SERIES_14_SLEEPER_properties.pnml"
-#include "src/Coaches/SERIES_14_SLEEPER_graphics.pnml"
-#include "src/Coaches/SERIES_14_SLEEPER_item.pnml"
+#include "src/Coaches/series_14_sleeper_properties.pnml"
+#include "src/Coaches/series_14_sleeper_graphics.pnml"
+#include "src/Coaches/series_14_sleeper_item.pnml"
 
 //Wagons
 #include "src/Wagons/flat_wagon_properties.pnml"

@@ -344,7 +344,7 @@ template template_coach_purchase(x, y) {
     [1 , 1, 1, 1, 0, 0, "gfx/Empty.png"]
     [1 , 1, 1, 1, 0, 0, "gfx/Empty.png"]
     [1 , 1, 1, 1, 0, 0, "gfx/Empty.png"]
-    [x , y, 47, 16, -11, -10]
+    [x , y, 41, 16, -11, -10]
     [1 , 1, 1, 1, 0, 0, "gfx/Empty.png"]
 }
 
@@ -1733,7 +1733,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //2020 Livery   
 spriteset(set_inka_coach_purchase, "gfx/COACHES/Inka_Commuter_Coach/Inka_Commuter_Coach.png") {
-  template_mu_purchase(1, 106)
+  template_coach_purchase(1, 106)
 }
 
 
@@ -1814,7 +1814,7 @@ item (FEAT_TRAINS, item_inka_commuter_coach) {
 # 93 "PNR-Trains.pnml" 2
 
 //Series 14 Sleeper
-# 1 "src/Coaches/SERIES_14_SLEEPER_properties.pnml" 1
+# 1 "src/Coaches/series_14_sleeper_properties.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
 
@@ -1859,9 +1859,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 
 //Undefined properties
-# 23 "src/Coaches/SERIES_14_SLEEPER_properties.pnml" 2
+# 23 "src/Coaches/series_14_sleeper_properties.pnml" 2
 # 96 "PNR-Trains.pnml" 2
-# 1 "src/Coaches/SERIES_14_SLEEPER_graphics.pnml" 1
+# 1 "src/Coaches/series_14_sleeper_graphics.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
 
@@ -1895,7 +1895,7 @@ spriteset (set_SERIES_14_SLEEPER, "gfx/COACHES/SERIES_14_SLEEPER/SERIES_14_SLEEP
 
 
 # 97 "PNR-Trains.pnml" 2
-# 1 "src/Coaches/SERIES_14_SLEEPER_item.pnml" 1
+# 1 "src/Coaches/series_14_sleeper_item.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
 
@@ -1923,7 +1923,7 @@ item (FEAT_TRAINS, item_series_14_sleeper) {
       name: string(STR_SERIES_14_SLEEPER);
       climates_available: bitmask(CLIMATE_TEMPERATE);
   introduction_date: date(2010, 1, 1);
-  model_life: 15;
+  model_life: 25;
   retire_early: 5;
   loading_speed: 15;
   cost_factor: 0.5*(0.1*45 +0.05*(((110/180 -((110/180*110/180)-110 )/(0.1+2*110/180))-(((110/180 -((110/180*110/180)-110 )/(0.1+2*110/180))*(110/180 -((110/180*110/180)-110 )/(0.1+2*110/180)))-110 )/(0.1+2*(110/180 -((110/180*110/180)-110 )/(0.1+2*110/180))))-((((110/180 -((110/180*110/180)-110 )/(0.1+2*110/180))-(((110/180 -((110/180*110/180)-110 )/(0.1+2*110/180))*(110/180 -((110/180*110/180)-110 )/(0.1+2*110/180)))-110 )/(0.1+2*(110/180 -((110/180*110/180)-110 )/(0.1+2*110/180))))*((110/180 -((110/180*110/180)-110 )/(0.1+2*110/180))-(((110/180 -((110/180*110/180)-110 )/(0.1+2*110/180))*(110/180 -((110/180*110/180)-110 )/(0.1+2*110/180)))-110 )/(0.1+2*(110/180 -((110/180*110/180)-110 )/(0.1+2*110/180)))))-110 )/(0.1+2*((110/180 -((110/180*110/180)-110 )/(0.1+2*110/180))-(((110/180 -((110/180*110/180)-110 )/(0.1+2*110/180))*(110/180 -((110/180*110/180)-110 )/(0.1+2*110/180)))-110 )/(0.1+2*(110/180 -((110/180*110/180)-110 )/(0.1+2*110/180))))))+0.5*(((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))-(((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180)))-0 )/(0.1+2*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))))-((((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))-(((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180)))-0 )/(0.1+2*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))))*((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))-(((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180)))-0 )/(0.1+2*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180)))))-0 )/(0.1+2*((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))-(((0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180)))-0 )/(0.1+2*(0/180 -((0/180*0/180)-0 )/(0.1+2*0/180))))))+0.5*0.3);
@@ -3259,7 +3259,7 @@ spriteset(set_cc300_purchase, "gfx/DIESEL/CC300/DIESEL_CC300.png") {
 
 
 spriteset(set_cc300, "gfx/DIESEL/CC300/DIESEL_CC300.png") {
-   template_standard(1,0)
+   template_standard(1,1)
 }
 
 
@@ -3464,11 +3464,11 @@ spriteset(set_dost_het_front, "gfx/DMU/DOST_HET/DOST_HET.png") {
    template_dmu_ft_front(1,0)
 }
 spriteset(set_dost_het_back, "gfx/DMU/DOST_HET/DOST_HET.png") {
-   template_dmu_ft_back(1,60)
+   template_dmu_ft_back(1,120)
 
 }
 spriteset (set_dost_het_pass_car, "gfx/DMU/DOST_HET/DOST_HET.png") {
-   template_dmu_ft_front(1,30)
+   template_dmu_ft_front(1,60)
 }
 
 switch(FEAT_TRAINS, SELF, switch_dost_het_pass_cargo, cargo_classes){
@@ -3542,7 +3542,7 @@ item (FEAT_TRAINS, item_dmu_dost_het) {
 
   sprite_id: SPRITE_ID_NEW_TRAIN;
   dual_headed: 1;
-  length: 8;
+  length: 7;
 
    }
 
@@ -3557,7 +3557,7 @@ item (FEAT_TRAINS, item_dmu_dost_het) {
      running_cost_factor: int(80/10);
      loading_speed: 40;
      cargo_capacity: switch_dmu_dost_het_capacity_wagon;
-  length: 8;
+  length: 7;
   weight: int(25.5*1/8);
   cargo_age_period: 185;
   default: switch_dost_het_pass_cargo;
@@ -3567,7 +3567,7 @@ item (FEAT_TRAINS, item_dmu_dost_het) {
      running_cost_factor: int(80/10+(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))-(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))-1250 )/(0.1+2*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))))-((((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))-(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))-1250 )/(0.1+2*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))))*((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))-(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))-1250 )/(0.1+2*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))))-1250 )/(0.1+2*((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))-(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))-1250 )/(0.1+2*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))))))/10+0.3*25.5);
      loading_speed: 40;
   cargo_capacity: 0;
-  length: 8;
+  length: 7;
   weight: int(25.5*1/16);
   power: int(1250*1/2);
   tractive_effort_coefficient: int(0.3*10*25.5);

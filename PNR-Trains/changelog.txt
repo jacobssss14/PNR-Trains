@@ -1,4 +1,11 @@
 Changelog for PNR-Trains
+0.10.1-beta-public
+    *Fixed DOST Hybrid Electric Train graphics issues
+    *Fixed Inka Commuter Coach purchase sprite 
+    *New sprite for CC 300 locomotive
+    *Updated sprite for Series 14 Sleeper coach
+    *Fixed capitalization issues for source files
+
 0.10.0-beta-public
     *Added DOST Hybrid Electric Train
     *Added CC 300 Diesel-Hydraulic Locomitive

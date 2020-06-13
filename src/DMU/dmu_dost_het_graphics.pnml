@@ -22,11 +22,11 @@ spriteset(set_dost_het_front,  "gfx/DMU/DOST_HET/DOST_HET.png") {
    template_dmu_ft_front(1,0)
 }
 spriteset(set_dost_het_back, "gfx/DMU/DOST_HET/DOST_HET.png") {
-   template_dmu_ft_back(1,60)
+   template_dmu_ft_back(1,120)
 
 }
 spriteset (set_dost_het_pass_car, "gfx/DMU/DOST_HET/DOST_HET.png") {
-   template_dmu_ft_front(1,30)
+   template_dmu_ft_front(1,60)
 }
 
 switch(FEAT_TRAINS, SELF, switch_dost_het_pass_cargo, cargo_classes){

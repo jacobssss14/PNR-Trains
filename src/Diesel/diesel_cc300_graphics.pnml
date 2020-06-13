@@ -25,7 +25,7 @@ spriteset(set_cc300_purchase, "gfx/DIESEL/CC300/DIESEL_CC300.png") {
 
 
 spriteset(set_cc300,  "gfx/DIESEL/CC300/DIESEL_CC300.png") {
-   template_standard(1,0)
+   template_standard(1,1)
 }
 
 

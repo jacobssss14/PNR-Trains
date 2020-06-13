@@ -21,7 +21,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //2020 Livery   
 spriteset(set_inka_coach_purchase, "gfx/COACHES/Inka_Commuter_Coach/Inka_Commuter_Coach.png") {
-  template_mu_purchase(1, 106) 
+  template_coach_purchase(1, 106) 
 }
 
 
