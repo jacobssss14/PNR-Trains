@@ -115,6 +115,17 @@ template template_diesel_purchase(x, y) {
     [1	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
 }
 
+template template_steam_tender_purchase(x, y) {
+    [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [x	,  y,  57, 17, -11, -10]
+    [1	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+}
+
 template template_coach_purchase(x, y) {
     [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
     [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
