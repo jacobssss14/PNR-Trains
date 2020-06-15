@@ -23,11 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-<<<<<<< refs/remotes/origin/master
-STR_GRF_NAME        : PNR Trains 0.10.310
-=======
-STR_GRF_NAME        : PNR Trains 0.10.3
->>>>>>> 0.10.3
+STR_GRF_NAME        : PNR Trains 0.11.0
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
 
 #Diesel Locomotives
