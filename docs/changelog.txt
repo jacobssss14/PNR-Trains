@@ -1,4 +1,10 @@
 Changelog for PNR-Trains
+0.11.1
+    *Adjusted sprite positions
+    
+0.11.0
+    *Added Class 300 steam locomotive
+
 0.10.3
     *Fixed graphics issues with the DOST HET
     *Pull graphics template from 0.8.1
