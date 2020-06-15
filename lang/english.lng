@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : PNR Trains 0.10.3
+STR_GRF_NAME        : PNR Trains 0.10.310
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
 
 #Diesel Locomotives
@@ -42,6 +42,9 @@ STR_DMU_KiHa_59       : KiHa 59
 STR_DMU_CLASS_8000    : PNR Class 8000/8100
 STR_DMU_HYUNDAI_ROTEM : PNR Hyundai Rotem DMU 
 STR_DMU_DOST_HET      : DOST Hybrid Electric Train
+
+#Steam 
+STR_STEAM_CLASS_300   : MRR Class 300 
 
 #Coaches
 STR_203_COACH         : 203 Series Coach
