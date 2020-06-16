@@ -1,4 +1,7 @@
 Changelog for PNR-Trains
+0.11.2
+    *New sprite for Class 300 locomotive
+    
 0.11.1
     *Adjusted sprite positions
     
