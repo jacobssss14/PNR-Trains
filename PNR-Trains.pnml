@@ -175,3 +175,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/Steam/steam_class_300_properties.pnml"
 #include "src/Steam/steam_class_300_graphics.pnml"
 #include "src/Steam/steam_class_300_item.pnml"
+
+//Class 140
+#include "src/Steam/steam_class_140_properties.pnml"
+#include "src/Steam/steam_class_140_graphics.pnml"
+#include "src/Steam/steam_class_140_item.pnml"
