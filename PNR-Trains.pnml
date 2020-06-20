@@ -56,6 +56,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //Coaches
 #include "src/init/init_coach.pnml"
 
+//3rd Class Coach
+#include "src/Coaches/3rd_class_coach_properties.pnml"
+#include "src/Coaches/3rd_class_coach_graphics.pnml"
+#include "src/Coaches/3rd_class_coach_item.pnml"
+
 //MU Coach Powered
 #include "src/Coaches/pnr_mu_coach_powered_graphics.pnml"
 #include "src/Coaches/pnr_mu_coach_powered_properties.pnml"
@@ -132,6 +137,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //DMUs
 #include "src/init/init_dmu.pnml"
+
+//MC-14
+#include "src/DMU/mc_14_properties.pnml"
+#include "src/DMU/mc_14_graphics.pnml"
+#include "src/DMU/mc_14_item.pnml"
 
 //DOST HET
 #include "src/DMU/dmu_dost_het_properties.pnml"

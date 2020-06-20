@@ -1,4 +1,11 @@
 Changelog for PNR-Trains
+0.13.0
+    *Added MC-14 motor car (same behavior as MU units)
+    *Added 3rd class coach
+    *Adjusted unpowered MU coach introduction date 
+
+0.12.0
+    *Added Class 140 locomotive
 0.11.2
     *New sprite for Class 300 locomotive
     

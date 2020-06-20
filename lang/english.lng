@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : PNR Trains 0.12.0
+STR_GRF_NAME        : PNR Trains 0.13.0
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
 
 #Diesel Locomotives
@@ -35,6 +35,7 @@ STR_DIESEL_CC203     : ICTSI CC 203
 STR_DIESEL_CC300     : PNR CC300
 
 #DMU
+STR_MC_14             : MC-14
 STR_DMU_CMC_300       : CMC 300
 STR_DMU_NIKKO         : Nikko
 STR_DMU_KiHa_35       : KiHa 35
@@ -48,6 +49,7 @@ STR_STEAM_CLASS_300   : MRR Class 300
 STR_STEAM_CLASS_140   : MRR Class 140
 
 #Coaches
+STR_3RD_CLASS_COACH   : 3rd Class Coach
 STR_203_COACH         : 203 Series Coach
 STR_7A_100            : 7A-100
 STR_7A_2000           : 7A-2000
@@ -90,3 +92,5 @@ str_livery_203_green           : Tokyo Metro Chiyoda Line
 str_livery_203_orange          : Jōban Line Special Rapid
 str_livery_isarog_express      : Isarog Express
 str_livery_luster              : Luster
+str_livery_commuter_black      : Metro Commuter Black
+str_livery_commuter_orange     : Metro Commuter Orange
