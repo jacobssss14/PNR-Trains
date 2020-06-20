@@ -21,35 +21,36 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 #include "../undefine_properties.pnml"
 
-#define VEHIDCODE 3rd_class_coach
-#define ITEM  item_3rd_class_coach
-#define NAME  string(STR_3RD_CLASS_COACH)
-#define INTRODUCTION_YEAR 1900
+#define VEHIDCODE mc_102
+#define ITEM  item_mc_102
+#define NAME  string(STR_MC_102)
+#define INTRODUCTION_YEAR 1940
 #define CLIMATE bitmask(CLIMATE_TEMPERATE)
-#define MODEL_LIFE 50
+#define MODEL_LIFE 30
 #define RETIRE_EARLY DEFAULT_RETIRE_EARLY
+#define VEHICLE_LIFE 25
 
-#define LOADINGSPEED LOAD_INTERCITY
+#define LOADINGSPEED LOAD_COMMUTER
 #define CARGODEF PASSENGERS
-
-#define SPEED 90 
-#define POWER 0
-#define WEIGHT 35
+#define SPEED 80    
+#define POWER 150
+#define WEIGHT 9
 #define TE_COEFFICIENT 0.3
 #define AIR_DRAG_COEFFICIENT 0
 
-#define LENGTH 8
-#define ACTUAL_LENGTH 12
-#define WAGON_LENGTH  8
+#define LENGTH 6
+#define ACTUAL_LENGTH 8
+#define WAGON_LENGTH  6
 
-#define HEAD_CAPACITY 56
-#define WAGON_CAPACITY 56
+#define HEAD_CAPACITY 34
+#define WAGON_CAPACITY 48
 
 #define DUAL_HEADED 0
 #define PASSENGER 1
 
+#define MISC_FLAGS bitmask(TRAIN_FLAG_MU)
+#define VISUAL_FLAG visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER)
 #define TRACK_TYPE CURRENT_TRACK_TYPE
-#define VISUAL_FLAG visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER)
 #define ENGINE_CLASS CURRENT_ENGINE_CLASS
 #define RUNNING_COST_BASE CURRENT_RUNNING_COST_BASE
 #define REFIT_COST DEFAULT_REFIT_COST

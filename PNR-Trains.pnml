@@ -143,6 +143,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/DMU/mc_14_graphics.pnml"
 #include "src/DMU/mc_14_item.pnml"
 
+//MC-14
+#include "src/DMU/mc_102_properties.pnml"
+#include "src/DMU/mc_102_graphics.pnml"
+#include "src/DMU/mc_102_item.pnml"
+
 //DOST HET
 #include "src/DMU/dmu_dost_het_properties.pnml"
 #include "src/DMU/dmu_dost_het_graphics.pnml"

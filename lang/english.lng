@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : PNR Trains 0.13.1
+STR_GRF_NAME        : PNR Trains 0.14.0
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
 
 #Diesel Locomotives
@@ -35,6 +35,7 @@ STR_DIESEL_CC203     : ICTSI CC 203
 STR_DIESEL_CC300     : PNR CC300
 
 #DMU
+STR_MC_102            : MC-102
 STR_MC_14             : MC-14
 STR_DMU_CMC_300       : CMC 300
 STR_DMU_NIKKO         : Nikko
