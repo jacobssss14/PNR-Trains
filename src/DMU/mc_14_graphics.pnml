@@ -43,18 +43,18 @@ spriteset(set_mc_14_pass_car_black, "gfx/DMU/MC_14/MC_14.png") {
 
 //Manual livery change
 switch(FEAT_TRAINS, SELF, switch_mc_14, cargo_subtype) {
-    1: set_mc_14_head_orange;
-    2: set_mc_14_head_black;
+    1: set_mc_14_head_black;
+    set_mc_14_head_orange;
 }
 
 switch(FEAT_TRAINS, SELF, switch_mc_14_pass_cars, cargo_subtype) {
-	1: set_mc_14_pass_car_orange;
-    2: set_mc_14_pass_car_black;
+	1: set_mc_14_pass_car_black;
+    set_mc_14_pass_car_orange;
 }
 
 switch(FEAT_TRAINS, SELF, switch_livery_text_mc_14, cargo_subtype) {
-    1: return string(str_livery_commuter_orange);
-    2: return string(str_livery_commuter_black);
+    0: return string(str_livery_commuter_orange);
+    1: return string(str_livery_commuter_black);
     return CB_RESULT_NO_TEXT;
 }
 ENGINECAPACITYSWITCH(VEHIDCODE)

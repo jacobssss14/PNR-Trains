@@ -1,4 +1,8 @@
 Changelog for PNR-Trains
+0.13.1
+    *Updated Inka Commuter coach sprites
+    *Fixed MC-14 motor car
+
 0.13.0
     *Added MC-14 motor car (same behavior as MU units)
     *Added 3rd class coach
