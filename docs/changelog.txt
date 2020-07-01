@@ -1,4 +1,9 @@
 Changelog for PNR-Trains
+0.14.1
+    *Updated Class 140 graphics
+    *Updated Class 300 graphics
+    *Rewored Class 900 2020 livery (normal and reversed)
+
 0.14.0
     *Added MC-14 motor car
     *Adjusted 3rd class coach length
