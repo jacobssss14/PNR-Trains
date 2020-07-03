@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : PNR Trains 0.14.1
+STR_GRF_NAME        : PNR Trains 0.15.0
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
 
 #Diesel Locomotives
@@ -48,6 +48,8 @@ STR_DMU_DOST_HET      : DOST Hybrid Electric Train
 #Steam 
 STR_STEAM_CLASS_300   : MRR Class 300 
 STR_STEAM_CLASS_140   : MRR Class 140
+STR_STEAM_CLASS_170   : MRR Class 170
+STR_STEAM_CLASS_200   : MRR Class 200
 
 #Coaches
 STR_3RD_CLASS_COACH   : 3rd Class Coach

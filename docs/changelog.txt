@@ -1,4 +1,11 @@
 Changelog for PNR-Trains
+0.15.0
+    *Added Class 170 locomotive
+    *Added Class 200 locomotive
+    
+0.14.2
+    *Reworked CMC-300 liveries
+    
 0.14.1
     *Updated Class 140 graphics
     *Updated Class 300 graphics
