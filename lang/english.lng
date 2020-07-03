@@ -23,11 +23,12 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : PNR Trains 0.15.0
+STR_GRF_NAME        : PNR Trains 0.16.0
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
 
 #Diesel Locomotives
-STR_DIESEL_CLASS_2000: PNR Class 2000
+STR_DIESEL_CLASS_1000: MRR Class 1000
+STR_DIESEL_CLASS_2000: MRR Class 2000
 STR_DIESEL_CLASS_2500: PNR Class 2500
 STR_DIESEL_CLASS_5000: PNR Class 5000
 STR_DIESEL_CLASS_900 : PNR Class 900 

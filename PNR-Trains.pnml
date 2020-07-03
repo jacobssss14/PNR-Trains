@@ -71,7 +71,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/Coaches/pnr_mu_coach_unpowered_properties.pnml"
 #include "src/Coaches/pnr_mu_coach_unpowered_item.pnml"
 
-// 203 Series Generator Car
+// 203 Series generator Car
 #include "src/Coaches/203_generator_car_graphics.pnml"
 #include "src/Coaches/203_generator_car_properties.pnml"
 #include "src/Coaches/203_generator_car_item.pnml"
@@ -110,17 +110,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //Diesel 
 #include "src/init/init_diesel.pnml"
 
-//GE 2500
+//Class 1000
+#include "src/Diesel/diesel_class_1000_properties.pnml"
+#include "src/Diesel/diesel_class_1000_graphics.pnml"
+#include "src/Diesel/diesel_class_1000_item.pnml"
+
+//Class 1000
+#include "src/Diesel/diesel_class_2000_properties.pnml"
+#include "src/Diesel/diesel_class_2000_graphics.pnml"
+#include "src/Diesel/diesel_class_2000_item.pnml"
+
+//Class 5000
 #include "src/Diesel/diesel_class_5000_properties.pnml"
 #include "src/Diesel/diesel_class_5000_graphics.pnml"
 #include "src/Diesel/diesel_class_5000_item.pnml"
 
-//GE 2500
+//Class 2500
 #include "src/Diesel/diesel_class_2500_properties.pnml"
 #include "src/Diesel/diesel_class_2500_graphics.pnml"
 #include "src/Diesel/diesel_class_2500_item.pnml"
 
-//GE 900
+//Class 900
 #include "src/Diesel/diesel_class_900_properties.pnml"
 #include "src/Diesel/diesel_class_900_graphics.pnml"
 #include "src/Diesel/diesel_class_900_item.pnml"
