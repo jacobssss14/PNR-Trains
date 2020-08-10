@@ -48,18 +48,15 @@ item (FEAT_TRAINS, ITEM) {
 		dual_headed: DUAL_HEADED;
 		length: LENGTH;
 
-		cargo_capacity: 1;
-		cargo_allow_refit: [PASS];
+		
       
    }
 
    graphics {
       purchase: set_class_1_purchase;
 	  visual_effect_and_powered: switch_steam_class_1_effect;
-	  length: switch_steam_class_1_length;
-	  articulated_part: switch_steam_class_1_articulated;
 	  RUNNING_COST_ENGINE_CALL
-      default: switch_steam_class_1;
+      default: set_class_1;
 	  
 
    }

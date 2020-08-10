@@ -1,8 +1,11 @@
 Changelog for PNR-Trains
+0.17.1
+    *Fixed Class 1 graphics
+    
 0.17.0
     *Added Class 45 locomotive
     *Added Class 1 locomotive
-    
+
 0.16.0
     *Added Class 1000 locomotive
     *Added Class 2000 locomotive
