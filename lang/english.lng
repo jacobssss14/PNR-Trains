@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : PNR Trains 0.16.0
+STR_GRF_NAME        : PNR Trains 0.17.0
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
 
 #Diesel Locomotives
@@ -51,6 +51,8 @@ STR_STEAM_CLASS_300   : MRR Class 300
 STR_STEAM_CLASS_140   : MRR Class 140
 STR_STEAM_CLASS_170   : MRR Class 170
 STR_STEAM_CLASS_200   : MRR Class 200
+STR_STEAM_CLASS_45    : MRR Class 45
+STR_STEAM_CLASS_1     : Ferrocarril de Manila-Dagupan Class 1
 
 #Coaches
 STR_3RD_CLASS_COACH   : 3rd Class Coach
