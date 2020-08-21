@@ -1,4 +1,7 @@
 Changelog for PNR-Trains
+0.17.2
+    *Increased both HP and Speed of Nikko DMU
+
 0.17.1
     *Fixed Class 1 graphics
     
