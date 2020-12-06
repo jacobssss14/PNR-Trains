@@ -25,7 +25,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #define ITEM  item_dmu_kiha_59
 #define NAME  string(STR_DMU_KiHa_59)
 #define INTRODUCTION_YEAR 2012
-#define CLIMATE bitmask(CLIMATE_TEMPERATE)
+#define CLIMATE bitmask(ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND))
 #define MODEL_LIFE 30
 #define RETIRE_EARLY DEFAULT_RETIRE_EARLY
 #define VEHICLE_LIFE 60

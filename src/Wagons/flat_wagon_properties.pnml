@@ -23,7 +23,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #define VEHIDCODE flat_wagon
 #define ITEM item_flat_wagon
 #define NAME string(STR_FLAT_WAGON)
-#define CLIMATE bitmask(CLIMATE_TEMPERATE)
+#define CLIMATE bitmask(ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND))
 
 
 #define INTRODUCTION_YEAR 1973

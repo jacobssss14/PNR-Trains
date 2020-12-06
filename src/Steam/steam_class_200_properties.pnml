@@ -25,7 +25,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #define ITEM  item_steam_class_200
 #define NAME string(STR_STEAM_CLASS_200)
 #define INTRODUCTION_YEAR 1921
-#define CLIMATE bitmask(CLIMATE_TEMPERATE)
+#define CLIMATE bitmask(ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND))
 #define MODEL_LIFE 30
 #define VEHICLE_LIFE 25
 

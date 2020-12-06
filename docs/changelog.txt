@@ -1,4 +1,7 @@
 Changelog for PNR-Trains
+0.17.3
+    *Fixed instances where vehicles are unavalable on certain climates
+    
 0.17.2
     *Increased both HP and Speed of Nikko DMU
 
