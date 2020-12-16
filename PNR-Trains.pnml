@@ -178,6 +178,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/DMU/dmu_kiha_35_graphics.pnml"
 #include "src/DMU/dmu_kiha_35_item.pnml"
 
+//KiHa52
+#include "src/DMU/dmu_kiha_52_properties.pnml"
+#include "src/DMU/dmu_kiha_52_graphics.pnml"
+#include "src/DMU/dmu_kiha_52_item.pnml"
+
 //KiHa59
 #include "src/DMU/dmu_kiha_59_properties.pnml"
 #include "src/DMU/dmu_kiha_59_graphics.pnml"

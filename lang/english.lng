@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : PNR Trains 0.17.3
+STR_GRF_NAME        : PNR Trains 0.18.0
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
 
 #Diesel Locomotives
@@ -41,6 +41,7 @@ STR_MC_14             : MC-14
 STR_DMU_CMC_300       : CMC 300
 STR_DMU_NIKKO         : Nikko
 STR_DMU_KiHa_35       : KiHa 35
+STR_DMU_KiHa_52       : KiHa 52
 STR_DMU_KiHa_59       : KiHa 59
 STR_DMU_CLASS_8000    : PNR Class 8000/8100
 STR_DMU_HYUNDAI_ROTEM : PNR Hyundai Rotem DMU 

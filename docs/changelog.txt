@@ -1,4 +1,8 @@
 Changelog for PNR-Trains
+0.18.0 
+    *Added KiHa 52 DMU
+    *Revert changes from 0.17.3; GRF is currently limited to Temperate climate
+
 0.17.3
     *Fixed instances where vehicles are unavalable on certain climates
     

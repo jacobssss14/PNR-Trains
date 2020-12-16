@@ -25,7 +25,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #define ITEM  item_diesel_class_5000
 #define NAME string(STR_DIESEL_CLASS_5000)
 #define INTRODUCTION_YEAR 1960
-#define CLIMATE bitmask(ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND))
+#define CLIMATE bitmask(CLIMATE_TEMPERATE)
 #define MODEL_LIFE 50
 #define VEHICLE_LIFE 30
 

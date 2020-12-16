@@ -25,7 +25,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #define ITEM  item_7A_2000
 #define NAME  string(STR_7A_2000)
 #define INTRODUCTION_YEAR 1999
-#define CLIMATE bitmask(ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND))
+#define CLIMATE bitmask(CLIMATE_TEMPERATE)
 #define MODEL_LIFE 40
 #define RETIRE_EARLY DEFAULT_RETIRE_EARLY
 

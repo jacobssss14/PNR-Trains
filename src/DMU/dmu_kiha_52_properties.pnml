@@ -1,5 +1,5 @@
 /* PNR-Trains NewGRF For OpenTTD
-Copyright (C) 2020  Jacob Payag, Alon?
+Copyright (C) 2020  Jacob Payag
 
 This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
 
@@ -21,10 +21,10 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 #include "../undefine_properties.pnml"
 
-#define VEHIDCODE dmu_hyundai_rotem
-#define ITEM  item_dmu_hyundai_rotem
-#define NAME  string(STR_DMU_HYUNDAI_ROTEM)
-#define INTRODUCTION_YEAR 2009
+#define VEHIDCODE dmu_kiha_52
+#define ITEM  item_dmu_kiha_52
+#define NAME  string(STR_DMU_KiHa_52)
+#define INTRODUCTION_YEAR 2011
 #define CLIMATE bitmask(CLIMATE_TEMPERATE)
 #define MODEL_LIFE 30
 #define RETIRE_EARLY DEFAULT_RETIRE_EARLY
@@ -32,9 +32,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 #define LOADINGSPEED LOAD_COMMUTER
 #define CARGODEF PASSENGERS
-#define SPEED 80 
-#define POWER 250
-#define WEIGHT 43.5
+#define SPEED 91
+#define POWER 300
+#define WEIGHT 36
 #define TE_COEFFICIENT 0.3
 #define AIR_DRAG_COEFFICIENT 0
 
@@ -42,8 +42,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #define ACTUAL_LENGTH 8
 #define WAGON_LENGTH  8
 
-#define HEAD_CAPACITY 167
-#define WAGON_CAPACITY 167
+#define HEAD_CAPACITY 88
+#define WAGON_CAPACITY 88
 
 #define DUAL_HEADED 1
 #define PASSENGER 1

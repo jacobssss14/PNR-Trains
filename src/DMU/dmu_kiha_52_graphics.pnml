@@ -1,0 +1,102 @@
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+//2011 Livery
+spriteset(set_kiha_52_purchase_2011, "gfx/DMU/KIHA_52/DMU_KIHA_52_2011.png") {
+  template_mu_purchase(1, 106) 
+}
+
+spriteset(set_kiha_52_front_2011,  "gfx/DMU/KIHA_52/DMU_KIHA_52_2011.png") {
+    template_standard(1, 1)
+}
+
+spriteset (set_kiha_52_pass_car_2011, "gfx/DMU/KIHA_52/DMU_KIHA_52_2011.png") {
+    template_standard(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_kiha_52_pass_cargo_2011, cargo_classes){
+	bitmask(CC_PASSENGERS): set_kiha_52_pass_car_2011;
+}
+
+//2015 Livery
+
+spriteset(set_kiha_52_purchase_2015, "gfx/DMU/KIHA_52/DMU_KIHA_52_2015.png") {
+  template_mu_purchase(1, 106) 
+}
+
+spriteset(set_kiha_52_front_2015,  "gfx/DMU/KIHA_52/DMU_KIHA_52_2015.png") {
+    template_standard(1, 1)
+}
+
+spriteset (set_kiha_52_pass_car_2015, "gfx/DMU/KIHA_52/DMU_KIHA_52_2015.png") {
+    template_standard(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_kiha_52_pass_cargo_2015, cargo_classes){
+	bitmask(CC_PASSENGERS): set_kiha_52_pass_car_2015;
+}
+
+//Autolivery change
+
+switch (FEAT_TRAINS, PARENT, switch_kiha_52_purchase, current_date ) {
+    0..date(2014,12,31): set_kiha_52_purchase_2011;
+    date(2015,1,1)..date(2050,1,1): set_kiha_52_purchase_2015;
+    set_kiha_52_purchase_2015;
+}
+
+switch (FEAT_TRAINS, PARENT, switch_kiha_52_head_cars_auto, date_of_last_service ) {
+    0..date(2014,12,31): set_kiha_52_front_2011;
+    date(2015,1,1)..date(2050,1,1): set_kiha_52_front_2015;
+    set_kiha_52_front_2015;
+}
+
+switch (FEAT_TRAINS, PARENT, switch_kiha_52_pass_cars_auto, date_of_last_service ) {
+    0..date(2019,12,31): switch_kiha_52_pass_cargo_2011;
+    date(2020,1,1)..date(2050,1,1): switch_kiha_52_pass_cargo_2015;
+    switch_kiha_52_pass_cargo_2015;
+}
+
+//Manual Livery Change
+switch(FEAT_TRAINS, SELF, switch_kiha_52_head_cars, cargo_subtype) {
+    1: set_kiha_52_front_2011;
+    2: set_kiha_52_front_2015;
+    switch_kiha_52_head_cars_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_kiha_52_pass_cars, cargo_subtype) {
+	1: switch_kiha_52_pass_cargo_2011;
+    2: switch_kiha_52_pass_cargo_2015;
+    switch_kiha_52_pass_cars_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_livery_text_kiha_52, cargo_subtype) {
+    0: return string(str_livery_auto);
+    1: return string(str_livery_pnr_navy_blue);
+    2: return string(str_livery_pnr_navy_blue);
+    return CB_RESULT_NO_TEXT;
+}
+
+
+
+ENGINECAPACITYSWITCH(VEHIDCODE)
+
+WAGONCAPACITYSWITCH(VEHIDCODE)
+
+RUNNING_COST_ENGINE
+RUNNING_COST_MU
