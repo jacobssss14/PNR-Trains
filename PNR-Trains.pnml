@@ -141,9 +141,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/Diesel/diesel_cc203_item.pnml"
 
 //CC 300
-#include "src/Diesel/diesel_cc300_properties.pnml"
-#include "src/Diesel/diesel_cc300_graphics.pnml"
-#include "src/Diesel/diesel_cc300_item.pnml"
+#include "src/Diesel/diesel_class_9000_properties.pnml"
+#include "src/Diesel/diesel_class_9000_graphics.pnml"
+#include "src/Diesel/diesel_class_9000_item.pnml"
 
 //DMUs
 #include "src/init/init_dmu.pnml"

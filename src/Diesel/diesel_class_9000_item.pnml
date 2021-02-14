@@ -53,8 +53,8 @@ item (FEAT_TRAINS, ITEM) {
 
    graphics {
 	  RUNNING_COST_ENGINE_CALL
-	  purchase: set_cc300_purchase;
-      default: set_cc300;
+	  purchase: set_class_9000_purchase;
+      default: set_class_9000;
 
    }
 

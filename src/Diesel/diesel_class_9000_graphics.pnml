@@ -18,13 +18,13 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-spriteset(set_cc300_purchase, "gfx/DIESEL/CC300/DIESEL_CC300.png") {
+spriteset(set_class_9000_purchase, "gfx/DIESEL/class_9000/DIESEL_class_9000.png") {
     template_diesel_purchase(1,105)
   
 }
 
 
-spriteset(set_cc300,  "gfx/DIESEL/CC300/DIESEL_CC300.png") {
+spriteset(set_class_9000,  "gfx/DIESEL/class_9000/DIESEL_class_9000.png") {
    template_standard(1,1)
 }
 

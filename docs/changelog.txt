@@ -1,4 +1,10 @@
 Changelog for PNR-Trains
+0.18.1 
+    *Change CC300 to official classification (Class 9000)
+    *Change Inka Commuter Coaches to official classification (8300 Series Coaches)
+    *Update to Class 9000 graphics
+    *update to 8300 Series Coaches graphics
+
 0.18.0 
     *Added KiHa 52 DMU
     *Revert changes from 0.17.3; GRF is currently limited to Temperate climate
