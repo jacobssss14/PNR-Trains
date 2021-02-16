@@ -23,42 +23,43 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : PNR Trains 0.18.1
+STR_GRF_NAME        : PNR Trains 0.19.0
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
 
 #Diesel Locomotives
-STR_DIESEL_CLASS_1000: MRR Class 1000
-STR_DIESEL_CLASS_2000: MRR Class 2000
-STR_DIESEL_CLASS_2500: PNR Class 2500
-STR_DIESEL_CLASS_5000: PNR Class 5000
-STR_DIESEL_CLASS_900 : PNR Class 900 
+STR_DIESEL_CLASS_1000: MRR 1000 Class
+STR_DIESEL_CLASS_2000: MRR 2000 Class
+STR_DIESEL_CLASS_2500: PNR 2500 Class
+STR_DIESEL_CLASS_5000: PNR 5000 Class
+STR_DIESEL_CLASS_900 : PNR  900 Class
 STR_DIESEL_CC203     : ICTSI CC 203
-STR_DIESEL_CLASS_9000    : PNR Class 9000
+STR_DIESEL_CLASS_9000: PNR 9000 Class
 
 #DMU
 STR_MC_102            : MC-102
 STR_MC_14             : MC-14
 STR_DMU_CMC_300       : CMC 300
 STR_DMU_NIKKO         : Nikko
-STR_DMU_KiHa_35       : KiHa 35
-STR_DMU_KiHa_52       : KiHa 52
-STR_DMU_KiHa_59       : KiHa 59
-STR_DMU_CLASS_8000    : PNR Class 8000/8100
+STR_DMU_KiHa_35       : PNR KiHa 35
+STR_DMU_KiHa_52       : PNR KiHa 52
+STR_DMU_KiHa_59       : PNR KiHa 59
+STR_DMU_CLASS_8000    : PNR 8000 Series
 STR_DMU_HYUNDAI_ROTEM : PNR Hyundai Rotem DMU 
 STR_DMU_DOST_HET      : DOST Hybrid Electric Train
 
 #Steam 
-STR_STEAM_CLASS_300   : MRR Class 300 
-STR_STEAM_CLASS_140   : MRR Class 140
-STR_STEAM_CLASS_170   : MRR Class 170
-STR_STEAM_CLASS_200   : MRR Class 200
-STR_STEAM_CLASS_45    : MRR Class 45
+STR_STEAM_CLASS_300   : MRR 300 Class
+STR_STEAM_CLASS_140   : MRR 140 Class
+STR_STEAM_CLASS_170   : MRR 170 Class
+STR_STEAM_CLASS_200   : MRR 200 Class
+STR_STEAM_CLASS_45    : MRR  45 Class
 STR_STEAM_CLASS_1     : Ferrocarril de Manila-Dagupan Class 1
 
 #Coaches
 STR_3RD_CLASS_COACH   : 3rd Class Coach
 STR_203_COACH         : 203 Series Coach
 STR_7A_100            : 7A-100
+STR_CTC_DMT           : CTC Demotorized Coach
 STR_7A_2000           : 7A-2000
 STR_INKA_COMMUTER_COACH : 8300 Series Coach
 STR_SERIES_14_SLEEPER : Series 14 Family Sleeper

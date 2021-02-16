@@ -1,4 +1,11 @@
 Changelog for PNR-Trains
+0.19.0 
+    *Added CTC Demotorized Coach
+    *Rename KiHa 59
+    *Rename KiHa 35
+    *Rename KiHa 52
+    *Change names to match PNR Classification format (*Number* Class)
+
 0.18.1 
     *Change CC300 to official classification (Class 9000)
     *Change Inka Commuter Coaches to official classification (8300 Series Coaches)
