@@ -17,7 +17,6 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
-
 //1960 livery
 spriteset(set_class_5000_purchase_1960, "gfx/DIESEL/CLASS_5000/DIESEL_CLASS_5000_1960.png") {
     template_diesel_purchase(1,105)
@@ -28,7 +27,7 @@ spriteset(set_class_5000_1960,  "gfx/DIESEL/CLASS_5000/DIESEL_CLASS_5000_1960.pn
    template_standard(1,1)
 }
 
-//1960 livery
+//1970 livery
 spriteset(set_class_5000_purchase_1970, "gfx/DIESEL/CLASS_5000/DIESEL_CLASS_5000_1970.png") {
     template_diesel_purchase(1,105)
   
@@ -69,15 +68,24 @@ spriteset(set_class_5000_2009,  "gfx/DIESEL/CLASS_5000/DIESEL_CLASS_5000_2009.pn
 }
 
 //2011-2019
-spriteset(set_class_5000_purchase_2011, "gfx/DIESEL/CLASS_5000/DIESEL_CLASS_5000_2000.png") {
+spriteset(set_class_5000_purchase_2011, "gfx/DIESEL/CLASS_5000/DIESEL_CLASS_5000_2011.png") {
     template_diesel_purchase(1,105)
   
 }
 
-spriteset(set_class_5000_2011,  "gfx/DIESEL/CLASS_5000/DIESEL_CLASS_5000_2000.png") {
+spriteset(set_class_5000_2011,  "gfx/DIESEL/CLASS_5000/DIESEL_CLASS_5000_2011.png") {
    template_standard(1,1)
 }
 
+//2020
+spriteset(set_class_5000_purchase_2020, "gfx/DIESEL/CLASS_5000/DIESEL_CLASS_5000_2020.png") {
+    template_diesel_purchase(1,105)
+  
+}
+
+spriteset(set_class_5000_2020,  "gfx/DIESEL/CLASS_5000/DIESEL_CLASS_5000_2020.png") {
+   template_standard(1,1)
+}
 
 //Autochanclass Livery
 switch (FEAT_TRAINS, PARENT, switch_class_5000_purchase, current_date ) {
@@ -87,7 +95,7 @@ switch (FEAT_TRAINS, PARENT, switch_class_5000_purchase, current_date ) {
     date(2001,1,1)..date(2008,12,31): set_class_5000_purchase_2000;
     date(2009,1,1)..date(2010,12,31): set_class_5000_purchase_2009;
     date(2011,1,1)..date(2019,12,31): set_class_5000_purchase_2011;
-    set_class_5000_purchase_2011;
+    set_class_5000_purchase_2020;
 }
 
 switch (FEAT_TRAINS, PARENT, switch_class_5000_auto , date_of_last_service ) {
@@ -97,7 +105,7 @@ switch (FEAT_TRAINS, PARENT, switch_class_5000_auto , date_of_last_service ) {
     date(2001,1,1)..date(2008,12,31): set_class_5000_2000;
     date(2009,1,1)..date(2010,12,31): set_class_5000_2009;
     date(2011,1,1)..date(2019,12,31): set_class_5000_2011;
-    set_class_5000_2011;
+    set_class_5000_2020;
 }
 
 switch(FEAT_TRAINS, SELF, switch_class_5000, cargo_subtype) {
@@ -106,6 +114,8 @@ switch(FEAT_TRAINS, SELF, switch_class_5000, cargo_subtype) {
     3: set_class_5000_1997;
     4: set_class_5000_2000;
     5: set_class_5000_2009;
+    6: set_class_5000_2011;
+    7: set_class_5000_2020;
     switch_class_5000_auto;
 }
 
@@ -114,8 +124,10 @@ switch(FEAT_TRAINS, SELF, switch_livery_text_5000, cargo_subtype) {
 	1: return string(str_livery_mrr_yellow_green);
     2: return string(str_livery_pnr_green);
     3: return string(str_livery_philippines_2000);
-    4: return string(str_livery_pnr_navy_blue);
+    4: return string(str_livery_pnr_navy_blue_2001);
     5: return string(str_livery_filtrak);
+    6: return string(str_livery_pnr_navy_blue_2011);
+    7: return string(str_livery_pnr_orange);
     return CB_RESULT_NO_TEXT;
 }
 

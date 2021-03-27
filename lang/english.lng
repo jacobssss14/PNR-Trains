@@ -82,6 +82,8 @@ str_livery_mrr_yellow          : MRR Yellow
 str_livery_mrr_yellow_green    : MRR Yellow Green
 str_livery_pnr_green           : PNR Green
 str_livery_philippines_2000    : Philippines 2000
+str_livery_pnr_navy_blue_2001  : PNR Navy Blue 2001
+str_livery_pnr_navy_blue_2011  : PNR Navy Blue 2011
 str_livery_pnr_navy_blue       : PNR Navy Blue
 str_livery_pnr_navy_blue_reversed  : PNR Navy Blue (Reversed)    
 str_livery_filtrak             : Filtrak

@@ -59,12 +59,12 @@ spriteset(set_class_900_2009,  "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2009.png")
 }
 
 //2011-2019
-spriteset(set_class_900_purchase_2011, "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2000.png") {
+spriteset(set_class_900_purchase_2011, "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2011.png") {
     template_diesel_purchase(1,105)
   
 }
 
-spriteset(set_class_900_2011,  "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2000.png") {
+spriteset(set_class_900_2011,  "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2011.png") {
    template_standard(1,1)
 }
 
@@ -123,8 +123,9 @@ switch(FEAT_TRAINS, SELF, switch_class_900, cargo_subtype) {
     3: set_class_900_2000;
     4: set_class_900_2011_reversed;
     5: set_class_900_2009;
-    6: set_class_900_2020;
-    7: set_class_900_2020_reversed;
+    6: set_class_900_2011;
+    7: set_class_900_2020;
+    8: set_class_900_2020_reversed;
     switch_class_900_auto;
 }
 
@@ -132,11 +133,12 @@ switch(FEAT_TRAINS, SELF, switch_livery_text_900, cargo_subtype) {
     0: return string(str_livery_auto);
     1: return string(str_livery_pnr_green);
     2: return string(str_livery_philippines_2000);
-    3: return string(str_livery_pnr_navy_blue);
+    3: return string(str_livery_pnr_navy_blue_2001);
     4: return string(str_livery_pnr_navy_blue_reversed);
     5: return string(str_livery_filtrak);
-    6: return string(str_livery_pnr_orange);
-    7: return string(str_livery_pnr_orange_reversed);
+    6: return string(str_livery_pnr_navy_blue_2011);
+    7: return string(str_livery_pnr_orange);
+    8: return string(str_livery_pnr_orange_reversed);
     return CB_RESULT_NO_TEXT;
 }
 
