@@ -1,0 +1,6 @@
+VERSION        :
+VERSION_STRING :
+TITLE          :PNR Trains 
+FILENAME       :PNR-Trains.grf
+REPO_HASH      :
+NEWGRF_VERSION :

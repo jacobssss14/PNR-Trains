@@ -1,0 +1,233 @@
+Changelog for PNR-Trains
+0.19.0 
+    *Added CTC Demotorized Coach
+    *Rename KiHa 59
+    *Rename KiHa 35
+    *Rename KiHa 52
+    *Change names to match PNR Classification format (*Number* Class)
+
+0.18.1 
+    *Change CC300 to official classification (Class 9000)
+    *Change Inka Commuter Coaches to official classification (8300 Series Coaches)
+    *Update to Class 9000 graphics
+    *update to 8300 Series Coaches graphics
+
+0.18.0 
+    *Added KiHa 52 DMU
+    *Revert changes from 0.17.3; GRF is currently limited to Temperate climate
+
+0.17.3
+    *Fixed instances where vehicles are unavalable on certain climates
+    
+0.17.2
+    *Increased both HP and Speed of Nikko DMU
+
+0.17.1
+    *Fixed Class 1 graphics
+    
+0.17.0
+    *Added Class 45 locomotive
+    *Added Class 1 locomotive
+
+0.16.0
+    *Added Class 1000 locomotive
+    *Added Class 2000 locomotive
+
+0.15.0
+    *Added Class 170 locomotive
+    *Added Class 200 locomotive
+
+0.14.2
+    *Reworked CMC-300 liveries
+    
+0.14.1
+    *Updated Class 140 graphics
+    *Updated Class 300 graphics
+    *Rewored Class 900 2020 livery (normal and reversed)
+
+0.14.0
+    *Added MC-14 motor car
+    *Adjusted 3rd class coach length
+
+0.13.1
+    *Updated Inka Commuter coach sprites
+    *Fixed MC-14 motor car
+
+0.13.0
+    *Added MC-14 motor car (same behavior as MU units)
+    *Added 3rd class coach
+    *Adjusted unpowered MU coach introduction date 
+
+0.12.0
+    *Added Class 140 locomotive
+0.11.2
+    *New sprite for Class 300 locomotive
+    
+0.11.1
+    *Adjusted sprite positions
+    
+0.11.0
+    *Added Class 300 steam locomotive
+
+0.10.3
+    *Fixed graphics issues with the DOST HET
+    *Pull graphics template from 0.8.1
+    *Fixed 203 Series Generator car graphics
+    *Updated 203 series coach and generator car sprites
+    *Fixed Kiha 59 Isarog Express sprites
+    *Fixed Kiha 59 2020 livery missing from refit menu
+    *Revised naming scheme
+
+0.10.2-beta-public
+    *Adjusted 203 Series Coach and Generator car capacity
+    *Adjusted 7A-2000 lifespan
+
+0.10.1-beta-public
+    *Fixed DOST Hybrid Electric Train graphics issues
+    *Fixed Inka Commuter Coach purchase sprite 
+    *New sprite for CC 300 locomotive
+    *Updated sprite for Series 14 Sleeper coach
+    *Fixed capitalization issues for source files
+    *Adjusted Series 14 Sleeper lifespan
+
+0.10.0-beta-public
+    *Added DOST Hybrid Electric Train
+    *Added CC 300 Diesel-Hydraulic Locomitive
+    *Added Inka Commuter Coach
+
+0.9.5-beta-public
+    *Added reversed options for Class 900 locomotive
+    
+0.9.4-beta-public
+    *Fixed CMC 300 livery name 
+    *Added reworked Class 900 graphics
+    *Added Luster livery to the Nikko DMU (Manual livery only)
+
+0.9.3-beta-public
+    *Fixed additional 203 Series Generator Car glitches
+    *Added reworked Kiha 59 graphics
+    *Added Isarog Express livery for the Kiha 59 DMU (Manual livery change only)
+
+0.9.2-beta-public
+    *Fixed 203 Series Generator Car livery glitches
+    *Added reworked Series 14 graphics
+    *Added Nikko Prestige Express reworked graphics
+    *Added Nikko MetroTren reworked graphics
+    *Added Class 90 2020 livery reworked graphics
+
+0.9.1-beta-public   
+    *Fixed Series 14 Sleeper graphics
+    *Added reworked graphics for 203 Series Coach and Generator car
+    *Added reworked Kiha 59 graphics
+    *Added reworked Kiha 35 graphics
+0.9.0-beta-public 
+    *Added Series 14 Sleeper
+
+0.8.5-beta-public 
+    *Adjusted loading speed for Intercity trains
+    *Added properties for sleeper cars
+    *Added 2 liveries for the 7A-2000 coach (available through manual livery switch only)
+
+0.8.4-beta-public
+    *New randomizer behavior for Flat wagons
+
+0.8.3-beta-public
+    *Fixed 7A-2000 purchase sprite
+    *Fixed CMC-300 purchase sprite
+
+0.8.2-beta-public
+    *Fixed MU Coach purchase sprites
+    
+0.8.1-beta-public
+    *Fixed Nikko DMU display name
+
+0.8.0-beta-public
+    *Added Nikko DMU
+
+0.7.3-beta-public
+    *Added generic Multiple Unit coach sprites
+    *Update MU coach purchase graphics
+
+0.7.2-beta-public
+    *Added 1960 livery for Class 5000 locomotive
+    *Added 1965 livery for Class 2500 locomotive
+
+0.7.1-beta-public
+    *Added 1997 livery of 7A-100 coaches
+    *Added fixes for non-AC coaches
+
+0.7.0-beta-public
+    *Fixed CMC 300 issues
+    *Added 7A-2000
+    *Adjusted purchase Cost
+    *Adjusted KiHa 35 capacity
+
+0.6.0-beta-public
+    *Fixed livery issues
+    *Fixed Class 900 graphics
+    *Added CMC 300 DMU
+    *Added Class 5000 locomotive
+
+0.5.0-beta-public
+    *Fixed naming issues
+    *Added Class 2500 locomotive
+    *Added 7A-100 passenger coaches
+
+0.4.0-beta-public
+    *Added Class 8000 DMU (from Filipino trains)
+    *Added PNR Flat Wagon 
+    *Added CC 203 locomotive
+    *Added automatic livery change depending on the year
+    *Fixed issues with the Class 900 locomotive
+
+0.3.0-beta-public
+    *Added GE Class 900 locomotives
+    *Added 203 Series Derived coaches and generator car
+    *Added Hyundai Rotem DMU (from Filipino trains)
+    *Fixed aimated sprites 
+    
+0.2.0-beta-public
+    *Initial public beta release
+
+0.1.2-beta-private
+    *Fixed head unit weight
+
+0.1.1-beta-private
+    *Completed documentation
+
+0.1.0-beta-private
+    *Finalized graphics
+    *Added graphics templates
+    *Pull files from 2ccts
+    *Change to narrow guage tracks
+
+0.0.7-alpha-testing
+    *added versioninfo script
+    *added kiha 59 DMU
+    *added MU coach purchase graphics
+
+
+0.0.6-alpha-testing
+    *Code change for the MU coaches
+    *Dynamic capacity scaling for MU wagons is now functional (pass only)
+
+0.0.5-alpha-testing
+    *More code changes
+    *KiHa 35 code is now complete; pending finalization
+
+0.0.4-alpha-testing
+    *Mostly code changes
+    *Fully functional makefile included
+    *Preliminary split of main nml file into multiple pnml files
+
+0.0.3-alpha-testing
+    *Added MU wagons
+    *Defined livery override for MU wagons
+    *Running speed change
+    *Cost change
+
+0.0.2-alpha-testing
+    *First working model of the GRF
+
+0.0.1-alpha-testing
+    *Added purchase menu graphics

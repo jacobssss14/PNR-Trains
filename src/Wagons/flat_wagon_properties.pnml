@@ -32,7 +32,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #define VEHICLE_LIFE 60
 
 #define LOADINGSPEED LOAD_CARGO
-#define CARGODEF FLATBED
+#define CARGODEF CARGODEF_FLAT_WAGON
 
 #define SPEED 100
 #define POWER 0
