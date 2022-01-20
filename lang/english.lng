@@ -69,6 +69,10 @@ STR_MU_COACH_POWERED  : PNR MU Coach Powered
 
 #Wagons
 STR_FLAT_WAGON        : PNR Flatbed Wagon
+STR_TANKER            : PNR Tanker
+STR_BOXCAR_REF        : PNR Refriderated Box Car
+STR_BOXCAR_SMALL      : PNR Small Box Car
+STR_HOPPER_SMALL      : PNR Small Hopper
 
 
 

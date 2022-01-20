@@ -107,10 +107,31 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/Coaches/series_14_sleeper_item.pnml"
 
 //Wagons
+
+//Flat Wagon
 #include "src/Wagons/flat_wagon_properties.pnml"
 #include "src/Wagons/flat_wagon_graphics.pnml"
 #include "src/Wagons/flat_wagon_item.pnml"
 
+//Tanker
+#include "src/Wagons/tanker_properties.pnml"
+#include "src/Wagons/tanker_graphics.pnml"
+#include "src/Wagons/tanker_item.pnml"
+
+//Ref. Boxcar
+#include "src/Wagons/boxcar_ref_properties.pnml"
+#include "src/Wagons/boxcar_ref_graphics.pnml"
+#include "src/Wagons/boxcar_ref_item.pnml"
+
+//Small Boxcar
+#include "src/Wagons/boxcar_small_properties.pnml"
+#include "src/Wagons/boxcar_small_graphics.pnml"
+#include "src/Wagons/boxcar_small_item.pnml"
+
+//Small Hopper
+#include "src/Wagons/hopper_small_properties.pnml"
+#include "src/Wagons/hopper_small_graphics.pnml"
+#include "src/Wagons/hopper_small_item.pnml"
 
 //Diesel 
 #include "src/init/init_diesel.pnml"
