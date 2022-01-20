@@ -18,9 +18,19 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
+//Commuter Coach
+#define DECAY_COMMUTER cargo_age_period: 180;
 
-#define DECAY_COMMUTER_NONAC cargo_age_period: 250;
-#define DECAY_INTERCITY_NONAC cargo_age_period: 200;
-#define DECAY_COMMUTER cargo_age_period: 185;
-#define DECAY_INTERCITY cargo_age_period: 100;
-#define DECAY_SLEEPER cargo_age_period: 85;
+//Intercity Coach
+#define DECAY_INTERCITY_COACH_PRIME cargo_age_period: 10;
+#define DECAY_INTERCITY_COACH cargo_age_period: 80;
+#define DECAY_ECONOMY_COACH cargo_age_period: 125;
+#define DECAY_3CLASS_COACH cargo_age_period: 160;
+
+//Sleeper Cars
+#define DECAY_SLEEPER_PRIME cargo_age_period: 35;
+#define DECAY_SLEEPER cargo_age_period: 70;
+#define DECAY_ECONOMY_SLEEPER cargo_age_period: 140;
+
+
+

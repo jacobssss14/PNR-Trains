@@ -33,7 +33,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #define SPEED 87
 #define WEIGHT 105
 #define TE_COEFFICIENT 0.17
-#define AIR_DRAG_COEFFICIENT 0
+#define AIR_DRAG_COEFFICIENT 0.09
 #define POWER 512
 
 #define LENGTH 8

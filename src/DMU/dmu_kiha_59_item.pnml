@@ -37,7 +37,7 @@ item (FEAT_TRAINS, ITEM) {
 		weight: WEIGHT ton;
 		tractive_effort_coefficient: TE_COEFFICIENT;
 		air_drag_coefficient: AIR_DRAG_COEFFICIENT;
-		DECAY_INTERCITY
+		DECAY_INTERCITY_COACH
 		
 		reliability_decay: RELIABILITY_DECAY;
 		CARGODEF
@@ -70,7 +70,7 @@ item (FEAT_TRAINS, ITEM) {
 	   	WAGONCAPACITYSWITCHCALL(VEHIDCODE)
 		length: WAGON_LENGTH;
 		weight: ADD_WEIGHT_UNPOWERED
-		DECAY_INTERCITY
+		DECAY_INTERCITY_COACH
 		default: switch_kiha_59_pass_cars;
 		cargo_subtype_text: switch_livery_text_kiha_59;
 		
@@ -84,7 +84,7 @@ item (FEAT_TRAINS, ITEM) {
 		weight: ADD_WEIGHT_POWERED
 		power: ADD_POWER
 		tractive_effort_coefficient: ADD_TE
-		DECAY_INTERCITY
+		DECAY_INTERCITY_COACH
 		default: switch_kiha_59_pass_cars;
 		cargo_subtype_text: switch_livery_text_kiha_59;
    }

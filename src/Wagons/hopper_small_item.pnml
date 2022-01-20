@@ -36,7 +36,6 @@ item(FEAT_TRAINS, ITEM) {
 		weight: WEIGHT ton;
 		tractive_effort_coefficient: TE_COEFFICIENT;
 		air_drag_coefficient: AIR_COEFFICIENT;
-		DECAY_COMMUTER
 	
 		CARGODEF
 		misc_flags: MISC_FLAGS;
