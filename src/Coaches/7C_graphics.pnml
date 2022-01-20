@@ -1,0 +1,125 @@
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTACILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+//1949 Livery
+
+spriteset(set_7C_1949_purchase, "gfx/COACHES/7C/7C.png") {
+  template_mu_purchase(1, 106) 
+}
+
+
+spriteset (set_7C_1949, "gfx/COACHES/7C/7C.png") {
+    template_standard(1, 1)
+}
+
+
+//1955 Lviery
+
+spriteset(set_7C_1955_purchase, "gfx/COACHES/7C/7C.png") {
+  template_mu_purchase(1, 106) 
+}
+
+
+spriteset (set_7C_1955, "gfx/COACHES/7C/7C.png") {
+    template_standard(1, 32)
+}
+
+//1964 Livery
+spriteset(set_7C_1964_purchase, "gfx/COACHES/7C/7C.png") {
+  template_mu_purchase(1, 106) 
+}
+
+spriteset (set_7C_1964,  "gfx/COACHES/7C/7C.png") {
+    template_standard(1, 63)
+} 
+
+
+//1990 Livery
+spriteset(set_7C_1990_purchase, "gfx/COACHES/7C/7C.png") {
+  template_mu_purchase(1, 106) 
+}
+
+
+spriteset (set_7C_1990, "gfx/COACHES/7C/7C.png") {
+    template_standard(1, 94)
+}
+
+//1997 Livery
+spriteset(set_7C_1997_purchase, "gfx/COACHES/7C/7C.png") {
+  template_mu_purchase(1, 106) 
+}
+
+
+spriteset (set_7C_1997, "gfx/COACHES/7C/7C.png") {
+    template_standard(1, 125)
+}
+
+//2001 Livery
+spriteset(set_7C_2001_purchase, "gfx/COACHES/7C/7C.png") {
+  template_mu_purchase(1, 106) 
+}
+
+
+spriteset (set_7C_2001, "gfx/COACHES/7C/7C.png") {
+    template_standard(1, 156)
+}
+
+
+
+//Auto livery change
+
+switch (FEAT_TRAINS, PARENT, switch_7C_purchase, current_date ) {
+    0..date(1954,12,31): set_7C_1949_purchase;
+    date(1955,1,1)..date(1963,12,31): set_7C_1955_purchase;
+    date(1964,1,1)..date(1989,12,31): set_7C_1964_purchase;
+    date(1990,1,1)..date(1996,12,31): set_7C_1990_purchase;
+    date(1997,1,1)..date(2000,12,31): set_7C_1997_purchase;
+    set_7C_2001_purchase;
+}
+
+switch (FEAT_TRAINS, PARENT, switch_7C_auto, date_of_last_service ) {
+    0..date(1954,12,31): set_7C_1949;
+    date(1955,1,1)..date(1963,12,31): set_7C_1955;
+    date(1964,1,1)..date(1989,12,31): set_7C_1964;
+    date(1990,1,1)..date(1996,12,31): set_7C_1990;
+    date(1997,1,1)..date(2000,12,31): set_7C_1997;
+    set_7C_2001;
+}
+
+switch(FEAT_TRAINS, SELF, switch_7C, cargo_subtype) {
+   	1: set_7C_1949;
+    2: set_7C_1955;
+    3: set_7C_1964;
+    4: set_7C_1990;
+    5: set_7C_1997;
+    switch_7C_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_livery_text_7C, cargo_subtype) {
+    0: return string(str_livery_auto);
+	1: return string(str_livery_mrr_brown);
+    2: return string(str_livery_mrr_yellow);
+    3: return string(str_livery_pnr_green);
+    4: return string(str_livery_metrotren);
+    5: return string(str_livery_philippines_2000);
+    return CB_RESULT_NO_TEXT;
+}
+
+RUNNING_COST_ENGINE

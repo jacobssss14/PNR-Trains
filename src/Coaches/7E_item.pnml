@@ -1,0 +1,68 @@
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+
+item (FEAT_TRAINS, ITEM) {
+   property {
+      name: NAME;
+      climates_available: CLIMATE;
+		INTRODUCTIONDATEPROPERTY
+		model_life: MODEL_LIFE;
+		retire_early: RETIRE_EARLY;
+		loading_speed: LOADINGSPEED;
+		PURCHASE_COST
+		RUNNING_COST
+		speed: SPEED km/h;
+        power: POWER hp;
+		cargo_capacity: HEAD_CAPACITY;
+		weight: WEIGHT ton;
+		tractive_effort_coefficient: TE_COEFFICIENT;
+		air_drag_coefficient: AIR_DRAG_COEFFICIENT;
+		DECAY_INTERCITY
+		
+		reliability_decay: RELIABILITY_DECAY;
+		CARGODEF
+		refit_cost: REFIT_COST;
+		track_type: TRACK_TYPE;
+		
+		running_cost_base: RUNNING_COST_BASE;
+		engine_class: ENGINE_CLASS;
+		visual_effect_and_powered: VISUAL_FLAG;
+		
+		sprite_id: SPRITE_ID;
+		dual_headed: DUAL_HEADED;
+		length: LENGTH;
+
+		cargo_allow_refit: [PASS];
+      
+   }
+
+     graphics {
+	  cargo_age_period: switch_7A_cargodecay;
+      purchase: switch_7E_purchase;
+      default: switch_7E;
+	  cargo_subtype_text: switch_livery_text_7E;
+      RUNNING_COST_ENGINE_CALL
+
+   }
+
+
+}
