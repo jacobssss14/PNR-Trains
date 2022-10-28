@@ -20,43 +20,19 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 
  spriteset(set_mc_14_purchase, "gfx/DMU/MC_14/MC_14.png") {
-     template_mu_purchase(1,118)
+     template_mu_purchase(1,106)
  }
 
 //Orange 
-spriteset(set_mc_14_head_orange, "gfx/DMU/MC_14/MC_14.png") {
+spriteset(set_mc_14_head, "gfx/DMU/MC_14/MC_14.png") {
     template_standard(1,1)
 }
 
-spriteset(set_mc_14_pass_car_orange, "gfx/DMU/MC_14/MC_14.png") {
-    template_standard(1,28)
+spriteset(set_mc_14_pass_cars, "gfx/DMU/MC_14/MC_14.png") {
+    template_standard(1,64)
 }
 
-//Black
-spriteset(set_mc_14_head_black, "gfx/DMU/MC_14/MC_14.png") {
-    template_standard(1,56)
-}
 
-spriteset(set_mc_14_pass_car_black, "gfx/DMU/MC_14/MC_14.png") {
-    template_standard(1,83)
-}
-
-//Manual livery change
-switch(FEAT_TRAINS, SELF, switch_mc_14, cargo_subtype) {
-    1: set_mc_14_head_black;
-    set_mc_14_head_orange;
-}
-
-switch(FEAT_TRAINS, SELF, switch_mc_14_pass_cars, cargo_subtype) {
-	1: set_mc_14_pass_car_black;
-    set_mc_14_pass_car_orange;
-}
-
-switch(FEAT_TRAINS, SELF, switch_livery_text_mc_14, cargo_subtype) {
-    0: return string(str_livery_commuter_orange);
-    1: return string(str_livery_commuter_black);
-    return CB_RESULT_NO_TEXT;
-}
 ENGINECAPACITYSWITCH(VEHIDCODE)
 
 WAGONCAPACITYSWITCH(VEHIDCODE)
