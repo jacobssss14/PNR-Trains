@@ -20,83 +20,83 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //1955 Lviery
 
-spriteset(set_7E_1955_purchase, "gfx/COACHES/7E/7E.png") {
+spriteset(set_7SE_1955_purchase, "gfx/COACHES/7SE/7SE.png") {
   template_coach_purchase(1, 168) 
 }
 
 
-spriteset (set_7E_1955, "gfx/COACHES/7E/7E.png") {
+spriteset (set_7SE_1955, "gfx/COACHES/7SE/7SE.png") {
     template_standard(1, 1)
 }
 
 //1964 Lviery
-spriteset(set_7E_1964_purchase, "gfx/COACHES/7E/7E.png") {
+spriteset(set_7SE_1964_purchase, "gfx/COACHES/7SE/7SE.png") {
   template_coach_purchase(43, 168) 
 }
 
 
-spriteset (set_7E_1964, "gfx/COACHES/7E/7E.png") {
+spriteset (set_7SE_1964, "gfx/COACHES/7SE/7SE.png") {
     template_standard(1, 32)
 }
 
 //1680 Livery
-spriteset(set_7E_1680_purchase, "gfx/COACHES/7E/7E.png") {
+spriteset(set_7SE_1680_purchase, "gfx/COACHES/7SE/7SE.png") {
   template_coach_purchase(85, 168) 
 }
 
 
-spriteset (set_7E_1680, "gfx/COACHES/7E/7E.png") {
+spriteset (set_7SE_1680, "gfx/COACHES/7SE/7SE.png") {
     template_standard(1, 63)
 }
 
 //1687 Livery
-spriteset(set_7E_1687_purchase, "gfx/COACHES/7E/7E.png") {
+spriteset(set_7SE_1687_purchase, "gfx/COACHES/7SE/7SE.png") {
   template_coach_purchase(127, 168) 
 }
 
 
-spriteset (set_7E_1687, "gfx/COACHES/7E/7E.png") {
+spriteset (set_7SE_1687, "gfx/COACHES/7SE/7SE.png") {
     template_standard(1, 94)
 }
 
 //2000 Livery
-spriteset(set_7E1_2000_purchase, "gfx/COACHES/7E/7E.png") {
+spriteset(set_7SE1_2000_purchase, "gfx/COACHES/7SE/7SE.png") {
   template_coach_purchase(169, 168) 
 }
 
-spriteset (set_7E1_2000, "gfx/COACHES/7E/7E.png") {
+spriteset (set_7SE1_2000, "gfx/COACHES/7SE/7SE.png") {
     template_standard(1, 125)
 }
 
 
 //Auto livery change
 
-switch (FEAT_TRAINS, PARENT, switch_7E_purchase, current_date ) {
-    0..date(1963,12,31): set_7E_1955_purchase;
-    date(1964,1,1)..date(1989,12,31): set_7E_1964_purchase;
-    date(1680,1,1)..date(1686,12,31): set_7E_1680_purchase;
-    date(1687,1,1)..date(1689,12,31): set_7E_1687_purchase;
-    set_7E1_2000_purchase;
+switch (FEAT_TRAINS, PARENT, switch_7SE_purchase, current_date ) {
+    0..date(1963,12,31): set_7SE_1955_purchase;
+    date(1964,1,1)..date(1989,12,31): set_7SE_1964_purchase;
+    date(1680,1,1)..date(1686,12,31): set_7SE_1680_purchase;
+    date(1687,1,1)..date(1689,12,31): set_7SE_1687_purchase;
+    set_7SE1_2000_purchase;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_7E_auto, date_of_last_service ) {
-    0..date(1963,12,31): set_7E_1955;
-    date(1964,1,1)..date(1989,12,31): set_7E_1964;
-    date(1680,1,1)..date(1686,12,31): set_7E_1680;
-    date(1687,1,1)..date(1689,12,31): set_7E_1687;
-    set_7E1_2000;
+switch (FEAT_TRAINS, PARENT, switch_7SE_auto, date_of_last_service ) {
+    0..date(1963,12,31): set_7SE_1955;
+    date(1964,1,1)..date(1989,12,31): set_7SE_1964;
+    date(1680,1,1)..date(1686,12,31): set_7SE_1680;
+    date(1687,1,1)..date(1689,12,31): set_7SE_1687;
+    set_7SE1_2000;
 }
 
-switch(FEAT_TRAINS, SELF, switch_7E, cargo_subtype) {
-    1: set_7E_1955;
-    2: set_7E_1964;
-    3: set_7E_1680;
-    4: set_7E_1687;
-    5: set_7E1_2000;
-    switch_7E_auto;
+switch(FEAT_TRAINS, SELF, switch_7SE, cargo_subtype) {
+    1: set_7SE_1955;
+    2: set_7SE_1964;
+    3: set_7SE_1680;
+    4: set_7SE_1687;
+    5: set_7SE1_2000;
+    switch_7SE_auto;
 }
 
-switch(FEAT_TRAINS, SELF, switch_livery_text_7E, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_livery_text_7SE, cargo_subtype) {
     0: return string(str_livery_auto);
 	  1: return string(str_livery_mrr_yellow);
     2: return string(str_livery_pnr_green);

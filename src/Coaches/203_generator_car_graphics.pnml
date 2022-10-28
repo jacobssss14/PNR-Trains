@@ -19,29 +19,33 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
 spriteset (set_203_generator_car_purchase, "gfx/COACHES/203_GEN_CAR/203_GEN_CAR.png") {
-    template_coach_purchase(1,106)
+    template_coach_purchase(85,138)
 }
 
 
 spriteset (set_203_generator_car, "gfx/COACHES/203_GEN_CAR/203_GEN_CAR.png") {
-    template_standard(1,64)
+    template_standard(1,96)
 }
 
 //Other Liveries
 
 spriteset (set_203_generator_car_orange, "gfx/COACHES/203_GEN_CAR/203_GEN_CAR.png") {
-    template_standard(1,1)
-}
-
-spriteset (set_203_generator_car_green, "gfx/COACHES/203_GEN_CAR/203_GEN_CAR.png") {
     template_standard(1,32)
 }
 
+spriteset (set_203_generator_car_green, "gfx/COACHES/203_GEN_CAR/203_GEN_CAR.png") {
+    template_standard(1,64)
+}
+
+spriteset (set_203_generator_car_inka, "gfx/COACHES/203_GEN_CAR/203_GEN_CAR.png") {
+    template_standard(1,1)
+}
 
 //Manual livery swtich
 switch(FEAT_TRAINS, SELF, switch_203_generator_car, cargo_subtype) {
    	1: set_203_generator_car_orange;
     2: set_203_generator_car_green;
+    3: set_203_generator_car_inka;
     set_203_generator_car;
 }
 
@@ -49,6 +53,7 @@ switch(FEAT_TRAINS, SELF, switch_livery_text_203_generator_car, cargo_subtype) {
     0: return string(str_livery_pnr_navy_blue);
 	1: return string(str_livery_203_orange);
     2: return string(str_livery_203_green);
+    3: return string(str_livery_pnr_2020);
     return CB_RESULT_NO_TEXT;
 }
 

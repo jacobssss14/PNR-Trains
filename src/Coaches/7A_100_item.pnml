@@ -57,9 +57,9 @@ item (FEAT_TRAINS, ITEM) {
 
      graphics {
 	  cargo_age_period: switch_7A_cargodecay;
-      purchase: switch_7A_100_purchase;
-      default: switch_7A_100;
-	  cargo_subtype_text: switch_livery_text_7A_100;
+      purchase: switch_7A_purchase;
+      default: switch_7A;
+	  cargo_subtype_text: switch_livery_text_7A;
       RUNNING_COST_ENGINE_CALL
 
    }

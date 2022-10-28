@@ -101,6 +101,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/Coaches/7E_properties.pnml"
 #include "src/Coaches/7E_item.pnml"
 
+//7SE
+#include "src/Coaches/7SE_graphics.pnml"
+#include "src/Coaches/7SE_properties.pnml"
+#include "src/Coaches/7SE_item.pnml"
+
 
 //CMC-DMT
 #include "src/Coaches/ctc_dmt_graphics.pnml"
