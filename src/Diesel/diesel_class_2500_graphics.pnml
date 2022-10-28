@@ -18,26 +18,6 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-//1965 livery
-spriteset(set_class_2500_purchase_1965, "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_1965.png") {
-    template_diesel_purchase(1,105)
-  
-}
-
-spriteset(set_class_2500_1965,  "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_1965.png") {
-   template_standard(1,1)
-}
-
-//1970 livery
-spriteset(set_class_2500_purchase_1970, "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_1970.png") {
-    template_diesel_purchase(1,105)
-  
-}
-
-spriteset(set_class_2500_1970,  "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_1970.png") {
-   template_standard(1,1)
-}
-
 //1997-2000 livery
 spriteset(set_class_2500_purchase_1997, "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_1997.png") {
     template_diesel_purchase(1,105)
@@ -69,54 +49,62 @@ spriteset(set_class_2500_2009,  "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_2009.pn
 }
 
 //2011-2019
-spriteset(set_class_2500_purchase_2011, "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_2000.png") {
+spriteset(set_class_2500_purchase_2011, "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_2011.png") {
     template_diesel_purchase(1,105)
   
 }
 
-spriteset(set_class_2500_2011,  "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_2000.png") {
+spriteset(set_class_2500_2011,  "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_2011.png") {
+   template_standard(1,1)
+}
+
+//2020
+spriteset(set_class_2500_purchase_2020, "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_2020.png") {
+    template_diesel_purchase(1,105)
+  
+}
+
+spriteset(set_class_2500_2020,  "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_2020.png") {
    template_standard(1,1)
 }
 
 
 //Autochanclass Livery
 switch (FEAT_TRAINS, PARENT, switch_class_2500_purchase, current_date ) {
-    0..date(1969,12,31): set_class_2500_purchase_1965;
-    date(1970,1,1)..date(1996,12,31): set_class_2500_purchase_1970;
+    0..date(1996,12,31): set_class_2500_purchase_1997;
     date(1997,1,1)..date(2000,12,31): set_class_2500_purchase_1997;
     date(2001,1,1)..date(2008,12,31): set_class_2500_purchase_2000;
     date(2009,1,1)..date(2010,12,31): set_class_2500_purchase_2009;
     date(2011,1,1)..date(2019,12,31): set_class_2500_purchase_2011;
-    set_class_2500_purchase_2011;
+    set_class_2500_purchase_2020;
 }
 
 switch (FEAT_TRAINS, PARENT, switch_class_2500_auto , date_of_last_service ) {
-    0..date(1969,12,31): set_class_2500_1965;
-    date(1970,1,1)..date(1996,12,31): set_class_2500_1970;
+    0..date(1996,12,31): set_class_2500_1997;
     date(1997,1,1)..date(2000,12,31): set_class_2500_1997;
     date(2001,1,1)..date(2008,12,31): set_class_2500_2000;
     date(2009,1,1)..date(2010,12,31): set_class_2500_2009;
     date(2011,1,1)..date(2019,12,31): set_class_2500_2011;
-    set_class_2500_2011;
+    set_class_2500_2020;
 }
 
 
 switch(FEAT_TRAINS, SELF, switch_class_2500, cargo_subtype) {
-	1: set_class_2500_1965;
-    2: set_class_2500_1970;
-    3: set_class_2500_1997;
-    4: set_class_2500_2000;
-    5: set_class_2500_2009;
+    1: set_class_2500_1997;
+    2: set_class_2500_2000;
+    3: set_class_2500_2009;
+    4: set_class_2500_2011;
+    5: set_class_2500_2020;
     switch_class_2500_auto;
 }
 
 switch(FEAT_TRAINS, SELF, switch_livery_text_2500, cargo_subtype) {
     0: return string(str_livery_auto);
-	1: return string(str_livery_mrr_yellow_green);
-    2: return string(str_livery_pnr_green);
-    3: return string(str_livery_philippines_2000);
-    4: return string(str_livery_pnr_navy_blue);
-    5: return string(str_livery_filtrak);
+    1: return string(str_livery_philippines_2000);
+    2: return string(str_livery_pnr_navy_blue_2001);
+    3: return string(str_livery_filtrak);
+    4: return string(str_livery_pnr_navy_blue_2011);
+    5: return string(str_livery_pnr_orange);
     return CB_RESULT_NO_TEXT;
 }
 

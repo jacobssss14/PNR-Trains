@@ -18,66 +18,87 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-//1949 Livery
+//1948 Livery
 
-spriteset(set_7A_100_1949_purchase, "gfx/COACHES/7A_100/7A_100_1949.png") {
-  template_mu_purchase(1, 106) 
+spriteset(set_7A_1948_purchase, "gfx/COACHES/7A/7A.png") {
+  template_coach_purchase(1, 199) 
 }
 
 
-spriteset (set_7A_100_1949, "gfx/COACHES/7A_100/7A_100_1949.png") {
-    template_standard(1, 64)
+spriteset (set_7A_1948, "gfx/COACHES/7A/7A.png") {
+    template_standard(1, 1)
 }
 
 
 //1955 Lviery
 
-spriteset(set_7A_100_1955_purchase, "gfx/COACHES/7A_100/7A_100_1955.png") {
-  template_mu_purchase(1, 106) 
+spriteset(set_7A_1955_purchase, "gfx/COACHES/7A/7A.png") {
+  template_coach_purchase(43, 199) 
 }
 
 
-spriteset (set_7A_100_1955, "gfx/COACHES/7A_100/7A_100_1955.png") {
-    template_standard(1, 64)
+spriteset (set_7A_1955, "gfx/COACHES/7A/7A.png") {
+    template_standard(1, 32)
+}
+
+//1964 Lviery
+spriteset(set_7A_1964_purchase, "gfx/COACHES/7A/7A.png") {
+  template_coach_purchase(85, 199) 
+}
+
+
+spriteset (set_7A_1964, "gfx/COACHES/7A/7A.png") {
+    template_standard(1, 63)
 }
 
 //1990 Livery
-spriteset(set_7A_100_1990_purchase, "gfx/COACHES/7A_100/7A_100_1990.png") {
-  template_mu_purchase(1, 106) 
+spriteset(set_7A_1990_purchase, "gfx/COACHES/7A/7A.png") {
+  template_coach_purchase(127, 199) 
 }
 
 
-spriteset (set_7A_100_1990, "gfx/COACHES/7A_100/7A_100_1990.png") {
-    template_standard(1, 64)
+spriteset (set_7A_1990, "gfx/COACHES/7A/7A.png") {
+    template_standard(1, 94)
 }
 
 //1997 Livery
-spriteset(set_7A_100_1997_purchase, "gfx/COACHES/7A_100/7A_100_1997.png") {
-  template_mu_purchase(1, 106) 
+spriteset(set_7A_1997_purchase, "gfx/COACHES/7A/7A.png") {
+  template_coach_purchase(169, 199) 
 }
 
 
-spriteset (set_7A_100_1997, "gfx/COACHES/7A_100/7A_100_1997.png") {
-    template_standard(1, 64)
+spriteset (set_7A_1997, "gfx/COACHES/7A/7A.png") {
+    template_standard(1, 125)
+}
+
+//2000 Livery
+spriteset(set_7A1_2000_purchase, "gfx/COACHES/7A/7A.png") {
+  template_coach_purchase(211, 199) 
+}
+
+spriteset (set_7A1_2000, "gfx/COACHES/7A/7A.png") {
+    template_standard(1, 156)
 }
 
 
 //Auto livery change
 
-switch (FEAT_TRAINS, PARENT, switch_7A_100_purchase, current_date ) {
-    0..date(1954,12,31): set_7A_100_1949_purchase;
-    date(1955,1,1)..date(1989,12,31): set_7A_100_1955_purchase;
-    date(1990,1,1)..date(1996,12,31): set_7A_100_1990_purchase;
-    date(1997,1,1)..date(1999,12,31): set_7A_100_1997_purchase;
-    set_7A_100_1990_purchase;
+switch (FEAT_TRAINS, PARENT, switch_7A_purchase, current_date ) {
+    0..date(1954,12,31): set_7A_1948_purchase;
+    date(1955,1,1)..date(1963,12,31): set_7A_1955_purchase;
+    date(1964,1,1)..date(1989,12,31): set_7A_1964_purchase;
+    date(1990,1,1)..date(1996,12,31): set_7A_1990_purchase;
+    date(1997,1,1)..date(1999,12,31): set_7A_1997_purchase;
+    set_7A1_2000_purchase;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_7A_100_auto, date_of_last_service ) {
-    0..date(1954,12,31): set_7A_100_1949;
-    date(1955,1,1)..date(1989,12,31): set_7A_100_1955;
-    date(1990,1,1)..date(1996,12,31): set_7A_100_1990;
-    date(1997,1,1)..date(1999,12,31): set_7A_100_1997;
-    set_7A_100_1990;
+switch (FEAT_TRAINS, PARENT, switch_7A_auto, date_of_last_service ) {
+    0..date(1954,12,31): set_7A_1948;
+    date(1955,1,1)..date(1963,12,31): set_7A_1955;
+    date(1964,1,1)..date(1989,12,31): set_7A_1964;
+    date(1990,1,1)..date(1996,12,31): set_7A_1990;
+    date(1997,1,1)..date(1999,12,31): set_7A_1997;
+    set_7A1_2000;
 }
 
 
@@ -88,20 +109,24 @@ switch (FEAT_TRAINS, PARENT, switch_7A_cargodecay, date_of_last_service ) {
     return 100;
 }
 
-switch(FEAT_TRAINS, SELF, switch_7A_100, cargo_subtype) {
-   	1: set_7A_100_1949;
-    2: set_7A_100_1955;
-    3: set_7A_100_1990;
-    4: set_7A_100_1997;
-    switch_7A_100_auto;
+switch(FEAT_TRAINS, SELF, switch_7A, cargo_subtype) {
+   	1: set_7A_1948;
+    2: set_7A_1955;
+    3: set_7A_1964;
+    4: set_7A_1990;
+    5: set_7A_1997;
+    6: set_7A1_2000;
+    switch_7A_auto;
 }
 
-switch(FEAT_TRAINS, SELF, switch_livery_text_7A_100, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_livery_text_7A, cargo_subtype) {
     0: return string(str_livery_auto);
-	  1: return string(str_livery_mrr_yellow);
-    2: return string(str_livery_pnr_green);
-    3: return string(str_livery_metrotren);
-    4: return string(str_livery_philippines_2000);
+    1: return string(str_livery_mrr_brown);
+	2: return string(str_livery_mrr_yellow);
+    3: return string(str_livery_pnr_green);
+    4: return string(str_livery_metrotren);
+    5: return string(str_livery_philippines_2000);
+    6: return string(str_livery_pnr_navy_blue_2001);
     return CB_RESULT_NO_TEXT;
 }
 

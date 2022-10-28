@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : PNR Trains 0.19.0
+STR_GRF_NAME        : PNR Trains 0.19.x.a
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
 
 #Diesel Locomotives
@@ -58,7 +58,12 @@ STR_STEAM_CLASS_1     : Ferrocarril de Manila-Dagupan Class 1
 #Coaches
 STR_3RD_CLASS_COACH   : 3rd Class Coach
 STR_203_COACH         : 203 Series Coach
-STR_7A_100            : 7A-100
+STR_7A_100            : 7A - 1st Class Coach
+STR_7B                : 7B Baggage Car
+STR_7C                : 7C - 3rd Class Coach
+STR_7CC               : 7C - 3rd Class Commuter
+STR_7E                : 7E Economy Coach
+STR_7SE               : 7SE - Economy Sleeper
 STR_CTC_DMT           : CTC Demotorized Coach
 STR_7A_2000           : 7A-2000
 STR_INKA_COMMUTER_COACH : 8300 Series Coach
@@ -69,6 +74,10 @@ STR_MU_COACH_POWERED  : PNR MU Coach Powered
 
 #Wagons
 STR_FLAT_WAGON        : PNR Flatbed Wagon
+STR_TANKER            : PNR Tanker
+STR_BOXCAR_REF        : PNR Refriderated Box Car
+STR_BOXCAR_SMALL      : PNR Small Box Car
+STR_HOPPER_SMALL      : PNR Small Hopper
 
 
 
@@ -78,10 +87,13 @@ str_variant_u15c:Variant: {ORANGE} GE U15C
 
 #Livery names
 str_livery_auto                : Automatic livery changing 
+str_livery_mrr_brown           : MRR Brown
 str_livery_mrr_yellow          : MRR Yellow
 str_livery_mrr_yellow_green    : MRR Yellow Green
 str_livery_pnr_green           : PNR Green
 str_livery_philippines_2000    : Philippines 2000
+str_livery_pnr_navy_blue_2001  : PNR Navy Blue 2001
+str_livery_pnr_navy_blue_2011  : PNR Navy Blue 2011
 str_livery_pnr_navy_blue       : PNR Navy Blue
 str_livery_pnr_navy_blue_reversed  : PNR Navy Blue (Reversed)    
 str_livery_filtrak             : Filtrak

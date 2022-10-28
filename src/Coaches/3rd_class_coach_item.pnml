@@ -36,7 +36,7 @@ item (FEAT_TRAINS, ITEM) {
 		weight: WEIGHT ton;
 		tractive_effort_coefficient: TE_COEFFICIENT;
 		air_drag_coefficient: AIR_DRAG_COEFFICIENT;
-		DECAY_INTERCITY_NONAC
+		DECAY_3CLASS_COACH
 		
 		CARGODEF
 		refit_cost: REFIT_COST;
