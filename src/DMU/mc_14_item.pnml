@@ -57,8 +57,7 @@ item (FEAT_TRAINS, ITEM) {
 	  RUNNING_COST_ENGINE_CALL
       ENGINECAPACITYSWITCHCALL(VEHIDCODE)	   
       purchase: set_mc_14_purchase;
-      default: switch_mc_14;
-	  cargo_subtype_text: switch_livery_text_mc_14;
+      default: set_mc_14_head;
 
    }
 
@@ -69,8 +68,8 @@ item (FEAT_TRAINS, ITEM) {
 		length: WAGON_LENGTH;
 		weight: ADD_WEIGHT_UNPOWERED
 		DECAY_COMMUTER
-		default: switch_mc_14_pass_cars;
-		cargo_subtype_text: switch_livery_text_mc_14;
+		default: set_mc_14_pass_cars;
+		
 		
    }
 
@@ -83,8 +82,8 @@ item (FEAT_TRAINS, ITEM) {
 		power: ADD_POWER
 		tractive_effort_coefficient: ADD_TE
 		DECAY_COMMUTER
-		default: switch_mc_14_pass_cars;
-		cargo_subtype_text: switch_livery_text_mc_14;
+		default: set_mc_14_pass_cars;
+		
    }
 
 

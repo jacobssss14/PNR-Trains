@@ -19,7 +19,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 //2011 Livery
 spriteset(set_kiha_52_purchase_2011, "gfx/DMU/KIHA_52/DMU_KIHA_52_2011.png") {
-  template_mu_purchase(1, 106) 
+  template_coach_purchase(1, 106) 
 }
 
 spriteset(set_kiha_52_front_2011,  "gfx/DMU/KIHA_52/DMU_KIHA_52_2011.png") {
@@ -37,7 +37,7 @@ switch(FEAT_TRAINS, SELF, switch_kiha_52_pass_cargo_2011, cargo_classes){
 //2015 Livery
 
 spriteset(set_kiha_52_purchase_2015, "gfx/DMU/KIHA_52/DMU_KIHA_52_2015.png") {
-  template_mu_purchase(1, 106) 
+  template_coach_purchase(1, 106) 
 }
 
 spriteset(set_kiha_52_front_2015,  "gfx/DMU/KIHA_52/DMU_KIHA_52_2015.png") {
