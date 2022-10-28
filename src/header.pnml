@@ -22,7 +22,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //GRF definition
 
 grf {
-   grfid: "PM\01\02";
+   grfid: "PM\01\01";
    name:                   string(STR_GRF_NAME);
    desc:                   string(STR_GRF_DESCRIPTION);
    version:                01;

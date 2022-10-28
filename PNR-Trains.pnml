@@ -144,16 +144,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/Wagons/boxcar_ref_graphics.pnml"
 #include "src/Wagons/boxcar_ref_item.pnml"
 
-//Small Boxcar
-#include "src/Wagons/boxcar_small_properties.pnml"
-#include "src/Wagons/boxcar_small_graphics.pnml"
-#include "src/Wagons/boxcar_small_item.pnml"
-
-//Small Hopper
-#include "src/Wagons/hopper_small_properties.pnml"
-#include "src/Wagons/hopper_small_graphics.pnml"
-#include "src/Wagons/hopper_small_item.pnml"
-
 //Diesel 
 #include "src/init/init_diesel.pnml"
 

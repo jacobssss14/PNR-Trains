@@ -1,4 +1,15 @@
 Changelog for PNR-Trains
+0.20.0
+    *General Graphics Overhaul
+    *Improved Cargo decay for passengers
+    *Added more cargotypes
+    *Added Tanker Car
+    *Added Ref. Box Car
+    *Added 7B Baggage Car (Mail)
+    *Added 7C Coach
+    *Added 7E Coach
+    *Added 7SE Sleeper car
+    
 0.19.0 
     *Added CTC Demotorized Coach
     *Rename KiHa 59
