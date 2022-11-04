@@ -19,16 +19,16 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
 
-spriteset(set_mc_102_purchase, "gfx/DMU/MC_102/MC_102.png") {
+spriteset(set_mc_100_purchase, "gfx/DMU/MC_100/MC_100.png") {
      template_mu_purchase(1,106)
  }
 
 
-spriteset(set_mc_102, "gfx/DMU/MC_102/MC_102.png") {
+spriteset(set_mc_100, "gfx/DMU/MC_100/MC_100.png") {
     template_standard(1,1)
 }
 
-spriteset(set_mc_102_pass_car, "gfx/DMU/MC_102/MC_102.png") {
+spriteset(set_mc_100_pass_car, "gfx/DMU/MC_100/MC_100.png") {
     template_standard(1,64)
 }
 

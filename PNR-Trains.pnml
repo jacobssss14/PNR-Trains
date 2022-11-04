@@ -144,6 +144,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/Wagons/boxcar_ref_graphics.pnml"
 #include "src/Wagons/boxcar_ref_item.pnml"
 
+//Small Boxcar
+#include "src/Wagons/boxcar_small_properties.pnml"
+#include "src/Wagons/boxcar_small_graphics.pnml"
+#include "src/Wagons/boxcar_small_item.pnml"
+
+//Small Hopper
+#include "src/Wagons/hopper_small_properties.pnml"
+#include "src/Wagons/hopper_small_graphics.pnml"
+#include "src/Wagons/hopper_small_item.pnml"
+
+
 //Diesel 
 #include "src/init/init_diesel.pnml"
 
@@ -185,15 +196,15 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //DMUs
 #include "src/init/init_dmu.pnml"
 
-//MC-14
-#include "src/DMU/mc_14_properties.pnml"
-#include "src/DMU/mc_14_graphics.pnml"
-#include "src/DMU/mc_14_item.pnml"
+//MC-0
+#include "src/DMU/mc_0_properties.pnml"
+#include "src/DMU/mc_0_graphics.pnml"
+#include "src/DMU/mc_0_item.pnml"
 
-//MC-14
-#include "src/DMU/mc_102_properties.pnml"
-#include "src/DMU/mc_102_graphics.pnml"
-#include "src/DMU/mc_102_item.pnml"
+//MC-100
+#include "src/DMU/mc_100_properties.pnml"
+#include "src/DMU/mc_100_graphics.pnml"
+#include "src/DMU/mc_100_item.pnml"
 
 //DOST HET
 #include "src/DMU/dmu_dost_het_properties.pnml"
@@ -267,3 +278,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/Steam/steam_class_45_properties.pnml"
 #include "src/Steam/steam_class_45_graphics.pnml"
 #include "src/Steam/steam_class_45_item.pnml"
+
+//EMU Standard Guage
+#include "src/init/init_emu_standard.pnml"
+
+//EM10000
+#include "src/EMU/emu_std_em10000_properties.pnml"
+#include "src/EMU/emu_std_em10000_graphics.pnml"
+#include "src/EMU/emu_std_em10000_item.pnml"

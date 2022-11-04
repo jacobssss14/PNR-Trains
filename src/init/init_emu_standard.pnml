@@ -1,5 +1,5 @@
 /* PNR-Trains NewGRF For OpenTTD
-Copyright (C) 1981  Jacob Payag
+Copyright (C) 2020  Jacob Payag
 
 This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
 
@@ -19,23 +19,14 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
 
- spriteset(set_mc_14_purchase, "gfx/DMU/MC_14/MC_14.png") {
-     template_mu_purchase(1,106)
- }
 
-//Orange 
-spriteset(set_mc_14_head, "gfx/DMU/MC_14/MC_14.png") {
-    template_standard(1,1)
-}
+#include "undefined_properties.pnml"
 
-spriteset(set_mc_14_pass_cars, "gfx/DMU/MC_14/MC_14.png") {
-    template_standard(1,64)
-}
+#define CURRENT_TRACK_TYPE ELRL
+#define CURRENT_RUNNING_COST_BASE RUNNING_COST_ELECTRIC
+#define CURRENT_ENGINE_CLASS ENGINE_CLASS_ELECTRIC
 
 
-ENGINECAPACITYSWITCH(VEHIDCODE)
-
-WAGONCAPACITYSWITCH(VEHIDCODE)
-
-RUNNING_COST_ENGINE
-RUNNING_COST_MU
+// Room for specific defines
+#define PURCHASECOSTVALUE PURCHASE_EMU
+#define RUNNINGCOSTVALUE  RUNNING_EMU

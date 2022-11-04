@@ -20,20 +20,20 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //2012 Livery
 
-spriteset(set_kiha_59_purchase_2012, "gfx/DMU/KIHA_59/DMU_KIHA_59_2012.png") {
-  template_mu_purchase(1, 106) 
+spriteset(set_kiha_59_purchase_2012, "gfx/DMU/KIHA_59/DMU_KIHA_59.png") {
+  template_mu_purchase(1, 200) 
 }
 
-spriteset(set_kiha_59_front_2012,  "gfx/DMU/KIHA_59/DMU_KIHA_59_2012.png") {
+spriteset(set_kiha_59_front_2012,  "gfx/DMU/KIHA_59/DMU_KIHA_59.png") {
     template_standard(1, 1)
 }
 
-spriteset(set_kiha_59_back_2012, "gfx/DMU/KIHA_59/DMU_KIHA_59_2012.png") {
+spriteset(set_kiha_59_back_2012, "gfx/DMU/KIHA_59/DMU_KIHA_59.png") {
     template_standard(1, 32)
    }
 
 
-spriteset (set_kiha_59_pass_car_2012, "gfx/DMU/KIHA_59/DMU_KIHA_59_2012.png") {
+spriteset (set_kiha_59_pass_car_2012, "gfx/DMU/KIHA_59/DMU_KIHA_59.png") {
     template_standard(1, 64)
 }
 
@@ -47,52 +47,52 @@ switch(FEAT_TRAINS, SELF, switch_dmu_kiha_59_reversed_2012, var[0xC8]) {
     set_kiha_59_front_2012;
 }
 
-//isarog Livery
+//2014 Livery
 
-spriteset(set_kiha_59_purchase_isarog, "gfx/DMU/KIHA_59/DMU_KIHA_59_ISAROG.png") {
-  template_mu_purchase(1, 106) 
+spriteset(set_kiha_59_purchase_2014, "gfx/DMU/KIHA_59/DMU_KIHA_59.png") {
+  template_mu_purchase(60, 200) 
 }
 
-spriteset(set_kiha_59_front_isarog,  "gfx/DMU/KIHA_59/DMU_KIHA_59_ISAROG.png") {
-    template_standard(1, 1)
+spriteset(set_kiha_59_front_2014,  "gfx/DMU/KIHA_59/DMU_KIHA_59.png") {
+    template_standard(1, 95)
 }
 
-spriteset(set_kiha_59_back_isarog, "gfx/DMU/KIHA_59/DMU_KIHA_59_ISAROG.png") {
-    template_standard(1, 32)
+spriteset(set_kiha_59_back_2014, "gfx/DMU/KIHA_59/DMU_KIHA_59.png") {
+    template_standard(1, 126)
    }
 
 
-spriteset (set_kiha_59_pass_car_isarog, "gfx/DMU/KIHA_59/DMU_KIHA_59_ISAROG.png") {
-    template_standard(1, 64)
+spriteset (set_kiha_59_pass_car_2014, "gfx/DMU/KIHA_59/DMU_KIHA_59.png") {
+    template_standard(1, 158)
 }
 
-switch(FEAT_TRAINS, SELF, switch_kiha_59_pass_cargo_isarog, cargo_classes){
-	bitmask(CC_PASSENGERS): set_kiha_59_pass_car_isarog;
+switch(FEAT_TRAINS, SELF, switch_kiha_59_pass_cargo_2014, cargo_classes){
+	bitmask(CC_PASSENGERS): set_kiha_59_pass_car_2014;
 }
 
-switch(FEAT_TRAINS, SELF, switch_dmu_kiha_59_reversed_isarog, var[0xC8]) {
-	 0xFE: set_kiha_59_back_isarog;
-    0xFF: set_kiha_59_back_isarog;
-    set_kiha_59_front_isarog;
+switch(FEAT_TRAINS, SELF, switch_dmu_kiha_59_reversed_2014, var[0xC8]) {
+	 0xFE: set_kiha_59_back_2014;
+    0xFF: set_kiha_59_back_2014;
+    set_kiha_59_front_2014;
 }
 
 //2020 Lviery
 
-spriteset(set_kiha_59_purchase_2020, "gfx/DMU/KIHA_59/DMU_KIHA_59_2020.png") {
-  template_mu_purchase(1, 106) 
+spriteset(set_kiha_59_purchase_2020, "gfx/DMU/KIHA_59/DMU_KIHA_59.png") {
+  template_mu_purchase(119, 200) 
 }
 
-spriteset(set_kiha_59_front_2020,  "gfx/DMU/KIHA_59/DMU_KIHA_59_2020.png") {
-    template_standard(1, 1)
+spriteset(set_kiha_59_front_2020,  "gfx/DMU/KIHA_59/DMU_KIHA_59.png") {
+    template_standard(179, 1)
 }
 
-spriteset(set_kiha_59_back_2020, "gfx/DMU/KIHA_59/DMU_KIHA_59_2020.png") {
-    template_standard(1, 32)
+spriteset(set_kiha_59_back_2020, "gfx/DMU/KIHA_59/DMU_KIHA_59.png") {
+    template_standard(179, 32)
    }
 
 
-spriteset (set_kiha_59_pass_car_2020, "gfx/DMU/KIHA_59/DMU_KIHA_59_2020.png") {
-    template_standard(1, 64)
+spriteset (set_kiha_59_pass_car_2020, "gfx/DMU/KIHA_59/DMU_KIHA_59.png") {
+    template_standard(179, 64)
 }
 
 switch(FEAT_TRAINS, SELF, switch_kiha_59_pass_cargo_2020, cargo_classes){
@@ -109,19 +109,22 @@ switch(FEAT_TRAINS, SELF, switch_dmu_kiha_59_reversed_2020, var[0xC8]) {
 //Autolivery change
 
 switch (FEAT_TRAINS, PARENT, switch_kiha_59_purchase, current_date ) {
-    0..date(2019,12,31): set_kiha_59_purchase_2012;
+    0..date(2013,12,31): set_kiha_59_purchase_2012;
+    date(2014,1,1)..date(2019,12,31): set_kiha_59_purchase_2014;
     date(2020,1,1)..date(2050,1,1): set_kiha_59_purchase_2020;
     set_kiha_59_purchase_2020;
 }
 
 switch (FEAT_TRAINS, PARENT, switch_kiha_59_head_cars_auto, date_of_last_service ) {
-    0..date(2019,12,31): switch_dmu_kiha_59_reversed_2012;
+    0..date(2013,12,31): switch_dmu_kiha_59_reversed_2012;
+    date(2014,1,1)..date(2019,12,31): switch_dmu_kiha_59_reversed_2014;
     date(2020,1,1)..date(2050,1,1): switch_dmu_kiha_59_reversed_2020;
     switch_dmu_kiha_59_reversed_2020;
 }
 
 switch (FEAT_TRAINS, PARENT, switch_kiha_59_pass_cars_auto, date_of_last_service ) {
-    0..date(2019,12,31): switch_kiha_59_pass_cargo_2012;
+    0..date(2013,12,31): switch_kiha_59_pass_cargo_2012;
+     date(2014,1,1)..date(2019,12,31): switch_kiha_59_pass_cargo_2014;
     date(2020,1,1)..date(2050,1,1): switch_kiha_59_pass_cargo_2020;
     switch_kiha_59_pass_cargo_2020;
 }
@@ -129,23 +132,23 @@ switch (FEAT_TRAINS, PARENT, switch_kiha_59_pass_cars_auto, date_of_last_service
 //Manual Livery Change
 switch(FEAT_TRAINS, SELF, switch_kiha_59_head_cars, cargo_subtype) {
     1: switch_dmu_kiha_59_reversed_2012;
-    2: switch_dmu_kiha_59_reversed_isarog;
+    2: switch_dmu_kiha_59_reversed_2014;
     3: switch_dmu_kiha_59_reversed_2020;
     switch_kiha_59_head_cars_auto;
 }
 
 switch(FEAT_TRAINS, SELF, switch_kiha_59_pass_cars, cargo_subtype) {
 	1: switch_kiha_59_pass_cargo_2012;
-    2: switch_kiha_59_pass_cargo_isarog;
+    2: switch_kiha_59_pass_cargo_2014;
     3: switch_kiha_59_pass_cargo_2020;
     switch_kiha_59_pass_cars_auto;
 }
 
 switch(FEAT_TRAINS, SELF, switch_livery_text_kiha_59, cargo_subtype) {
     0: return string(str_livery_auto);
-    1: return string(str_livery_premiere_train_2012);
-    2: return string(str_livery_isarog_express);
-    3: return string(str_livery_pnr_2020);
+    1: return string(str_livery_kogane);
+    2: return string(str_livery_premiere);
+    3: return string(str_livery_premiere_2019);
     return CB_RESULT_NO_TEXT;
 }
 

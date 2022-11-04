@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : PNR Trains 0.20.0
+STR_GRF_NAME        : PNR Trains 1.0.0-rc
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
 
 #Diesel Locomotives
@@ -37,7 +37,7 @@ STR_DIESEL_CLASS_9000: PNR 9000 Class
 
 #DMU
 STR_MC_102            : MC-102
-STR_MC_14             : MC-14
+STR_mc_0             : MC-14
 STR_DMU_CMC_300       : CMC 300
 STR_DMU_NIKKO         : Nikko
 STR_DMU_KiHa_35       : PNR KiHa 35
@@ -46,6 +46,9 @@ STR_DMU_KiHa_59       : PNR KiHa 59
 STR_DMU_CLASS_8000    : PNR 8000 Series
 STR_DMU_HYUNDAI_ROTEM : PNR Hyundai Rotem DMU 
 STR_DMU_DOST_HET      : DOST Hybrid Electric Train
+
+#EMU
+STR_EMU_EM_10000       :EM10000 Class
 
 #Steam 
 STR_STEAM_CLASS_300   : MRR 300 Class
@@ -103,6 +106,7 @@ str_livery_pnr_orange_reversed : PNR Orange (Reversed)
 str_livery_pnr_2020            : PNR 2020 
 str_livery_metrotren           : Metrotren
 str_livery_mayon_limited       : Mayon Limited
+str_livery_niigata             : Niigata Livery
 str_livery_premiere_train_2012  : Premiere Train 2012
 str_livery_penafrancia_express : Peñafrancia Express
 str_livery_prestige_express    : Prestige Express
@@ -114,3 +118,7 @@ str_livery_isarog_express      : Isarog Express
 str_livery_luster              : Luster
 str_livery_commuter_black      : Metro Commuter Black
 str_livery_commuter_orange     : Metro Commuter Orange
+str_livery_kogane              : KiHa 59 "Kogane"
+str_livery_premiere            : Premiere Train
+str_livery_premiere_2019       : Premiere Train 2019
+str_livery_2011                : KiHa 52 Original

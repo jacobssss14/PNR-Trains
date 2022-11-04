@@ -1,5 +1,5 @@
 /* PNR-Trains NewGRF For OpenTTD
-Copyright (C) 2020  Jacob Payag
+Copyright (C) 1981  Jacob Payag
 
 This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
 
@@ -17,12 +17,25 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
-//Spritesets
-spriteset (hopper_small, "gfx/Wagons/HOPPER_SMALL.png") {
-    template_cargo(1,1)
+
+
+ spriteset(set_mc_0_purchase, "gfx/DMU/MC_0/MC_0.png") {
+     template_mu_purchase(1,106)
+ }
+
+//Orange 
+spriteset(set_mc_0_head, "gfx/DMU/MC_0/MC_0.png") {
+    template_standard(1,1)
 }
 
+spriteset(set_mc_0_pass_cars, "gfx/DMU/MC_0/MC_0.png") {
+    template_standard(1,64)
+}
+
+
+ENGINECAPACITYSWITCH(VEHIDCODE)
+
+WAGONCAPACITYSWITCH(VEHIDCODE)
+
 RUNNING_COST_ENGINE
-
-
-
+RUNNING_COST_MU

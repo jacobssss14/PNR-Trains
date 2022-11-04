@@ -18,6 +18,8 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
+
+/*Kiha 35*/
 item (FEAT_TRAINS, ITEM) {
    property {
       name: NAME;
@@ -53,11 +55,11 @@ item (FEAT_TRAINS, ITEM) {
       
    }
 
-     graphics {
+   graphics {
 	  RUNNING_COST_ENGINE_CALL
       ENGINECAPACITYSWITCHCALL(VEHIDCODE)	   
-      purchase: set_mc_102_purchase;
-      default: set_mc_102;
+      purchase: set_em_100000_purchase;
+      default: switch_dmu_em_100000_reversed;
 
    }
 
@@ -68,8 +70,7 @@ item (FEAT_TRAINS, ITEM) {
 		length: WAGON_LENGTH;
 		weight: ADD_WEIGHT_UNPOWERED
 		DECAY_COMMUTER
-		default: set_mc_102_pass_car;
-		
+		default: set_em_100000_pass_car;
    }
 
    livery_override (item_pnr_mu_coach_powered) {
@@ -81,9 +82,8 @@ item (FEAT_TRAINS, ITEM) {
 		power: ADD_POWER
 		tractive_effort_coefficient: ADD_TE
 		DECAY_COMMUTER
-		default: set_mc_102_pass_car;
+		default: set_em_100000_pass_car;
+
    }
-
-
 
 }

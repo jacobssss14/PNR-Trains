@@ -1,4 +1,12 @@
 Changelog for PNR-Trains
+1.0.0-rc
+    *Release Candidate. For internal testing and final feedback
+    *Added Reworked KiHa 59 and 52 Graphics
+    *Fixed small cargo cars
+    *Added EM10000 Class 
+    *Code Cleanup
+    *Fixed Raitypes
+    *MU Coach is now available for Standard Guage tracks
 0.20.0
     *General Graphics Overhaul
     *Improved Cargo decay for passengers

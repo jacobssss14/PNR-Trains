@@ -40,7 +40,7 @@ item(FEAT_TRAINS, ITEM) {
 		CARGODEF
 		misc_flags: MISC_FLAGS;
 
-		track_type: NAAN;
+		track_type: RAIL;
 		
 	
 		visual_effect_and_powered: VISUAL_FLAG;

@@ -17,11 +17,10 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
- 
- /*MU Wagon, modify for later use*/  
-item(FEAT_TRAINS, ITEM) {
-	property {
-		name: NAME;
+
+item (FEAT_TRAINS, ITEM) {
+   property {
+      name: NAME;
       climates_available: CLIMATE;
 		INTRODUCTIONDATEPROPERTY
 		model_life: MODEL_LIFE;
@@ -35,14 +34,17 @@ item(FEAT_TRAINS, ITEM) {
 		cargo_capacity: HEAD_CAPACITY;
 		weight: WEIGHT ton;
 		tractive_effort_coefficient: TE_COEFFICIENT;
-		air_drag_coefficient: AIR_COEFFICIENT;
-	
+		air_drag_coefficient: AIR_DRAG_COEFFICIENT;
+		DECAY_COMMUTER
+		
+		reliability_decay: RELIABILITY_DECAY;
 		CARGODEF
 		misc_flags: MISC_FLAGS;
-
-		track_type: RAIL;
+		refit_cost: REFIT_COST;
+		track_type: TRACK_TYPE;
 		
-	
+		running_cost_base: RUNNING_COST_BASE;
+		engine_class: ENGINE_CLASS;
 		visual_effect_and_powered: VISUAL_FLAG;
 		
 		sprite_id: SPRITE_ID;
@@ -50,9 +52,40 @@ item(FEAT_TRAINS, ITEM) {
 		length: LENGTH;
       
    }
-   graphics {
-      purchase: set_pnr_mu_coach_unpowered_purchase;
-	  default: set_pnr_mu_coach_unpowered;
+
+     graphics {
 	  RUNNING_COST_ENGINE_CALL
+      ENGINECAPACITYSWITCHCALL(VEHIDCODE)	   
+      purchase: set_mc_0_purchase;
+      default: set_mc_0_head;
+
    }
+
+   livery_override (item_pnr_mu_coach_unpowered) {
+	    RUNNING_COST_MU_UNPOWERED_CALL 
+	   	loading_speed: LOADINGSPEED;
+	   	WAGONCAPACITYSWITCHCALL(VEHIDCODE)
+		length: WAGON_LENGTH;
+		weight: ADD_WEIGHT_UNPOWERED
+		DECAY_COMMUTER
+		default: set_mc_0_pass_cars;
+		
+		
+   }
+
+   livery_override (item_pnr_mu_coach_powered) {
+	    RUNNING_COST_MU_POWERED_CALL 
+	   	loading_speed: LOADINGSPEED;
+	   	WAGONCAPACITYSWITCHCALL(VEHIDCODE)
+		length: WAGON_LENGTH;
+		weight: ADD_WEIGHT_POWERED
+		power: ADD_POWER
+		tractive_effort_coefficient: ADD_TE
+		DECAY_COMMUTER
+		default: set_mc_0_pass_cars;
+		
+   }
+
+
+
 }

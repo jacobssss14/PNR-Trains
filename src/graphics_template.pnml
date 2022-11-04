@@ -18,6 +18,18 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
+template template_standard_guage(x, y) {
+   [x,     y, 8,  24, -3,  -12]
+   [x+9,   y, 22, 21, -14, -12]
+   [x+33,  y, 31, 16, -16, -12]
+   [x+65,  y, 22, 21, -6,  -12]
+   [x+88,  y, 8,  24, -3,  -12]
+   [x+97,  y, 22, 21, -14, -12]
+   [x+120, y, 31, 16, -16, -12]
+   [x+153, y, 22, 21, -6,  -12]
+
+}
+
 template template_standard(x, y) {
    [x,     y, 8,  24, -3,  -10]
    [x+9,   y, 22, 21, -14, -13]
@@ -93,13 +105,13 @@ template template_cargo(x, y) {
 
 template template_cargo_small(x, y) {
     [x    , y,  8, 23,  -3, -10]
-    [x+9  , y, 22, 20, -16, -15]
-    [x+32 , y, 32, 16, -16, -12]
-    [x+65 , y, 22, 20,  -9, -11]
+    [x+9  , y, 22, 20, -15, -15]
+    [x+32 , y, 32, 16, -12, -13]
+    [x+65 , y, 22, 20,  -7, -14]
     [x+88 , y,  8, 23,  -3, -10]
-    [x+97 , y, 22, 20, -14, -13]
-    [x+120, y, 32, 16, -16, -12]
-    [x+153, y, 22, 20,  -8, -16]
+    [x+97 , y, 22, 20, -15, -13]
+    [x+120, y, 32, 16, -18, -13]
+    [x+153, y, 22, 20,  -7, -16]
 }
 
 
