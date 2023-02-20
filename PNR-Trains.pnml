@@ -61,15 +61,25 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/Coaches/3rd_class_coach_graphics.pnml"
 #include "src/Coaches/3rd_class_coach_item.pnml"
 
-//MU Coach Powered
+//MU Coach Std Powered
 #include "src/Coaches/pnr_mu_coach_powered_graphics.pnml"
 #include "src/Coaches/pnr_mu_coach_powered_properties.pnml"
 #include "src/Coaches/pnr_mu_coach_powered_item.pnml"
 
-//MU Coach Unpowered
+//MU Coach Std Unpowered
 #include "src/Coaches/pnr_mu_coach_unpowered_graphics.pnml"
 #include "src/Coaches/pnr_mu_coach_unpowered_properties.pnml"
 #include "src/Coaches/pnr_mu_coach_unpowered_item.pnml"
+
+//MU Coach Nrw Powered
+//#include "src/Coaches/pnr_mu_coach_nrw_powered_graphics.pnml"
+#include "src/Coaches/pnr_mu_coach_nrw_powered_properties.pnml"
+#include "src/Coaches/pnr_mu_coach_nrw_powered_item.pnml"
+
+//MU Coach Nrw Unpowered
+//#include "src/Coaches/pnr_mu_coach_nrw_unpowered_graphics.pnml"
+#include "src/Coaches/pnr_mu_coach_nrw_unpowered_properties.pnml"
+#include "src/Coaches/pnr_mu_coach_nrw_unpowered_item.pnml"
 
 // 203 Series generator Car
 #include "src/Coaches/203_generator_car_graphics.pnml"

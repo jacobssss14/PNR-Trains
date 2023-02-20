@@ -1,4 +1,7 @@
 Changelog for PNR-Trains
+1.0.0-rc2
+    *Fixed Availability of MU coach on narrow guage tracks
+
 1.0.0-rc
     *Release Candidate. For internal testing and final feedback
     *Added Reworked KiHa 59 and 52 Graphics
