@@ -36,6 +36,7 @@ item (FEAT_TRAINS, ITEM) {
 		weight: WEIGHT ton;
 		tractive_effort_coefficient: TE_COEFFICIENT;
 		air_drag_coefficient: AIR_DRAG_COEFFICIENT;
+		variant_group: 6009;
 
 		
 		reliability_decay: RELIABILITY_DECAY;

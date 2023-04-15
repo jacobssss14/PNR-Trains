@@ -22,7 +22,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "../undefine_properties.pnml"
 
 #define VEHIDCODE mc_100
-#define ITEM  item_mc_100
+#define ITEM  item_mc_200
 #define NAME  string(STR_MC_102)
 #define INTRODUCTION_YEAR 1940
 #define CLIMATE bitmask(CLIMATE_TEMPERATE)

@@ -55,8 +55,7 @@ item (FEAT_TRAINS, ITEM) {
 
    graphics {
 	  RUNNING_COST_ENGINE_CALL
-	  additional_text: switch_class_900_variant;
-	  power: switch_class_900_power;
+	  additional_text: string(str_variant_u14c);
       purchase: switch_class_900_purchase;
       default: switch_class_900;
 	  cargo_subtype_text: switch_livery_text_900;

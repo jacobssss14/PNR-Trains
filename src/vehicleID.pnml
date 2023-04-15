@@ -20,15 +20,89 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 
 //Vehicle IDS
-#define ID_RANGE_DMU 0x3E8..0x7CF
-item(FEAT_TRAINS, dmu_kiha_35, 1000) {}
-item(FEAT_TRAINS, dmu_kiha_59, 1001) {}
-item(FEAT_TRAINS, dmu_hyundai_rotem, 1002) {}
+
+//Steam
+#define ID_RANGE_STEAM_NRW 0x3E8..0x7CF
+//1000 for Manila
+item(FEAT_TRAINS, item_steam_class_1, 1001) {}
+//1002-1014 for other steam classes
+item(FEAT_TRAINS, item_steam_class_45, 1015) {}
+item(FEAT_TRAINS, item_steam_class_170, 1016) {}
+item(FEAT_TRAINS, item_steam_class_200, 1017) {}
+item(FEAT_TRAINS, item_steam_class_140, 1018) {}
+item(FEAT_TRAINS, item_steam_class_250, 1019) {}
+//1020-1022 for other steam classes
+item(FEAT_TRAINS, item_steam_class_300, 1023) {}
+
+//Diesel
+#define ID_RANGE_DIESEL_NRW 0x7D0..0xBB7
+//2000-2001 for other diesel locos
+item(FEAT_TRAINS, item_diesel_class_1000, 2002) {}
+item(FEAT_TRAINS, item_diesel_class_2000, 2003) {}
+//2004-2006
+item(FEAT_TRAINS, item_diesel_class_2500, 2007) {}
+item(FEAT_TRAINS, item_diesel_class_1500, 2008) {}
+item(FEAT_TRAINS, item_diesel_class_900, 2009) {}
+item(FEAT_TRAINS, item_diesel_class_900_u15c, 2010) {}
+item(FEAT_TRAINS, item_diesel_class_5000, 2011) {}
+item(FEAT_TRAINS, item_diesel_class_9000, 2012) {}
+item(FEAT_TRAINS, item_diesel_cc203, 2013) {}
+
+//DMU 
+#define ID_RANGE_DMU_NRW 0xBB8..0xF9F
+//reserve 3000
+item(FEAT_TRAINS, item_mc_100, 3001) {}
+item(FEAT_TRAINS, item_mc_200, 3002) {}
+//reserve 3003-3006
+item(FEAT_TRAINS, item_dmu_cmc_300, 3007) {}
+item(FEAT_TRAINS, item_dmu_nikko, 3008) {}
+//reserve 3009
+item(FEAT_TRAINS, item_dmu_hyundai_rotem, 3010) {}
+item(FEAT_TRAINS, item_dmu_kiha_52, 3011) {}
+item(FEAT_TRAINS, item_dmu_kiha_59, 3012) {}
+item(FEAT_TRAINS, item_dmu_kiha_35, 3013) {}
+item(FEAT_TRAINS, item_dmu_class_8000, 3014) {}
+
+item(FEAT_TRAINS, item_pnr_mu_coach_nrw_unpowered, 3998) {}
+item(FEAT_TRAINS, item_pnr_mu_coach_nrw_powered, 3999) {}
+
+#define ID_RANGE_EMU_STD 0xFA0..0x1387
+item(FEAT_TRAINS, item_emu_EM_10000, 4000) {}
+item(FEAT_TRAINS, item_pnr_mu_coach_unpowered, 4998) {}
+item(FEAT_TRAINS, item_pnr_mu_coach_powered, 4999) {}
+
+#define ID_RANGE_DMU_STD 0x1388..176F
+item(FEAT_TRAINS, item_dmu_slh, 5000) {}
 
 
-#define ID_RANGE_COACH 0x7D0..0xBB7
-item(FEAT_TRAINS, item_203_coach 2000) {}
-item(FEAT_TRAINS, item_203_generator_car  2001) {}
-item(FEAT_TRAINS, item_pnr_mu_coach_unpowered 2002) {}
-item(FEAT_TRAINS, item_pnr_mu_coach_powered 2003) {}
+//Coaches
+#define ID_RANGE_COACH_NRW 0x1770..0x1B57
+//reserve 6000-6002
+item(FEAT_TRAINS, item_3rd_class_coach, 6003) {}
+//reserve 6004-6008
+item(FEAT_TRAINS, item_7A_100, 6009) {}
+item(FEAT_TRAINS, item_7C, 6010) {}
+//reserve 6011
+item(FEAT_TRAINS, item_7E, 6012) {}
+item(FEAT_TRAINS, item_7SE, 6013) {}
+item(FEAT_TRAINS, item_ctc_dmt, 6014) {}
+item(FEAT_TRAINS, item_7A_2000, 6015) {}
+//reserve 6014-6016
+item(FEAT_TRAINS, item_series_14_sleeper, 6017) {}
+item(FEAT_TRAINS, item_203_coach, 6018) {}
+item(FEAT_TRAINS, item_203_generator_car, 6019) {}
+item(FEAT_TRAINS, item_inka_commuter_coach, 6020) {}
+
+//Wagons
+#define ID_RANGE_WAGON_NRW 0x1B58..0x1F3F
+item(FEAT_TRAINS, item_boxcar_ref, 7000) {}
+item(FEAT_TRAINS, item_boxcar_small, 7001) {}
+item(FEAT_TRAINS, item_hopper_small, 7002) {}
+item(FEAT_TRAINS, item_tanker, 7003) {}
+item(FEAT_TRAINS, item_flat_wagon, 7004) {}
+item(FEAT_TRAINS, item_7B, 7005){}
+
+
+
+
 

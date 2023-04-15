@@ -54,7 +54,7 @@ item (FEAT_TRAINS, ITEM) {
    graphics {
 	  RUNNING_COST_ENGINE_CALL
       default: set_cc203;
-
+	  cargo_capacity: return 0;
    }
 
   livery_override (item_203_generator_car) {

@@ -1,4 +1,14 @@
 Changelog for PNR-Trains
+1.0.0-rc3
+    *Fixed Availability of MU coach on standard guage tracks.
+    *Fixed 2500 Class 2001-2009 livery mismatch
+    *Added 1500 Class Diesel Locomotive
+    *Fixed Navy Blue Livery showing 2cc on 7A 1st Class Coach
+    *Added U14C and U15C variants to Class 900
+    *Cleanup on 7A coach series
+    *Custom cargo decay causes problems with lager maps. Temporarily removing feature.
+    
+
 1.0.0-rc2
     *Fixed Availability of MU coach on narrow guage tracks
 

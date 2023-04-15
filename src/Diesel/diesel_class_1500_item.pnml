@@ -50,16 +50,14 @@ item (FEAT_TRAINS, ITEM) {
 
 		cargo_capacity: 1;
 		cargo_allow_refit: [PASS];
+		curve_speed_mod: -0.25;
       
    }
 
    graphics {
 	  RUNNING_COST_ENGINE_CALL
-	  additional_text: switch_class_900_variant;
-	  power: switch_class_900_power;
-      purchase: switch_class_900_purchase;
-      default: switch_class_900;
-	  cargo_subtype_text: switch_livery_text_900;
+      purchase: switch_class_1500_purchase;
+      default: switch_class_1500;
 	  cargo_capacity: return 0;
 
    }

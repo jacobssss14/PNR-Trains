@@ -23,7 +23,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 #define VEHIDCODE diesel_class_900
 #define ITEM  item_diesel_class_900
-#define NAME string(STR_DIESEL_CLASS_900)
+#define NAME string(STR_DIESEL_CLASS_900_U14C)
 #define INTRODUCTION_YEAR 1973
 #define CLIMATE bitmask(CLIMATE_TEMPERATE)
 #define MODEL_LIFE 55
@@ -34,7 +34,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #define WEIGHT 90
 #define TE_COEFFICIENT 0.3
 #define AIR_DRAG_COEFFICIENT 0.06
-#define POWER 1560
+#define POWER 1400
 
 #define LENGTH 8
 #define ACTUAL_LENGTH 8

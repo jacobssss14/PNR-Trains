@@ -37,6 +37,7 @@ item (FEAT_TRAINS, ITEM) {
 		tractive_effort_coefficient: TE_COEFFICIENT;
 		air_drag_coefficient: AIR_DRAG_COEFFICIENT;
 		DECAY_3CLASS_COACH
+		variant_group: 6009;
 		
 		reliability_decay: RELIABILITY_DECAY;
 		CARGODEF

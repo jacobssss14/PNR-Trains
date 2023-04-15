@@ -18,142 +18,52 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-//1973 livery
-spriteset(set_class_900_purchase_1973, "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_1973.png") {
+//1966 livery
+spriteset(set_class_1500_purchase_1966, "gfx/DIESEL/CLASS_1500/DIESEL_CLASS_1500_1966.png") {
     template_diesel_purchase(1,105)
   
 }
 
-spriteset(set_class_900_1973,  "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_1973.png") {
+spriteset(set_class_1500_1966,  "gfx/DIESEL/CLASS_1500/DIESEL_CLASS_1500_1966.png") {
    template_standard(1,1)
 }
 
-//1997-2000 livery
-spriteset(set_class_900_purchase_1997, "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_1997.png") {
+//1970 livery
+spriteset(set_class_1500_purchase_1970, "gfx/DIESEL/CLASS_1500/DIESEL_CLASS_1500_1970.png") {
     template_diesel_purchase(1,105)
   
 }
 
-spriteset(set_class_900_1997,  "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_1997.png") {
+spriteset(set_class_1500_1970,  "gfx/DIESEL/CLASS_1500/DIESEL_CLASS_1500_1970.png") {
    template_standard(1,1)
 }
-
-//2001-2009 livery
-spriteset(set_class_900_purchase_2000, "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2000.png") {
-    template_diesel_purchase(1,105)
-  
-}
-
-spriteset(set_class_900_2000,  "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2000.png") {
-   template_standard(1,1)
-}
-
-//2009-2011
-spriteset(set_class_900_purchase_2009, "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2009.png") {
-    template_diesel_purchase(1,105)
-  
-}
-
-spriteset(set_class_900_2009,  "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2009.png") {
-   template_standard(1,1)
-}
-
-//2011-2019
-spriteset(set_class_900_purchase_2011, "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2011.png") {
-    template_diesel_purchase(1,105)
-  
-}
-
-spriteset(set_class_900_2011,  "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2011.png") {
-   template_standard(1,1)
-}
-
-//2020
-spriteset(set_class_900_purchase_2020, "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2020.png") {
-    template_diesel_purchase(1,105)
-  
-}
-
-spriteset(set_class_900_2020,  "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2020.png") {
-   template_standard(1,1)
-}
-
-
-//Navy Blue Reversed
-
-spriteset(set_class_900_2011_reversed,  "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2000_REVERSED.png") {
-   template_standard(1,1)
-}
-
-//2020
-
-
-spriteset(set_class_900_2020_reversed,  "gfx/DIESEL/CLASS_900/DIESEL_CLASS_900_2020_REVERSED.png") {
-   template_standard(1,1)
-}
-
-
 
 
 //Autochanclass Livery
-switch (FEAT_TRAINS, PARENT, switch_class_900_purchase, current_date ) {
-    0..date(1996,12,31): set_class_900_purchase_1973;
-    date(1997,1,1)..date(2000,12,31): set_class_900_purchase_1997;
-    date(2001,1,1)..date(2008,12,31): set_class_900_purchase_2000;
-    date(2009,1,1)..date(2010,12,31): set_class_900_purchase_2009;
-    date(2011,1,1)..date(2019,12,31): set_class_900_purchase_2011;
-    date(2020,1,1)..date(2050,12,31): set_class_900_purchase_2020;
-    set_class_900_purchase_2020;
+switch (FEAT_TRAINS, PARENT, switch_class_1500_purchase, current_date ) {
+    0..date(1969,12,31): set_class_1500_purchase_1966;
+    date(1970,1,1)..date(2000,12,31): set_class_1500_purchase_1970;
+    set_class_1500_purchase_1970;
 }
 
-switch (FEAT_TRAINS, PARENT, switch_class_900_auto , date_of_last_service ) {
-    0..date(1996,12,31): set_class_900_1973;
-    date(1997,1,1)..date(2000,12,31): set_class_900_1997;
-    date(2001,1,1)..date(2008,12,31): set_class_900_2000;
-    date(2009,1,1)..date(2010,12,31): set_class_900_2009;
-    date(2011,1,1)..date(2019,12,31): set_class_900_2011;
-    date(2020,1,1)..date(2050,12,31): set_class_900_2020;
-    set_class_900_2020;
+switch (FEAT_TRAINS, PARENT, switch_class_1500_auto , date_of_last_service ) {
+    0..date(1969,12,31): set_class_1500_1966;
+    date(1970,1,1)..date(2000,12,31): set_class_1500_1970;
+    set_class_1500_1970;
 }
 
 //Manual Livery change
-switch(FEAT_TRAINS, SELF, switch_class_900, cargo_subtype) {
-	1: set_class_900_1973;
-    2: set_class_900_1997;
-    3: set_class_900_2000;
-    4: set_class_900_2011_reversed;
-    5: set_class_900_2009;
-    6: set_class_900_2011;
-    7: set_class_900_2020;
-    8: set_class_900_2020_reversed;
-    switch_class_900_auto;
+switch(FEAT_TRAINS, SELF, switch_class_1500, cargo_subtype) {
+	1: set_class_1500_1966;
+    2: set_class_1500_1970;
+    switch_class_1500_auto;
 }
 
-switch(FEAT_TRAINS, SELF, switch_livery_text_900, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_livery_text_1500, cargo_subtype) {
     0: return string(str_livery_auto);
-    1: return string(str_livery_pnr_green);
-    2: return string(str_livery_philippines_2000);
-    3: return string(str_livery_pnr_navy_blue_2001);
-    4: return string(str_livery_pnr_navy_blue_reversed);
-    5: return string(str_livery_filtrak);
-    6: return string(str_livery_pnr_navy_blue_2011);
-    7: return string(str_livery_pnr_orange);
-    8: return string(str_livery_pnr_orange_reversed);
+	1: return string(str_livery_mrr_yellow_green);
+    2: return string(str_livery_pnr_green);
     return CB_RESULT_NO_TEXT;
-}
-
-
-switch (FEAT_TRAINS, PARENT, switch_class_900_variant, date_of_last_service) {
-    0..date(1996,12,31): string(str_variant_u14c);
-    date(1997,1,1)..date(2025,12,31): string(str_variant_u15c);
-    string(str_variant_u15c);
-    
-}
-
-switch (FEAT_TRAINS, PARENT, switch_class_900_power, date_of_last_service) {
-    0..date(1996,12,31): return 1560;
-    date(1997,1,1)..date(2025,12,31):  return 1400;
-    return 1400;  
 }
 
 RUNNING_COST_ENGINE

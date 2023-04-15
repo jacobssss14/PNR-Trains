@@ -39,6 +39,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //Template for graphics files
 #include "src/graphics_template.pnml"
 
+//Vehicle IDs
+#include "src/vehicleID.pnml"
+
 //Costs calculations
 #include "src/costs.pnml"
 
@@ -173,7 +176,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/Diesel/diesel_class_1000_graphics.pnml"
 #include "src/Diesel/diesel_class_1000_item.pnml"
 
-//Class 1000
+//1500 Class
+#include "src/Diesel/diesel_class_1500_properties.pnml"
+#include "src/Diesel/diesel_class_1500_graphics.pnml"
+#include "src/Diesel/diesel_class_1500_item.pnml"
+
+//Class 2000
 #include "src/Diesel/diesel_class_2000_properties.pnml"
 #include "src/Diesel/diesel_class_2000_graphics.pnml"
 #include "src/Diesel/diesel_class_2000_item.pnml"
@@ -192,6 +200,10 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/Diesel/diesel_class_900_properties.pnml"
 #include "src/Diesel/diesel_class_900_graphics.pnml"
 #include "src/Diesel/diesel_class_900_item.pnml"
+
+//Class 900 U15C
+#include "src/Diesel/diesel_class_900_properties_U15C.pnml"
+#include "src/Diesel/diesel_class_900_item_U15C.pnml"
 
 //CC 203
 #include "src/Diesel/diesel_cc203_properties.pnml"
@@ -296,3 +308,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/EMU/emu_std_em10000_properties.pnml"
 #include "src/EMU/emu_std_em10000_graphics.pnml"
 #include "src/EMU/emu_std_em10000_item.pnml"
+
+//DMU Standard Guage
+#include "src/init/init_dmu_standard.pnml"
+
+//SLH DMU
+#include "src/DMU/dmu_slh_properties.pnml"
+#include "src/DMU/dmu_slh_graphics.pnml"
+#include "src/DMU/dmu_slh_item.pnml"
