@@ -428,6 +428,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 
 //Vehicle IDS
+//MU Coaches
+
 
 //Steam
 
@@ -5270,11 +5272,12 @@ switch(FEAT_TRAINS, SELF, switch_class_5000, cargo_subtype) {
 }
 
 switch(FEAT_TRAINS, SELF, switch_livery_text_5000, cargo_subtype) {
-    0: return string(str_livery_philippines_2000);
-    1: return string(str_livery_pnr_navy_blue_2001);
-    2: return string(str_livery_filtrak);
-    3: return string(str_livery_pnr_navy_blue_2011);
-    4: return string(str_livery_pnr_orange);
+    0: return string(str_livery_auto);
+    1: return string(str_livery_philippines_2000);
+    2: return string(str_livery_pnr_navy_blue_2001);
+    3: return string(str_livery_filtrak);
+    4: return string(str_livery_pnr_navy_blue_2011);
+    5: return string(str_livery_pnr_orange);
     return CB_RESULT_NO_TEXT;
 }
 
@@ -6536,7 +6539,7 @@ item (FEAT_TRAINS, item_mc_100) {
 
    }
 
-   livery_override (item_pnr_mu_coach_unpowered) {
+   livery_override (item_pnr_mu_coach_nrw_unpowered) {
      running_cost_factor: int(60/10);
      loading_speed: 40;
      cargo_capacity: switch_mc_0_capacity_wagon;
@@ -6548,7 +6551,7 @@ item (FEAT_TRAINS, item_mc_100) {
 
    }
 
-   livery_override (item_pnr_mu_coach_powered) {
+   livery_override (item_pnr_mu_coach_nrw_powered) {
      running_cost_factor: int(60/10+(((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))-(((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180)))-95 )/(0.1+2*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))))-((((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))-(((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180)))-95 )/(0.1+2*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))))*((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))-(((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180)))-95 )/(0.1+2*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180)))))-95 )/(0.1+2*((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))-(((95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180)))-95 )/(0.1+2*(95/180 -((95/180*95/180)-95 )/(0.1+2*95/180))))))/10+0.3*7.7);
      loading_speed: 40;
      cargo_capacity: switch_mc_0_capacity_wagon;
@@ -6721,7 +6724,7 @@ item (FEAT_TRAINS, item_mc_200) {
 
    }
 
-   livery_override (item_pnr_mu_coach_unpowered) {
+   livery_override (item_pnr_mu_coach_nrw_unpowered) {
      running_cost_factor: int(80/10);
      loading_speed: 40;
      cargo_capacity: switch_mc_100_capacity_wagon;
@@ -6732,7 +6735,7 @@ item (FEAT_TRAINS, item_mc_200) {
 
    }
 
-   livery_override (item_pnr_mu_coach_powered) {
+   livery_override (item_pnr_mu_coach_nrw_powered) {
      running_cost_factor: int(80/10+(((150/180 -((150/180*150/180)-150 )/(0.1+2*150/180))-(((150/180 -((150/180*150/180)-150 )/(0.1+2*150/180))*(150/180 -((150/180*150/180)-150 )/(0.1+2*150/180)))-150 )/(0.1+2*(150/180 -((150/180*150/180)-150 )/(0.1+2*150/180))))-((((150/180 -((150/180*150/180)-150 )/(0.1+2*150/180))-(((150/180 -((150/180*150/180)-150 )/(0.1+2*150/180))*(150/180 -((150/180*150/180)-150 )/(0.1+2*150/180)))-150 )/(0.1+2*(150/180 -((150/180*150/180)-150 )/(0.1+2*150/180))))*((150/180 -((150/180*150/180)-150 )/(0.1+2*150/180))-(((150/180 -((150/180*150/180)-150 )/(0.1+2*150/180))*(150/180 -((150/180*150/180)-150 )/(0.1+2*150/180)))-150 )/(0.1+2*(150/180 -((150/180*150/180)-150 )/(0.1+2*150/180)))))-150 )/(0.1+2*((150/180 -((150/180*150/180)-150 )/(0.1+2*150/180))-(((150/180 -((150/180*150/180)-150 )/(0.1+2*150/180))*(150/180 -((150/180*150/180)-150 )/(0.1+2*150/180)))-150 )/(0.1+2*(150/180 -((150/180*150/180)-150 )/(0.1+2*150/180))))))/10+0.3*9);
      loading_speed: 40;
      cargo_capacity: switch_mc_100_capacity_wagon;
@@ -6911,7 +6914,7 @@ item (FEAT_TRAINS, item_dmu_dost_het) {
 
    }
 
-   livery_override (item_pnr_mu_coach_unpowered) {
+   livery_override (item_pnr_mu_coach_nrw_unpowered) {
      running_cost_factor: int(80/10);
      loading_speed: 40;
      cargo_capacity: switch_dmu_dost_het_capacity_wagon;
@@ -6921,7 +6924,7 @@ item (FEAT_TRAINS, item_dmu_dost_het) {
   default: switch_dost_het_pass_cargo;
    }
 
-   livery_override (item_pnr_mu_coach_powered) {
+   livery_override (item_pnr_mu_coach_nrw_powered) {
      running_cost_factor: int(80/10+(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))-(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))-1250 )/(0.1+2*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))))-((((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))-(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))-1250 )/(0.1+2*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))))*((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))-(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))-1250 )/(0.1+2*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))))-1250 )/(0.1+2*((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))-(((1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180)))-1250 )/(0.1+2*(1250/180 -((1250/180*1250/180)-1250 )/(0.1+2*1250/180))))))/10+0.3*25.5);
      loading_speed: 40;
   cargo_capacity: 0;
@@ -7240,7 +7243,7 @@ item (FEAT_TRAINS, item_nikko) {
 
    }
 
-   livery_override (item_pnr_mu_coach_unpowered) {
+   livery_override (item_pnr_mu_coach_nrw_unpowered) {
      running_cost_factor: int(120/10);
      loading_speed: 20;
      cargo_capacity: switch_dmu_nikko_capacity_wagon;
@@ -7252,7 +7255,7 @@ item (FEAT_TRAINS, item_nikko) {
 
    }
 
-   livery_override (item_pnr_mu_coach_powered) {
+   livery_override (item_pnr_mu_coach_nrw_powered) {
      running_cost_factor: int(120/10+(((450/180 -((450/180*450/180)-450 )/(0.1+2*450/180))-(((450/180 -((450/180*450/180)-450 )/(0.1+2*450/180))*(450/180 -((450/180*450/180)-450 )/(0.1+2*450/180)))-450 )/(0.1+2*(450/180 -((450/180*450/180)-450 )/(0.1+2*450/180))))-((((450/180 -((450/180*450/180)-450 )/(0.1+2*450/180))-(((450/180 -((450/180*450/180)-450 )/(0.1+2*450/180))*(450/180 -((450/180*450/180)-450 )/(0.1+2*450/180)))-450 )/(0.1+2*(450/180 -((450/180*450/180)-450 )/(0.1+2*450/180))))*((450/180 -((450/180*450/180)-450 )/(0.1+2*450/180))-(((450/180 -((450/180*450/180)-450 )/(0.1+2*450/180))*(450/180 -((450/180*450/180)-450 )/(0.1+2*450/180)))-450 )/(0.1+2*(450/180 -((450/180*450/180)-450 )/(0.1+2*450/180)))))-450 )/(0.1+2*((450/180 -((450/180*450/180)-450 )/(0.1+2*450/180))-(((450/180 -((450/180*450/180)-450 )/(0.1+2*450/180))*(450/180 -((450/180*450/180)-450 )/(0.1+2*450/180)))-450 )/(0.1+2*(450/180 -((450/180*450/180)-450 )/(0.1+2*450/180))))))/10+0.3*40);
      loading_speed: 20;
      cargo_capacity: switch_dmu_nikko_capacity_wagon;
@@ -7579,7 +7582,7 @@ item (FEAT_TRAINS, item_dmu_cmc_300) {
 
    }
 
-   livery_override (item_pnr_mu_coach_unpowered) {
+   livery_override (item_pnr_mu_coach_nrw_unpowered) {
      running_cost_factor: int(96/10);
      loading_speed: 40;
      cargo_capacity: switch_dmu_cmc_300_capacity_wagon;
@@ -7590,7 +7593,7 @@ item (FEAT_TRAINS, item_dmu_cmc_300) {
   cargo_subtype_text: switch_livery_text_cmc_300;
    }
 
-   livery_override (item_pnr_mu_coach_powered) {
+   livery_override (item_pnr_mu_coach_nrw_powered) {
      running_cost_factor: int(96/10+(((200/180 -((200/180*200/180)-200 )/(0.1+2*200/180))-(((200/180 -((200/180*200/180)-200 )/(0.1+2*200/180))*(200/180 -((200/180*200/180)-200 )/(0.1+2*200/180)))-200 )/(0.1+2*(200/180 -((200/180*200/180)-200 )/(0.1+2*200/180))))-((((200/180 -((200/180*200/180)-200 )/(0.1+2*200/180))-(((200/180 -((200/180*200/180)-200 )/(0.1+2*200/180))*(200/180 -((200/180*200/180)-200 )/(0.1+2*200/180)))-200 )/(0.1+2*(200/180 -((200/180*200/180)-200 )/(0.1+2*200/180))))*((200/180 -((200/180*200/180)-200 )/(0.1+2*200/180))-(((200/180 -((200/180*200/180)-200 )/(0.1+2*200/180))*(200/180 -((200/180*200/180)-200 )/(0.1+2*200/180)))-200 )/(0.1+2*(200/180 -((200/180*200/180)-200 )/(0.1+2*200/180)))))-200 )/(0.1+2*((200/180 -((200/180*200/180)-200 )/(0.1+2*200/180))-(((200/180 -((200/180*200/180)-200 )/(0.1+2*200/180))*(200/180 -((200/180*200/180)-200 )/(0.1+2*200/180)))-200 )/(0.1+2*(200/180 -((200/180*200/180)-200 )/(0.1+2*200/180))))))/10+0.3*35);
      loading_speed: 40;
      cargo_capacity: switch_dmu_cmc_300_capacity_wagon;
@@ -7677,20 +7680,20 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //2015 Livery
 
-spriteset(set_kiha_35_purchase_2015, "gfx/DMU/KIHA_35/DMU_KIHA_35_2015.png") {
-  template_mu_purchase(1, 106)
+spriteset(set_kiha_35_purchase_2015, "gfx/DMU/KIHA_35/DMU_KIHA_35.png") {
+  template_mu_purchase(1, 200)
 }
 
-spriteset(set_kiha_35_front_2015, "gfx/DMU/KIHA_35/DMU_KIHA_35_2015.png") {
+spriteset(set_kiha_35_front_2015, "gfx/DMU/KIHA_35/DMU_KIHA_35.png") {
     template_standard(1, 1)
 }
 
-spriteset(set_kiha_35_back_2015, "gfx/DMU/KIHA_35/DMU_KIHA_35_2015.png") {
+spriteset(set_kiha_35_back_2015, "gfx/DMU/KIHA_35/DMU_KIHA_35.png") {
     template_standard(1, 32)
    }
 
 
-spriteset (set_kiha_35_pass_car_2015, "gfx/DMU/KIHA_35/DMU_KIHA_35_2015.png") {
+spriteset (set_kiha_35_pass_car_2015, "gfx/DMU/KIHA_35/DMU_KIHA_35.png") {
     template_standard(1, 64)
 }
 
@@ -7706,21 +7709,21 @@ switch(FEAT_TRAINS, SELF, switch_dmu_kiha_35_reversed_2015, var[0xC8]) {
 
 //2020 Lviery
 
-spriteset(set_kiha_35_purchase_2020, "gfx/DMU/KIHA_35/DMU_KIHA_35_2020.png") {
-  template_mu_purchase(1, 106)
+spriteset(set_kiha_35_purchase_2020, "gfx/DMU/KIHA_35/DMU_KIHA_35.png") {
+  template_mu_purchase(60, 200)
 }
 
-spriteset(set_kiha_35_front_2020, "gfx/DMU/KIHA_35/DMU_KIHA_35_2020.png") {
-    template_standard(1, 1)
+spriteset(set_kiha_35_front_2020, "gfx/DMU/KIHA_35/DMU_KIHA_35.png") {
+    template_standard(179, 1)
 }
 
-spriteset(set_kiha_35_back_2020, "gfx/DMU/KIHA_35/DMU_KIHA_35_2020.png") {
-    template_standard(1, 32)
+spriteset(set_kiha_35_back_2020, "gfx/DMU/KIHA_35/DMU_KIHA_35.png") {
+    template_standard(179, 32)
    }
 
 
-spriteset (set_kiha_35_pass_car_2020, "gfx/DMU/KIHA_35/DMU_KIHA_35_2020.png") {
-    template_standard(1, 64)
+spriteset (set_kiha_35_pass_car_2020, "gfx/DMU/KIHA_35/DMU_KIHA_35.png") {
+    template_standard(179, 64)
 }
 
 switch(FEAT_TRAINS, SELF, switch_kiha_35_pass_cargo_2020, cargo_classes){
@@ -7850,7 +7853,7 @@ item (FEAT_TRAINS, item_dmu_kiha_35) {
 
    }
 
-   livery_override (item_pnr_mu_coach_unpowered) {
+   livery_override (item_pnr_mu_coach_nrw_unpowered) {
      running_cost_factor: int(80/10);
      loading_speed: 40;
      cargo_capacity: switch_dmu_kiha_35_capacity_wagon;
@@ -7861,7 +7864,7 @@ item (FEAT_TRAINS, item_dmu_kiha_35) {
   cargo_subtype_text: switch_livery_text_kiha_35;
    }
 
-   livery_override (item_pnr_mu_coach_powered) {
+   livery_override (item_pnr_mu_coach_nrw_powered) {
      running_cost_factor: int(80/10+(((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))-(((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180)))-250 )/(0.1+2*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))))-((((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))-(((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180)))-250 )/(0.1+2*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))))*((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))-(((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180)))-250 )/(0.1+2*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180)))))-250 )/(0.1+2*((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))-(((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180)))-250 )/(0.1+2*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))))))/10+0.3*30);
      loading_speed: 40;
      cargo_capacity: switch_dmu_kiha_35_capacity_wagon;
@@ -8113,7 +8116,7 @@ item (FEAT_TRAINS, item_dmu_kiha_52) {
 
    }
 
-   livery_override (item_pnr_mu_coach_unpowered) {
+   livery_override (item_pnr_mu_coach_nrw_unpowered) {
      running_cost_factor: int(91/10);
      loading_speed: 40;
      cargo_capacity: switch_dmu_kiha_52_capacity_wagon;
@@ -8124,7 +8127,7 @@ item (FEAT_TRAINS, item_dmu_kiha_52) {
   cargo_subtype_text: switch_livery_text_kiha_52;
    }
 
-   livery_override (item_pnr_mu_coach_powered) {
+   livery_override (item_pnr_mu_coach_nrw_powered) {
      running_cost_factor: int(91/10+(((300/180 -((300/180*300/180)-300 )/(0.1+2*300/180))-(((300/180 -((300/180*300/180)-300 )/(0.1+2*300/180))*(300/180 -((300/180*300/180)-300 )/(0.1+2*300/180)))-300 )/(0.1+2*(300/180 -((300/180*300/180)-300 )/(0.1+2*300/180))))-((((300/180 -((300/180*300/180)-300 )/(0.1+2*300/180))-(((300/180 -((300/180*300/180)-300 )/(0.1+2*300/180))*(300/180 -((300/180*300/180)-300 )/(0.1+2*300/180)))-300 )/(0.1+2*(300/180 -((300/180*300/180)-300 )/(0.1+2*300/180))))*((300/180 -((300/180*300/180)-300 )/(0.1+2*300/180))-(((300/180 -((300/180*300/180)-300 )/(0.1+2*300/180))*(300/180 -((300/180*300/180)-300 )/(0.1+2*300/180)))-300 )/(0.1+2*(300/180 -((300/180*300/180)-300 )/(0.1+2*300/180)))))-300 )/(0.1+2*((300/180 -((300/180*300/180)-300 )/(0.1+2*300/180))-(((300/180 -((300/180*300/180)-300 )/(0.1+2*300/180))*(300/180 -((300/180*300/180)-300 )/(0.1+2*300/180)))-300 )/(0.1+2*(300/180 -((300/180*300/180)-300 )/(0.1+2*300/180))))))/10+0.3*36);
      loading_speed: 40;
      cargo_capacity: switch_dmu_kiha_52_capacity_wagon;
@@ -8419,7 +8422,7 @@ item (FEAT_TRAINS, item_dmu_kiha_59) {
 
    }
 
-   livery_override (item_pnr_mu_coach_unpowered) {
+   livery_override (item_pnr_mu_coach_nrw_unpowered) {
      running_cost_factor: int(80/10);
      loading_speed: 20;
      cargo_capacity: switch_dmu_kiha_59_capacity_wagon;
@@ -8431,7 +8434,7 @@ item (FEAT_TRAINS, item_dmu_kiha_59) {
 
    }
 
-   livery_override (item_pnr_mu_coach_powered) {
+   livery_override (item_pnr_mu_coach_nrw_powered) {
      running_cost_factor: int(80/10+(((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))-(((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180)))-250 )/(0.1+2*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))))-((((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))-(((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180)))-250 )/(0.1+2*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))))*((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))-(((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180)))-250 )/(0.1+2*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180)))))-250 )/(0.1+2*((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))-(((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180)))-250 )/(0.1+2*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))))))/10+0.3*35);
      loading_speed: 20;
      cargo_capacity: switch_dmu_kiha_59_capacity_wagon;
@@ -8716,7 +8719,7 @@ item (FEAT_TRAINS, item_dmu_hyundai_rotem) {
 
    }
 
-   livery_override (item_pnr_mu_coach_unpowered) {
+   livery_override (item_pnr_mu_coach_nrw_unpowered) {
      running_cost_factor: int(80/10);
      loading_speed: 40;
      cargo_capacity: switch_dmu_hyundai_rotem_capacity_wagon;
@@ -8727,7 +8730,7 @@ item (FEAT_TRAINS, item_dmu_hyundai_rotem) {
   cargo_subtype_text: switch_livery_text_hyundai_rotem;
    }
 
-   livery_override (item_pnr_mu_coach_powered) {
+   livery_override (item_pnr_mu_coach_nrw_powered) {
      running_cost_factor: int(80/10+(((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))-(((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180)))-250 )/(0.1+2*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))))-((((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))-(((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180)))-250 )/(0.1+2*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))))*((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))-(((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180)))-250 )/(0.1+2*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180)))))-250 )/(0.1+2*((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))-(((250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180)))-250 )/(0.1+2*(250/180 -((250/180*250/180)-250 )/(0.1+2*250/180))))))/10+0.3*43.5);
      loading_speed: 40;
      cargo_capacity: switch_dmu_hyundai_rotem_capacity_wagon;
@@ -8915,7 +8918,7 @@ item (FEAT_TRAINS, item_dmu_class_8000) {
 
    }
 
-   livery_override (item_pnr_mu_coach_unpowered) {
+   livery_override (item_pnr_mu_coach_nrw_unpowered) {
      running_cost_factor: int(100/10);
      loading_speed: 40;
      cargo_capacity: switch_dmu_class_8000_capacity_wagon;
@@ -8925,7 +8928,7 @@ item (FEAT_TRAINS, item_dmu_class_8000) {
   default: switch_class_8000_pass_cargo;
    }
 
-   livery_override (item_pnr_mu_coach_powered) {
+   livery_override (item_pnr_mu_coach_nrw_powered) {
      running_cost_factor: int(100/10+(((350/180 -((350/180*350/180)-350 )/(0.1+2*350/180))-(((350/180 -((350/180*350/180)-350 )/(0.1+2*350/180))*(350/180 -((350/180*350/180)-350 )/(0.1+2*350/180)))-350 )/(0.1+2*(350/180 -((350/180*350/180)-350 )/(0.1+2*350/180))))-((((350/180 -((350/180*350/180)-350 )/(0.1+2*350/180))-(((350/180 -((350/180*350/180)-350 )/(0.1+2*350/180))*(350/180 -((350/180*350/180)-350 )/(0.1+2*350/180)))-350 )/(0.1+2*(350/180 -((350/180*350/180)-350 )/(0.1+2*350/180))))*((350/180 -((350/180*350/180)-350 )/(0.1+2*350/180))-(((350/180 -((350/180*350/180)-350 )/(0.1+2*350/180))*(350/180 -((350/180*350/180)-350 )/(0.1+2*350/180)))-350 )/(0.1+2*(350/180 -((350/180*350/180)-350 )/(0.1+2*350/180)))))-350 )/(0.1+2*((350/180 -((350/180*350/180)-350 )/(0.1+2*350/180))-(((350/180 -((350/180*350/180)-350 )/(0.1+2*350/180))*(350/180 -((350/180*350/180)-350 )/(0.1+2*350/180)))-350 )/(0.1+2*(350/180 -((350/180*350/180)-350 )/(0.1+2*350/180))))))/10+0.3*43.5);
      loading_speed: 40;
      cargo_capacity: switch_dmu_class_8000_capacity_wagon;
@@ -10535,7 +10538,7 @@ item (FEAT_TRAINS, item_dmu_slh) {
 
   running_cost_base: RUNNING_COST_DIESEL;
   engine_class: ENGINE_CLASS_DIESEL;
-  visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+  visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
 
   sprite_id: SPRITE_ID_NEW_TRAIN;
   dual_headed: 1;

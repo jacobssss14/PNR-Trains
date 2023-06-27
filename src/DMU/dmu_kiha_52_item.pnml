@@ -64,7 +64,7 @@ item (FEAT_TRAINS, ITEM) {
 
    }
 
-   livery_override (item_pnr_mu_coach_unpowered) {
+   livery_override (item_pnr_mu_coach_nrw_unpowered) {
 	    RUNNING_COST_MU_UNPOWERED_CALL 
 	   	loading_speed: LOADINGSPEED;
 	   	WAGONCAPACITYSWITCHCALL(VEHIDCODE)
@@ -75,7 +75,7 @@ item (FEAT_TRAINS, ITEM) {
 		cargo_subtype_text: switch_livery_text_kiha_52;
    }
 
-   livery_override (item_pnr_mu_coach_powered) {
+   livery_override (item_pnr_mu_coach_nrw_powered) {
 	    RUNNING_COST_MU_POWERED_CALL 
 	   	loading_speed: LOADINGSPEED;
 	   	WAGONCAPACITYSWITCHCALL(VEHIDCODE)

@@ -20,6 +20,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 
 //Vehicle IDS
+//MU Coaches
+
 
 //Steam
 #define ID_RANGE_STEAM_NRW 0x3E8..0x7CF

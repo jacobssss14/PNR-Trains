@@ -114,11 +114,12 @@ switch(FEAT_TRAINS, SELF, switch_class_5000, cargo_subtype) {
 }
 
 switch(FEAT_TRAINS, SELF, switch_livery_text_5000, cargo_subtype) {
-    0: return string(str_livery_philippines_2000);
-    1: return string(str_livery_pnr_navy_blue_2001);
-    2: return string(str_livery_filtrak);
-    3: return string(str_livery_pnr_navy_blue_2011);
-    4: return string(str_livery_pnr_orange);
+    0: return string(str_livery_auto);
+    1: return string(str_livery_philippines_2000);
+    2: return string(str_livery_pnr_navy_blue_2001);
+    3: return string(str_livery_filtrak);
+    4: return string(str_livery_pnr_navy_blue_2011);
+    5: return string(str_livery_pnr_orange);
     return CB_RESULT_NO_TEXT;
 }
 

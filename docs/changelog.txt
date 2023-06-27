@@ -1,4 +1,9 @@
 Changelog for PNR-Trains
+1.0.0
+    *Fixed Narrow Guage MU system
+    *Fixed SLH DMU visual effects
+    *
+    
 1.0.0-rc3
     *Fixed Availability of MU coach on standard guage tracks.
     *Fixed 2500 Class 2001-2009 livery mismatch
