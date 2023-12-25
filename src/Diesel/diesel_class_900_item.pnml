@@ -27,8 +27,8 @@ item (FEAT_TRAINS, ITEM) {
 		INTRODUCTIONDATEPROPERTY
 		model_life: MODEL_LIFE;
 		vehicle_life: VEHICLE_LIFE; 
-		PURCHASE_COST
-		RUNNING_COST
+		PURCHASECOSTPROPERTY
+		RUNNINGCOSTPROPERTY
 		speed: SPEED km/h;
 		weight: WEIGHT ton;
 		power: POWER hp;
@@ -54,7 +54,7 @@ item (FEAT_TRAINS, ITEM) {
    }
 
    graphics {
-	  RUNNING_COST_ENGINE_CALL
+	  RUNNINGCOSTENGINESWITCHCALL
 	  additional_text: string(str_variant_u14c);
       purchase: switch_class_900_purchase;
       default: switch_class_900;

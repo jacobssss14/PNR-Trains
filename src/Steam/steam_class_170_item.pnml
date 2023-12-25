@@ -27,8 +27,8 @@ item (FEAT_TRAINS, ITEM) {
 		INTRODUCTIONDATEPROPERTY
 		model_life: MODEL_LIFE;
 		vehicle_life: VEHICLE_LIFE; 
-		PURCHASE_COST
-		RUNNING_COST
+		PURCHASECOSTPROPERTY
+		RUNNINGCOSTPROPERTY
 		speed: SPEED km/h;
 		weight: WEIGHT ton;
 		power: POWER hp;
@@ -58,7 +58,7 @@ item (FEAT_TRAINS, ITEM) {
 	  visual_effect_and_powered: switch_steam_class_170_effect;
 	  length: switch_steam_class_170_length;
 	  articulated_part: switch_steam_class_170_articulated;
-	  RUNNING_COST_ENGINE_CALL
+	  RUNNINGCOSTENGINESWITCHCALL
       default: switch_steam_class_170;
 	  
 

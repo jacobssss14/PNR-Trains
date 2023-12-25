@@ -25,4 +25,4 @@ spriteset(set_cc203,  "gfx/DIESEL/CC203/DIESEL_CC203.png") {
    template_dmu_ft_front(1,0)
 
 }
-RUNNING_COST_ENGINE
+RUNNINGCOSTENGINESWITCH

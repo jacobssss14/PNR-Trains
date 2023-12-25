@@ -156,4 +156,4 @@ switch (FEAT_TRAINS, PARENT, switch_class_900_power, date_of_last_service) {
     return 1400;  
 }
 
-RUNNING_COST_ENGINE
+RUNNINGCOSTENGINESWITCH

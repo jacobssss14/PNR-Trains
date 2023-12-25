@@ -138,5 +138,5 @@ switch(FEAT_TRAINS, SELF, switch_livery_text_7B, cargo_subtype) {
     return CB_RESULT_NO_TEXT;
 }
 
-RUNNING_COST_ENGINE
+RUNNINGCOSTENGINESWITCH
 

@@ -25,5 +25,7 @@ spriteset(set_3rd_class_purchase, "gfx/COACHES/3rd_Class/3rd_class.png") {
 spriteset(set_3rd_class, "gfx/COACHES/3rd_Class/3rd_class.png") {
     template_standard(1,64)
 }
-RUNNING_COST_ENGINE
+
+RUNNINGCOSTENGINESWITCH
+PURCHASETEXTSWITCH
 

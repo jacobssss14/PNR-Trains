@@ -58,4 +58,4 @@ switch(FEAT_TRAINS, SELF, switch_livery_text_203_generator_car, cargo_subtype) {
 }
 
 
-RUNNING_COST_ENGINE
+RUNNINGCOSTENGINESWITCH

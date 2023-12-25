@@ -28,8 +28,8 @@ item (FEAT_TRAINS, ITEM) {
 		model_life: MODEL_LIFE;
 		vehicle_life: VEHICLE_LIFE; 
 		retire_early: RETIRE_EARLY;
-		PURCHASE_COST
-		RUNNING_COST
+		PURCHASECOSTPROPERTY
+		RUNNINGCOSTPROPERTY
 		speed: SPEED km/h;
 		weight: WEIGHT ton;
 		power: POWER hp;
@@ -52,7 +52,7 @@ item (FEAT_TRAINS, ITEM) {
    }
 
    graphics {
-	  RUNNING_COST_ENGINE_CALL
+	  RUNNINGCOSTENGINESWITCHCALL
       default: set_cc203;
 	  cargo_capacity: return 0;
    }

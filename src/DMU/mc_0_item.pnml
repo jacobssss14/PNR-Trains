@@ -26,9 +26,9 @@ item (FEAT_TRAINS, ITEM) {
 		model_life: MODEL_LIFE;
 		vehicle_life: VEHICLE_LIFE; 
 		retire_early: RETIRE_EARLY;
-		loading_speed: LOADINGSPEED;
-		PURCHASE_COST
-		RUNNING_COST
+		LOADINGSPEEDPROPERTY
+		PURCHASECOSTPROPERTY
+		RUNNINGCOSTPROPERTY
 		speed: SPEED km/h;
 		power: POWER hp;
 		cargo_capacity: HEAD_CAPACITY;
@@ -54,7 +54,8 @@ item (FEAT_TRAINS, ITEM) {
    }
 
      graphics {
-	  RUNNING_COST_ENGINE_CALL
+	  RUNNINGCOSTENGINESWITCHCALL
+	  PURCHASETEXTSWITCHCALL
       ENGINECAPACITYSWITCHCALL(VEHIDCODE)	   
       purchase: set_mc_0_purchase;
       default: set_mc_0_head;
@@ -62,26 +63,24 @@ item (FEAT_TRAINS, ITEM) {
    }
 
    livery_override (item_pnr_mu_coach_nrw_unpowered) {
-	    RUNNING_COST_MU_UNPOWERED_CALL 
-	   	loading_speed: LOADINGSPEED;
+	    RUNNINGCOSTMUWAGONUNPOWEREDSWITCHCALL
+		LOADINGSPEEDPROPERTY 
 	   	WAGONCAPACITYSWITCHCALL(VEHIDCODE)
 		length: WAGON_LENGTH;
-		weight: ADD_WEIGHT_UNPOWERED
-		DECAY_COMMUTER
+		weight: WEIGHTMUWAGONUNPOWERED
 		default: set_mc_0_pass_cars;
 		
 		
    }
 
    livery_override (item_pnr_mu_coach_nrw_powered) {
-	    RUNNING_COST_MU_POWERED_CALL 
-	   	loading_speed: LOADINGSPEED;
+	    LOADINGSPEEDPROPERTY
+		RUNNINGCOSTMUWAGONPOWEREDSWITCHCALL
 	   	WAGONCAPACITYSWITCHCALL(VEHIDCODE)
+		power: POWERMUWAGONPOWERED
+		weight: WEIGHTMUWAGONPOWERED
 		length: WAGON_LENGTH;
-		weight: ADD_WEIGHT_POWERED
-		power: ADD_POWER
-		tractive_effort_coefficient: ADD_TE
-		DECAY_COMMUTER
+		tractive_effort_coefficient: TEMUWAGONPOWERED
 		default: set_mc_0_pass_cars;
 		
    }

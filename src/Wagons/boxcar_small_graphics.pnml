@@ -32,7 +32,7 @@ spritegroup boxcar_small {
     loading: [set_boxcar_small_empty, set_boxcar_small_loaded];
     loaded: [set_boxcar_small_empty, set_boxcar_small_loaded];
 }
-RUNNING_COST_ENGINE
+RUNNINGCOSTENGINESWITCH
 
 
 

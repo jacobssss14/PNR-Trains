@@ -127,7 +127,7 @@ random_switch (FEAT_TRAINS, SELF, flat_wagon, bitmask(TRIGGER_VEHICLE_NEW_LOAD))
         1: flat_wagon_1;
 }
 
-RUNNING_COST_ENGINE
+RUNNINGCOSTENGINESWITCH
 
 
 

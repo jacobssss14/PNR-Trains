@@ -22,7 +22,7 @@ spriteset (hopper_small, "gfx/Wagons/HOPPER_SMALL.png") {
     template_cargo(1,1)
 }
 
-RUNNING_COST_ENGINE
+RUNNINGCOSTENGINESWITCH
 
 
 

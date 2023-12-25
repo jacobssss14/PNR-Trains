@@ -63,4 +63,4 @@ switch(FEAT_TRAINS, SELF, switch_steam_class_45_articulated, extra_callback_info
 }
 
 
-RUNNING_COST_ENGINE
+RUNNINGCOSTENGINESWITCH

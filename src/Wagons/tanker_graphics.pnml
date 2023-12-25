@@ -22,7 +22,7 @@ spriteset (tanker, "gfx/Wagons/TANKER.png") {
     template_cargo(1,32)
 
 }
-RUNNING_COST_ENGINE
+RUNNINGCOSTENGINESWITCH
 
 
 

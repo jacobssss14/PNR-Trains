@@ -20,13 +20,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 
 
-#include "undefined_properties.pnml"
+#include "undefine_type.pnml"
 
 #define CURRENT_TRACK_TYPE ELRL
 #define CURRENT_RUNNING_COST_BASE RUNNING_COST_ELECTRIC
 #define CURRENT_ENGINE_CLASS ENGINE_CLASS_ELECTRIC
 
-
 // Room for specific defines
-#define PURCHASECOSTVALUE PURCHASE_EMU
-#define RUNNINGCOSTVALUE  RUNNING_EMU
+#define PURCHASECOSTVALUE PURCHASECOSTEMUVALUE
+#define RUNNINGCOSTVALUE RUNNINGCOSTEMUVALUE

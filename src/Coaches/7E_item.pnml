@@ -27,9 +27,9 @@ item (FEAT_TRAINS, ITEM) {
 		INTRODUCTIONDATEPROPERTY
 		model_life: MODEL_LIFE;
 		retire_early: RETIRE_EARLY;
-		loading_speed: LOADINGSPEED;
-		PURCHASE_COST
-		RUNNING_COST
+		LOADINGSPEEDPROPERTY
+		PURCHASECOSTPROPERTY
+		RUNNINGCOSTPROPERTY
 		speed: SPEED km/h;
         power: POWER hp;
 		cargo_capacity: HEAD_CAPACITY;
@@ -60,7 +60,7 @@ item (FEAT_TRAINS, ITEM) {
       purchase: switch_7E_purchase;
       default: switch_7E;
 	  cargo_subtype_text: switch_livery_text_7E;
-      RUNNING_COST_ENGINE_CALL
+      RUNNINGCOSTENGINESWITCHCALL
 
    }
 

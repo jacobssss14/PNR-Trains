@@ -26,4 +26,4 @@ spriteset (set_ctc_dmt, "gfx/COACHES/CTC_DMT/CTC_DMT.png") {
     template_standard(1,64)
 }
 
-RUNNING_COST_ENGINE
+RUNNINGCOSTENGINESWITCH

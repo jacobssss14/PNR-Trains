@@ -30,5 +30,5 @@ spriteset (set_inka_coach, "gfx/COACHES/Inka_Commuter_Coach/Inka_Commuter_Coach.
 }
 
 
-RUNNING_COST_ENGINE
+RUNNINGCOSTENGINESWITCH
 
