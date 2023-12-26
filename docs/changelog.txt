@@ -1,4 +1,7 @@
 Changelog for PNR-Trains
+1.0.b3
+    *Added NSCR Airport Express EMU
+
 1.0.b2
     *New calculations for MU coaches
     *Narrow guage trains are up to 20% less costly to operate than standard-guage ones 

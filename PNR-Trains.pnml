@@ -316,6 +316,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/EMU/emu_std_em10000_graphics.pnml"
 #include "src/EMU/emu_std_em10000_item.pnml"
 
+//NSCR Airport Express
+#include "src/EMU/emu_std_nscr_aa_properties.pnml"
+#include "src/EMU/emu_std_nscr_aa_graphics.pnml"
+#include "src/EMU/emu_std_nscr_aa_item.pnml"
+
 //DMU Standard Guage
 #include "src/init/init_dmu_standard.pnml"
 

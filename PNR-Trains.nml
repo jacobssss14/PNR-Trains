@@ -578,6 +578,7 @@ item(FEAT_TRAINS, item_pnr_mu_coach_nrw_powered, 3999) {}
 
 
 item(FEAT_TRAINS, item_emu_EM_10000, 4000) {}
+item(FEAT_TRAINS, item_emu_nsrc_aa, 40001) {}
 item(FEAT_TRAINS, item_pnr_mu_coach_unpowered, 4998) {}
 item(FEAT_TRAINS, item_pnr_mu_coach_powered, 4999) {}
 
@@ -10438,7 +10439,7 @@ spriteset (set_em_100000_pass_car, "gfx/EMU/EM_10000/EM_10000.png") {
 }
 
 
-switch(FEAT_TRAINS, SELF, switch_dmu_em_100000_reversed, var[0xC8]) {
+switch(FEAT_TRAINS, SELF, switch_em_100000_reversed, var[0xC8]) {
  0xFE: set_em_100000_back;
     0xFF: set_em_100000_back;
     set_em_100000_front;
@@ -10513,7 +10514,7 @@ item (FEAT_TRAINS, item_emu_EM_10000) {
   
       cargo_capacity: switch_emu_EM_10000_capacity_engine;
       purchase: set_em_100000_purchase;
-      default: switch_dmu_em_100000_reversed;
+      default: switch_em_100000_reversed;
 
    }
 
@@ -10542,6 +10543,199 @@ item (FEAT_TRAINS, item_emu_EM_10000) {
 
 }
 # 318 "PNR-Trains.pnml" 2
+
+//NSCR Airport Express
+# 1 "src/EMU/emu_std_nscr_aa_properties.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+# 1 "src/EMU/../undefine_properties.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+//Undefined properties
+# 23 "src/EMU/emu_std_nscr_aa_properties.pnml" 2
+# 321 "PNR-Trains.pnml" 2
+# 1 "src/EMU/emu_std_nscr_aa_graphics.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+spriteset(set_nscr_aa_purchase, "gfx/EMU/NSCR_AA/NSCR_AA.png") {
+  template_mu_purchase(1, 106)
+}
+
+spriteset(set_nscr_aa_front, "gfx/EMU/NSCR_AA/NSCR_AA.png") {
+    template_standard_guage(1, 1)
+}
+
+spriteset(set_nscr_aa_back, "gfx/EMU/NSCR_AA/NSCR_AA.png") {
+    template_standard_guage(1, 32)
+   }
+
+
+spriteset (set_nscr_aa_pass_car, "gfx/EMU/NSCR_AA/NSCR_AA.png") {
+    template_standard_guage(1, 64)
+}
+
+
+switch(FEAT_TRAINS, SELF, switch_nscr_aa_reversed, var[0xC8]) {
+ 0xFE: set_nscr_aa_back;
+    0xFF: set_nscr_aa_back;
+    set_nscr_aa_front;
+}
+
+switch(FEAT_TRAINS, SELF, switch_emu_nscr_aa_capacity_engine, cargo_classes) { bitmask(CC_MAIL): 80/2; bitmask(CC_ARMOURED): 80/4; 80; }
+
+switch(FEAT_TRAINS, SELF, switch_emu_nscr_aa_capacity_wagon, cargo_classes) { bitmask(CC_MAIL): 80/2; bitmask(CC_ARMOURED): 80/4; 80; }
+
+
+
+# 322 "PNR-Trains.pnml" 2
+# 1 "src/EMU/emu_std_nscr_aa_item.pnml" 1
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+/*Kiha 35*/
+item (FEAT_TRAINS, item_emu_nscr_aa) {
+   property {
+      name: string(STR_EMU_NSCR_AA);
+      climates_available: bitmask(CLIMATE_TEMPERATE);
+  introduction_date: date(2022, 1, 1);
+  model_life: 30;
+  vehicle_life: 60;
+  retire_early: 5;
+  loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+  cost_factor: 1*(0.1*38 +0.05*(((120/40 -((120/40*120/40)-120 )/(0.1+2*120/40))-(((120/40 -((120/40*120/40)-120 )/(0.1+2*120/40))*(120/40 -((120/40*120/40)-120 )/(0.1+2*120/40)))-120 )/(0.1+2*(120/40 -((120/40*120/40)-120 )/(0.1+2*120/40))))-((((120/40 -((120/40*120/40)-120 )/(0.1+2*120/40))-(((120/40 -((120/40*120/40)-120 )/(0.1+2*120/40))*(120/40 -((120/40*120/40)-120 )/(0.1+2*120/40)))-120 )/(0.1+2*(120/40 -((120/40*120/40)-120 )/(0.1+2*120/40))))*((120/40 -((120/40*120/40)-120 )/(0.1+2*120/40))-(((120/40 -((120/40*120/40)-120 )/(0.1+2*120/40))*(120/40 -((120/40*120/40)-120 )/(0.1+2*120/40)))-120 )/(0.1+2*(120/40 -((120/40*120/40)-120 )/(0.1+2*120/40)))))-120 )/(0.1+2*((120/40 -((120/40*120/40)-120 )/(0.1+2*120/40))-(((120/40 -((120/40*120/40)-120 )/(0.1+2*120/40))*(120/40 -((120/40*120/40)-120 )/(0.1+2*120/40)))-120 )/(0.1+2*(120/40 -((120/40*120/40)-120 )/(0.1+2*120/40))))))+1*(((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))-(((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40)))-650 )/(0.1+2*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))))-((((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))-(((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40)))-650 )/(0.1+2*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))))*((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))-(((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40)))-650 )/(0.1+2*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40)))))-650 )/(0.1+2*((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))-(((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40)))-650 )/(0.1+2*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))))))+max(0.5*(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))-((((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))*((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))))-80 )/(0.1+2*((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))))),0.5*(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))-((((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))*((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))))-80 )/(0.1+2*((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))))))+1*0.3);
+  running_cost_factor: 1*(0.01*(((120/40 -((120/40*120/40)-120 )/(0.1+2*120/40))-(((120/40 -((120/40*120/40)-120 )/(0.1+2*120/40))*(120/40 -((120/40*120/40)-120 )/(0.1+2*120/40)))-120 )/(0.1+2*(120/40 -((120/40*120/40)-120 )/(0.1+2*120/40))))-((((120/40 -((120/40*120/40)-120 )/(0.1+2*120/40))-(((120/40 -((120/40*120/40)-120 )/(0.1+2*120/40))*(120/40 -((120/40*120/40)-120 )/(0.1+2*120/40)))-120 )/(0.1+2*(120/40 -((120/40*120/40)-120 )/(0.1+2*120/40))))*((120/40 -((120/40*120/40)-120 )/(0.1+2*120/40))-(((120/40 -((120/40*120/40)-120 )/(0.1+2*120/40))*(120/40 -((120/40*120/40)-120 )/(0.1+2*120/40)))-120 )/(0.1+2*(120/40 -((120/40*120/40)-120 )/(0.1+2*120/40)))))-120 )/(0.1+2*((120/40 -((120/40*120/40)-120 )/(0.1+2*120/40))-(((120/40 -((120/40*120/40)-120 )/(0.1+2*120/40))*(120/40 -((120/40*120/40)-120 )/(0.1+2*120/40)))-120 )/(0.1+2*(120/40 -((120/40*120/40)-120 )/(0.1+2*120/40))))))+1*(((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))-(((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40)))-650 )/(0.1+2*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))))-((((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))-(((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40)))-650 )/(0.1+2*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))))*((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))-(((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40)))-650 )/(0.1+2*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40)))))-650 )/(0.1+2*((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))-(((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40)))-650 )/(0.1+2*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))))))+max(0.5*(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))-((((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))*((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))))-80 )/(0.1+2*((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))))), 0.5*(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))-((((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))))*((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))))-80 )/(0.1+2*((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))-(((80/40 -((80/40*80/40)-80 )/(0.1+2*80/40))*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))-80 )/(0.1+2*(80/40 -((80/40*80/40)-80 )/(0.1+2*80/40)))))))+1*0.3);
+  speed: 120 km/h;
+  power: 650 hp;
+  cargo_capacity: 80;
+  weight: 38 ton;
+  tractive_effort_coefficient: 0.3;
+  air_drag_coefficient: 0.1;
+  cargo_age_period: 185;
+
+  reliability_decay: 20;
+  refittable_cargo_classes: bitmask(CC_PASSENGERS); non_refittable_cargo_classes: 0;
+  misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
+  refit_cost: 0;
+  track_type: ELRL;
+
+  running_cost_base: RUNNING_COST_ELECTRIC;
+  engine_class: ENGINE_CLASS_ELECTRIC;
+  visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+
+  sprite_id: SPRITE_ID_NEW_TRAIN;
+  dual_headed: 1;
+  length: 8;
+
+   }
+
+   graphics {
+  
+      cargo_capacity: switch_emu_nscr_aa_capacity_engine;
+      purchase: set_nscr_aa_purchase;
+      default: switch_nscr_aa_reversed;
+
+   }
+
+   livery_override (item_pnr_mu_coach_unpowered) {
+     running_cost_factor: int(120/10);
+  loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+     cargo_capacity: switch_emu_nscr_aa_capacity_wagon;
+  cargo_age_period: 185;
+  length: 8;
+  weight: int(38*1/2);
+  default: set_nscr_aa_pass_car;
+   }
+
+   livery_override (item_pnr_mu_coach_powered) {
+     loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+  running_cost_factor: int(120/10+(((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))-(((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40)))-650 )/(0.1+2*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))))-((((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))-(((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40)))-650 )/(0.1+2*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))))*((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))-(((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40)))-650 )/(0.1+2*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40)))))-650 )/(0.1+2*((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))-(((650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40)))-650 )/(0.1+2*(650/40 -((650/40*650/40)-650 )/(0.1+2*650/40))))))/10+0.3*38);
+     cargo_capacity: switch_emu_nscr_aa_capacity_wagon;
+  cargo_age_period: 185;
+  power: int(650*1/2);
+  weight: int(38*3/4);
+  length: 8;
+  tractive_effort_coefficient: int(0.3*10*38);
+  default: set_nscr_aa_pass_car;
+
+   }
+
+}
+# 323 "PNR-Trains.pnml" 2
 
 //DMU Standard Guage
 # 1 "src/init/init_dmu_standard.pnml" 1
@@ -10594,7 +10788,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 
 // Room for specific defines
-# 321 "PNR-Trains.pnml" 2
+# 326 "PNR-Trains.pnml" 2
 
 //SLH DMU
 # 1 "src/DMU/dmu_slh_properties.pnml" 1
@@ -10643,7 +10837,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //Undefined properties
 # 23 "src/DMU/dmu_slh_properties.pnml" 2
-# 324 "PNR-Trains.pnml" 2
+# 329 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_slh_graphics.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -10696,7 +10890,7 @@ switch(FEAT_TRAINS, SELF, switch_dmu_slh_capacity_wagon, cargo_classes) { bitmas
 
 
 
-# 325 "PNR-Trains.pnml" 2
+# 330 "PNR-Trains.pnml" 2
 # 1 "src/DMU/dmu_slh_item.pnml" 1
 /* PNR-Trains NewGRF For OpenTTD
 Copyright (C) 2020  Jacob Payag
@@ -10788,4 +10982,4 @@ item (FEAT_TRAINS, item_dmu_slh) {
    }
 
 }
-# 326 "PNR-Trains.pnml" 2
+# 331 "PNR-Trains.pnml" 2

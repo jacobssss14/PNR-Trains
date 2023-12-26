@@ -19,28 +19,28 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
 
-spriteset(set_em_100000_purchase, "gfx/EMU/EM_10000/EM_10000.png") {
+spriteset(set_nscr_aa_purchase, "gfx/EMU/NSCR_AA/NSCR_AA.png") {
   template_mu_purchase(1, 106) 
 }
 
-spriteset(set_em_100000_front,  "gfx/EMU/EM_10000/EM_10000.png") {
+spriteset(set_nscr_aa_front,  "gfx/EMU/NSCR_AA/NSCR_AA.png") {
     template_standard_guage(1, 1)
 }
 
-spriteset(set_em_100000_back, "gfx/EMU/EM_10000/EM_10000.png") {
+spriteset(set_nscr_aa_back, "gfx/EMU/NSCR_AA/NSCR_AA.png") {
     template_standard_guage(1, 32)
    }
 
 
-spriteset (set_em_100000_pass_car, "gfx/EMU/EM_10000/EM_10000.png") {
+spriteset (set_nscr_aa_pass_car, "gfx/EMU/NSCR_AA/NSCR_AA.png") {
     template_standard_guage(1, 64)
 }
 
 
-switch(FEAT_TRAINS, SELF, switch_em_100000_reversed, var[0xC8]) {
-	0xFE: set_em_100000_back;
-    0xFF: set_em_100000_back;
-    set_em_100000_front;
+switch(FEAT_TRAINS, SELF, switch_nscr_aa_reversed, var[0xC8]) {
+	0xFE: set_nscr_aa_back;
+    0xFF: set_nscr_aa_back;
+    set_nscr_aa_front;
 }
 
 ENGINECAPACITYSWITCH(VEHIDCODE)

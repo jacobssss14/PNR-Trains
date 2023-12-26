@@ -37,7 +37,7 @@ item (FEAT_TRAINS, ITEM) {
 		weight: WEIGHT ton;
 		tractive_effort_coefficient: TE_COEFFICIENT;
 		air_drag_coefficient: AIR_DRAG_COEFFICIENT;
-		DECAY_COMMUTER
+		DECAY_INTERCITY_COACH
 		
 		reliability_decay: RELIABILITY_DECAY;
 		CARGODEF
@@ -58,8 +58,8 @@ item (FEAT_TRAINS, ITEM) {
    graphics {
 	  RUNNINGCOSTENGINESWITCHCALL
       ENGINECAPACITYSWITCHCALL(VEHIDCODE)	   
-      purchase: set_em_100000_purchase;
-      default: switch_em_100000_reversed;
+      purchase: set_nscr_aa_purchase;
+      default: switch_nscr_aa_reversed;
 
    }
 
@@ -67,22 +67,22 @@ item (FEAT_TRAINS, ITEM) {
 	    RUNNINGCOSTMUWAGONUNPOWEREDSWITCHCALL
 		LOADINGSPEEDPROPERTY 
 	   	WAGONCAPACITYSWITCHCALL(VEHIDCODE)
-		DECAY_COMMUTER
+		DECAY_INTERCITY_COACH
 		length: WAGON_LENGTH;
 		weight: WEIGHTMUWAGONUNPOWERED
-		default: set_em_100000_pass_car;
+		default: set_nscr_aa_pass_car;
    }
 
    livery_override (item_pnr_mu_coach_powered) {
 	    LOADINGSPEEDPROPERTY
 		RUNNINGCOSTMUWAGONPOWEREDSWITCHCALL
 	   	WAGONCAPACITYSWITCHCALL(VEHIDCODE)
-		DECAY_COMMUTER
+		DECAY_INTERCITY_COACH
 		power: POWERMUWAGONPOWERED
 		weight: WEIGHTMUWAGONPOWERED
 		length: WAGON_LENGTH;
 		tractive_effort_coefficient: TEMUWAGONPOWERED
-		default: set_em_100000_pass_car;
+		default: set_nscr_aa_pass_car;
 
    }
 

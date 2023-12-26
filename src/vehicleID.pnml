@@ -70,6 +70,7 @@ item(FEAT_TRAINS, item_pnr_mu_coach_nrw_powered, 3999) {}
 
 #define ID_RANGE_EMU_STD 0xFA0..0x1387
 item(FEAT_TRAINS, item_emu_EM_10000, 4000) {}
+item(FEAT_TRAINS, item_emu_nsrc_aa, 40001) {}
 item(FEAT_TRAINS, item_pnr_mu_coach_unpowered, 4998) {}
 item(FEAT_TRAINS, item_pnr_mu_coach_powered, 4999) {}
 
