@@ -23,6 +23,7 @@ spriteset (tanker, "gfx/Wagons/TANKER.png") {
 
 }
 RUNNINGCOSTENGINESWITCH
+PURCHASETEXTSWITCH
 
 
 

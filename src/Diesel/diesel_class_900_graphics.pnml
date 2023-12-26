@@ -157,3 +157,4 @@ switch (FEAT_TRAINS, PARENT, switch_class_900_power, date_of_last_service) {
 }
 
 RUNNINGCOSTENGINESWITCH
+PURCHASETEXTSWITCH

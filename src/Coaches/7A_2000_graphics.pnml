@@ -79,9 +79,6 @@ switch(FEAT_TRAINS, SELF, switch_livery_text_7A_2000, cargo_subtype) {
     4: return string(str_livery_northrail);
     return CB_RESULT_NO_TEXT;
 }
-
-
-
-
 RUNNINGCOSTENGINESWITCH
+PURCHASETEXTSWITCH
 

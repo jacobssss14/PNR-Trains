@@ -28,8 +28,8 @@ item(FEAT_TRAINS, ITEM) {
 		vehicle_life: VEHICLE_LIFE; 
 		retire_early: RETIRE_EARLY;
 		LOADINGSPEEDPROPERTY
-		PURCHASECOSTPROPERTY
-		RUNNINGCOSTPROPERTY
+		PURCHASECOSTMUUNPOWERED
+		RUNNINGCOSTMU
 		speed: SPEED km/h;
 		power: POWER hp;
 		cargo_capacity: HEAD_CAPACITY;
@@ -53,6 +53,6 @@ item(FEAT_TRAINS, ITEM) {
    graphics {
       purchase: set_pnr_mu_coach_unpowered_purchase;
 	  default: set_pnr_mu_coach_unpowered;
-	  RUNNINGCOSTENGINESWITCHCALL
+	  PURCHASETEXTMUWAGONPASSENGERUNPOWERED
    }
 }

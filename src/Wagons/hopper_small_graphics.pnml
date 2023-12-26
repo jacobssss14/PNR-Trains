@@ -23,6 +23,7 @@ spriteset (hopper_small, "gfx/Wagons/HOPPER_SMALL.png") {
 }
 
 RUNNINGCOSTENGINESWITCH
+PURCHASETEXTSWITCH
 
 
 

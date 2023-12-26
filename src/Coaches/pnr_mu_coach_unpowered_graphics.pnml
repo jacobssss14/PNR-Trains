@@ -27,3 +27,4 @@ spriteset (set_pnr_mu_coach_unpowered, "gfx/COACHES/MU_COACH/PNR_MU_COACH.png") 
     template_standard(1, 64)
 }
 RUNNINGCOSTENGINESWITCH
+PURCHASETEXTSWITCH

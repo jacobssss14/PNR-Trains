@@ -67,3 +67,4 @@ switch(FEAT_TRAINS, SELF, switch_livery_text_1500, cargo_subtype) {
 }
 
 RUNNINGCOSTENGINESWITCH
+PURCHASETEXTSWITCH

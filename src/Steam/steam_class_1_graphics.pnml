@@ -34,3 +34,4 @@ switch(FEAT_TRAINS, SELF, switch_steam_class_1_effect, position_in_vehid_chain %
 
 
 RUNNINGCOSTENGINESWITCH
+PURCHASETEXTSWITCH

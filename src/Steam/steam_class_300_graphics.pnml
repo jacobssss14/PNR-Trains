@@ -64,3 +64,4 @@ switch(FEAT_TRAINS, SELF, switch_steam_class_300_articulated, extra_callback_inf
 
 
 RUNNINGCOSTENGINESWITCH
+PURCHASETEXTSWITCH

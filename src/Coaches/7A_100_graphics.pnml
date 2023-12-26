@@ -131,4 +131,4 @@ switch(FEAT_TRAINS, SELF, switch_livery_text_7A, cargo_subtype) {
 }
 
 RUNNINGCOSTENGINESWITCH
-
+PURCHASETEXTSWITCH

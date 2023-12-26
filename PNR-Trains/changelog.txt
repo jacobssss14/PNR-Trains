@@ -1,4 +1,9 @@
 Changelog for PNR-Trains
+1.0.b1
+    *Rebase multiple support files
+    *GRF Currently compiles but behavior is not as expected
+    *Added parameters for purchase cost, running cost, and loading speed adjusment
+
 1.0.0
     *Fixed Narrow Guage MU system
     *Fixed SLH DMU visual effects

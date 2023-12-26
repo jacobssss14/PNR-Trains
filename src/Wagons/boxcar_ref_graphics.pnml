@@ -25,6 +25,7 @@ spriteset (boxcar_ref, "gfx/Wagons/BOXCAR_REF.png") {
 
 
 RUNNINGCOSTENGINESWITCH
+PURCHASETEXTSWITCH
 
 
 

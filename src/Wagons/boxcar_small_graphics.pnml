@@ -33,6 +33,7 @@ spritegroup boxcar_small {
     loaded: [set_boxcar_small_empty, set_boxcar_small_loaded];
 }
 RUNNINGCOSTENGINESWITCH
+PURCHASETEXTSWITCH
 
 
 

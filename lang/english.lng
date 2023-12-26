@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : PNR Trains 1.0.b1
+STR_GRF_NAME        : PNR Trains 1.0.b2
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
 
 STR_PARAM_PURCHASE_COST             :Purchase cost multiplier
@@ -114,6 +114,7 @@ STR_HOPPER_SMALL      : PNR Small Hopper
 #Purchase text
 str_variant_u14c:Variant: {ORANGE} GE U14C
 str_variant_u15c:Variant: {ORANGE} GE U15C
+str_unit_wagon_passenger	:This generic wagon can ONLY be used with passenger MUs to create trains of the desired length
 
 #Livery names
 str_livery_auto                : Automatic livery changing 
