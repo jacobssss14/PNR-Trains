@@ -52,6 +52,7 @@ item (FEAT_TRAINS, ITEM) {
    }
 
    graphics {
+	  can_attach_wagon: switch_can_attach_vehicle;
 	  RUNNINGCOSTENGINESWITCHCALL
 	  purchase: set_class_9000_purchase;
       default: set_class_9000;

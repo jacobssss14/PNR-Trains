@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : PNR Trains 1.0.b3
+STR_GRF_NAME        : PNR Trains 1.0.b4
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
 
 STR_PARAM_PURCHASE_COST             :Purchase cost multiplier
@@ -151,3 +151,11 @@ str_livery_kogane              : KiHa 59 "Kogane"
 str_livery_premiere            : Premiere Train
 str_livery_premiere_2019       : Premiere Train 2019
 str_livery_2011                : KiHa 52 Original
+
+#Can attach vehicle texts
+str_cannot_attach_wagon_to_MU					:Cannot attach wagon to Multiple Unit engine
+str_cannot_attach_wagon_to_Unit_Wagon			:Cannot attach regular wagon to Unit Wagon
+str_cannot_attach_Unit_wagon_to_engine			:Cannot attach Unit Wagon to regular engine
+str_cannot_attach_Unit_wagon_to_wagon			:Cannot attach Unit Wagon to regular wagon
+str_cannot_attach_Unit_wagon_cargo_to_passenger	:Cannot attach cargo Unit Wagon to passenger Multiple Unit engine
+str_cannot_attach_Unit_wagon_passenger_to_cargo	:Cannot attach passenger Unit Wagon to cargo Multiple Unit engine

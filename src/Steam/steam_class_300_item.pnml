@@ -54,6 +54,8 @@ item (FEAT_TRAINS, ITEM) {
    }
 
    graphics {
+	  can_attach_wagon: switch_can_attach_vehicle;
+	  cargo_capacity: return 0;
       purchase: set_class_300_purchase;
 	  visual_effect_and_powered: switch_steam_class_300_effect;
 	  length: switch_steam_class_300_length;

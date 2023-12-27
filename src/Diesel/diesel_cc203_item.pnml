@@ -52,6 +52,7 @@ item (FEAT_TRAINS, ITEM) {
    }
 
    graphics {
+	  can_attach_wagon: switch_can_attach_vehicle;
 	  RUNNINGCOSTENGINESWITCHCALL
       default: set_cc203;
 	  cargo_capacity: return 0;

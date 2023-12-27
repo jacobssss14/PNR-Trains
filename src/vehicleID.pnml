@@ -65,16 +65,12 @@ item(FEAT_TRAINS, item_dmu_kiha_59, 3012) {}
 item(FEAT_TRAINS, item_dmu_kiha_35, 3013) {}
 item(FEAT_TRAINS, item_dmu_class_8000, 3014) {}
 
-item(FEAT_TRAINS, item_pnr_mu_coach_nrw_unpowered, 3998) {}
-item(FEAT_TRAINS, item_pnr_mu_coach_nrw_powered, 3999) {}
-
 #define ID_RANGE_EMU_STD 0xFA0..0x1387
 item(FEAT_TRAINS, item_emu_EM_10000, 4000) {}
 item(FEAT_TRAINS, item_emu_nsrc_aa, 40001) {}
-item(FEAT_TRAINS, item_pnr_mu_coach_unpowered, 4998) {}
-item(FEAT_TRAINS, item_pnr_mu_coach_powered, 4999) {}
 
-#define ID_RANGE_DMU_STD 0x1388..176F
+
+#define ID_RANGE_DMU_STD 0x1388..0x176F
 item(FEAT_TRAINS, item_dmu_slh, 5000) {}
 
 
@@ -105,7 +101,11 @@ item(FEAT_TRAINS, item_tanker, 7003) {}
 item(FEAT_TRAINS, item_flat_wagon, 7004) {}
 item(FEAT_TRAINS, item_7B, 7005){}
 
-
-
+//MU Cars
+#define ID_RANGE_MU_COACH 0x1F40..0x2327
+item(FEAT_TRAINS, item_pnr_mu_coach_unpowered, 8000) {}
+item(FEAT_TRAINS, item_pnr_mu_coach_powered, 8001) {}
+item(FEAT_TRAINS, item_pnr_mu_coach_nrw_unpowered, 8002) {}
+item(FEAT_TRAINS, item_pnr_mu_coach_nrw_powered, 8003) {}
 
 

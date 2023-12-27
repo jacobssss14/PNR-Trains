@@ -56,6 +56,7 @@ item (FEAT_TRAINS, ITEM) {
    }
 
    graphics {
+	  can_attach_wagon: switch_can_attach_vehicle;
 	  RUNNINGCOSTENGINESWITCHCALL
       ENGINECAPACITYSWITCHCALL(VEHIDCODE)	   
       purchase: set_nscr_aa_purchase;

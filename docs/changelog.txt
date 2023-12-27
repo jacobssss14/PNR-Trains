@@ -1,4 +1,7 @@
 Changelog for PNR-Trains
+1.0.b4
+    *Added wagon attachment limitations
+
 1.0.b3
     *Added NSCR Airport Express EMU
 
