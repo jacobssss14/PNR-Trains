@@ -19,28 +19,28 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
 
-spriteset(set_em_100000_purchase, "gfx/EMU/EM_10000/EM_10000_COMMUTER.png") {
+spriteset(set_em_100000_comm_exp_purchase, "gfx/EMU/EM_10000/EM_10000_COMMUTER_EXP.png") {
   template_mu_purchase(1, 106) 
 }
 
-spriteset(set_em_100000_front,  "gfx/EMU/EM_10000/EM_10000_COMMUTER.png") {
+spriteset(set_em_100000_comm_exp_front,  "gfx/EMU/EM_10000/EM_10000_COMMUTER_EXP.png") {
     template_standard_guage(1, 1)
 }
 
-spriteset(set_em_100000_back, "gfx/EMU/EM_10000/EM_10000_COMMUTER.png") {
+spriteset(set_em_100000_comm_exp_back, "gfx/EMU/EM_10000/EM_10000_COMMUTER_EXP.png") {
     template_standard_guage(1, 32)
    }
 
 
-spriteset (set_em_100000_pass_car, "gfx/EMU/EM_10000/EM_10000_COMMUTER.png") {
+spriteset (set_em_100000_comm_exp_pass_car, "gfx/EMU/EM_10000/EM_10000_COMMUTER_EXP.png") {
     template_standard_guage(1, 64)
 }
 
 
-switch(FEAT_TRAINS, SELF, switch_em_100000_reversed, var[0xC8]) {
-	0xFE: set_em_100000_back;
-    0xFF: set_em_100000_back;
-    set_em_100000_front;
+switch(FEAT_TRAINS, SELF, switch_em_100000_comm_exp_reversed, var[0xC8]) {
+	0xFE: set_em_100000_comm_exp_back;
+    0xFF: set_em_100000_comm_exp_back;
+    set_em_100000_comm_exp_front;
 }
 
 ENGINECAPACITYSWITCH(VEHIDCODE)

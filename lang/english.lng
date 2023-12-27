@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : PNR Trains 1.0.b4
+STR_GRF_NAME        : PNR Trains 1.1.0
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
 
 STR_PARAM_PURCHASE_COST             :Purchase cost multiplier
@@ -75,7 +75,8 @@ STR_DMU_DOST_HET      : DOST Hybrid Electric Train
 STR_DMU_SLH           : SLH DMU
 
 #EMU
-STR_EMU_EM_10000       :EM10000 Class
+STR_EMU_EM_10000          :EM10000 Class
+STR_EMU_EM_10000_COMM_EXP :EM10000 Commuter Express
 STR_EMU_NSCR_AA        :NSCR Airport Express
 
 #Steam 

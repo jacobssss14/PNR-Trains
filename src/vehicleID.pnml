@@ -68,6 +68,7 @@ item(FEAT_TRAINS, item_dmu_class_8000, 3014) {}
 #define ID_RANGE_EMU_STD 0xFA0..0x1387
 item(FEAT_TRAINS, item_emu_EM_10000, 4000) {}
 item(FEAT_TRAINS, item_emu_nsrc_aa, 40001) {}
+item(FEAT_TRAINS, item_emu_em_10000_comm_exp, 4002) {}
 
 
 #define ID_RANGE_DMU_STD 0x1388..0x176F

@@ -1,20 +1,24 @@
 Changelog for PNR-Trains
-1.0.b4
-    *Added wagon attachment limitations
+1.1.0
+    It has come to our attention that the running costs and purchase cost of trains in this set
+    are too low. Good for early game but allows AIs to become a little too aggressive. In line of
+    this, the following changes were made:
+        *Rebase multiple support files
+        *New calculations for MU coaches
+        *Re-introduced varied cargo age period 
+        *Narrow guage trains are up to 20% less costly to operate than standard-guage ones 
+        
 
-1.0.b3
-    *Added NSCR Airport Express EMU
-
-1.0.b2
-    *New calculations for MU coaches
-    *Narrow guage trains are up to 20% less costly to operate than standard-guage ones 
-    *Fixed graphics error with KiHa 35 intermedite cars
-    *Re-introduced varied cargo age period 
-
-1.0.b1
-    *Rebase multiple support files
-    *GRF Currently compiles but behavior is not as expected
-    *Added parameters for purchase cost, running cost, and loading speed adjusment
+    New Features
+        *Added parameters for purchase cost, running cost, and loading speed adjusment
+        *Added wagon attachment limitations
+        *Added NSCR Airport Express EMU
+        *Added new livery for EM10000
+    
+    Bug fixes
+        *Fixed graphics error with KiHa 35 intermedite cars
+        *Fixed bug where steam locomotives carry passengers
+    
 
 1.0.0
     *Fixed Narrow Guage MU system
