@@ -99,7 +99,8 @@ basecost {
 	PR_RUNNING_TRAIN_ELECTRIC: 1 + param_running_cost  - 4;
 }
 
-
+//disable original rail vehicles
+disable_item(FEAT_TRAINS, 0, 115);
 
 //set depot vehicle width to 32px to avoid overlap
 train_width_32_px = 1;

@@ -1,4 +1,8 @@
 Changelog for PNR-Trains
+1.1.1
+    Minor Change    
+        *Disable stock rail vehicles
+
 1.1.0
     It has come to our attention that the running costs and purchase cost of trains in this set
     are too low. Good for early game but allows AIs to become a little too aggressive. In line of
