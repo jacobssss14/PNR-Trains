@@ -18,20 +18,33 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-//Commuter Coach
-#define DECAY_COMMUTER_PRIME cargo_age_period: 160;
-#define DECAY_COMMUTER cargo_age_period: 74;
+spriteset(set_class_70_purchase, "gfx/STEAM/Class_70/class_70.png" ) {
+    template_steam_tender_purchase(1, 105)
+}
 
-//Intercity Coach
-#define DECAY_INTERCITY_COACH_PRIME cargo_age_period: 250;
-#define DECAY_INTERCITY_COACH cargo_age_period: 185;
-#define DECAY_ECONOMY_COACH cargo_age_period: 150;
-#define DECAY_3CLASS_COACH cargo_age_period: 100;
+spriteset(set_class_70_pos1, "gfx/STEAM/Class_70/class_70.png") {
+    template_cargo_small(1, 1)
+}
 
-//Sleeper Cars
-#define DECAY_SLEEPER_PRIME cargo_age_period: 500;
-#define DECAY_SLEEPER cargo_age_period: 450;
-#define DECAY_ECONOMY_SLEEPER cargo_age_period: 300;
+spriteset(set_class_70_pos2, "gfx/STEAM/Class_70/class_70.png"){
+    template_cargo_small(1, 32)
+}
 
 
+//Sprite animation
+switch(FEAT_TRAINS, SELF, switch_steam_class_70_animation, motion_counter % 2){
+	0: set_class_70_pos1;
+	set_class_70_pos2;
+}
 
+
+//Visual effects
+switch(FEAT_TRAINS, SELF, switch_steam_class_70_effect, position_in_vehid_chain % 2) {
+	0: return visual_effect_and_powered(VISUAL_EFFECT_STEAM, -3, DISABLE_WAGON_POWER);
+	return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, -1, DISABLE_WAGON_POWER);
+}
+
+
+
+RUNNINGCOSTENGINESWITCH
+PURCHASETEXTSWITCH

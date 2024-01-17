@@ -1,4 +1,16 @@
 Changelog for PNR-Trains
+1.2.0
+    Changes
+        *Increased SLH DMU Speed to 160kph
+        *Increased Airport Express EMU Speed to 160kph
+        *Decreased EM10000 Limited Capacity to 120
+    New Features
+        *Added new cargo decay for commuter prime trains
+    
+    New Trains
+        *Added MRR 70 Class Steam Locomotive
+        *Added MRR 100 Class Steam Locomotive
+
 1.1.1
     Minor Change    
         *Disable stock rail vehicles

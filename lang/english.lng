@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : PNR Trains 1.1.1
+STR_GRF_NAME        : PNR Trains 1.2.0
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
 
 STR_PARAM_PURCHASE_COST             :Purchase cost multiplier
@@ -55,6 +55,8 @@ STR_DIESEL_CLASS_1000: MRR 1000 Class
 STR_DIESEL_CLASS_1500: MRR 1500 Class
 STR_DIESEL_CLASS_2000: MRR 2000 Class
 STR_DIESEL_CLASS_2500: PNR 2500 Class
+STR_DIESEL_CLASS_3000: MRR 3000 Class (U5B)
+STR_DIESEL_CLASS_3000_U6B: MRR 3000 Class (U6B)
 STR_DIESEL_CLASS_5000: PNR 5000 Class
 STR_DIESEL_CLASS_900_U14C : PNR  900 Class
 STR_DIESEL_CLASS_900_U15C : PNR  900 Class U15C
@@ -84,6 +86,8 @@ STR_STEAM_CLASS_300   : MRR 300 Class
 STR_STEAM_CLASS_140   : MRR 140 Class
 STR_STEAM_CLASS_170   : MRR 170 Class
 STR_STEAM_CLASS_200   : MRR 200 Class
+STR_STEAM_CLASS_100   : MRR 100 Class
+STR_STEAM_CLASS_70    : MRR  70 Class
 STR_STEAM_CLASS_45    : MRR  45 Class
 STR_STEAM_CLASS_1     : Ferrocarril de Manila-Dagupan Class 1
 

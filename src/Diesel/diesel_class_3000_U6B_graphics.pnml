@@ -1,0 +1,70 @@
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+//1961 livery
+spriteset(set_class_3000_purchase_1961, "gfx/DIESEL/CLASS_3000/DIESEL_CLASS_3000_1961.png") {
+    template_diesel_purchase(1,105)
+  
+}
+
+spriteset(set_class_3000_1961,  "gfx/DIESEL/CLASS_3000/DIESEL_CLASS_3000_1961.png") {
+   template_cargo_small(1,1)
+}
+
+//1970 livery
+spriteset(set_class_3000_purchase_1970, "gfx/DIESEL/CLASS_3000/DIESEL_CLASS_3000_1970.png") {
+    template_diesel_purchase(1,105)
+  
+}
+
+spriteset(set_class_3000_1970,  "gfx/DIESEL/CLASS_3000/DIESEL_CLASS_3000_1970.png") {
+   template_cargo_small(1,1)
+}
+
+
+//Autochanclass Livery
+switch (FEAT_TRAINS, PARENT, switch_class_3000_purchase, current_date ) {
+    0..date(1969,12,31): set_class_3000_purchase_1961;
+    date(1970,1,1)..date(1996,12,31): set_class_3000_purchase_1970;
+    set_class_3000_purchase_1970;
+}
+
+switch (FEAT_TRAINS, PARENT, switch_class_3000_auto , date_of_last_service ) {
+    0..date(1969,12,31): set_class_3000_1961;
+    date(1970,1,1)..date(1996,12,31): set_class_3000_1970;
+    set_class_3000_1970;
+}
+
+
+switch(FEAT_TRAINS, SELF, switch_class_3000, cargo_subtype) {
+	1: set_class_3000_1961;
+    2: set_class_3000_1970;
+    switch_class_3000_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_livery_text_3000, cargo_subtype) {
+    0: return string(str_livery_auto);
+	1: return string(str_livery_mrr_yellow_green);
+    2: return string(str_livery_pnr_green);
+    return CB_RESULT_NO_TEXT;
+}
+
+RUNNINGCOSTENGINESWITCH
+PURCHASETEXTSWITCH

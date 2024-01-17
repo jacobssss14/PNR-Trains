@@ -27,8 +27,10 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #define ID_RANGE_STEAM_NRW 0x3E8..0x7CF
 //1000 for Manila
 item(FEAT_TRAINS, item_steam_class_1, 1001) {}
-//1002-1014 for other steam classes
-item(FEAT_TRAINS, item_steam_class_45, 1015) {}
+item(FEAT_TRAINS, item_steam_class_70, 1002) {}
+//1003-1014 for other steam classes
+item(FEAT_TRAINS, item_steam_class_45, 1014) {}
+item(FEAT_TRAINS, item_steam_class_100, 1015) {}
 item(FEAT_TRAINS, item_steam_class_170, 1016) {}
 item(FEAT_TRAINS, item_steam_class_200, 1017) {}
 item(FEAT_TRAINS, item_steam_class_140, 1018) {}
@@ -41,6 +43,8 @@ item(FEAT_TRAINS, item_steam_class_300, 1023) {}
 //2000-2001 for other diesel locos
 item(FEAT_TRAINS, item_diesel_class_1000, 2002) {}
 item(FEAT_TRAINS, item_diesel_class_2000, 2003) {}
+item(FEAT_TRAINS, item_diesel_class_3000, 2004) {}
+item(FEAT_TRAINS, item_diesel_class_3000_U6B, 2005) {}
 //2004-2006
 item(FEAT_TRAINS, item_diesel_class_2500, 2007) {}
 item(FEAT_TRAINS, item_diesel_class_1500, 2008) {}

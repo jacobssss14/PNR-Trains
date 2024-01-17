@@ -196,6 +196,16 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/Diesel/diesel_class_2000_graphics.pnml"
 #include "src/Diesel/diesel_class_2000_item.pnml"
 
+//Class 3000
+#include "src/Diesel/diesel_class_3000_properties.pnml"
+#include "src/Diesel/diesel_class_3000_graphics.pnml"
+#include "src/Diesel/diesel_class_3000_item.pnml"
+
+//Class 3000
+#include "src/Diesel/diesel_class_3000_U6B_properties.pnml"
+#include "src/Diesel/diesel_class_3000_U6B_graphics.pnml"
+#include "src/Diesel/diesel_class_3000_U6B_item.pnml"
+
 //Class 5000
 #include "src/Diesel/diesel_class_5000_properties.pnml"
 #include "src/Diesel/diesel_class_5000_graphics.pnml"
@@ -290,6 +300,16 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/Steam/steam_class_140_properties.pnml"
 #include "src/Steam/steam_class_140_graphics.pnml"
 #include "src/Steam/steam_class_140_item.pnml"
+
+//Class 70
+#include "src/Steam/steam_class_70_properties.pnml"
+#include "src/Steam/steam_class_70_graphics.pnml"
+#include "src/Steam/steam_class_70_item.pnml"
+
+//Class 100
+#include "src/Steam/steam_class_100_properties.pnml"
+#include "src/Steam/steam_class_100_graphics.pnml"
+#include "src/Steam/steam_class_100_item.pnml"
 
 //Class 170
 #include "src/Steam/steam_class_170_properties.pnml"

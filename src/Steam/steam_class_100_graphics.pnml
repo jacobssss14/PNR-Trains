@@ -18,47 +18,47 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-spriteset(set_class_45_purchase, "gfx/STEAM/class_45/class_45.png" ) {
+spriteset(set_class_100_purchase, "gfx/STEAM/Class_100/class_100.png" ) {
     template_steam_tender_purchase(1, 105)
 }
 
-spriteset(set_class_45_pos1, "gfx/STEAM/class_45/class_45.png") {
-    template_standard(1, 1)
+spriteset(set_class_100_pos1, "gfx/STEAM/Class_100/class_100.png") {
+    template_cargo_small(1, 1)
 }
 
-spriteset(set_class_45_pos2, "gfx/STEAM/class_45/class_45.png"){
-    template_standard(1, 32)
+spriteset(set_class_100_pos2, "gfx/STEAM/Class_100/class_100.png"){
+    template_cargo_small(1, 32)
 }
 
-spriteset(set_class_45_tender, "gfx/STEAM/class_45/class_45.png") {
-    template_standard(1, 63)
+spriteset(set_class_100_tender, "gfx/STEAM/Class_100/class_100.png") {
+    template_cargo_small(1, 63)
 }
 
 //Sprite animation
-switch(FEAT_TRAINS, SELF, switch_steam_class_45_animation, motion_counter % 2){
-	0: set_class_45_pos1;
-	set_class_45_pos2;
+switch(FEAT_TRAINS, SELF, switch_steam_class_100_animation, motion_counter % 2){
+	0: set_class_100_pos1;
+	set_class_100_pos2;
 }
 
 //Tender attachment
-switch(FEAT_TRAINS, SELF, switch_steam_class_45, position_in_vehid_chain % 2) {
-	0: switch_steam_class_45_animation;
-	set_class_45_tender;
+switch(FEAT_TRAINS, SELF, switch_steam_class_100, position_in_vehid_chain % 2) {
+	0: switch_steam_class_100_animation;
+	set_class_100_tender;
 }
 
 //Visual effects
-switch(FEAT_TRAINS, SELF, switch_steam_class_45_effect, position_in_vehid_chain % 2) {
+switch(FEAT_TRAINS, SELF, switch_steam_class_100_effect, position_in_vehid_chain % 2) {
 	0: return visual_effect_and_powered(VISUAL_EFFECT_STEAM, -3, DISABLE_WAGON_POWER);
 	return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, -1, DISABLE_WAGON_POWER);
 }
 
-switch(FEAT_TRAINS, SELF, switch_steam_class_45_length, position_in_vehid_chain % 2) {
-	0: 6;
+switch(FEAT_TRAINS, SELF, switch_steam_class_100_length, position_in_vehid_chain % 2) {
+	0: 5;
 	5;
 }
 
-switch(FEAT_TRAINS, SELF, switch_steam_class_45_articulated, extra_callback_info1) {
-	1: return item_steam_class_45;
+switch(FEAT_TRAINS, SELF, switch_steam_class_100_articulated, extra_callback_info1) {
+	1: return item_steam_class_100;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 

@@ -116,58 +116,24 @@ template template_cargo_small(x, y) {
 
 
 template template_mu_purchase(x, y) {
-    [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
     [x	,  y,  55, 16, -11, -10]
-    [1	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
 }
 
 template template_diesel_purchase(x, y) {
-    [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
     [x	,  y,  41, 17, -11, -10]
-    [1	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
 }
 
 template template_steam_tender_purchase(x, y) {
-    [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
     [x	,  y,  57, 17, -11, -10]
-    [1	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
 }
 
 template template_coach_purchase(x, y) {
-    [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
     [x	,  y,  41, 16, -11, -10]
-    [1	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
 }
 
 
 template template_ft_purchase(x, y) {
-    [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
-    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
     [x, y, 60, 12, -31, -7]
-    [1	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+
 }
 
