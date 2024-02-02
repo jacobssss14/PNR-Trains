@@ -57,6 +57,7 @@ STR_DIESEL_CLASS_2000: MRR 2000 Class
 STR_DIESEL_CLASS_2500: PNR 2500 Class
 STR_DIESEL_CLASS_3000: MRR 3000 Class (U5B)
 STR_DIESEL_CLASS_3000_U6B: MRR 3000 Class (U6B)
+STR_DIESEL_CLASS_4000: PNR 4000 Class 
 STR_DIESEL_CLASS_5000: PNR 5000 Class
 STR_DIESEL_CLASS_900_U14C : PNR  900 Class
 STR_DIESEL_CLASS_900_U15C : PNR  900 Class U15C
@@ -92,7 +93,9 @@ STR_STEAM_CLASS_45    : MRR  45 Class
 STR_STEAM_CLASS_1     : Ferrocarril de Manila-Dagupan Class 1
 
 #Coaches
-STR_3RD_CLASS_COACH   : VCB Class Coach
+STR_VCB   : VCB Coach
+STR_AB    : AB Coach
+STR_CB    : CB Coach
 STR_203_COACH         : 203 Series Coach
 STR_7A_100            : 7A - 1st Class Coach
 STR_7B                : 7B Baggage Car

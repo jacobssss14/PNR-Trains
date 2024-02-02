@@ -25,7 +25,7 @@ spriteset(set_class_2500_purchase_1960, "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500
 }
 
 spriteset(set_class_2500_1960,  "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_1965.png") {
-   template_standard(1,1)
+   template_cargo_small(1,1)
 }
 
 //1970 livery
@@ -35,7 +35,7 @@ spriteset(set_class_2500_purchase_1970, "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500
 }
 
 spriteset(set_class_2500_1970,  "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_1970.png") {
-   template_standard(1,1)
+   template_cargo_small(1,1)
 }
 
 
@@ -46,7 +46,7 @@ spriteset(set_class_2500_purchase_1997, "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500
 }
 
 spriteset(set_class_2500_1997,  "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_1997.png") {
-   template_standard(1,1)
+   template_cargo_small(1,1)
 }
 
 //2001-2009 livery
@@ -56,7 +56,7 @@ spriteset(set_class_2500_purchase_2000, "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500
 }
 
 spriteset(set_class_2500_2000,  "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_2000.png") {
-   template_standard(1,1)
+   template_cargo_small(1,1)
 }
 
 //2009-2011
@@ -66,7 +66,7 @@ spriteset(set_class_2500_purchase_2009, "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500
 }
 
 spriteset(set_class_2500_2009,  "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_2009.png") {
-   template_standard(1,1)
+   template_cargo_small(1,1)
 }
 
 //2011-2019
@@ -76,7 +76,7 @@ spriteset(set_class_2500_purchase_2011, "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500
 }
 
 spriteset(set_class_2500_2011,  "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_2011.png") {
-   template_standard(1,1)
+   template_cargo_small(1,1)
 }
 
 //2020
@@ -86,7 +86,7 @@ spriteset(set_class_2500_purchase_2020, "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500
 }
 
 spriteset(set_class_2500_2020,  "gfx/DIESEL/CLASS_2500/DIESEL_CLASS_2500_2020.png") {
-   template_standard(1,1)
+   template_cargo_small(1,1)
 }
 
 

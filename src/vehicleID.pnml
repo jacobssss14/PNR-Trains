@@ -82,7 +82,9 @@ item(FEAT_TRAINS, item_dmu_slh, 5000) {}
 //Coaches
 #define ID_RANGE_COACH_NRW 0x1770..0x1B57
 //reserve 6000-6002
-item(FEAT_TRAINS, item_3rd_class_coach, 6003) {}
+item(FEAT_TRAINS, item_VCB, 6003) {}
+item(FEAT_TRAINS, item_AB, 6004) {}
+item(FEAT_TRAINS, item_CB, 6005) {}
 //reserve 6004-6008
 item(FEAT_TRAINS, item_7A_100, 6009) {}
 item(FEAT_TRAINS, item_7C, 6010) {}

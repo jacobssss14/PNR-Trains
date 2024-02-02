@@ -11,6 +11,7 @@ Changelog for PNR-Trains
         *Added MRR 70 Class Steam Locomotive
         *Added MRR 100 Class Steam Locomotive
         *Added MRR 3000 Class Diesel Locomotive
+        *Added PNR 4000 Class Diesel Locomotive
 
 1.1.1
     Minor Change    

@@ -36,7 +36,7 @@ item (FEAT_TRAINS, ITEM) {
 		weight: WEIGHT ton;
 		tractive_effort_coefficient: TE_COEFFICIENT;
 		air_drag_coefficient: AIR_DRAG_COEFFICIENT;
-		DECAY_3CLASS_COACH
+		DECAY_INTERCITY_COACH_PRIME
 		
 		CARGODEF
 		refit_cost: REFIT_COST;
@@ -52,8 +52,8 @@ item (FEAT_TRAINS, ITEM) {
    }
 
      graphics {  
-      purchase: set_3rd_class_purchase;
-      default: set_3rd_class;
+      purchase: set_ab_purchase;
+      default: set_ab;
       RUNNINGCOSTENGINESWITCHCALL
 	  PURCHASETEXTSWITCHCALL
    }

@@ -21,12 +21,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 #include "../undefine_properties.pnml"
 
-#define VEHIDCODE diesel_class_3000
-#define ITEM  item_diesel_class_3000
-#define NAME string(STR_DIESEL_CLASS_3000)
-#define INTRODUCTION_YEAR 1955
+#define VEHIDCODE diesel_class_4000
+#define ITEM  item_diesel_class_4000
+#define NAME string(STR_DIESEL_CLASS_4000)
+#define INTRODUCTION_YEAR 1961
 #define CLIMATE bitmask(CLIMATE_TEMPERATE)
-#define MODEL_LIFE 5
+#define MODEL_LIFE 30
 #define VEHICLE_LIFE 25
 
 

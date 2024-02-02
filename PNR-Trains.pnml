@@ -69,10 +69,21 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //Coaches
 #include "src/init/init_coach.pnml"
 
-//3rd Class Coach
-#include "src/Coaches/3rd_class_coach_properties.pnml"
-#include "src/Coaches/3rd_class_coach_graphics.pnml"
-#include "src/Coaches/3rd_class_coach_item.pnml"
+//VCB Coach
+#include "src/Coaches/vcb_properties.pnml"
+#include "src/Coaches/vcb_graphics.pnml"
+#include "src/Coaches/vcb_item.pnml"
+
+//AB Coach
+#include "src/Coaches/ab_properties.pnml"
+#include "src/Coaches/ab_graphics.pnml"
+#include "src/Coaches/ab_item.pnml"
+
+//CB Coach
+#include "src/Coaches/cb_properties.pnml"
+#include "src/Coaches/cb_graphics.pnml"
+#include "src/Coaches/cb_item.pnml"
+
 
 //MU Coach Std Powered
 #include "src/Coaches/pnr_mu_coach_powered_graphics.pnml"
@@ -205,6 +216,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/Diesel/diesel_class_3000_U6B_properties.pnml"
 #include "src/Diesel/diesel_class_3000_U6B_graphics.pnml"
 #include "src/Diesel/diesel_class_3000_U6B_item.pnml"
+
+//Class 4000
+#include "src/Diesel/diesel_class_4000_properties.pnml"
+#include "src/Diesel/diesel_class_4000_graphics.pnml"
+#include "src/Diesel/diesel_class_4000_item.pnml"
 
 //Class 5000
 #include "src/Diesel/diesel_class_5000_properties.pnml"
