@@ -69,6 +69,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //Coaches
 #include "src/init/init_coach.pnml"
 
+//B Coach
+#include "src/Coaches/b_properties.pnml"
+#include "src/Coaches/b_graphics.pnml"
+#include "src/Coaches/b_item.pnml"
+
 //VCB Coach
 #include "src/Coaches/vcb_properties.pnml"
 #include "src/Coaches/vcb_graphics.pnml"
@@ -83,6 +88,31 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/Coaches/cb_properties.pnml"
 #include "src/Coaches/cb_graphics.pnml"
 #include "src/Coaches/cb_item.pnml"
+
+//AC Coach
+#include "src/Coaches/ac_properties.pnml"
+#include "src/Coaches/ac_graphics.pnml"
+#include "src/Coaches/ac_item.pnml"
+
+//ABS Coach
+#include "src/Coaches/abs_properties.pnml"
+#include "src/Coaches/abs_graphics.pnml"
+#include "src/Coaches/abs_item.pnml"
+
+//Metropolitan Coach
+#include "src/Coaches/metropolitan_properties.pnml"
+#include "src/Coaches/metropolitan_graphics.pnml"
+#include "src/Coaches/metropolitan_item.pnml"
+
+//Wooden Baggage Car
+#include "src/Coaches/WBS_properties.pnml"
+#include "src/Coaches/WBS_graphics.pnml"
+#include "src/Coaches/WBS_item.pnml"
+
+//Large Wooden Baggage Car
+#include "src/Coaches/WBL_properties.pnml"
+#include "src/Coaches/WBL_graphics.pnml"
+#include "src/Coaches/WBL_item.pnml"
 
 
 //MU Coach Std Powered

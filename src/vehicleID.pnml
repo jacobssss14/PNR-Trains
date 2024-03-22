@@ -82,22 +82,26 @@ item(FEAT_TRAINS, item_dmu_slh, 5000) {}
 //Coaches
 #define ID_RANGE_COACH_NRW 0x1770..0x1B57
 //reserve 6000-6002
+item(FEAT_TRAINS, item_B, 6002) {}
 item(FEAT_TRAINS, item_VCB, 6003) {}
 item(FEAT_TRAINS, item_AB, 6004) {}
 item(FEAT_TRAINS, item_CB, 6005) {}
-//reserve 6004-6008
+item(FEAT_TRAINS, item_AC, 6006) {}
+item(FEAT_TRAINS, item_WBS, 6007) {}
+item(FEAT_TRAINS, item_WBL, 6008) {}
 item(FEAT_TRAINS, item_7A_100, 6009) {}
 item(FEAT_TRAINS, item_7C, 6010) {}
-//reserve 6011
+item(FEAT_TRAINS, item_7B, 6011) {}
 item(FEAT_TRAINS, item_7E, 6012) {}
 item(FEAT_TRAINS, item_7SE, 6013) {}
 item(FEAT_TRAINS, item_ctc_dmt, 6014) {}
 item(FEAT_TRAINS, item_7A_2000, 6015) {}
-//reserve 6014-6016
+item(FEAT_TRAINS, item_ABS, 6016) {}
 item(FEAT_TRAINS, item_series_14_sleeper, 6017) {}
 item(FEAT_TRAINS, item_203_coach, 6018) {}
 item(FEAT_TRAINS, item_203_generator_car, 6019) {}
 item(FEAT_TRAINS, item_inka_commuter_coach, 6020) {}
+item(FEAT_TRAINS, item_METROPOLITAN, 6021) {}
 
 //Wagons
 #define ID_RANGE_WAGON_NRW 0x1B58..0x1F3F
@@ -106,7 +110,6 @@ item(FEAT_TRAINS, item_boxcar_small, 7001) {}
 item(FEAT_TRAINS, item_hopper_small, 7002) {}
 item(FEAT_TRAINS, item_tanker, 7003) {}
 item(FEAT_TRAINS, item_flat_wagon, 7004) {}
-item(FEAT_TRAINS, item_7B, 7005){}
 
 //MU Cars
 #define ID_RANGE_MU_COACH 0x1F40..0x2327

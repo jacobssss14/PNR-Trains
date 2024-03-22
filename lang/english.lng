@@ -93,9 +93,15 @@ STR_STEAM_CLASS_45    : MRR  45 Class
 STR_STEAM_CLASS_1     : Ferrocarril de Manila-Dagupan Class 1
 
 #Coaches
+STR_B     : B Class Carriage
 STR_VCB   : VCB Coach
 STR_AB    : AB Coach
 STR_CB    : CB Coach
+STR_AC    : AC Coach
+STR_ABS   : ABS Coach
+STR_METROPOLITAN   : Metropolitan Coach
+STR_WBS   : Wooden Baggage Car
+STR_WBL   : Large Wooden Baggage Car
 STR_203_COACH         : 203 Series Coach
 STR_7A_100            : 7A - 1st Class Coach
 STR_7B                : 7B Baggage Car

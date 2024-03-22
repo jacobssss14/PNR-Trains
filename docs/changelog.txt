@@ -13,6 +13,15 @@ Changelog for PNR-Trains
         *Added MRR 3000 Class Diesel Locomotive
         *Added PNR 4000 Class Diesel Locomotive
 
+    New Coaches 
+        *Added B Class
+        *Added AB Class
+        *Added CB Class 
+        *Added AC Class
+        *Addec ABS Class
+        *Added Metropolitan Class
+        *Added Small and Large Wooden Baggage Cars
+
 1.1.1
     Minor Change    
         *Disable stock rail vehicles
