@@ -23,7 +23,7 @@ spriteset(set_class_1_purchase, "gfx/STEAM/class_1/class_1.png" ) {
 }
 
 spriteset(set_class_1, "gfx/STEAM/class_1/class_1.png") {
-    template_standard(1, 1)
+    template_cargo_small(1, 1)
 }
 
 //Visual effects

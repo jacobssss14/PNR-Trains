@@ -104,6 +104,16 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/Coaches/metropolitan_graphics.pnml"
 #include "src/Coaches/metropolitan_item.pnml"
 
+//6C Coach
+#include "src/Coaches/6C_properties.pnml"
+#include "src/Coaches/6C_graphics.pnml"
+#include "src/Coaches/6C_item.pnml"
+
+//5C Coach
+#include "src/Coaches/5C_properties.pnml"
+#include "src/Coaches/5C_graphics.pnml"
+#include "src/Coaches/5C_item.pnml"
+
 //Wooden Baggage Car
 #include "src/Coaches/WBS_properties.pnml"
 #include "src/Coaches/WBS_graphics.pnml"

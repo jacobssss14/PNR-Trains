@@ -102,6 +102,8 @@ item(FEAT_TRAINS, item_203_coach, 6018) {}
 item(FEAT_TRAINS, item_203_generator_car, 6019) {}
 item(FEAT_TRAINS, item_inka_commuter_coach, 6020) {}
 item(FEAT_TRAINS, item_METROPOLITAN, 6021) {}
+item(FEAT_TRAINS, item_5C, 6022) {}
+item(FEAT_TRAINS, item_6C, 6023) {}
 
 //Wagons
 #define ID_RANGE_WAGON_NRW 0x1B58..0x1F3F

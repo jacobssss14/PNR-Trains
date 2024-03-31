@@ -23,7 +23,7 @@ spriteset(set_metropolitan_purchase, "gfx/COACHES/METROPOLITAN/METROPOLITAN.png"
 }
 
 spriteset(set_metropolitan, "gfx/COACHES/METROPOLITAN/METROPOLITAN.png") {
-    template_standard(1,64)
+    template_standard(1,63)
 }
 
 RUNNINGCOSTENGINESWITCH

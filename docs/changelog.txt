@@ -4,6 +4,7 @@ Changelog for PNR-Trains
         *Increased SLH DMU Speed to 160kph
         *Increased Airport Express EMU Speed to 160kph
         *Decreased EM10000 Limited Capacity to 120
+
     New Features
         *Added new cargo decay for commuter prime trains
     
@@ -20,6 +21,8 @@ Changelog for PNR-Trains
         *Added AC Class
         *Addec ABS Class
         *Added Metropolitan Class
+        *Added 5C 3rd Class Coach
+        *Added 6C 3rd Class Coach
         *Added Small and Large Wooden Baggage Cars
 
 1.1.1

@@ -103,6 +103,8 @@ STR_METROPOLITAN   : Metropolitan Coach
 STR_WBS   : Wooden Baggage Car
 STR_WBL   : Large Wooden Baggage Car
 STR_203_COACH         : 203 Series Coach
+STR_5C                : 5C - 3rd Class Coach
+STR_6C                : 6C - 3rd Class Coach
 STR_7A_100            : 7A - 1st Class Coach
 STR_7B                : 7B Baggage Car
 STR_7C                : 7C - 3rd Class Coach

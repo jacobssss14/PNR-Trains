@@ -1,0 +1,74 @@
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2020  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+//1946 Livery
+
+spriteset(set_6C_1946_purchase, "gfx/COACHES/6C/6C_1946.png") {
+  template_coach_purchase(1, 74) 
+}
+
+
+spriteset (set_6C_1946, "gfx/COACHES/6C/6C_1946.png") {
+    template_standard(1, 1)
+}
+
+
+//1955 Lviery
+
+spriteset(set_6C_1955_purchase, "gfx/COACHES/6C/6C_1955.png") {
+  template_coach_purchase(1, 74) 
+}
+
+
+spriteset (set_6C_1955, "gfx/COACHES/6C/6C_1955.png") {
+    template_standard(1, 1)
+}
+
+//Auto livery change
+
+switch (FEAT_TRAINS, PARENT, switch_6C_purchase, current_date ) {
+    0..date(1954,12,31): set_6C_1946_purchase;
+    date(1955,1,1)..date(1963,12,31): set_6C_1955_purchase;
+    set_6C_1955_purchase;
+}
+
+switch (FEAT_TRAINS, PARENT, switch_6C_auto, date_of_last_service ) {
+    0..date(1954,12,31): set_6C_1946;
+    date(1955,1,1)..date(1963,12,31): set_6C_1955;
+    set_6C_1955;
+}
+
+
+
+switch(FEAT_TRAINS, SELF, switch_6C, cargo_subtype) {
+   	1: set_6C_1946;
+    2: set_6C_1955;
+    switch_6C_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_livery_text_6C, cargo_subtype) {
+    0: return string(str_livery_auto);
+    1: return string(str_livery_mrr_brown);
+  	2: return string(str_livery_mrr_yellow);
+    return CB_RESULT_NO_TEXT;
+}
+
+RUNNINGCOSTENGINESWITCH
+PURCHASETEXTSWITCH
