@@ -18,39 +18,42 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-#include "../undefine_properties.pnml"
+ /*MU Wagon, modify for later use*/  
+item(FEAT_TRAINS, ITEM) {
+	property {
+		name: NAME;
+      climates_available: CLIMATE;
+		INTRODUCTIONDATEPROPERTY
+		model_life: MODEL_LIFE;
+		vehicle_life: VEHICLE_LIFE; 
+		retire_early: RETIRE_EARLY;
+		LOADINGSPEEDPROPERTY
+		PURCHASECOSTPROPERTY
+		RUNNINGCOSTPROPERTY
+		speed: SPEED km/h;
+		power: POWER hp;
+		cargo_capacity: HEAD_CAPACITY;
+		weight: WEIGHT ton;
+		tractive_effort_coefficient: TE_COEFFICIENT;
+		air_drag_coefficient: AIR_COEFFICIENT;
+	
+		CARGODEF
+		misc_flags: MISC_FLAGS;
 
-#define VEHIDCODE B
-#define ITEM item_B
-#define NAME string(STR_B)
-#define CLIMATE bitmask(CLIMATE_TEMPERATE)
+		track_type: NAAN;
+		
+	
+		visual_effect_and_powered: VISUAL_FLAG;
+		
+		sprite_id: SPRITE_ID;
+		dual_headed: DUAL_HEADED;
+		length: LENGTH;
+      
+   }
+   graphics {
+      default: bc_class;
+	  RUNNINGCOSTENGINESWITCHCALL
+   }
 
-
-#define INTRODUCTION_YEAR 1888
-#define MODEL_LIFE 20
-#define RETIRE_EARLY DEFAULT_RETIRE_EARLY
-#define VEHICLE_LIFE 25
-
-#define LOADINGSPEED LOADINGSPEEDDEF_INTERCITY
-#define CARGODEF PASSENGERS
-
-#define SPEED 70
-#define POWER 0
-#define WEIGHT 15
-#define TE_COEFFICIENT 0.3
-#define AIR_COEFFICIENT 0
-
-#define LENGTH 4
-#define ACTUAL_LENGTH 6
-
-#define HEAD_CAPACITY 30
-
-
-#define DUAL_HEADED 0
-#define PASSENGER 1
-#define MISC_FLAGS bitmask(TRAIN_FLAG_2CC)
-#define VISUAL_FLAG visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER)
-
-
-
-#define SPRITE_ID DEFAULT_SPRITE_ID
+   
+}

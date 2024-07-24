@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : PNR Trains 1.2.0
+STR_GRF_NAME        : PNR Trains 1.3.0
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
 
 STR_PARAM_PURCHASE_COST             :Purchase cost multiplier
@@ -124,6 +124,7 @@ STR_FLAT_WAGON        : PNR Flatbed Wagon
 STR_TANKER            : PNR Tanker
 STR_BOXCAR_REF        : PNR Refriderated Box Car
 STR_BOXCAR_SMALL      : PNR Small Box Car
+STR_BC_CLASS          : BC Class Box Car
 STR_HOPPER_SMALL      : PNR Small Hopper
 
 

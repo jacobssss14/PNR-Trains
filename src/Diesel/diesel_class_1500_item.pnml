@@ -59,6 +59,7 @@ item (FEAT_TRAINS, ITEM) {
 	  RUNNINGCOSTENGINESWITCHCALL
       purchase: switch_class_1500_purchase;
       default: switch_class_1500;
+	  cargo_subtype_text: switch_livery_text_1500;
 	  cargo_capacity: return 0;
 
    }

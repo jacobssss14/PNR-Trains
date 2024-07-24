@@ -40,7 +40,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 #define LENGTH 8
 #define ACTUAL_LENGTH 8
-#define WAGON_LENGTH  8
 
 #define HEAD_CAPACITY 50
 #define WAGON_CAPACITY 50

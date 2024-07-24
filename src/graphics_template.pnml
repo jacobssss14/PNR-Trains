@@ -31,13 +31,13 @@ template template_standard_guage(x, y) {
 }
 
 template template_standard(x, y) {
-   [x,     y, 8,  24, -3,  -10]
-   [x+9,   y, 22, 21, -17, -12]
-   [x+33,  y, 31, 16, -16, -13]
+   [x,     y, 8,  24, -3,  -12]
+   [x+9,   y, 22, 21, -16, -12]
+   [x+33,  y, 31, 16, -15, -13]
    [x+65,  y, 22, 21, -9,  -14]
-   [x+88,  y, 8,  24, -3,  -10]
-   [x+97,  y, 22, 21, -17, -12]
-   [x+120, y, 31, 16, -16, -13]
+   [x+88,  y, 8,  24, -3,  -12]
+   [x+97,  y, 22, 21, -16, -12]
+   [x+120, y, 31, 16, -15, -13]
    [x+153, y, 22, 21, -9,  -14]
 
 }
@@ -137,3 +137,21 @@ template template_ft_purchase(x, y) {
 
 }
 
+//Special template for empty spritesets (vehicles with length 10 use this)
+template template_empty_spriteset() {
+    //[left_x, upper_y, width, height, offset_x, offset_y]
+	[1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [1  ,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [1 	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+    [1	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
+}
+
+spriteset(spriteset_empty) {
+	template_empty_spriteset()
+}
+
+#define EMPTY_SPRITESET spriteset_empty;

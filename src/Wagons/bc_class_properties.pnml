@@ -20,30 +20,30 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 #include "../undefine_properties.pnml"
 
-#define VEHIDCODE B
-#define ITEM item_B
-#define NAME string(STR_B)
+#define VEHIDCODE bc_class
+#define ITEM item_bc_class
+#define NAME string(STR_BC_CLASS)
 #define CLIMATE bitmask(CLIMATE_TEMPERATE)
 
 
-#define INTRODUCTION_YEAR 1888
-#define MODEL_LIFE 20
+#define INTRODUCTION_YEAR 1973
+#define MODEL_LIFE VEHICLE_NEVER_EXPIRES
 #define RETIRE_EARLY DEFAULT_RETIRE_EARLY
 #define VEHICLE_LIFE 25
 
-#define LOADINGSPEED LOADINGSPEEDDEF_INTERCITY
-#define CARGODEF PASSENGERS
+#define LOADINGSPEED LOADINGSPEEDDEF_CARGO
+#define CARGODEF CARGODEF_CONTAINER
 
-#define SPEED 70
+#define SPEED 100
 #define POWER 0
-#define WEIGHT 15
+#define WEIGHT 35
 #define TE_COEFFICIENT 0.3
-#define AIR_COEFFICIENT 0
+#define AIR_COEFFICIENT 0.08
 
-#define LENGTH 4
-#define ACTUAL_LENGTH 6
+#define LENGTH 6
+#define ACTUAL_LENGTH 8
 
-#define HEAD_CAPACITY 30
+#define HEAD_CAPACITY 60
 
 
 #define DUAL_HEADED 0

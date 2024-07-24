@@ -26,8 +26,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #define NAME string(STR_DIESEL_CLASS_900_U15C)
 #define INTRODUCTION_YEAR 1990
 #define CLIMATE bitmask(CLIMATE_TEMPERATE)
-#define MODEL_LIFE 55
-#define VEHICLE_LIFE 30
+#define MODEL_LIFE 40
+#define VEHICLE_LIFE 25
 
 #define SPEED 115
 #define WEIGHT 90
@@ -35,8 +35,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #define AIR_DRAG_COEFFICIENT 0.06
 #define POWER 1500
 
-#define LENGTH 8
-#define ACTUAL_LENGTH 8
+#define LENGTH 7
+#define ACTUAL_LENGTH 7
 
 
 #define DUAL_HEADED 0

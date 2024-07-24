@@ -33,7 +33,7 @@ spriteset (set_5C_1946, "gfx/COACHES/5C/5C_1946.png") {
 //1955 Lviery
 
 spriteset(set_5C_1955_purchase, "gfx/COACHES/5C/5C_1955.png") {
-  template_coach_purchase(1, 1) 
+  template_coach_purchase(1, 74) 
 }
 
 
