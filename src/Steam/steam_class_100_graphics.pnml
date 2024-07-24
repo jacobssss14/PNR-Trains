@@ -23,15 +23,15 @@ spriteset(set_class_100_purchase, "gfx/STEAM/Class_100/class_100.png" ) {
 }
 
 spriteset(set_class_100_pos1, "gfx/STEAM/Class_100/class_100.png") {
-    template_cargo_small(1, 1)
+    template_standard(1, 1)
 }
 
 spriteset(set_class_100_pos2, "gfx/STEAM/Class_100/class_100.png"){
-    template_cargo_small(1, 32)
+    template_standard(1, 32)
 }
 
 spriteset(set_class_100_tender, "gfx/STEAM/Class_100/class_100.png") {
-    template_cargo_small(1, 63)
+    template_standard(1, 63)
 }
 
 //Sprite animation
