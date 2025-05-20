@@ -7,7 +7,6 @@ This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
 as published by the Free Software Foundation; either version 2
 of the License, or (at your option) any later version.
-
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -37,7 +36,7 @@ item (FEAT_TRAINS, ITEM) {
 		weight: WEIGHT ton;
 		tractive_effort_coefficient: TE_COEFFICIENT;
 		air_drag_coefficient: AIR_DRAG_COEFFICIENT;
-		DECAY_COMMUTER_PRIME
+		cargo_age_period: DECAY;
 		
 		reliability_decay: RELIABILITY_DECAY;
 		CARGODEF
@@ -69,7 +68,7 @@ item (FEAT_TRAINS, ITEM) {
 	    RUNNINGCOSTMUWAGONUNPOWEREDSWITCHCALL
 		LOADINGSPEEDPROPERTY 
 	   	WAGONCAPACITYSWITCHCALL(VEHIDCODE)
-		DECAY_COMMUTER
+		cargo_age_period: DECAY;
 		length: WAGON_LENGTH;
 		weight: WEIGHTMUWAGONUNPOWERED
 		default: set_em_100000_comm_exp_pass_car;
@@ -79,7 +78,7 @@ item (FEAT_TRAINS, ITEM) {
 	    LOADINGSPEEDPROPERTY
 		RUNNINGCOSTMUWAGONPOWEREDSWITCHCALL
 	   	WAGONCAPACITYSWITCHCALL(VEHIDCODE)
-		DECAY_COMMUTER
+		cargo_age_period: DECAY;
 		power: POWERMUWAGONPOWERED
 		weight: WEIGHTMUWAGONPOWERED
 		length: WAGON_LENGTH;

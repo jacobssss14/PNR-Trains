@@ -203,10 +203,20 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 //Wagons
 
-//Ref. Boxcar
+//BC Boxcar
 #include "src/Wagons/bc_class_properties.pnml"
 #include "src/Wagons/bc_class_graphics.pnml"
 #include "src/Wagons/bc_class_item.pnml"
+
+//BC Boxcar
+#include "src/Wagons/gc_class_properties.pnml"
+#include "src/Wagons/gc_class_graphics.pnml"
+#include "src/Wagons/gc_class_item.pnml"
+
+//BC Boxcar
+#include "src/Wagons/nbb_class_properties.pnml"
+#include "src/Wagons/nbb_class_graphics.pnml"
+#include "src/Wagons/nbb_class_item.pnml"
 
 //Flat Wagon
 #include "src/Wagons/flat_wagon_properties.pnml"

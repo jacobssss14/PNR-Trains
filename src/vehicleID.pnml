@@ -112,6 +112,9 @@ item(FEAT_TRAINS, item_boxcar_small, 7001) {}
 item(FEAT_TRAINS, item_hopper_small, 7002) {}
 item(FEAT_TRAINS, item_tanker, 7003) {}
 item(FEAT_TRAINS, item_flat_wagon, 7004) {}
+item(FEAT_TRAINS, item_bc_class, 7005) {}
+item(FEAT_TRAINS, item_nbb_class, 7006) {}
+item(FEAT_TRAINS, item_gc_class, 7007) {}
 
 //MU Cars
 #define ID_RANGE_MU_COACH 0x1F40..0x2327

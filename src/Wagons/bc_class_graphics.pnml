@@ -18,11 +18,64 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 //Spritesets
-spriteset (bc_class, "gfx/Wagons/BC_CLASS.png") {
+
+//1957 Livery
+spriteset(set_bc_class_purchase_1957, "gfx/Wagons/BC_CLASS/BC_CLASS_1957.png") {
+  template_coach_purchase(1, 106) 
+}
+
+spriteset (set_bc_class_1957, "gfx/Wagons/BC_CLASS/BC_CLASS_1997.png") {
     template_cargo(1,1)
 }
 
+//1997 Livery
+spriteset(set_bc_class_purchase_1997, "gfx/Wagons/BC_CLASS/BC_CLASS_1997.png") {
+  template_coach_purchase(1, 106) 
+}
 
+spriteset (set_bc_class_1997, "gfx/Wagons/BC_CLASS/BC_CLASS_1997.png") {
+    template_cargo(1,1)
+}
+
+//2010 Livery
+
+spriteset(set_bc_class_purchase_2010, "gfx/Wagons/BC_CLASS/BC_CLASS_2010.png") {
+  template_coach_purchase(1, 106) 
+}
+
+spriteset (set_bc_class_2010, "gfx/Wagons/BC_CLASS/BC_CLASS_2010.png") {
+    template_cargo(1,1)
+}
+
+//Autochanclass Livery
+switch (FEAT_TRAINS, PARENT, switch_bc_class_purchase, current_date ) {
+    0..date(1996,12,31): set_bc_class_purchase_1957;
+    date(1997,1,1)..date(2000,12,31): set_bc_class_purchase_1997;
+    date(2009,1,1)..date(2010,12,31): set_bc_class_purchase_2010;
+    set_bc_class_purchase_2010;
+}
+
+switch (FEAT_TRAINS, PARENT, switch_bc_class_auto , date_of_last_service ) {
+    0..date(1996,12,31): set_bc_class_1957;
+    date(1997,1,1)..date(2000,12,31): set_bc_class_1997;
+    date(2009,1,1)..date(2010,12,31): set_bc_class_2010;
+    set_bc_class_2010;
+}
+
+switch(FEAT_TRAINS, SELF, switch_bc_class, cargo_subtype) {
+	1: set_bc_class_1957;
+    2: set_bc_class_1997;
+    3: set_bc_class_2010;
+    switch_bc_class_auto;
+}
+
+switch(FEAT_TRAINS, SELF, switch_livery_text_bc_class, cargo_subtype) {
+    0: return string(str_livery_auto);
+	1: return string(str_livery_mrr_yellow_green);
+    3: return string(str_livery_philippines_2000);
+    4: return string(str_livery_pnr_navy_blue_2001);
+    return CB_RESULT_NO_TEXT;
+}
 
 RUNNINGCOSTENGINESWITCH
 PURCHASETEXTSWITCH

@@ -129,6 +129,30 @@ switch(FEAT_TRAINS, SELF, switch_dmu_nikko_reversed_luster, var[0xC8]) {
     set_nikko_front_luster;
 }
 
+//Hope Livery
+spriteset(set_nikko_front_hope,   "gfx/DMU/nikko/NIKKO_HOPE.png") {
+    template_standard(1, 1)
+}
+
+spriteset(set_nikko_back_hope,  "gfx/DMU/nikko/NIKKO_HOPE.png") {
+    template_standard(1, 32)
+   }
+
+
+spriteset (set_nikko_pass_car_hope,  "gfx/DMU/nikko/NIKKO_HOPE.png") {
+    template_standard(1, 64)
+}
+
+switch(FEAT_TRAINS, SELF, switch_nikko_pass_cargo_hope, cargo_classes){
+	bitmask(CC_PASSENGERS): set_nikko_pass_car_hope;
+}
+
+switch(FEAT_TRAINS, SELF, switch_dmu_nikko_reversed_hope, var[0xC8]) {
+	 0xFE: set_nikko_back_hope;
+    0xFF: set_nikko_back_hope;
+    set_nikko_front_hope;
+}
+
 //Autolivery change
 
 switch (FEAT_TRAINS, PARENT, switch_nikko_purchase, current_date ) {
@@ -141,8 +165,8 @@ switch (FEAT_TRAINS, PARENT, switch_nikko_purchase, current_date ) {
 switch (FEAT_TRAINS, PARENT, switch_nikko_head_cars_auto, date_of_last_service ) {
     0..date(1980,12,31): switch_dmu_nikko_reversed_1974;
     date(1981,1,1)..date(1989,12,31): switch_dmu_nikko_reversed_1981;
-    date(1990,1,1)..date(2050,1,1): switch_dmu_nikko_reversed_1981;
-    switch_dmu_nikko_reversed_1981;
+    date(1990,1,1)..date(2050,1,1): switch_dmu_nikko_reversed_1990;
+    switch_dmu_nikko_reversed_1990;
 }
 
 switch (FEAT_TRAINS, PARENT, switch_nikko_pass_cars_auto, date_of_last_service ) {

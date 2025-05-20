@@ -37,6 +37,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #define WEIGHT 40
 #define TE_COEFFICIENT 0.3
 #define AIR_DRAG_COEFFICIENT 0.06
+#define DECAY DECAY_INTERCITY_COACH
 
 #define LENGTH 8
 #define ACTUAL_LENGTH 8
@@ -45,7 +46,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #define HEAD_CAPACITY 28
 #define WAGON_CAPACITY 28
 
-#define DUAL_HEADED 0
+#define DUAL_HEADED 1
 #define PASSENGER 1
 
 #define MISC_FLAGS bitmask(TRAIN_FLAG_MU)

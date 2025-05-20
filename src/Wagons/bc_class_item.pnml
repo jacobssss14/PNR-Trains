@@ -36,6 +36,7 @@ item(FEAT_TRAINS, ITEM) {
 		weight: WEIGHT ton;
 		tractive_effort_coefficient: TE_COEFFICIENT;
 		air_drag_coefficient: AIR_COEFFICIENT;
+		cargo_age_period: DECAY;
 	
 		CARGODEF
 		misc_flags: MISC_FLAGS;
@@ -51,7 +52,9 @@ item(FEAT_TRAINS, ITEM) {
       
    }
    graphics {
-      default: bc_class;
+	  purchase:switch_bc_class_purchase;
+      default: switch_bc_class;
+	  cargo_subtype_text:switch_livery_text_bc_class;
 	  RUNNINGCOSTENGINESWITCHCALL
    }
 
