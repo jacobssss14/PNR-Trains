@@ -1,4 +1,8 @@
 Changelog for PNR-Trains
+1.3.2 
+    Changes
+        *Added new cargo wagons
+
 1.2.0
     Changes
         *Increased SLH DMU Speed to 160kph
