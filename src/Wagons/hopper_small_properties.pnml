@@ -23,7 +23,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #define VEHIDCODE hopper_small
 #define ITEM item_hopper_small
 #define NAME string(STR_HOPPER_SMALL)
-#define CLIMATE bitmask(CLIMATE_TEMPERATE)
+#define CLIMATE bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL)
 
 
 #define INTRODUCTION_YEAR 1945
