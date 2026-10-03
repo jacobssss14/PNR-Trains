@@ -50,6 +50,8 @@ item (FEAT_TRAINS, ITEM) {
 
 		cargo_capacity: 1;
 		cargo_allow_refit: [PASS];
+		badges: ["flag/PH", "power/steam", "role/mixed_traffic"];
+
       
    }
 

@@ -23,7 +23,7 @@
 #Engish language file
 
 #GRF names and description definitions
-STR_GRF_NAME        : PNR Trains 1.4.0
+STR_GRF_NAME        : PNR Trains 1.4.1
 STR_GRF_DESCRIPTION : Trains from the Philippine National Railways
 
 STR_PARAM_PURCHASE_COST             :Purchase cost multiplier
@@ -80,7 +80,7 @@ STR_DMU_SLH           : SLH DMU
 #EMU
 STR_EMU_EM_10000          :EM10000 Class
 STR_EMU_EM_10000_COMM_EXP :EM10000 Commuter Express
-STR_EMU_NSCR_AA        :NSCR Airport Express
+STR_EMU_NSCR_AA           :Airport Express
 
 #Steam 
 STR_STEAM_CLASS_300   : MRR 300 Class
@@ -118,6 +118,9 @@ STR_SERIES_14_SLEEPER : Series 14 Family Sleeper
 STR_203_GENERATOR_CAR : 203 Series Generator Car
 STR_MU_COACH_UNPOWERED: PNR MU Coach Unpowered
 STR_MU_COACH_POWERED  : PNR MU Coach Powered
+STR_MU_COACH_UNPOWERED_STD: PNR MU Coach Unpowered Standard Guage
+STR_MU_COACH_POWERED_STD  : PNR MU Coach Powered Standard Guage
+
 
 #Wagons
 STR_FLAT_WAGON        : PNR Flatbed Wagon
@@ -135,6 +138,7 @@ STR_HOPPER_SMALL      : PNR Small Hopper
 str_variant_u14c:Variant: {ORANGE} GE U14C
 str_variant_u15c:Variant: {ORANGE} GE U15C
 str_unit_wagon_passenger	:This generic wagon can ONLY be used with passenger MUs to create trains of the desired length
+str_203_bonus:Bonus: {ORANGE} Extra 250hp for Diesel Locomotives; Control Cab Present
 
 #Livery names
 str_livery_auto                : Automatic livery changing 
@@ -178,3 +182,26 @@ str_cannot_attach_Unit_wagon_to_engine			:Cannot attach Unit Wagon to regular en
 str_cannot_attach_Unit_wagon_to_wagon			:Cannot attach Unit Wagon to regular wagon
 str_cannot_attach_Unit_wagon_cargo_to_passenger	:Cannot attach cargo Unit Wagon to passenger Multiple Unit engine
 str_cannot_attach_Unit_wagon_passenger_to_cargo	:Cannot attach passenger Unit Wagon to cargo Multiple Unit engine
+
+#Badges 
+STR_FLAG:Country of Operation
+STR_FLAG_PH:Philippines
+STR_POWER:Power Source
+STR_STEAM:Steam
+STR_HYBRID:Hybrid 
+STR_DIESEL:Diesel
+STR_GASOLINE:Gasoline  
+STR_POWER_ELECTRIC_OH:Electric Overhead Line 
+STR_POWER_ELECTRIC_3RD:Electric 3rd Rail 
+STR_ROLE:Role 
+STR_LIGHT_METRO:Light Metro    
+STR_HEAVY_METRO:Metro 
+STR_EXPRESS_PASSENGER:Express passenger
+STR_1ST_CLASS:First Class Coach
+STR_3RD_CLASS:Third Class Coach 
+STR_MIXED_CLASS:Mixed Class Coach 
+STR_COMMUTER:Commuter
+STR_SLEEPER:Sleeper Coach 
+STR_MAIL:Mail Car 
+STR_FREIGHT:Freight 
+STR_MIXED_TRAFFIC:Mixed Traffic 

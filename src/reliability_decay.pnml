@@ -1,5 +1,5 @@
 /* PNR-Trains NewGRF For OpenTTD
-Copyright (C) 2020  Jacob Payag
+Copyright (C) 2026  Jacob Payag
 
 This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
 
@@ -18,11 +18,5 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-badgetable {
-     "flag",
-     "flag/PH",
-     "power",
-     "power/steam",
-     "power/diesel",
-     "power/electric",
- }
+#define INTECITY_DECAY 10
+#define COMMUTER_DECAY 20

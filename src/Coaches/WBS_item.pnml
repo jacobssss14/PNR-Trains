@@ -53,6 +53,7 @@ item (FEAT_TRAINS, ITEM) {
 		length: LENGTH;
 
 		cargo_allow_refit: [MAIL];
+		badges: ["flag/PH", "role/mail"];
       
    }
 

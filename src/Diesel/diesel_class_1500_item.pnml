@@ -51,6 +51,7 @@ item (FEAT_TRAINS, ITEM) {
 		cargo_capacity: 1;
 		cargo_allow_refit: [PASS];
 		curve_speed_mod: -0.25;
+		badges: ["flag/PH", "power/diesel", "role/express_passenger"];
       
    }
 

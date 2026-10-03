@@ -1,0 +1,339 @@
+/* PNR-Trains NewGRF For OpenTTD
+Copyright (C) 2026  Jacob Payag
+
+This file is part of the PNR-Trains NewGRF based on 2ccts by Transportman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+//Badge sprites 
+
+spriteset (badge_ph_flag, "gfx/Badges/PH_Flag.png") {
+    template_badge_flag(0, 0)
+}
+
+spriteset (badge_light_metro, "gfx/Badges/Light_Metro.png") {
+    template_badge(0, 0)
+}
+
+spriteset (badge_heavy_metro, "gfx/Badges/Heavy_Metro.png") {
+    template_badge(0, 0)
+}
+
+spriteset (badge_express_passenger, "gfx/Badges/Express_Passenger.png") {
+    template_badge(0, 0)
+}
+
+spriteset (badge_freight, "gfx/Badges/Freight.png") {
+    template_badge(0,0)
+}
+
+spriteset (badge_mixed_traffic, "gfx/Badges/Mixed_Traffic.png") {
+    template_badge(0, 0)
+}
+
+spriteset(badge_1st_class, "gfx/Badges/1st_Class.png") {
+    template_badge(0, 0)
+}
+
+spriteset(badge_3rd_class, "gfx/Badges/3rd_Class.png") {
+    template_badge(0, 0)
+}
+
+spriteset(badge_mixed_class, "gfx/Badges/Mixed_Class.png" ) {
+    template_badge(0, 0)
+}
+
+spriteset(badge_mail, "gfx/Badges/Mail.png") {
+    template_badge(0, 0)
+}
+
+spriteset(badge_sleeper, "gfx/Badges/Sleeper.png") {
+    template_badge(0, 0)
+}
+
+spriteset(badge_commuter, "gfx/Badges/Commuter.png") {
+    template_badge(0, 0)
+}
+
+spriteset (badge_electric_oh, "gfx/Badges/Electric_OH.png") {
+    template_badge(0, 0)
+}
+
+spriteset (badge_electric_3rd, "gfx/Badges/Electric_3rd.png") {
+    template_badge(0, 0)
+}
+
+spriteset (badge_steam, "gfx/Badges/Steam.png") {
+    template_badge(0, 0)
+}
+
+spriteset (badge_diesel, "gfx/Badges/Diesel.png") {
+    template_badge(0, 0)
+}
+
+spriteset (badge_gasoline, "gfx/Badges/Gasoline.png") {
+    template_badge(0,0 )
+}
+
+spriteset (badge_hybrid, "gfx/Badges/Hybrid.png") {
+    template_badge(0,0 )
+}
+
+//badgetable
+
+badgetable {
+    "flag",
+    "flag/PH",
+    "power",
+    "power/steam",
+    "power/diesel",
+    "power/gasoline",
+    "power/hybrid",
+    "power/electric_oh",
+    "power/electric_3rd",
+    "role",
+    "role/light_metro",
+    "role/heavy_metro",
+    "role/express_passenger",
+    "role/1st_class",
+    "role/3rd_class",
+    "role/mixed_class",
+    "role/sleeper",
+    "role/commuter",
+    "role/mail",
+    "role/mixed_traffic",
+    "role/freight",
+}
+
+item (FEAT_BADGES, flag) {
+    property {
+        label: "flag";
+        name: string(STR_FLAG);
+    }
+} 
+
+item (FEAT_BADGES, flag_PH) {
+    property {
+        label: "flag/PH";
+        name: string(STR_FLAG_PH);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+    graphics{
+        default: badge_ph_flag;
+    }
+}
+
+item (FEAT_BADGES, powers) {
+    property {
+        label: "power";
+        name: string(STR_POWER);
+    }
+} 
+
+item (FEAT_BADGES, power_steam) {
+    property {
+        label: "power/steam";
+        name: string(STR_STEAM);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+    graphics {
+        default: badge_steam;
+    }
+}
+
+item (FEAT_BADGES, power_hybrid) {
+    property {
+        label: "power/hybrid";
+        name: string(STR_HYBRID);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+    graphics {
+        default: badge_hybrid;
+    }
+}
+
+item (FEAT_BADGES, power_diesel) {
+    property {
+        label: "power/diesel";
+        name: string(STR_DIESEL);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+    graphics {
+        default: badge_diesel;
+    }
+}
+
+item (FEAT_BADGES, power_gasoline) {
+    property {
+        label: "power/gasoline";
+        name: string(STR_GASOLINE);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+    graphics {
+        default: badge_gasoline;
+    }
+}
+
+item (FEAT_BADGES, power_electric_oh) {
+    property {
+        label: "power/electric_oh";
+        name: string(STR_POWER_ELECTRIC_OH);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+    graphics{
+        default: badge_electric_oh;
+    }
+}
+
+item (FEAT_BADGES, power_electric_3rd) {
+    property {
+        label: "power/electric_3rd";
+        name: string(STR_POWER_ELECTRIC_3RD);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+    graphics{
+        default: badge_electric_3rd;
+    }
+}
+
+item (FEAT_BADGES, role) {
+    property {
+        label: "role";
+        name: string(STR_ROLE);
+    }
+}
+
+item (FEAT_BADGES, role_light_metro) {
+    property{
+        label: "role/light_metro";
+        name: string(STR_LIGHT_METRO);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+    graphics {
+        default: badge_light_metro;
+    }
+}
+
+item (FEAT_BADGES, role_heavy_metro) {
+    property{
+        label: "role/heavy_metro";
+        name: string(STR_HEAVY_METRO);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+    graphics {
+        default: badge_heavy_metro;
+    }
+}
+
+item (FEAT_BADGES, role_express_passenger) {
+    property {
+        label: "role/express_passenger";
+        name: string(STR_EXPRESS_PASSENGER);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+    graphics{ 
+        default: badge_express_passenger;
+    }
+}
+
+item (FEAT_BADGES, role_1st_class) {
+    property {
+        label:"role/1st_class";
+        name: string(STR_1ST_CLASS);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+    graphics {
+        default: badge_1st_class;
+    }
+}
+
+item (FEAT_BADGES, role_3rd_class) {
+    property {
+        label: "role/3rd_class";
+        name: string(STR_3RD_CLASS);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+    graphics {
+        default: badge_3rd_class;
+    }
+}
+
+item (FEAT_BADGES, role_mixed_class) {
+    property {
+        label: "role/mixed_class";
+        name: string(STR_MIXED_CLASS);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+
+    graphics {
+        default: badge_mixed_class;
+    }
+}
+
+item (FEAT_BADGES, role_sleeper) {
+    property {
+        label: "role/sleeper";
+        name: string(STR_SLEEPER);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+    graphics {
+        default: badge_sleeper;
+    }
+}
+
+item (FEAT_BADGES, role_commuter) {
+    property {
+        label: "role/commuter";
+        name: string(STR_COMMUTER);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+    graphics {
+        default: badge_commuter;
+    }
+}
+
+item (FEAT_BADGES, role_mail) {
+    property {
+        label: "role/mail";
+        name: string(STR_MAIL);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+    graphics {
+        default: badge_mail;
+    }
+}
+
+item (FEAT_BADGES, role_freight) {
+    property {
+        label: "role/freight";
+        name: string(STR_FREIGHT);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+    graphics {
+        default: badge_freight;
+    }
+}
+
+item (FEAT_BADGES, role_mixed_traffic) {
+    property {
+        label: "role/mixed_traffic";
+        name: string(STR_MIXED_TRAFFIC);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+    }
+    graphics {
+        default: badge_mixed_traffic;
+    }
+}

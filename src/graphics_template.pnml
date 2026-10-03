@@ -150,6 +150,16 @@ template template_empty_spriteset() {
     [1	,  1,  1,  1,   0,   0, "gfx/Empty.png"]
 }
 
+template template_badge_flag(x, y) {
+    [x, y, 32, 16, 0, 0]
+}
+
+template template_badge(x, y) {
+    [x, y, 16, 16, 0 ,0]
+}
+
+
+
 spriteset(spriteset_empty) {
 	template_empty_spriteset()
 }

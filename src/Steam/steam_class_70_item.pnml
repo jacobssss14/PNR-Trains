@@ -47,6 +47,7 @@ item (FEAT_TRAINS, ITEM) {
 		sprite_id: SPRITE_ID;
 		dual_headed: DUAL_HEADED;
 		length: LENGTH;
+		badges: ["flag/PH", "power/steam", "role/express_passenger"];
 
 		
       

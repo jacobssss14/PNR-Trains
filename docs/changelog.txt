@@ -1,4 +1,9 @@
 Changelog for PNR-Trains
+1.4.1
+    *Adjust reliability decay for some trains
+    *Updated Some Labels
+    *Added badges
+
 1.4.0
     *Adjusted loading speed
     *Adjusted cargo age period

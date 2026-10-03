@@ -58,6 +58,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //Cargo decay
 #include "src/cargo_decay.pnml"
 
+//Reliability decay 
+#include "src/reliability_decay.pnml"
+
 //Purchase Text
 #include "src/purchasetext.pnml"
 
@@ -65,6 +68,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "src/mu_coach_calc.pnml"
 
 #include "src/cargotable.pnml"
+
+//Badge Table 
+#include "src/badge_table.pnml"
 
 //Coaches
 #include "src/init/init_coach.pnml"

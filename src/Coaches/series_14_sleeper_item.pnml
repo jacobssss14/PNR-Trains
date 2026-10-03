@@ -52,6 +52,7 @@ item (FEAT_TRAINS, ITEM) {
 		length: LENGTH;
         
 		cargo_allow_refit: [PASS];
+		badges: ["flag/PH", "role/sleeper"];
    }
 
      graphics {  
