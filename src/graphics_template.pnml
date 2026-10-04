@@ -158,6 +158,11 @@ template template_badge(x, y) {
     [x, y, 16, 16, 0 ,0]
 }
 
+template template_badge_wide(x, y) {
+    [x, y, 32, 16, 0, 0]
+}
+
+
 
 
 spriteset(spriteset_empty) {

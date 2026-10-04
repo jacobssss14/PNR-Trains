@@ -1,4 +1,7 @@
 Changelog for PNR-Trains
+1.4.2
+    *Updated role badge graphics
+
 1.4.1
     *Adjust reliability decay for some trains
     *Updated Some Labels

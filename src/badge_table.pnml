@@ -33,39 +33,39 @@ spriteset (badge_heavy_metro, "gfx/Badges/Heavy_Metro.png") {
 }
 
 spriteset (badge_express_passenger, "gfx/Badges/Express_Passenger.png") {
-    template_badge(0, 0)
+    template_badge_wide(0, 0)
 }
 
 spriteset (badge_freight, "gfx/Badges/Freight.png") {
-    template_badge(0,0)
+    template_badge_wide(0,0)
 }
 
 spriteset (badge_mixed_traffic, "gfx/Badges/Mixed_Traffic.png") {
-    template_badge(0, 0)
+    template_badge_wide(0, 0)
 }
 
 spriteset(badge_1st_class, "gfx/Badges/1st_Class.png") {
-    template_badge(0, 0)
+    template_badge_wide(0, 0)
 }
 
 spriteset(badge_3rd_class, "gfx/Badges/3rd_Class.png") {
-    template_badge(0, 0)
+    template_badge_wide(0, 0)
 }
 
 spriteset(badge_mixed_class, "gfx/Badges/Mixed_Class.png" ) {
-    template_badge(0, 0)
+    template_badge_wide(0, 0)
 }
 
 spriteset(badge_mail, "gfx/Badges/Mail.png") {
-    template_badge(0, 0)
+    template_badge_wide(0, 0)
 }
 
 spriteset(badge_sleeper, "gfx/Badges/Sleeper.png") {
-    template_badge(0, 0)
+    template_badge_wide(0, 0)
 }
 
 spriteset(badge_commuter, "gfx/Badges/Commuter.png") {
-    template_badge(0, 0)
+    template_badge_wide(0, 0)
 }
 
 spriteset (badge_electric_oh, "gfx/Badges/Electric_OH.png") {
